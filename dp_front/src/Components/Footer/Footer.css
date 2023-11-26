@@ -1,0 +1,148 @@
+footer{
+    background-color: #003333;
+    padding:40px 35px ;
+}
+.first-footer{
+    display: flex;
+width:100%;
+border-bottom:2px solid #fff;
+padding-bottom:20px;
+}
+.footer-left{
+    display: flex;
+    width:60%;
+    border-right:2px solid #fff;
+}
+.footer-right{
+    padding-left:40px;
+    width:40%;
+}
+.footer-left div h2{
+color:#fff;
+font-size:20px;
+font-weight:600;
+text-transform: uppercase;
+margin-bottom:35px;
+}
+.footer-left div a{
+    display: block;
+    color:#bbb;
+    text-decoration: none;
+    font-size:18px;
+    margin:35px 0;
+}
+.footer-left div a:hover{
+color:#fff;
+}
+.footer-left div {
+   margin-right:60px;
+   height:100%;
+  
+}
+.footer-left div i{
+   margin-right:15px;
+}
+.footer-right div h3{
+    color:#fff;
+    font-size:18px;
+    font-weight: 600;
+    letter-spacing: .8px;
+    margin-bottom:20px;
+}
+
+.footer-right div p{
+    color:#bbb;
+    font-size: 18px;
+    margin:30px 0;
+}
+.footer-right div p span{
+    font-weight: 500;
+    color:#fff;
+}
+.footer-right div .subscribe{
+    border:none;
+    background-color: #fff;
+    width:70%;
+    height:50px;
+    border-radius: 3px;
+    margin:10px 0;
+    margin-bottom:15px;
+    display: flex;
+}
+.footer-right div .subscribe input{
+    margin-left:20px;
+    width:80%;
+    border:none;
+    outline:none;
+    background: transparent;
+    font-size: 16px;
+
+    }
+.footer-right div .subscribe input::placeholder{
+    color:#000;
+    font-size: 16px;
+}
+.footer-right div .subscribe button{
+    border:none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    outline:none;
+    padding:0 20px;
+    height:100%;
+    background: #666;
+    color:#fff;
+    font-size: 16px;
+}
+
+.footer-right div.getapp h2{
+    margin-bottom: 20px;
+    font-size:16px;
+    color:#fff;
+    font-weight: 600;
+}
+.footer-right div.getapp button span{
+    font-weight: 800;
+    color:#000;
+    font-size: 16px;
+}
+.footer-right div.getapp button p{
+    color:#000;
+    font-size: 15px;
+    margin-top:5px;
+}
+.footer-right div.getapp .getbuttons{
+    display: flex;
+}
+.footer-right div.getapp button{
+    height:55px;
+    width:150px;
+    border:none;
+    background-color: #fff;
+    border-radius: 3px;
+    display: flex;
+    margin-right:20px;
+    padding-top:5px;
+}
+.footer-right div.getapp button:hover{
+    background-color: #444;
+}
+.footer-right div.getapp button:hover .fa-brands,.footer-right div.getapp button:hover .gettext,.footer-right div.getapp button:hover .getspan{
+color:#fff;
+}
+
+
+
+.footer-right div.getapp button i{
+    margin-top:5px;
+    margin-left:10px;
+    margin-right:10px;
+    font-size:28px;
+}
+
+.second-footer h3{
+    color:#fff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25px;
+    letter-spacing: 1px;
+}

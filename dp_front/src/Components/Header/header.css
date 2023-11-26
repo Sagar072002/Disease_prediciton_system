@@ -1,0 +1,48 @@
+.header {
+    overflow: hidden;
+    background-color: #ccc;
+    padding: 10px 20px;
+    display: flex;
+    height:90px;
+    align-items: center;
+  }
+  .header img{
+    height:60px;
+    width:200px;
+  }
+ .header .searchbar{
+    width:500px;
+    padding:0px 20px;
+    padding-top:5px;
+    margin:0px 50px;
+    height:50px;
+    border:1px solid #ddd;
+    border-radius: 25px;
+ }
+ .header .searchbar::placeholder{
+    font-size: 18px;
+ }
+  .header a {
+    color: black;
+    padding: 15px 20px;
+    margin-left:10px;
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 4px;
+  }
+  
+ 
+  
+  .header a:hover {
+    background-color: #003333;
+    color: #fff;
+  }
+  
+  .header a.active {
+    background-color: #003333;
+    color: white;
+  }
+  
+ 
+  
+  
