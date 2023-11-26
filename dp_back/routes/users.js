@@ -72,7 +72,7 @@ router.post('/login', async(req, res)=>{
     const username= req.body.username;
     const password= req.body.password;
 
-    if(!username || !password){ return res.status(400).send("Invlaid request!"); }
+    if(!username || !password){ return res.status(400).send("Invalid request!"); }
     
     try{
         const user = await User.findOne({ username: username, password: password });
