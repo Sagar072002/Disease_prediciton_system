@@ -1,6 +1,6 @@
 import React from 'react';
 import './Review.css';
-import img from '../../assets/sekiro.jpg'
+import img from '../../../assets/sekiro.jpg'
 
 
 const Review = () => {
