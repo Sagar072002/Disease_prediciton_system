@@ -11,6 +11,7 @@ import Review from './Components/Home/Review/Review';
 import Faq from './Components/Home/FAQ/Faq';
 import Sponsors from './Components/Home/Sponsors/Sponsors';
 import Home from './Components/Home/home/Home';
+import Contact from './Components/Contact/Contact';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
             <Route path='/review' element={ <Review/> } />
             <Route path='/faq' element={ <Faq/> } />
             <Route path='/sponsors' element={ <Sponsors/> } />
+            <Route path='/contact' element={ <Contact/> } />
           </Routes>
           <Footer/>
         </Router>
