@@ -1,7 +1,7 @@
 import React from 'react';
 import './Register.css';
 import img from '../../assets/register.gif'
-
+import { Link } from 'react-router-dom';
 
 const Register = () => {
   return (
@@ -31,7 +31,7 @@ const Register = () => {
       </div>
       <button type="submit"> Register</button>
       <p>
-        Already an user? <a href="register.html">Sign in now</a>{" "}
+        Already an user? <Link to="/login">Sign in now</Link>{" "}
       </p>
     </div>
     <div className="register-right">

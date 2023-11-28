@@ -1,7 +1,7 @@
 import React from 'react';
 import './Login.css'
 import img from '../../assets/login.gif'
-
+import { Link } from 'react-router-dom'
 
 
 const Login = () => {
@@ -21,7 +21,7 @@ const Login = () => {
       <a href="" className='forgot'>Forgot Password?</a> <br />
       <button type="submit">Login</button>
       <p>
-        Don't have an account? <a href="#">Sign up now</a>{" "}
+        Don't have an account? <Link to="/register">Sign up now</Link>{" "}
       </p>
       <p className="ortext">OR</p>
       <div className="loginbtn">
