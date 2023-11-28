@@ -6,9 +6,12 @@ import Header from './Components/Header/Header';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import Footer from './Components/Footer/Footer';
-import Counter from './Components/Counter/Counter';
-import Review from './Components/Review/Review';
-import Faq from './Components/FAQ/Faq';
+import Counter from './Components/Home/Counter/Counter';
+import Review from './Components/Home/Review/Review';
+import Faq from './Components/Home/FAQ/Faq';
+import Sponsors from './Components/Home/Sponsors/Sponsors';
+import Home from './Components/Home/home/Home';
+import Contact from './Components/Contact/Contact';
 
 const App = () => {
   return (
@@ -17,12 +20,14 @@ const App = () => {
         <Router>
           <Header/>
           <Routes>
-            <Route path='/' element={ <Login/> } />
+            <Route path='/' element={ <Home/> } />
             <Route path='/login' element={ <Login/> } />
             <Route path='/register' element={ <Register/> } />
             <Route path='/counter' element={ <Counter/> } />
             <Route path='/review' element={ <Review/> } />
             <Route path='/faq' element={ <Faq/> } />
+            <Route path='/sponsors' element={ <Sponsors/> } />
+            <Route path='/contact' element={ <Contact/> } />
           </Routes>
           <Footer/>
         </Router>

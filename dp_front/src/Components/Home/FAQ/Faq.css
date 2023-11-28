@@ -20,6 +20,9 @@
     padding:5px;
     margin: 1.2rem 0;
     border-radius: 0.5rem;
+    border:1px solid #ddd;
+  }
+  .accordion-item:hover{
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
   }
   .accordion-item-header {
