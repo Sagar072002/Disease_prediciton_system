@@ -12,7 +12,7 @@ class userService{
     }
 
     login(credentials){
-        const req = clientApi.post(this.endpoint, credentials);
+        const req = clientApi.post(this.endpoint+'/login', credentials);
 
         return req;
     }
@@ -24,7 +24,7 @@ class userService{
     }
 
     getInfo(uid){
-        const req = clientApi.post(this.endpoint, uid)
+        const req = clientApi.post(this.endpoint+'/get', {uid: uid})
 
         return req;
     }
