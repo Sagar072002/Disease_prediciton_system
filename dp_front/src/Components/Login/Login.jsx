@@ -1,5 +1,6 @@
 import React from 'react';
 import './Login.css'
+import { Link } from 'react-router-dom'
 import img from '../../assets/login.gif';
 import { useFormik } from "formik";
 
@@ -71,7 +72,7 @@ const Login = () => {
       <button type="submit">Login</button>
       </form>
       <p>
-        Don't have an account? <a href="#">Sign up now</a>{" "}
+        Don't have an account? <Link to="/register">Sign up now</Link>{" "}
       </p>
       <p className="ortext">OR</p>
       <div className="loginbtn">

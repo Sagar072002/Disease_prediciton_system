@@ -1,5 +1,6 @@
 import React from 'react';
 import './Register.css';
+import { Link } from 'react-router-dom';
 import img from '../../assets/register.gif';
 import { useFormik } from "formik";
 
@@ -119,7 +120,7 @@ const Register = () => {
       </div>
       <button type="submit"> Register</button>
       <p>
-        Already an user? <a href="register.html">Sign in now</a>{" "}
+        Already an user? <Link to="/login">Sign in now</Link>{" "}
       </p>
     </form>
     </div>
