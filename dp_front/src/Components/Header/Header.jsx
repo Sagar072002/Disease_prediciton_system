@@ -13,16 +13,12 @@ const Header = () => {
     <a href="#">About</a>
     <a href="#">Prediction</a>
     <a href="#">Appointment</a>
+    
     <Link to="/contact">Contact</Link>
     <Link to="/login">Login</Link>
     {/* <a href="#">Register</a> */}
     </div>
   </div>
-  )
-}
-
-export default Header
-
-
-
-
+   )
+  }
+  export default Header
