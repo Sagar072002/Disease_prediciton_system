@@ -92,3 +92,7 @@
 .register-form .register-left p a{
     color:#4161c0;
 }
+.form-error{
+color:tomato;
+font-size:15px !important;
+}
