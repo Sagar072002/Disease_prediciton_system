@@ -1,0 +1,55 @@
+.symptom-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px 0;
+}
+.main-div{
+    display: flex;
+    padding:40px;
+    border:1px solid #eee;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    height:550px;
+    width:60%;
+}
+.main-div .left-side{
+    width:60%;
+}
+.main-div .right-side{
+    width:40%;
+    padding-left:100px;
+}
+.main-div .right-side img{
+    width:230px;
+    height:420px;
+    margin-top:-40px;
+}
+.main-div .left-side h2{
+font-size: 25px;
+margin-bottom:25px;
+}
+.main-div .left-side p{
+font-size: 18px;
+margin-bottom:20px;
+line-height: 1.5;
+}
+
+.main-div .content-div{
+    width:90%;
+    background-color: #f8f8f8;
+    height:190px;
+    padding:30px;
+    border-radius: 3px;
+    margin-top:20px;
+}
+.main-div .content-div p{
+    color:#777;
+    font-size: 17px;
+}
+.main-div .right-side .btn{
+    background:transparent;
+    color:#000;
+    font-size: 18px;
+    margin-left:20px;
+}
