@@ -3,7 +3,7 @@ import './Register.css';
 import { Link } from 'react-router-dom';
 import img from '../../assets/register.gif';
 import { useFormik } from "formik";
-
+import userService from '../../services/user_service.jsx';
 import {registerschema} from '../Register/Registerschema.jsx'
 
 const initialValues = {
@@ -20,17 +20,24 @@ const Register = () => {
       initialValues,
       validationSchema: registerschema,
       onSubmit: (values, action) => {
-        console.log(
-          "🚀 ~ file: Registration.jsx ~ line 11 ~ Registration ~ values",
-          values
-        );
+        console.log("Register values:",values);
+        const data = {
+          username: values.name,
+          email: values.email,
+          phone: values.phone,
+          address: "test_address",
+          password1: values.password,
+          password2: values.confirm_password
+        }
+        userService.register(data).then((res)=>{
+          console.log('Register res:', res.data);
+        }).catch((err)=>{
+          console.log('Register err:',err.response.data);
+        })
         action.resetForm();
       },
     });
-  // console.log(
-  //   "🚀 ~ file: Registration.jsx ~ line 25 ~ Registration ~ errors",
-  //   errors
-  // );
+ 
   return (
     <div className="register-container">
   <div className="register-form">

@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Login.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import img from '../../assets/login.gif';
 import { useFormik } from "formik";
-
+import userService from '../../services/user_service.jsx'
 import {loginschema} from '../Login/Loginschema.jsx'
-
+import { SiteContext } from '../../context/siteContext.jsx';
 
 
 const Login = () => {
+  const { setUid } = useContext(SiteContext)
+  const navigate = useNavigate()
   const initialValues = {
-    name: "",
+    username: "",
     password: ""
     };
 
@@ -20,10 +22,12 @@ const Login = () => {
       validationSchema: loginschema,
       validateOnChange: true,
       validateOnBlur: false,
-      //// By disabling validation onChange and onBlur formik will validate on submit.
       onSubmit: (values, action) => {
-        console.log("🚀 ~ file: App.jsx ~ line 17 ~ App ~ values", values);
-        //// to get rid of all the values after submitting the form
+        console.log("Login Values:", values);
+        userService.login(values).then((res)=>{
+          console.log('Login Res:', res.data);
+          setUid(res.data);
+        }).catch((err)=>{console.log('Login Err:',err.response.data);})
         action.resetForm();
       },
     });
@@ -41,13 +45,13 @@ const Login = () => {
         <div>
         <input  type="text"  placeholder="Username"  
                       autoComplete="off"
-                      name="name"
-                      id="name"
-                      value={values.name}
+                      name="username"
+                      id="username"
+                      value={values.username}
                       onChange={handleChange}
                       onBlur={handleBlur}/>
-        {errors.name && touched.name ? (
-                      <p className="form-error">{errors.name}</p>
+        {errors.username && touched.username ? (
+                      <p className="form-error">{errors.username}</p>
                     ) : null}
                     </div>
       </div>
