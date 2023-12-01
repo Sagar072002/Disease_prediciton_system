@@ -1,0 +1,142 @@
+.values{
+    margin:30px 80px;
+    height:600px;
+    border-radius: 4px;
+    padding:20px;
+}
+.values .col{
+    height:33%;
+    display: flex;
+    line-height: 1.5;
+}
+.values .col div{
+    width:50%;
+}
+.values .firstcol{
+    border-top:2px solid #ddd;
+    border-right:2px solid #ddd;
+}
+.values .thirdcol{
+    border-bottom:2px solid #ddd;
+    border-right:2px solid #ddd;
+}
+.values .secondcol{
+    border-left:2px solid #ddd;
+}
+
+.values .col .first{
+    background-color:cadetblue;
+}
+.values .col .second,.values .col .first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:18px;
+    text-align: justify;
+    padding:30px;
+}
+.values .col .first{
+    font-size:30px;
+    font-weight: bold;
+    color: #fff;
+}
+.message{
+    padding:30px 180px;
+}
+.message h2{
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom:30px;
+}
+.message p{
+    text-align: justify;
+    font-size: 18px;
+    line-height:1.4;
+}
+.message ul{
+    margin-top:20px;
+}
+.message li{
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom:15px;
+}
+.message li span{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+.teamdiv{
+   display: flex;
+justify-content: center;
+align-items: center;
+margin-top:40px;
+}
+.team{
+    width:90%;
+    height:500px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.teamdiv h1{
+    text-transform: uppercase;
+    font-size:35px;
+}
+.members {
+    display: flex;
+    margin-top:20px;
+}
+.detail img{
+    width:90px;
+    height:90px;
+    border-radius: 50%;
+    margin-left:38%;
+    border:3px solid #888;
+    margin-top:25px;
+}
+.detail h2{
+    text-align: center;
+    margin-top:15px;
+}
+.detail h4{
+    text-align: center;
+    margin-top:10px;
+}
+.members .row{
+    width:300px;
+    height:280px;
+    border:3px solid #eee;
+    border-radius: 4px;
+    margin:30px;
+    background-color: #f1f1f1;
+}
+.members .row:hover{
+    border:3px solid #bbb;
+}
+.members .connect{
+    margin-left:15%;
+    margin-top:15px;
+}
+.members .connect i{
+    margin-right:10px;
+    font-size:16px;
+    background-color: #333;
+    color:#fff;
+    padding:15px 17px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.members .connect i:hover{
+    transform: scale(1.07);
+}

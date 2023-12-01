@@ -1,8 +1,174 @@
+.terms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.terms .main-div{
+    display: flex;
+    flex-direction: column;
+    margin-top:60px;
+    margin-bottom:40px;
+    height:500px;
+}
+.termsdiv{
+    display: flex;
+}
+.termsdiv .leftdiv{
+    width:60%;
+    padding:20px;
+    padding-bottom:10px;
+}
+.termsdiv .leftdiv h2{
+   text-transform: uppercase;
+   margin-bottom:30px;
+   text-align: center;
+}
+.termsdiv .leftdiv p{
+   margin-bottom:30px;
+}
+.termsdiv .leftdiv li{
+   margin-bottom:20px;
+   line-height: 1.5;
+}
+.termsdiv .leftdiv li span{
+  font-weight: 700;
+}
+.main-div input{
+  margin-right:10px;
+}
+.main-div .form button{
+  margin-left:400px;
+  padding:17px 27px;
+  background-color: #003333;
+  color:#fff;
+  font-size: 17px;
+  border-radius:5px;
+}
+.termsdiv .rightdiv{
+    width:40%;
+}
+.termsdiv .rightdiv img{
+    height:70%;
+    width:90%;
+    margin-top:50px;
+    margin-left:20px;
+}
+
+
+.quesdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.questions{
+    border:1px solid #ddd;
+    background-color: #f7f7f7;
+    width:60%;
+    padding:30px;
+    padding-bottom:10px;
+}
+.questions h2{
+    text-align: center;
+    margin-bottom:30px;
+}
+.questions pre{
+    margin-bottom:50px;
+    font-size: 20px;
+}
+.questions .row{
+    border-top:1px solid #bbb;
+    margin-bottom:30px;
+    padding:20px;
+    padding-bottom:10px;
+}
+.questions .row p{
+display: inline; 
+margin-right:400px;
+font-size: 18px;
+}
+.questions .row input{
+margin-right:5px;
+}
+.questions .row label{
+margin-right:30px;
+font-size: 18px;
+}
+
+.questions button{
+    margin-left:700px;
+    margin-top:40px;
+    padding:17px 27px;
+    background-color: #003333;
+    color:#fff;
+    font-size: 17px;
+    border-radius:5px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gender-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:60px;
+}
+.gender{
+    width: 60%;
+border:1px solid #eee;
+background-color: #f7f7f7;
+height:500px;
+padding:30px;
+display: flex;
+flex-direction: column;
+}
+
+.gender div{
+    margin:20px;
+    height:300px;
+    padding:20px;
+    margin-left:50px;
+    display: flex;
+}
+.gender div .firstdiv,.gender div .seconddiv{
+    background-color: #eee;
+    width:300px;
+    border:1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    font-size:20px;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+}
+.gender div .firstdiv:hover,.gender div .seconddiv:hover{
+    border:1px solid #bbb;
+
+}
+.gender h2{
+   text-align: center;
+   text-transform: uppercase;
+}
+
 .symptom-div{
     display: flex;
     justify-content: center;
     align-items: center;
     padding:50px 0;
+    margin-top:50px;
 }
 .main-div{
     display: flex;

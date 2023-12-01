@@ -1,5 +1,5 @@
 footer{
-    background-color: #003333;
+    background-color: rgb(39, 74, 74);
     padding:40px 35px ;
 }
 .first-footer{
@@ -32,7 +32,8 @@ margin-bottom:35px;
     margin:35px 0;
 }
 .footer-left div a:hover{
-color:#fff;
+color:#fff !important;
+background: transparent !important;
 }
 .footer-left div {
    margin-right:60px;

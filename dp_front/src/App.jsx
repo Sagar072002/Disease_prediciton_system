@@ -13,6 +13,7 @@ import Sponsors from './Components/Home/Sponsors/Sponsors';
 import Home from './Components/Home/home/Home';
 import Contact from './Components/Contact/Contact';
 import Symptom from './Components/Symptom/Symptom';
+import About from './Components/About/About';
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
             <Route path='/sponsors' element={ <Sponsors/> } />
             <Route path='/contact' element={ <Contact/> } />
             <Route path='/symptom' element={ <Symptom/> } />
+            <Route path='/about' element={ <About/> } />
           </Routes>
           <Footer/>
         </Router>
