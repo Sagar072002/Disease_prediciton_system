@@ -1,15 +1,190 @@
 import React, { useState } from 'react';
-import './Faq.css';
+import Countup from 'react-countup';
+import ScrollTrigger from 'react-scroll-trigger';
+import './Home.css'
 
-const Faq = () => {
+import img from '../../assets/sekiro.jpg'
+import img1 from "../../assets/google.png";
+import img2 from "../../assets/intel.png";
+import img3 from "../../assets/maestro.png";
+import img4 from "../../assets/mastercard.png";
+import img5 from "../../assets/microsoft.png";
+import img6 from "../../assets/oracle.png";
+import img7 from "../../assets/samsung.png";
+import img8 from "../../assets/toyota.png";
+import img9 from "../../assets/walmart.png";
+import img10 from "../../assets/walt-disney.png";
+
+const Home = () => {
   const [activeIndex, setActiveIndex] = useState(null);
+  const [counteron,Setcounteron]=useState(false);
 
   const handleAccordionClick = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
   return (
-    <div className="accordion">
+    <>
+   {/* <Counter/>   */}
+   <div className='counter-div'>
+    <ScrollTrigger className='innercounter' onEnter={()=>Setcounteron(true)} onExit={()=>Setcounteron(false)}>
+    <h1>{counteron && <Countup className='counter' start={0} end={100} duration={3} delay={0}/>}+ <br /><span> patients treated</span></h1>
+    </ScrollTrigger>
+    <ScrollTrigger className='innercounter' onEnter={()=>Setcounteron(true)} onExit={()=>Setcounteron(false)}>
+    <h1>{counteron &&  <Countup className='counter' start={0} end={200} duration={3} delay={0}/>}+ <br /><span> patients treated</span></h1>
+    </ScrollTrigger>
+    <ScrollTrigger className='innercounter' onEnter={()=>Setcounteron(true)} onExit={()=>Setcounteron(false)}>
+    <h1>{counteron &&  <Countup className='counter' start={0} end={300} duration={3} delay={0}/>}+ <br /><span> patients treated</span></h1>
+    </ScrollTrigger>
+  </div>
+   {/* <Sponsors/> */}
+   <div className="partners">
+  <h2>Our Sponsor Partners</h2>
+  <div className="logos">
+    <div className="logos-slide">
+      <img src={img1} alt="" />
+      <img src={img2} alt="" />
+      <img src={img3} alt="" />
+      <img src={img4} alt="" />
+      <img src={img5} alt="" />
+      <img src={img6} alt="" />
+      <img src={img7} alt="" />
+      <img src={img8} alt="" />
+      <img src={img9} alt="" />
+      <img src={img10} alt="" />
+    </div>
+    <div className="logos-slide">
+      <img src={img1} alt="" />
+      <img src={img2} alt="" />
+      <img src={img3} alt="" />
+      <img src={img4} alt="" />
+      <img src={img5} alt="" />
+      <img src={img6} alt="" />
+      <img src={img7} alt="" />
+      <img src={img8} alt="" />
+      <img src={img9} alt="" />
+      <img src={img10} alt="" />
+    </div>
+  </div>
+</div>
+   {/* <Review/> */}
+   <div className='review-section'>
+        <h1>Customer Review</h1>
+        <p className='text'>Read what our customers have to say about us</p>
+        <div className="inner-review">
+        <div className="review">
+            <div className="top-section">
+            <img src={img} alt="" />
+            <div className="detail">
+            <h2>Sagar Negi</h2>
+            <p>Position,Company</p>
+            </div>
+            
+            </div>
+            <div className="stars">
+            <i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-regular fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus culpa repudiandae nisi ut dolor alias a maxime aliquam omnis aspernatur sunt eaque exercitationem rerum, assumenda velit eveniet facere. Ipsum, soluta.</p>
+        </div>
+        <div className="review">
+        <div className="top-section">
+            <img src={img} alt="" />
+            <div className="detail">
+            <h2>Sagar Negi</h2>
+            <p>Position,Company</p>
+            </div>
+            </div>
+            <div className="stars">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-regular fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus culpa repudiandae nisi ut dolor alias a maxime aliquam omnis aspernatur sunt eaque exercitationem rerum, assumenda velit eveniet facere. Ipsum, soluta.</p>
+        </div>
+        <div className="review">
+        <div className="top-section">
+            <img src={img} alt="" />
+            <div className="detail">
+            <h2>Sagar Negi</h2>
+            <p>Position,Company</p>
+            </div>
+            </div>
+            <div className="stars">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-regular fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus culpa repudiandae nisi ut dolor alias a maxime aliquam omnis aspernatur sunt eaque exercitationem rerum, assumenda velit eveniet facere. Ipsum, soluta.</p>
+        </div>
+        </div>
+       
+        <div className="inner-review">
+          <div className="review">
+          <div className="top-section">
+            <img src={img} alt="" />
+            <div className="detail">
+            <h2>Sagar Negi</h2>
+            <p>Position,Company</p>
+            </div>
+            </div>
+            <div className="stars">
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus culpa repudiandae nisi ut dolor alias a maxime aliquam omnis aspernatur sunt eaque exercitationem rerum, assumenda velit eveniet facere. Ipsum, soluta.</p>
+        </div>
+        <div className="review">
+        <div className="top-section">
+            <img src={img} alt="" />
+            <div className="detail">
+            <h2>Sagar Negi</h2>
+            <p>Position,Company</p>
+            </div>
+            </div>
+            <div className="stars">
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus culpa repudiandae nisi ut dolor alias a maxime aliquam omnis aspernatur sunt eaque exercitationem rerum, assumenda velit eveniet facere. Ipsum, soluta.</p>
+        </div>
+        <div className="review">
+        <div className="top-section">
+            <img src={img} alt="" />
+            <div className="detail">
+            <h2>Sagar Negi</h2>
+            <p>Position,Company</p>
+            </div>
+            </div>
+            <div className="stars">
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-regular fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus culpa repudiandae nisi ut dolor alias a maxime aliquam omnis aspernatur sunt eaque exercitationem rerum, assumenda velit eveniet facere. Ipsum, soluta.</p>
+        </div>
+        
+        </div>
+        
+       
+        
+    </div>
+   <div className="accordion">
       <h1>FAQ'S</h1>
       <div className={`accordion-item ${activeIndex === 0 ? 'active' : ''}`}>
         <div
@@ -136,7 +311,8 @@ const Faq = () => {
       </div>
       {/* Add more accordion items as needed */}
     </div>
-  );
-};
+    </>
+  )
+}
 
-export default Faq;
+export default Home
