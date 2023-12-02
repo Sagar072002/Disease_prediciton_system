@@ -1,6 +1,6 @@
 .header {
     overflow: hidden;
-    background-color: #ccc;
+    background-color: #eee;
     padding: 10px 20px;
     display: flex;
     height:90px;
@@ -10,6 +10,7 @@
     height:60px;
     width:200px;
   }
+  
  .header .searchbar{
     width:500px;
     padding:0px 20px;
@@ -34,12 +35,12 @@
  
   
   .header a:hover {
-    background-color: #003333;
+    background-color: rgb(45, 83, 83);
     color: #fff;
   }
   
   .header a.active {
-    background-color: #003333;
+    background-color: rgb(45, 83, 83);
     color: white;
   }
   

@@ -8,16 +8,21 @@
     border:1px solid #ccc;
     display: flex;
     height:420px;
-    width:50%;
+    width:70%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
 .contact-form .left-side{
     padding:30px;
-    width:50%;
+    width:40%;
     background-color: #003333;
     color:#fff;
 }
-
+.contact-form .inside-form{
+    display: flex;
+}
+.contact-form .inside-form div{
+    width:50%;
+}
 .contact-form .left-side h2,.right-side h2{
     font-size:20px;
     text-transform: uppercase;
@@ -59,7 +64,7 @@
     font-weight: bold;
 }
 .right-side{
-    width:50%;
+    width:60%;
     padding:30px;
 }
 .right-side input,.right-side textarea{
@@ -68,18 +73,26 @@
     outline:none;
     width:80%;
     padding-bottom:4px;
-    border-bottom:2px solid #bbb;
-    margin-bottom:20px;
+    border-bottom:1px solid #bbb;
+    margin-bottom:40px;
 }
 .right-side textarea{
-    border:2px solid #bbb;
+    border:1px solid #bbb;
+    margin-top:18px;
     padding-top:15px;
     padding-left:15px;
-    height:120px;
+    height:180px;
+    width:270px;
+    resize: none;
 }
 .right-side button{
     background-color: #003333;
     color:#fff;
-    padding:15px 23px;
+    padding:18px 28px;
     border-radius: 4px;
+    margin-left:270px;
+    font-size: 16px;
+}
+.right-side h2{
+    text-align: center;
 }

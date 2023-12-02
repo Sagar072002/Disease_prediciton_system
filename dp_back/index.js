@@ -6,7 +6,7 @@ const app = express()
 
 
 mongoose
-    .connect('mongodb://localhost:27017/DisPred')
+    .connect('mongodb://0.0.0.0:27017/DisPred')
     .then(()=>{ console.log('Connected to MongoDB...'); })
     .catch((err) => console.error("Could not connect to mongoDB...") );
 
