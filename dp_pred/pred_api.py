@@ -165,14 +165,14 @@ with open(HERE / "dp_model",'rb') as f:
 def dp_predictor(input_parameters:model_input):
     input_data = input_parameters.model_dump_json()
     input_dictionary = json.loads(input_data)
-    print("Input Dictionary :", input_dictionary)
+    # print("Input Dictionary :", input_dictionary)
     input_list = list(input_dictionary.values())
     # input_list = converter(input_dictionary)
     print("input values are = ", input_list)
         # input_list2 = [33, 35, 35, 50, 38, 32, 26, 21, 22, 21, 18, 11, 8, 4, 3, 3, 1]
     prediction = pred_model.predict([input_list])
-    print("Result of pred: ", prediction)
+    # print("Result of pred: ", prediction)
     pred_list = list(prediction)
     pred_json = json.dumps(pred_list)
-    print("Result of pred in json: ", pred_json)
+    # print("Result of pred in json: ", pred_json)
     return pred_json
