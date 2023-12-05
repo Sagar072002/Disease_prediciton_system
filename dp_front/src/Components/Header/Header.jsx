@@ -10,13 +10,13 @@ const Header = () => {
     <img src={img} alt="" />
     <input className="searchbar" type="search" name="" placeholder='Search here...' id="" />
     <div className="links">
-    <NavLink exact to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
+    <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
     <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>About</NavLink>
     <a href="#">Appointment</a>
     
     <NavLink to="/symptom" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Prediction</NavLink>
     <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Contact</NavLink>
-    <NavLink to="/login" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Login</NavLink>
+    {/* <NavLink to="/login" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Login</NavLink> */}
     {/* <a href="#">Register</a> */}
     </div>
   </div>
