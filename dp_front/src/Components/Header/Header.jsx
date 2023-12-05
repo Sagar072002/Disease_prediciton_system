@@ -1,10 +1,30 @@
-import React from 'react'
+import { useContext } from 'react';
 import './header.css';
 import img from "../../assets/dispred.png"
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
+import { SiteContext } from '../../context/siteContext';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Header = () => {
+
+  const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+  const { logout } = useContext(SiteContext)
+
+  const LogOut =async ()=>{
+    toast.success('LOGGED OUT!', {
+      position: toast.POSITION.BOTTOM_CENTER,
+      hideProgressBar: true,
+      autoClose: 1000,
+      pauseOnHover: false,
+    });
+    await delay(2000)
+    logout()
+  }
+
   return (
+    <>
+    <ToastContainer/>
     <div className="header">
       
     <img src={img} alt="" />
@@ -12,14 +32,15 @@ const Header = () => {
     <div className="links">
     <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
     <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>About</NavLink>
-    <a href="#">Appointment</a>
+    {/* <a href="#">Appointment</a> */}
     
     <NavLink to="/symptom" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Prediction</NavLink>
     <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Contact</NavLink>
-    {/* <NavLink to="/login" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Login</NavLink> */}
+    <Link onClick={LogOut} to="/">Logout</Link>
     {/* <a href="#">Register</a> */}
     </div>
-  </div>
+    </div>
+    </>
    )
   }
   export default Header

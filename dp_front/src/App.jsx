@@ -28,16 +28,17 @@ const App = () => {
             logged
             ?
             [
-              <Header/>,
-              <Routes>,
-                <Route path='/' element={ <Home/> } />,
-                <Route path='/login' element={ <Navigate replace to="/"/> } />,
-                <Route path='/register' element={ <Register/> } />,
-                <Route path='/contact' element={ <Contact/> } />,
-                <Route path='/symptom' element={ <Symptom/> } />,
-                <Route path='/about' element={ <About/> } />,
+              <Header key={"header"} />,
+              <Routes key={"routes"} >,
+                <Route key={"home"} path='/' element={ <Home/> } />,
+                <Route key={"login"} path='/login' element={ <Navigate replace to="/"/> } />,
+                {/* <Route key={"register"} path='/register' element={ <Register/> } />, */}
+                <Route key={"contact"} path='/contact' element={ <Contact/> } />,
+                <Route key={"symptom"} path='/symptom' element={ <Symptom/> } />,
+                <Route key={"about"} path='/about' element={ <About/> } />,
               </Routes>,
-              <Footer/>]
+              <Footer key={"footer"} />
+            ]
             :
             <Routes>
               <Route path="/" element={<Navigate replace to="/login"/>} />

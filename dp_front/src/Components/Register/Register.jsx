@@ -1,10 +1,12 @@
 import React from 'react';
 import './Register.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import img from '../../assets/register.gif';
 import { useFormik } from "formik";
 import userService from '../../services/user_service.jsx';
 import {registerschema} from '../Register/Registerschema.jsx'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const initialValues = {
   name: "",
@@ -15,6 +17,27 @@ const initialValues = {
 };
 
 const Register = () => {
+
+  const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+  const navigate = useNavigate();
+  const showToastMessage =(msg) => {
+    // console.log("called ",msg)
+    if(msg === "success"){
+      toast.success('REGISTERED SUCCESSFULLY !', {
+          position: toast.POSITION.BOTTOM_CENTER,
+          autoClose: 1000,
+          pauseOnHover: false,
+      });
+    }
+    else{
+      toast.warning(msg, {
+          position: toast.POSITION.BOTTOM_CENTER,
+          autoClose: 1000,
+          pauseOnHover: false,
+      });
+    }
+  };
+
   const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
     useFormik({
       initialValues,
@@ -29,8 +52,11 @@ const Register = () => {
           password1: values.password,
           password2: values.confirm_password
         }
-        userService.register(data).then((res)=>{
+        userService.register(data).then(async (res)=>{
           console.log('Register res:', res.data);
+          showToastMessage("success");
+          await delay(2000); 
+          navigate("/login")
         }).catch((err)=>{
           console.log('Register err:',err.response.data);
         })
@@ -39,6 +65,8 @@ const Register = () => {
     });
  
   return (
+    <>
+    <ToastContainer/>
     <div className="register-container">
   <div className="register-form">
     <div className="register-left">
@@ -55,8 +83,8 @@ const Register = () => {
                       onChange={handleChange}
                       onBlur={handleBlur}/>
         {errors.name && touched.name ? (
-                      <p className="form-error">{errors.name}</p>
-                    ) : null}
+          <p className="form-error">{errors.name}</p>
+          ) : null}
                     </div>
       </div>
       <div className="box">
@@ -87,8 +115,8 @@ const Register = () => {
                       onChange={handleChange}
                       onBlur={handleBlur} />
                         {errors.phone && touched.phone ? (
-                      <p className="form-error">{errors.phone}</p>
-                    ) : null}
+                          <p className="form-error">{errors.phone}</p>
+                          ) : null}
                     </div>
       </div>
       <div className="box">
@@ -102,7 +130,7 @@ const Register = () => {
                       value={values.password}
                       onChange={handleChange}
                       onBlur={handleBlur}
-                    />
+                      />
                     {errors.password && touched.password ? (
                       <p className="form-error">{errors.password}</p>
                     ) : null} 
@@ -119,10 +147,10 @@ const Register = () => {
                       value={values.confirm_password}
                       onChange={handleChange}
                       onBlur={handleBlur}
-                    />
+                      />
                     {errors.confirm_password && touched.confirm_password ? (
                       <p className="form-error">{errors.confirm_password}</p>
-                    ) : null} 
+                      ) : null} 
                     </div>
       </div>
       <button type="submit"> Register</button>
@@ -137,6 +165,7 @@ const Register = () => {
   </div>
 </div>
 
+</>
   )
 }
 
