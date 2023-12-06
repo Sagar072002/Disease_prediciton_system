@@ -13,6 +13,7 @@ import About from './Components/About/About';
 import Question from './Components/Symptom/Question';
 import Gender from './Components/Symptom/Gender';
 import Symptom from './Components/Symptom/Symptom';
+import Age from './Components/Symptom/Age';
 
 const App = () => {
 
@@ -41,6 +42,7 @@ const App = () => {
                 <Route key={"gender"} path='/symptom/gender' element={ <Gender/> } />,
                 <Route key={"symptom"} path='/symptom/predict' element={ <Symptom/> } />,
                 <Route key={"question"} path='/symptom/question' element={ <Question/> } />,
+                <Route key={"Age"} path='/symptom/Age' element={ <Age/> } />,
                 <Route key={"about"} path='/about' element={ <About/> } />,
               </Routes>,
               <Footer key={"footer"} />

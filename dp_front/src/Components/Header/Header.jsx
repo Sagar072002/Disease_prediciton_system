@@ -14,8 +14,8 @@ const Header = () => {
   const LogOut =async ()=>{
     toast.success('LOGGED OUT!', {
       position: toast.POSITION.BOTTOM_CENTER,
-      hideProgressBar: true,
-      autoClose: 1000,
+      hideProgressBar: false,
+      autoClose: 2000,
       pauseOnHover: false,
     });
     await delay(2000)
