@@ -31,6 +31,9 @@ const Symptom = () => {
     updatedSymptoms.splice(index, 1);
     setSelectedSymptoms(updatedSymptoms);
   };
+  const handleSubmit = () => {
+    console.log("Selected Symptoms:", selectedSymptoms);
+  };
   return (
     <>
     <div className="symptom-div">
@@ -61,8 +64,8 @@ const Symptom = () => {
             </div>
           )}
           {selectedSymptoms.length >= 3 && (
-                <button>Next</button>
-              )}
+        <button onClick={handleSubmit}>Submit</button>
+        )}
         </div>
         <div className="right-side">
             <img
