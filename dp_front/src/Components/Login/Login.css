@@ -2,10 +2,11 @@
             background-color: #f1f1f1;
             display: flex;
             justify-content: center;
-            padding:50px 0;
+            padding:70px 0;
+            height: 100vh;
         }
         .login-form{
-            height:75%;
+            height:90%;
             width:60%;
             border:1px solid #ddd;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
