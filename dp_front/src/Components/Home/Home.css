@@ -70,14 +70,15 @@
     font-size: 1.9rem;
   }
   .logos{
-    margin:30px;
+    margin:30px 50px;
     overflow: hidden;
     padding:20px 0;
     background-color: #fff;
     white-space: nowrap;
     position: relative;
-    border:1px solid #eee;
+    border:1px solid #ddd;
     border-radius: 8px;
+
   }
   .logos::before,
   .logos::after{
@@ -152,6 +153,9 @@
 .review .top-section{
     display: flex;
     margin-bottom:20px;
+}
+.review .detail{
+    margin-top:-15px;
 }
 .review .detail h2{
     margin-bottom:4px;

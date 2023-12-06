@@ -40,4 +40,3 @@ export const SiteContextProvider = (props) => {
     }
     return <SiteContext.Provider value={contextValue} >{props.children}</SiteContext.Provider>
 }
-

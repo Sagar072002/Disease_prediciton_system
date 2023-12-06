@@ -3,7 +3,7 @@ import "./SearchBar.css";
 import { FaSearch } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
-function SearchBar({ placeholder, data }) {
+function SearchBar({ placeholder, data, onSymptomSelect }) {
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
 
@@ -19,6 +19,12 @@ function SearchBar({ placeholder, data }) {
     } else {
       setFilteredData(newFilter);
     }
+  };
+
+  const handleSelect = (selectedSymptom) => {
+    onSymptomSelect(selectedSymptom);
+    setFilteredData([]);
+    setWordEntered("");
   };
 
   const clearInput = () => {
@@ -43,11 +49,15 @@ function SearchBar({ placeholder, data }) {
           )}
         </div>
       </div>
-      {filteredData.length != 0 && (
+      {filteredData.length !== 0 && (
         <div className="dataResult">
           {filteredData.slice(0, 15).map((value, key) => {
             return (
-              <a className="dataItem" href="" key={key}>
+              <a
+                className="dataItem"
+                key={key}
+                onClick={() => handleSelect(value.title)}
+              >
                 <p>{value.title} </p>
               </a>
             );
