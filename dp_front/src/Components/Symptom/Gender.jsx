@@ -30,7 +30,7 @@ const Gender = () => {
        
         <div className="next-button-container">
               {selectedGender && <button className="next-button">
-                <Link className='nextlink' to="/question">Next</Link>
+                <Link className='nextlink' to="/symptom/question">Next</Link>
                 </button>}
             </div>
       </div>
