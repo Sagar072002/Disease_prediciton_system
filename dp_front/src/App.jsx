@@ -37,10 +37,10 @@ const App = () => {
                 <Route key={"login"} path='/login' element={ <Navigate replace to="/"/> } />,
                 {/* <Route key={"register"} path='/register' element={ <Register/> } />, */}
                 <Route key={"contact"} path='/contact' element={ <Contact/> } />,
-                <Route key={"terms"} path='/terms' element={ <Terms/> } />,
-                <Route key={"gender"} path='/gender' element={ <Gender/> } />,
-                <Route key={"symptom"} path='/symptom' element={ <Symptom/> } />,
-                <Route key={"question"} path='/question' element={ <Question/> } />,
+                <Route key={"terms"} path='/symptom' element={ <Terms/> } />,
+                <Route key={"gender"} path='/symptom/gender' element={ <Gender/> } />,
+                <Route key={"symptom"} path='/symptom/predict' element={ <Symptom/> } />,
+                <Route key={"question"} path='/symptom/question' element={ <Question/> } />,
                 <Route key={"about"} path='/about' element={ <About/> } />,
               </Routes>,
               <Footer key={"footer"} />

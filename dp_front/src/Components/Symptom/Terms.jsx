@@ -40,7 +40,7 @@ const Terms = () => {
             <span>I read and accept Terms of service</span>
             <div className="next-button-container">
               {isChecked &&
-              <Link className='nextlink' to="/gender">
+              <Link className='nextlink' to="/symptom/gender">
                 <button className="next-button">
 
                 Next

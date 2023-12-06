@@ -86,7 +86,7 @@ const Question = () => {
         />
 
         {allQuestionsAnswered() && (
-          <Link to="/symptom">
+          <Link to="/symptom/predict">
             <button>Next</button>
           </Link>
         )}
