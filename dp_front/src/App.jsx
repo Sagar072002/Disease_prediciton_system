@@ -10,6 +10,9 @@ import Home from './Components/Home/Home';
 import Contact from './Components/Contact/Contact';
 import Symptom from './Components/Symptom/Symptom';
 import About from './Components/About/About';
+import Terms from './Components/Symptom/Terms';
+import Gender from './Components/Symptom/Gender';
+import Question from './Components/Symptom/Question';
 
 const App = () => {
   return (
@@ -24,6 +27,9 @@ const App = () => {
             <Route path='/contact' element={ <Contact/> } />
             <Route path='/symptom' element={ <Symptom/> } />
             <Route path='/about' element={ <About/> } />
+            <Route path='/terms' element={ <Terms/> } />
+            <Route path='/gender' element={ <Gender/> } />
+            <Route path='/question' element={ <Question/> } />
           </Routes>
           <Footer/>
         </Router>
