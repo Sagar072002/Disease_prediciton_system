@@ -1,13 +1,29 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './Symptom.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { SiteContext } from '../../context/siteContext';
+import { saveUserState } from '../../services/user_service';
 
 const Age = () => {
+
+  const navigate = useNavigate()
+  const { userState, setUserState } = useContext(SiteContext)
   const [selectedAge, setSelectedAge] = useState(40); // Default age value
 
   const handleAgeChange = (event) => {
     setSelectedAge(parseInt(event.target.value, 10));
   };
+
+  const onNext = ()=>{
+    console.log('User state :', userState);
+    let newState = {...userState}
+    newState.path = "/symptom/question"
+    newState.age = selectedAge
+    console.log('New UserState :',newState);
+    setUserState(newState)
+    saveUserState(newState)
+    navigate('/symptom/question')
+  }
 
   return (
     <div className="age">
@@ -26,9 +42,11 @@ const Age = () => {
       />
       <p>Selected Age: {selectedAge}</p>
       </div>
-      <div className='nextbtn'>
+      <div className='nextbtn' onClick={onNext}>
       <button>
-        <Link className='nextlink' to="/symptom/question"> Next</Link>
+        {/* <Link className='nextlink' to="/symptom/question"> */}
+           Next
+           {/* </Link> */}
         </button>
       </div>
     </div>

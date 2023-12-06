@@ -1,14 +1,36 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './Symptom.css';
 import term from '../../assets/terms.jpg';
+import { SiteContext } from '../../context/siteContext';
+import { saveUserState } from '../../services/user_service';
 
 const Terms = () => {
+
+  const navigate = useNavigate()
+  const { userState, setUserState } = useContext(SiteContext)
   const [isChecked, setIsChecked] = useState(false);
+
+  useEffect(()=>{
+    if(userState.path){
+      console.log('Navigating to :',userState.path);
+      navigate(userState.path)
+    }
+  },[])
 
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
+
+  const onNext = ()=>{
+    console.log('User state :', userState);
+    let newState = {...userState}
+    newState.path = "/symptom/gender"
+    console.log('New UserState :',newState);
+    setUserState(newState)
+    saveUserState(newState)
+    navigate('/symptom/gender')
+  }
 
   return (
     <div className="terms">
@@ -40,12 +62,12 @@ const Terms = () => {
             <span>I read and accept Terms of service</span>
             <div className="next-button-container">
               {isChecked &&
-              <Link className='nextlink' to="/symptom/gender">
-                <button className="next-button">
+              // <Link className='nextlink' to="/symptom/gender">
+                <button className="next-button" onClick={onNext}>
 
                 Next
               </button>
-              </Link>
+              // </Link>
               }
             </div>
            

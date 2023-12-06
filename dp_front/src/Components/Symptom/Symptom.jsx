@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import './Symptom.css';
 import BookData from '../Search/Data.json';
 import SearchBar from '../Search/SearchBar.jsx'
@@ -6,6 +6,8 @@ import { FaTimes } from 'react-icons/fa';
 import img1 from '../../assets/men_front.png'
 import img2 from '../../assets/men_back.jpeg'
 import PredictionService from "../../services/prediction_service.jsx"
+import { SiteContext } from '../../context/siteContext';
+import { saveUserState } from '../../services/user_service';
 
 const Symptom = () => {
 
@@ -144,19 +146,35 @@ const Symptom = () => {
     "itching": 1.0
    }
   
+  const { userState, setUserState } = useContext(SiteContext)
   const [currentImage, setCurrentImage] = useState(1);
   const [result, setResult] = useState("Prediciton not made yet!!");
+  const [selectedSymptoms, setSelectedSymptoms] = useState([]);
+
+  useEffect(()=>{
+    if(userState.SymList){
+    let syms = userState.SymList
+    setSelectedSymptoms(syms);}
+  },[])
+
+  useEffect(()=>{
+    let newState = {...userState}
+      newState.SymList = selectedSymptoms
+      console.log('New UserState :',newState);
+      setUserState(newState)
+      saveUserState(newState)
+  },[selectedSymptoms])
 
   const toggleImage = () => {
     setCurrentImage((prevImage) => (prevImage === 1 ? 2 : 1));
   };
-  const [selectedSymptoms, setSelectedSymptoms] = useState([]);
 
   // Function to handle selected symptoms from SearchBar
   const handleSymptomSelect = (selectedSymptom) => {
     // Update the state with the selected symptom
     if (!selectedSymptoms.includes(selectedSymptom)) {
       setSelectedSymptoms([...selectedSymptoms, selectedSymptom]);
+      // console.log('Symptoms :',selectedSymptoms);
     }
     else {
       // Show an alert if the symptom is already present
@@ -168,9 +186,17 @@ const Symptom = () => {
     const updatedSymptoms = [...selectedSymptoms];
     updatedSymptoms.splice(index, 1);
     setSelectedSymptoms(updatedSymptoms);
+    // console.log('Symptoms :',selectedSymptoms);
   };
 
   const handleSubmit = () => {
+    // console.log('User state :', userState);
+    // let newState = {...userState}
+    // newState.path = "/symptom/predict"
+    // newState.SymList = selectedSymptoms
+    // console.log('New UserState :',newState);
+    // setUserState(newState)
+    // saveUserState(newState)
     console.log("Selected Symptoms:", selectedSymptoms);
     PredictionService.getRes(data).then((res)=>{
       console.log('Result of pred :',res.data);

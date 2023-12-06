@@ -37,6 +37,10 @@ export function saveToken(tokenData){
     localStorage.setItem('userDetails', JSON.stringify(tokenData))
 }
 
+export function saveUserState(tokenData){
+    localStorage.setItem('userState', JSON.stringify(tokenData))
+}
+
 export function checkToken(){
     const TokenDetails = localStorage.getItem('userDetails')
 
@@ -52,6 +56,18 @@ export function checkToken(){
     return Token.uid
 }
 
+export function checkUserState(){
+    const TokenDetails = localStorage.getItem('userState')
+
+    if(!TokenDetails){
+        return ''
+    }
+    const Token = JSON.parse(TokenDetails)
+    
+    return Token
+}
+
 export function clearToken(){
     localStorage.removeItem('userDetails')
+    localStorage.removeItem('userState')
 }

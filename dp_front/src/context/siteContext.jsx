@@ -1,12 +1,19 @@
 import React, { createContext, useEffect, useState } from 'react'
 import userService from '../services/user_service'
-import { checkToken, clearToken } from '../services/user_service';
+import { checkToken, checkUserState, clearToken } from '../services/user_service';
 
 export const SiteContext = createContext(null);
 
 export const SiteContextProvider = (props) => {
     const [ uid, setUid ] = useState('')
     const [ user, setUser ] = useState({ user: "blank" })
+    const [ userState, setUserState ] = useState({
+                                                    path:"",
+                                                    gender: "",
+                                                    age: "",
+                                                    quesList :{},
+                                                    SymList: {},
+                                                })
 
     const logout = ()=>{
         console.log("called logout")
@@ -17,9 +24,11 @@ export const SiteContextProvider = (props) => {
     }
 
     useEffect(()=>{
-        const res = checkToken();
+        const res1 = checkToken();
+        const res2 = checkUserState()
         // console.log("res: ",res)
-        setUid(res)
+        setUid(res1)
+        setUserState(res2)
     },[])
     
     useEffect(()=>{
@@ -37,6 +46,8 @@ export const SiteContextProvider = (props) => {
         setUid,
         logout,
         user,
+        userState,
+        setUserState,
     }
     return <SiteContext.Provider value={contextValue} >{props.children}</SiteContext.Provider>
 }

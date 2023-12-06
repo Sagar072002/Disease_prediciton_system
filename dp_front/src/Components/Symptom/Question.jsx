@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { SiteContext } from '../../context/siteContext';
+import { saveUserState } from '../../services/user_service';
 import './Symptom.css';
 
 const QuestionRow = ({ question, name, handleChange }) => (
@@ -37,6 +39,9 @@ const QuestionRow = ({ question, name, handleChange }) => (
 );
 
 const Question = () => {
+
+  const navigate = useNavigate()
+  const { userState, setUserState } = useContext(SiteContext)
   const [answers, setAnswers] = useState({
     diabetes: '',
     overweight: '',
@@ -52,6 +57,17 @@ const Question = () => {
   const allQuestionsAnswered = () => {
     return Object.values(answers).every((answer) => answer !== '');
   };
+
+  const onNext = ()=>{
+    console.log('User state :', userState);
+    let newState = {...userState}
+    newState.path = "/symptom/predict"
+    newState.quesList = answers
+    console.log('New UserState :',newState);
+    setUserState(newState)
+    saveUserState(newState)
+    navigate('/symptom/predict')
+  }
 
   return (
     <div className="quesdiv">
@@ -86,9 +102,9 @@ const Question = () => {
         />
 
         {allQuestionsAnswered() && (
-          <Link to="/symptom/predict">
-            <button>Next</button>
-          </Link>
+          // <Link to="/symptom/predict">
+            <button onClick={onNext}>Next</button>
+          // </Link>
         )}
       </div>
     </div>
