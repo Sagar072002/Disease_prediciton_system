@@ -29,10 +29,12 @@
     outline: none;
   }
 
-  
+  .predict{
+    margin-top: 20px;
+  }
   .dataResult {
     width: 465px;
-    height: 200px;
+    height: 210px;
     position: absolute;
     z-index: 999999;
     background-color: white;
@@ -51,7 +53,7 @@
   
   .dataResult .dataItem {
     width: 100%;
-    height: 50px;
+    height: 53px;
     display: flex;
     align-items: center;
     color: black;
@@ -61,12 +63,12 @@
   .dataItem p {
     margin-left: 10px;
   }
-  .dataItem a {
+  .dataItem  {
     text-decoration: none;
   }
   
-  .dataItem a:hover {
-    background-color: lightgrey;
+  .dataItem:hover {
+    background-color: lightgrey ;
   }
   
   #clearBtn {
