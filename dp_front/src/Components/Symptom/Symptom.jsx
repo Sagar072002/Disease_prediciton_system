@@ -104,7 +104,7 @@ const Symptom = () => {
           {selectedSymptoms.length >= 3 && (
         <button onClick={handleSubmit}>Submit</button>
         )}
-        <div>Prediction : {result}</div>
+        <div className='predict'>Prediction : {result}</div>
         </div>
         <div className="right-side">
             <img

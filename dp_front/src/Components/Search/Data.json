@@ -1,146 +1,3143 @@
 [
-    {
-     
-      "title": "Headache"
-    },
-    {
-      "title": "Fever"
-    },
-    {
-     
-      "title": "Back pain"  },
-    {
-      
-      "title": "Swelling"  },
-    {
-      
-      "title": "Joint pain"  },
-    {
-     
-      "title": "Headache"
-    },
-    {
-      "title": "Fever"
-    },
-    {
-     
-      "title": "Back pain"  },
-    {
-      
-      "title": "Swelling"  },
-    {
-      
-      "title": "Joint pain"  },
-    {
-     
-      "title": "Headache"
-    },
-    {
-      "title": "Fever"
-    },
-    {
-     
-      "title": "Back pain"  },
-    {
-      
-      "title": "Swelling"  },
-    {
-      
-      "title": "Joint pain"  },
-    {
-     
-      "title": "Headache"
-    },
-    {
-      "title": "Fever"
-    },
-    {
-     
-      "title": "Back pain"  },
-    {
-      
-      "title": "Swelling"  },
-    {
-      
-      "title": "Joint pain"  },
-    {
-     
-      "title": "Headache"
-    },
-    {
-      "title": "Fever"
-    },
-    {
-     
-      "title": "Back pain"  },
-    {
-      
-      "title": "Swelling"  },
-    {
-      
-      "title": "Joint pain"  },
-    {
-     
-      "title": "Headache"
-    },
-    {
-      "title": "Fever"
-    },
-    {
-     
-      "title": "Back pain"  },
-    {
-      
-      "title": "Swelling"  },
-    {
-      
-      "title": "Joint pain"  },
-    {
-     
-      "title": "Headache"
-    },
-    {
-      "title": "Fever"
-    },
-    {
-     
-      "title": "Back pain"  },
-    {
-      
-      "title": "Swelling"  },
-    {
-      
-      "title": "Joint pain"  },
-    {
-     
-      "title": "Headache"
-    },
-    {
-      "title": "Fever"
-    },
-    {
-     
-      "title": "Back pain"  },
-    {
-      
-      "title": "Swelling"  },
-    {
-      
-      "title": "Joint pain"  },
-    {
-     
-      "title": "Headache"
-    },
-    {
-      "title": "Fever"
-    },
-    {
-     
-      "title": "Back pain"  },
-    {
-      
-      "title": "Swelling"  },
-    {
-      
-      "title": "Joint pain"  }
+  {
+    "title": "Pale skin",
+    "name": "Pale_skin"
+  },
+  {
+    "title": "Triple-jointed thumbs",
+    "name": "Triple_jointed_thumbs"
+  },
+  {
+    "title": "Pain in the abdomen",
+    "name": "Pain_in_the_abdomen"
+  },
+  {
+    "title": "Passing out",
+    "name": "Passing_out"
+  },
+  {
+    "title": "Clammy skin",
+    "name": "Clammy_skin"
+  },
+  {
+    "title": "Dizziness",
+    "name": "Dizziness"
+  },
+  {
+    "title": "Nausea and vomiting",
+    "name": "Nausea_and_vomiting"
+  },
+  {
+    "title": "Rapid heart rate",
+    "name": "Rapid_heart_rate"
+  },
+  {
+    "title": "Shock",
+    "name": "Shock"
+  },
+  {
+    "title": "Belly button that sticks out",
+    "name": "Belly_button_that_sticks_out"
+  },
+  {
+    "title": "Bulge in the groin or scrotum",
+    "name": "Bulge_in_the_groin_or_scrotum"
+  },
+  {
+    "title": "Delayed sexual maturity",
+    "name": "Delayed_sexual_maturity"
+  },
+  {
+    "title": "Delayed teeth",
+    "name": "Delayed_teeth"
+  },
+  {
+    "title": "Downward palpebral slant to eyes",
+    "name": "Downward_palpebral_slant_to_eyes"
+  },
+  {
+    "title": "Hairline with a 'widow's peak'",
+    "name": "Hairline_with_a_widow's_peak"
+  },
+  {
+    "title": "Mildly sunken chest (pectus excavatum)",
+    "name": "Mildly_sunken_chest_pectus_excavatum"
+  },
+  {
+    "title": "Mild to moderate cognitive problems",
+    "name": "Mild_to_moderate_cognitive_problems"
+  },
+  {
+    "title": "Mild to moderate short height",
+    "name": "Mild_to_moderate_short_height"
+  },
+  {
+    "title": "Poorly developed middle section of the face",
+    "name": "Poorly_developed_middle_section_of_the_face"
+  },
+  {
+    "title": "Short fingers and toes with mild webbing",
+    "name": "Short_fingers_and_toes_with_mild_webbing"
+  },
+  {
+    "title": "Single crease in the palm of the hand",
+    "name": "Single_crease_in_the_palm_of_the_hand"
+  },
+  {
+    "title": "Small nose with nostrils tipped forward",
+    "name": "Small_nose_with_nostrils_tipped_forward"
+  },
+  {
+    "title": "Testicles that have not come down (undescended)",
+    "name": "Testicles_that_have_not_come_down_undescended"
+  },
+  {
+    "title": "Top portion of the ear folded over slightly",
+    "name": "Top_portion_of_the_ear_folded_over_slightly"
+  },
+  {
+    "title": "Wide-set eyes with droopy eyelids",
+    "name": "Wide-set_eyes_with_droopy_eyelids"
+  },
+  {
+    "title": "Absent or small knuckles",
+    "name": "Absent_or_small_knuckles"
+  },
+  {
+    "title": "Cleft palate",
+    "name": "Cleft_palate"
+  },
+  {
+    "title": "Deformed ears",
+    "name": "Deformed_ears"
+  },
+  {
+    "title": "Inability to fully extend the joints from birth",
+    "name": "Inability_to_fully_extend_the_joints_from_birth"
+  },
+  {
+    "title": "Narrow shoulders",
+    "name": "Narrow_shoulders"
+  },
+  {
+    "title": "Bleeding or spotting from the vagina between periods",
+    "name": "Bleeding_or_spotting_from_the_vagina_between_periods"
+  },
+  {
+    "title": "Periods that occur less than 28 days apart",
+    "name": "Periods_that_occur_less_than_28_days_apart"
+  },
+  {
+    "title": "Time between periods changes each month",
+    "name": "Time_between_periods_changes_each_month"
+  },
+  {
+    "title": "Heavier bleeding",
+    "name": "Heavier_bleeding"
+  },
+  {
+    "title": "Bleeding that lasts for more days than normal or for more than 7 days",
+    "name": "Bleeding_that_last_for_more_days_than_normal_or_for_more_than_7_days"
+  },
+  {
+    "title": "Tenderness and dryness of the vagina",
+    "name": "Tenderness_and_dryness_of_the_vagina"
+  },
+  {
+    "title": "Hot flashes",
+    "name": "Hot_flashes"
+  },
+  {
+    "title": "Mood swings",
+    "name": "Mood_swings"
+  },
+  {
+    "title": "Shallow breathing",
+    "name": "Shallow_breathing"
+  },
+  {
+    "title": "Slow and labored breathing",
+    "name": "Slow_and_labored_breathing"
+  },
+  {
+    "title": "Stopped breathing",
+    "name": "Stopped_breathing"
+  },
+  {
+    "title": "Very small pupils",
+    "name": "Very_small_pupils"
+  },
+  {
+    "title": "Low blood pressure",
+    "name": "Low_blood_pressure"
+  },
+  {
+    "title": "Coma (lack of responsiveness)",
+    "name": "Coma_lack_of_responsiveness"
+  },
+  {
+    "title": "Convulsions (seizures)",
+    "name": "Convulsions_seizures"
+  },
+  {
+    "title": "Drowsiness",
+    "name": "Drowsiness"
+  },
+  {
+    "title": "Stupor (lack of alertness)",
+    "name": "Stupor_lack_of_alertness"
+  },
+  {
+    "title": "Bluish skin (fingernails and lips)",
+    "name": "Bluish_skin_fingernails_and_lips"
+  },
+  {
+    "title": "Cold, clammy skin",
+    "name": "Cold_clammy_skin"
+  },
+  {
+    "title": "Spasms of the stomach and intestines",
+    "name": "Spasms_of_the_stomach_and_intestines"
+  },
+  {
+    "title": "Liver failure",
+    "name": "Liver_failure"
+  },
+  {
+    "title": "Kidney failure",
+    "name": "Kidney_failure"
+  },
+  {
+    "title": "Pain in belly area",
+    "name": "Pain_in_belly_area"
+  },
+  {
+    "title": "Person may have a fruity odor",
+    "name": "Person_may_have_a_fruity_odor"
+  },
+  {
+    "title": "Sweet taste in mouth",
+    "name": "Sweet_taste_in_mouth"
+  },
+  {
+    "title": "Feeling of drunkenness",
+    "name": "Feeling_of_drunkenness"
+  },
+  {
+    "title": "Stupor (confusion, decreased level of consciousness)",
+    "name": "Stupor_confusion_decreased_level_of_consciousness"
+  },
+  {
+    "title": "Lack of coordination",
+    "name": "Lack_of_coordination"
+  },
+  {
+    "title": "Difficulty breathing",
+    "name": "Difficulty_breathing"
+  },
+  {
+    "title": "Increased need to urinate",
+    "name": "Increased_need_to_urinate"
+  },
+  {
+    "title": "Backflow (regurgitation) of food",
+    "name": "Backflow_regurgitation_of_food"
+  },
+  {
+    "title": "Chest pain, which may increase after eating, or may be felt as pain in the back, neck, and arms",
+    "name": "Chest_pain_may_increase_after_eating_or_may_be_felt_as_pain_in_back_neck_arms"
+  },
+  {
+    "title": "Cough",
+    "name": "Cough"
+  },
+  {
+    "title": "Difficulty swallowing liquids and solids",
+    "name": "Difficulty_swallowing_liquids_and_solids"
+  },
+  {
+    "title": "Heartburn",
+    "name": "Heartburn"
+  },
+  {
+    "title": "Unintentional weight loss",
+    "name": "Unintentional_weight_loss"
+  },
+  {
+    "title": "Very short trunk, arms, legs, and neck",
+    "name": "Very_short_trunk_arms_legs_and_neck"
+  },
+  {
+    "title": "Head appears large in relation to the trunk",
+    "name": "Head_appears_large_in_relation_to_the_trunk"
+  },
+  {
+    "title": "Small lower jaw",
+    "name": "Small_lower_jaw"
+  },
+  {
+    "title": "Narrow chest",
+    "name": "Narrow_chest"
+  },
+  {
+    "title": "Unusually large head",
+    "name": "Unusually_large_head"
+  },
+  {
+    "title": "Large forehead and flat bridge of the nose",
+    "name": "Large_forehead_and_flat_bridge_of_the_nose"
+  },
+  {
+    "title": "Crowded or crooked teeth",
+    "name": "Crowded_or_crooked_teeth"
+  },
+  {
+    "title": "Short stature (well below the average height for a person of the same age and sex)",
+    "name": "Short_stature_well_below_the_average_height_for_a_person_of_the_same_age_and_sex"
+  },
+  {
+    "title": "Average size trunk with short arms and legs (especially the upper arms and thighs)",
+    "name": "Average_size_trunk_with_short_arms_and_legs_especially_the_upper_arms_and_thighs"
+  },
+  {
+    "title": "Bowed legs",
+    "name": "Bowed_legs"
+  },
+  {
+    "title": "Limited range of motion of the elbows",
+    "name": "Limited_range_of_motion_of_the_elbows"
+  },
+  {
+    "title": "Spine curvatures called kyphosis and lordosis",
+    "name": "Spine_curvatures_called_kyphosis_and_lordosis"
+  },
+  {
+    "title": "Short fingers with an extra space between the ring and middle finger (trident hand)",
+    "name": "Short_fingers_with_an_extra_space_between_the_ring_and_middle_finger_trident_hand"
+  },
+  {
+    "title": "Decreased muscle tone in infants",
+    "name": "Decreased_muscle_tone_in_infants"
+  },
+  {
+    "title": "Loss of vision",
+    "name": "Loss_of_vision"
+  },
+  {
+    "title": "Severe pain in the throat",
+    "name": "Severe_pain_in_the_throat"
+  },
+  {
+    "title": "Severe pain or burning in the nose, eyes, ears, lips, or tongue",
+    "name": "Severe_pain_or_burning_in_the_nose_eyes_ears_lips_or_tongue"
+  },
+  {
+    "title": "Decreased urine output",
+    "name": "Decreased_urine_output"
+  },
+  {
+    "title": "Blood in the stool",
+    "name": "Blood_in_the_stool"
+  },
+  {
+    "title": "Burns of the food pipe (esophagus)",
+    "name": "Burns_of_the_food_pipe_esophagus"
+  },
+  {
+    "title": "Severe abdominal pain",
+    "name": "Severe_abdominal_pain"
+  },
+  {
+    "title": "Vomiting blood",
+    "name": "Vomiting_blood"
+  },
+  {
+    "title": "Irregular heartbeat",
+    "name": "Irregular_heartbeat"
+  },
+  {
+    "title": "Breathing difficulty",
+    "name": "Breathing_difficulty"
+  },
+  {
+    "title": "Throat swelling",
+    "name": "Throat_swelling"
+  },
+  {
+    "title": "Holes in the skin or tissues under the skin",
+    "name": "Holes_in_the_skin_or_tissues_under_the_skin"
+  },
+  {
+    "title": "Confusion",
+    "name": "Confusion"
+  },
+  {
+    "title": "Fatigue",
+    "name": "Fatigue"
+  },
+  {
+    "title": "Lethargy",
+    "name": "Lethargy"
+  },
+  {
+    "title": "Shortness of breath",
+    "name": "Shortness_of_breath"
+  },
+  {
+    "title": "Sleepiness",
+    "name": "Sleepiness"
+  },
+  {
+    "title": "Crusting of skin bumps",
+    "name": "Crusting_of_skin_bumps"
+  },
+  {
+    "title": "Cysts",
+    "name": "Cysts"
+  },
+  {
+    "title": "Papules (small red bumps)",
+    "name": "Papules_small_red_bumps"
+  },
+  {
+    "title": "Pustules (small red bumps containing white or yellow pus)",
+    "name": "Pustules_small_red_bumps_containing_white_or_yellow_pus"
+  },
+  {
+    "title": "Redness around the skin eruptions",
+    "name": "Redness_around_the_skin_eruptions"
+  },
+  {
+    "title": "Scarring of the skin",
+    "name": "Scarring_of_the_skin"
+  },
+  {
+    "title": "Blackheads",
+    "name": "Blackheads"
+  },
+  {
+    "title": "Abnormal feeling of movement",
+    "name": "Abnormal_feeling_of_movement"
+  },
+  {
+    "title": "Hearing loss",
+    "name": "Hearing_loss"
+  },
+  {
+    "title": "Ringing (tinnitus) in the affected ear",
+    "name": "Ringing_tinnitus_in_the_affected_ear"
+  },
+  {
+    "title": "Difficulty understanding speech",
+    "name": "Difficulty_understanding_speech"
+  },
+  {
+    "title": "Headache",
+    "name": "Headache"
+  },
+  {
+    "title": "Loss of balance",
+    "name": "Loss_of_balance"
+  },
+  {
+    "title": "Numbness in the face or one ear",
+    "name": "Numbness_in_the_face_or_one_ear"
+  },
+  {
+    "title": "Pain in the face or one ear",
+    "name": "Pain_in_the_face_or_one_ear"
+  },
+  {
+    "title": "Weakness of the face or facial asymmetry",
+    "name": "Weakness_of_the_face_or_facial_asymmetry"
+  },
+  {
+    "title": "Frequent middle ear infections",
+    "name": "Frequent_middle_ear_infections"
+  },
+  {
+    "title": "Growth problems, short arms and legs",
+    "name": "Growth_problems_short_arms_and_legs"
+  },
+  {
+    "title": "Hearing problems",
+    "name": "Hearing_problems"
+  },
+  {
+    "title": "Intellectual disability",
+    "name": "Intellectual_disability"
+  },
+  {
+    "title": "The body doesn't respond to certain hormones, even though hormone levels are normal",
+    "name": "Body_doesnt_respond_to_certain_hormones_even_though_hormone_levels_are_normal"
+  },
+  {
+    "title": "Distinct facial features",
+    "name": "Distinct_facial_features"
+  },
+  {
+    "title": "Body odor",
+    "name": "Body_odor"
+  },
+  {
+    "title": "Carpal tunnel syndrome",
+    "name": "Carpal_tunnel_syndrome"
+  },
+  {
+    "title": "Weakness",
+    "name": "Weakness"
+  },
+  {
+    "title": "Decreased peripheral vision",
+    "name": "Decreased_peripheral_vision"
+  },
+  {
+    "title": "Gaps between the teeth",
+    "name": "Gaps_between_the_teeth"
+  },
+  {
+    "title": "Enlarged tongue",
+    "name": "Enlarged_tongue"
+  },
+  {
+    "title": "Excessive height",
+    "name": "Excessive_height"
+  },
+  {
+    "title": "Excessive sweating",
+    "name": "Excessive_sweating"
+  },
+  {
+    "title": "Heart enlargement, which can cause fainting or shortness of breath",
+    "name": "Heart_enlargement_which_can_cause_fainting_or_shortness_of_breath"
+  },
+  {
+    "title": "Hoarseness",
+    "name": "Hoarseness"
+  },
+  {
+    "title": "Jaw pain",
+    "name": "Jaw_pain"
+  },
+  {
+    "title": "Joint pain",
+    "name": "Joint_pain"
+  },
+  {
+    "title": "Large bones of the face, large jaw and tongue, widely spaced teeth",
+    "name": "Large_bones_of_the_face_large_jaw_and_tongue_widely_spaced_teeth"
+  },
+  {
+    "title": "Large feet (change in shoe size), large hands (change in ring or glove size)",
+    "name": "Large_feet_change_in_shoe_size_large_hands_change_in_ring_or_glove_size"
+  },
+  {
+    "title": "Large glands in the skin (sebaceous glands) causing oily skin, thickening of the skin, skin tags (growths)",
+    "name": "Large_glands_in_the_skin_sebaceous_glands_causing_oily_skin_thickening_of_the_skin_skin_tags_growths"
+  },
+  {
+    "title": "Sleep apnea",
+    "name": "Sleep_apnea"
+  },
+  {
+    "title": "Abdominal pain",
+    "name": "Abdominal_pain"
+  },
+  {
+    "title": "Dehydration",
+    "name": "Dehydration"
+  },
+  {
+    "title": "High fever",
+    "name": "High_fever"
+  },
+  {
+    "title": "Loss of appetite",
+    "name": "Loss_of_appetite"
+  },
+  {
+    "title": "Low blood sugar",
+    "name": "Low_blood_sugar"
+  },
+  {
+    "title": "Rapid respiratory rate",
+    "name": "Rapid_respiratory_rate"
+  },
+  {
+    "title": "Slow, sluggish movement",
+    "name": "Slow_sluggish_movement"
+  },
+  {
+    "title": "Unusual and excessive sweating on the face or palms",
+    "name": "Unusual_and_excessive_sweating_on_the_face_or_palms"
+  },
+  {
+    "title": "Abrupt decrease in urine output",
+    "name": "Abrupt_decrease_in_urine_output"
+  },
+  {
+    "title": "Back pain",
+    "name": "Back_pain"
+  },
+  {
+    "title": "Blood in the urine",
+    "name": "Blood_in_the_urine"
+  },
+  {
+    "title": "Pain in the side",
+    "name": "Pain_in_the_side"
+  },
+  {
+    "title": "Chest discomfort",
+    "name": "Chest_discomfort"
+  },
+  {
+    "title": "Cough that produces mucus -- the mucus may be clear or yellow-green",
+    "name": "Cough_that_produces_mucus_the_mucus_may_be_clear_or_yellow_green"
+  },
+  {
+    "title": "Fever-- usually low-grade",
+    "name": "Fever_usually_low_grade"
+  },
+  {
+    "title": "Shortness of breath that gets worse with activity",
+    "name": "Shortness_of_breath_that_gets_worse_with_activity"
+  },
+  {
+    "title": "Wheezing",
+    "name": "Wheezing"
+  },
+  {
+    "title": "Clumsy speech pattern (dysarthria)",
+    "name": "Clumsy_speech_pattern_dysarthria"
+  },
+  {
+    "title": "Repetitive eye movements (nystagmus)",
+    "name": "Repetitive_eye_movements_nystagmus"
+  },
+  {
+    "title": "Uncoordinated eye movements",
+    "name": "Uncoordinated_eye_movements"
+  },
+  {
+    "title": "Walking problems (unsteady gait) that can lead to falls",
+    "name": "Walking_problems_unsteady_gait_that_can_lead_to_falls"
+  },
+  {
+    "title": "Difficulty controlling arm movements",
+    "name": "Difficulty_controlling_arm_movements"
+  },
+  {
+    "title": "Sharp, cramping, or dull pain",
+    "name": "Sharp_cramping_or_dull_pain"
+  },
+  {
+    "title": "Steady pain",
+    "name": "Steady_pain"
+  },
+  {
+    "title": "Pain that spreads to your back or below your right shoulder blade",
+    "name": "Pain_that_spreads_to_your_back_or_below_your_right_shoulder_blade"
+  },
+  {
+    "title": "Clay-colored stools",
+    "name": "Clay_colored_stools"
+  },
+  {
+    "title": "Yellowing of skin and whites of the eyes (jaundice)",
+    "name": "Yellowing_of_skin_and_whites_of_the_eyes_jaundice"
+  },
+  {
+    "title": "Pain in the shoulder, arm, neck, jaw, back, or belly area",
+    "name": "Pain_in_the_shoulder_arm_neck_jaw_back_or_belly_area"
+  },
+  {
+    "title": "Discomfort that feels like tightness, squeezing, crushing, burning, choking, or aching",
+    "name": "Discomfort_that_feels_like_tightness_squeezing_crushing_burning_choking_or_aching"
+  },
+  {
+    "title": "Discomfort that occurs at rest and does not easily go away when you take medicine",
+    "name": "Discomfort_that_occurs_at_rest_and_does_not_easily_go_away_when_you_take_medicine"
+  },
+  {
+    "title": "Anxiety",
+    "name": "Anxiety"
+  },
+  {
+    "title": "Feeling dizzy or lightheaded",
+    "name": "Feeling_dizzy_or_lightheaded"
+  },
+  {
+    "title": "Fast or irregular heartbeat",
+    "name": "Fast_or_irregular_heartbeat"
+  },
+  {
+    "title": "Drooping eyelids",
+    "name": "Drooping_eyelids"
+  },
+  {
+    "title": "Difficulty moving the eyes",
+    "name": "Difficulty_moving_the_eyes"
+  },
+  {
+    "title": "Slurred speech or difficulty swallowing",
+    "name": "Slurred_speech_or_difficulty_swallowing"
+  },
+  {
+    "title": "Stiffness in the neck",
+    "name": "Stiffness_in_the_neck"
+  },
+  {
+    "title": "Pain in the arms or legs",
+    "name": "Pain_in_the_arms_or_legs"
+  },
+  {
+    "title": "Inability to pass urine",
+    "name": "Inability_to_pass_urine"
+  }, {
+    "title": "Blood in the urine",
+    "name": "Blood_in_the_urine"
+  },
+  {
+    "title": "Pain in the side",
+    "name": "Pain_in_the_side"
+  },
+  {
+    "title": "Chest discomfort",
+    "name": "Chest_discomfort"
+  },
+  {
+    "title": "Cough that produces mucus -- the mucus may be clear or yellow-green",
+    "name": "Cough_that_produces_mucus_the_mucus_may_be_clear_or_yellow_green"
+  },
+  {
+    "title": "Fever-- usually low-grade",
+    "name": "Fever_usually_low_grade"
+  },
+  {
+    "title": "Shortness of breath that gets worse with activity",
+    "name": "Shortness_of_breath_that_gets_worse_with_activity"
+  },
+  {
+    "title": "Wheezing",
+    "name": "Wheezing"
+  },
+  {
+    "title": "Clumsy speech pattern (dysarthria)",
+    "name": "Clumsy_speech_pattern_dysarthria"
+  },
+  {
+    "title": "Repetitive eye movements (nystagmus)",
+    "name": "Repetitive_eye_movements_nystagmus"
+  },
+  {
+    "title": "Uncoordinated eye movements",
+    "name": "Uncoordinated_eye_movements"
+  },
+  {
+    "title": "Walking problems (unsteady gait) that can lead to falls",
+    "name": "Walking_problems_unsteady_gait_that_can_lead_to_falls"
+  },
+  {
+    "title": "Difficulty controlling arm movements",
+    "name": "Difficulty_controlling_arm_movements"
+  },
+  {
+    "title": "Sharp, cramping, or dull pain",
+    "name": "Sharp_cramping_or_dull_pain"
+  },
+  {
+    "title": "Steady pain",
+    "name": "Steady_pain"
+  },
+  {
+    "title": "Pain that spreads to your back or below your right shoulder blade",
+    "name": "Pain_that_spreads_to_your_back_or_below_your_right_shoulder_blade"
+  },
+  {
+    "title": "Clay-colored stools",
+    "name": "Clay_colored_stools"
+  },
+  {
+    "title": "Yellowing of skin and whites of the eyes (jaundice)",
+    "name": "Yellowing_of_skin_and_whites_of_the_eyes_jaundice"
+  },
+  {
+    "title": "Pain in the shoulder, arm, neck, jaw, back, or belly area",
+    "name": "Pain_in_the_shoulder_arm_neck_jaw_back_or_belly_area"
+  },
+  {
+    "title": "Discomfort that feels like tightness, squeezing, crushing, burning, choking, or aching",
+    "name": "Discomfort_that_feels_like_tightness_squeezing_crushing_burning_choking_or_aching"
+  },
+  {
+    "title": "Discomfort that occurs at rest and does not easily go away when you take medicine",
+    "name": "Discomfort_that_occurs_at_rest_and_does_not_easily_go_away_when_you_take_medicine"
+  },
+  {
+    "title": "Anxiety",
+    "name": "Anxiety"
+  },
+  {
+    "title": "Feeling dizzy or lightheaded",
+    "name": "Feeling_dizzy_or_lightheaded"
+  },
+  {
+    "title": "Fast or irregular heartbeat",
+    "name": "Fast_or_irregular_heartbeat"
+  },
+  {
+    "title": "Drooping eyelids",
+    "name": "Drooping_eyelids"
+  },
+  {
+    "title": "Difficulty moving the eyes",
+    "name": "Difficulty_moving_the_eyes"
+  },
+  {
+    "title": "Slurred speech or difficulty swallowing",
+    "name": "Slurred_speech_or_difficulty_swallowing"
+  },
+  {
+    "title": "Stiffness in the neck",
+    "name": "Stiffness_in_the_neck"
+  },
+  {
+    "title": "Pain in the arms or legs",
+    "name": "Pain_in_the_arms_or_legs"
+  },
+  {
+    "title": "Inability to pass urine",
+    "name": "Inability_to_pass_urine"
+  },
+  {
+    "title": "Respiratory failure, when muscles involved in breathing become weak",
+    "name": "Respiratory_failure_when_muscles_involved_in_breathing_become_weak"
+  },
+  {
+    "title": "Serious nervous system problems, which may lead to death",
+    "name": "Serious_nervous_system_problems_which_may_lead_to_death"
+  },
+  {
+    "title": "Bloody stools",
+    "name": "Bloody_stools"
+  },
+  {
+    "title": "Breath odor and metallic taste in the mouth",
+    "name": "Breath_odor_and_metallic_taste_in_the_mouth"
+  },
+  {
+    "title": "Bruising easily",
+    "name": "Bruising_easily"
+  },
+  {
+    "title": "Changes in mental status or mood",
+    "name": "Changes_in_mental_status_or_mood"
+  },
+  {
+    "title": "Decreased sensation, especially in the hands or feet",
+    "name": "Decreased_sensation_especially_in_the_hands_or_feet"
+  },
+  {
+    "title": "Flank pain(between the ribs and hips)",
+    "name": "Flank_pain_between_the_ribs_and_hips"
+  },
+  {
+    "title": "Hand tremor",
+    "name": "Hand_tremor"
+  },
+  {
+    "title": "Heart murmur",
+    "name": "Heart_murmur"
+  },
+  {
+    "title": "High blood pressure",
+    "name": "High_blood_pressure"
+  },
+  {
+    "title": "Nosebleeds",
+    "name": "Nosebleeds"
+  },
+  {
+    "title": "Persistent hiccups",
+    "name": "Persistent_hiccups"
+  },
+  {
+    "title": "Prolonged bleeding",
+    "name": "Prolonged_bleeding"
+  },
+  {
+    "title": "Swelling due to the body keeping in fluid (may be seen in the legs, ankles, and feet)",
+    "name": "Swelling_due_to_the_body_keeping_in_fluid_may_be_seen_in_the_legs_ankles_and_feet"
+  },
+  {
+    "title": "Urination changes, such as little or no urine, excessive urination at night, or urination that stops completely",
+    "name": "Urination_changes_such_as_little_or_no_urine_excessive_urination_at_night_or_urination_that_stops_completely"
+  },
+  {
+    "title": "Bone and joint pain",
+    "name": "Bone_and_joint_pain"
+  },
+  {
+    "title": "Easy bruising and bleeding",
+    "name": "Easy_bruising_and_bleeding"
+  },
+  {
+    "title": "Paleness",
+    "name": "Paleness"
+  },
+  {
+    "title": "Pain or feeling of fullness below the ribs from an enlarged liver or spleen",
+    "name": "Pain_or_feeling_of_fullness_below_the_ribs_from_an_enlarged_liver_or_spleen"
+  },
+  {
+    "title": "Pinpoint red spots on the skin",
+    "name": "Pinpoint_red_spots_on_the_skin"
+  },
+  {
+    "title": "Swollen lymph nodes in the neck, underarms, and groin",
+    "name": "Swollen_lymph_nodes_in_the_neck_underarms_and_groin"
+  },
+  {
+    "title": "Night sweats",
+    "name": "Night_sweats"
+  },
+  {
+    "title": "Difficulty sleeping",
+    "name": "Difficulty_sleeping"
+  },
+  {
+    "title": "Blue color to the skin",
+    "name": "Blue_color_to_the_skin"
+  },
+  {
+    "title": "Chest tightness or congestion",
+    "name": "Chest_tightness_or_congestion"
+  },
+  {
+    "title": "Inability to walk in a straight line, or walk at all",
+    "name": "Inability_to_walk_in_a_straight_line_or_walk_at_all"
+  },
+  {
+    "title": "Bleeding from the nose",
+    "name": "Bleeding_from_the_nose"
+  },
+  {
+    "title": "Bleeding and swelling (rare) in the gums",
+    "name": "Bleeding_and_swelling_rare_in_the_gums"
+  },
+  {
+    "title": "Bone pain or tenderness",
+    "name": "Bone_pain_or_tenderness"
+  },
+  {
+    "title": "Heavy menstrual periods",
+    "name": "Heavy_menstrual_periods"
+  },
+  {
+    "title": "Swelling of the face",
+    "name": "Swelling_of_the_face"
+  },
+  {
+    "title": "Swelling of the eye socket",
+    "name": "Swelling_of_the_eye_socket"
+  },
+  {
+    "title": "Swelling of legs",
+    "name": "Swelling_of_legs"
+  },
+  {
+    "title": "Swelling of arms",
+    "name": "Swelling_of_arms"
+  },
+  {
+    "title": "Swelling of hands",
+    "name": "Swelling_of_hands"
+  },
+  {
+    "title": "Swelling of feet",
+    "name": "Swelling_of_feet"
+  },
+  {
+    "title": "Swelling of the abdomen",
+    "name": "Swelling_of_the_abdomen"
+  },
+  {
+    "title": "Bloating and fullness",
+    "name": "Bloating_and_fullness"
+  },
+  {
+    "title": "Indigestion",
+    "name": "Indigestion"
+  },
+  {
+    "title": "Rapid breathing",
+    "name": "Rapid_breathing"
+  },
+  {
+    "title": "General swelling",
+    "name": "General_swelling"
+  },
+  {
+    "title": "Chronic diarrhea",
+    "name": "Chronic_diarrhea"
+  },
+  {
+    "title": "Darkening of the skin",
+    "name": "Darkening_of_the_skin"
+  },
+  {
+    "title": "Salt craving",
+    "name": "Salt_craving"
+  },
+  {
+    "title": "Heavy menstrual bleeding",
+    "name": "Heavy_menstrual_bleeding"
+  },
+  {
+    "title": "Painful menstrual periods",
+    "name": "Painful_menstrual_periods"
+  },
+  {
+    "title": "Pelvic pain during intercourse",
+    "name": "Pelvic_pain_during_intercourse"
+  },
+  {
+    "title": "Swelling of your belly",
+    "name": "Swelling_of_your_belly"
+  },
+  {
+    "title": "Constipation",
+    "name": "Constipation"
+  },
+  {
+    "title": "No longer being able to pass gas",
+    "name": "No_longer_being_able_to_pass_gas"
+  },
+  {
+    "title": "Acting defiant or showing impulsive behavior",
+    "name": "Acting_defiant_or_showing_impulsive_behavior"
+  },
+  {
+    "title": "Acting nervous",
+    "name": "Acting_nervous"
+  },
+  {
+    "title": "Crying, feeling sad or hopeless, and possibly withdrawing from other people",
+    "name": "Crying_feeling_sad_or_hopeless_and_possibly_withdrawing_from_other_people"
+  },
+  {
+    "title": "Skipped heartbeats and other physical complaints",
+    "name": "Skipped_heartbeats_and_other_physical_complaints"
+  },
+  {
+    "title": "Trembling or twitching",
+    "name": "Trembling_or_twitching"
+  },
+  {
+    "title": "Changes in muscle tone, especially muscle spasms and uncontrolled movements",
+    "name": "Changes_in_muscle_tone_especially_muscle_spasms_and_uncontrolled_movements"
+  },
+  {
+    "title": "Crossed eyes",
+    "name": "Crossed_eyes"
+  },
+  {
+    "title": "Handwriting that gets worse",
+    "name": "Handwriting_that_gets_worse"
+  },
+  {
+    "title": "Difficulty at school",
+    "name": "Difficulty_at_school"
+  },
+  {
+    "title": "Difficulty understanding what people are saying",
+    "name": "Difficulty_understanding_what_people_are_saying"
+  },
+  {
+    "title": "Hearing loss",
+    "name": "Hearing_loss"
+  },
+  {
+    "title": "Hyperactivity",
+    "name": "Hyperactivity"
+  },
+  {
+    "title": "Visual impairment or blindness",
+    "name": "Visual_impairment_or_blindness"
+  },
+  {
+    "title": "Bronchitis",
+    "name": "Bronchitis"
+  },
+  {
+    "title": "Conjunctivitis",
+    "name": "Conjunctivitis"
+  },
+  {
+  "title": "Otitis media (middle ear infection)",
+  "name": "Otitis_media_middle_ear_infection"
+},
+{
+  "title": "Pneumonia (lung infection)",
+  "name": "Pneumonia_lung_infection"
+},
+{
+  "title": "Sinusitis (sinus infection)",
+  "name": "Sinusitis_sinus_infection"
+},
+{
+  "title": "Skin infections",
+  "name": "Skin_infections"
+},
+{
+  "title": "Upper respiratory tract infections",
+  "name": "Upper_respiratory_tract_infections"
+},
+{
+  "title": "Being afraid of spending time alone",
+  "name": "Being_afraid_of_spending_time_alone"
+},
+{
+  "title": "Being afraid of places where escape might be hard",
+  "name": "Being_afraid_of_places_where_escape_might_be_hard"
+},
+{
+  "title": "Being afraid of losing control in a public place",
+  "name": "Being_afraid_of_losing_control_in_a_public_place"
+},
+{
+  "title": "Depending on others",
+  "name": "Depending_on_others"
+},
+{
+  "title": "Feeling detached or separated from others",
+  "name": "Feeling_detached_or_separated_from_others"
+},
+{
+  "title": "Feeling helpless",
+  "name": "Feeling_helpless"
+},
+{
+  "title": "Feeling that the body is not real",
+  "name": "Feeling_that_the_body_is_not_real"
+},
+{
+  "title": "Feeling that the environment is not real",
+  "name": "Feeling_that_the_environment_is_not_real"
+},
+{
+  "title": "Having an unusual temper or agitation",
+  "name": "Having_an_unusual_temper_or_agitation"
+},
+{
+  "title": "Staying in the house for long periods",
+  "name": "Staying_in_the_house_for_long_periods"
+},
+{
+  "title": "Malaise",
+  "name": "Malaise"
+},
+{
+  "title": "Chills",
+  "name": "Chills"
+},
+{
+  "title": "Sore throat",
+  "name": "Sore_throat"
+},
+{
+  "title": "Mouth and throat ulcers",
+  "name": "Mouth_and_throat_ulcers"
+},
+{
+  "title": "No color in the hair, skin, or iris of the eye",
+  "name": "No_color_in_the_hair_skin_or_iris_of_the_eye"
+},
+{
+  "title": "Lighter than normal skin and hair",
+  "name": "Lighter_than_normal_skin_and_hair"
+},
+{
+  "title": "Patches of missing skin color",
+  "name": "Patches_of_missing_skin_color"
+},
+{
+  "title": "Light sensitivity",
+  "name": "Light_sensitivity"
+},
+{
+  "title": "Rapid eye movements",
+  "name": "Rapid_eye_movements"
+},
+{
+  "title": "Vision problems, or functional blindness",
+  "name": "Vision_problems_or_functional_blindness"
+},
+{
+  "title": "Lightheadedness",
+  "name": "Lightheadedness"
+},
+{
+  "title": "Muscle twitching",
+  "name": "Muscle_twitching"
+},
+{
+  "title": "Prolonged muscle spasms (tetany)",
+  "name": "Prolonged_muscle_spasms_tetany"
+},
+{
+  "title": "Intense itching or burning eyes",
+  "name": "Intense_itching_or_burning_eyes"
+},
+{
+  "title": "Puffy eyelids, most often in the morning",
+  "name": "Puffy_eyelids_most_often_in_the_morning"
+},
+{
+  "title": "Red eyes",
+  "name": "Red_eyes"
+},
+{
+  "title": "Stringy eye discharge",
+  "name": "Stringy_eye_discharge"
+},
+{
+  "title": "Tearing (watery eyes)",
+  "name": "Tearing_watery_eyes"
+},
+{
+  "title": "Widened blood vessels in the clear tissue covering the white of the eye",
+  "name": "Widened_blood_vessels_in_the_clear_tissue_covering_the_white_of_the_eye"
+},
+{
+  "title": "Hives (especially over the neck and face)",
+  "name": "Hives_especially_over_the_neck_and_face"
+},
+{
+  "title": "Itching",
+  "name": "Itching"
+},
+{
+  "title": "Nasal congestion",
+  "name": "Nasal_congestion"
+},
+{
+  "title": "Rashes",
+  "name": "Rashes"
+},
+{
+  "title": "Problems with smell",
+  "name": "Problems_with_smell"
+},
+{
+  "title": "Runny nose",
+  "name": "Runny_nose"
+},
+{
+  "title": "Sneezing",
+  "name": "Sneezing"
+},
+{
+  "title": "Abnormal urine color",
+  "name": "Abnormal_urine_color"
+},
+{
+  "title": "Excessive thirst",
+  "name": "Excessive_thirst"
+},
+{
+  "title": "Abnormal shape of the lens",
+  "name": "Abnormal_shape_of_the_lens"
+},
+{
+  "title": "Corneal erosion",
+  "name": "Corneal_erosion"
+},
+{
+  "title": "Abnormal coloring of the retina",
+  "name": "Abnormal_coloring_of_the_retina"
+},
+{
+  "title": "Macular hole",
+  "name": "Macular_hole"
+},
+{
+  "title": "Deafness",
+  "name": "Deafness"
+},
+{
+  "title": "Impaired heart function",
+  "name": "Impaired_heart_function"
+},
+{
+  "title": "Obesity",
+  "name": "Obesity"
+},
+{
+  "title": "Progressive kidney failure",
+  "name": "Progressive_kidney_failure"
+},
+{
+  "title": "Slowed growth",
+  "name": "Slowed_growth"
+},
+{
+  "title": "Type 2 diabetes",
+  "name": "Type_2_diabetes"
+},
+{
+  "title": "Difficulty performing more than one task at a time",
+  "name": "Difficulty_performing_more_than_one_task_at_a_time"
+},
+{
+  "title": "Getting lost on familiar routes",
+  "name": "Getting_lost_on_familiar_routes"
+},
+{
+  "title": "Language problems, such as trouble remembering the names of familiar objects",
+  "name": "Language_problems_trouble_remembering_names_of_familiar_objects"
+},
+{
+  "title": "Losing interest in things previously enjoyed and being in a flat mood",
+  "name": "Losing_interest_in_things_previously_enjoyed_and_being_in_a_flat_mood"
+},
+{
+  "title": "Misplacing items",
+  "name": "Misplacing_items"
+},
+{
+  "title": "Personality changes and loss of social skills",
+  "name": "Personality_changes_and_loss_of_social_skills"
+},
+{
+  "title": "Change in sleep patterns, often waking up at night",
+  "name": "Change_in_sleep_patterns_often_waking_up_at_night"
+},
+{
+  "title": "Delusions, depression, and agitation",
+  "name": "Delusions_depression_and_agitation"
+},
+{
+  "title": "Difficulty doing basic tasks",
+  "name": "Difficulty_doing_basic_tasks"
+},
+{
+  "title": "Difficulty reading or writing",
+  "name": "Difficulty_reading_or_writing"
+},
+{
+  "title": "Forgetting details about current events",
+  "name": "Forgetting_details_about_current_events"
+},
+{
+  "title": "Hallucinations",
+  "name": "Hallucinations"
+},
+{
+  "title": "Abdominal cramps",
+  "name": "Abdominal_cramps"
+},
+{
+  "title": "Excessive gas",
+  "name": "Excessive_gas"
+},
+{
+  "title": "Rectal pain while having a bowel movement (tenesmus)",
+  "name": "Rectal_pain_while_having_a_bowel_movement_tenesmus"
+},
+{
+  "title": "Abdominal pain, more so in the right, upper part of the abdomen; pain is intense, continuous or stabbing",
+  "name": "Abdominal_pain_more_so_in_the_right_upper_part_of_the_abdomen_pain_is_intense_continuous_or_stabbing"
+},
+{
+  "title": "Hiccups that do not stop (rare)",
+  "name": "Hiccups_that_do_not_stop_rare"
+},
+{
+  "title": "Difficulty lifting, climbing stairs, and walking",
+  "name": "Difficulty_lifting_climbing_stairs_and_walking"
+},
+{
+  "title": "Difficulty swallowing -- choking easily, drooling, or gagging",
+  "name": "Difficulty_swallowing_choking_easily_drooling_or_gagging"
+},
+{
+  "title": "Head drop due to weakness of the neck muscles",
+  "name": "Head_drop_due_to_weakness_of_the_neck_muscles"
+},
+{
+  "title": "Speech problems, such as a slow or abnormal speech pattern (slurring of words)",
+  "name": "Speech_problems_slow_or_abnormal_speech_pattern_slurring_of_words"
+},
+{
+  "title": "Voice changes, hoarseness",
+  "name": "Voice_changes_hoarseness"
+},
+{
+  "title": "Muscle cramps",
+  "name": "Muscle_cramps"
+},
+{
+  "title": "Muscle stiffness, called spasticity",
+  "name": "Muscle_stiffness_called_spasticity"
+},
+{
+  "title": "Muscle contractions, called fasciculations",
+  "name": "Muscle_contractions_called_fasciculations"
+},
+{
+  "title": "A lump in or near the anus",
+  "name": "A_lump_in_or_near_the_anus"
+},
+{
+  "title": "Anal pain",
+  "name": "Anal_pain"
+},
+{
+  "title": "Itching in anal",
+  "name": "Itching_in_anal"
+},
+{
+  "title": "Discharge from the anus",
+  "name": "Discharge_from_the_anus"
+},
+{
+  "title": "Change in bowel habits",
+  "name": "Change_in_bowel_habits"
+},
+{
+  "title": "Swollen lymph nodes in the groin or anal region",
+  "name": "Swollen_lymph_nodes_in_the_groin_or_anal_region"
+},
+{
+  "title": "Increased urinary frequency or urgency",
+  "name": "Increased_urinary_frequency_or_urgency"
+},
+{
+  "title": "Decreased alertness",
+  "name": "Decreased_alertness"
+},
+{
+  "title": "Easy bruising or bleeding",
+  "name": "Easy_bruising_or_bleeding"
+},
+{
+  "title": "Feeling anxious",
+  "name": "Feeling_anxious"
+},
+{
+  "title": "Chest discomfort or tightness",
+  "name": "Chest_discomfort_or_tightness"
+},
+{
+  "title": "Palpitations",
+  "name": "Palpitations"
+},
+{
+  "title": "Swelling of the tongue",
+  "name": "Swelling_of_the_tongue"
+},
+{
+  "title": "Unconsciousness",
+  "name": "Unconsciousness"
+},
+{
+  "title": "Coughing up blood",
+  "name": "Coughing_up_blood"
+},
+{
+  "title": "Loud breathing",
+  "name": "Loud_breathing"
+},
+{
+  "title": "Lower neck lump, which often grows quickly",
+  "name": "Lower_neck_lump_often_grows_quickly"
+},
+{
+  "title": "Pain in the throat",
+  "name": "Pain_in_the_throat"
+},
+{
+  "title": "Vocal cord paralysis",
+  "name": "Vocal_cord_paralysis"
+},
+{
+  "title": "Overactive thyroid",
+  "name": "Overactive_thyroid"
+},
+{
+  "title": "Feeling weak or tired more often than usual, or with exercise",
+  "name": "Feeling_weak_or_tired_more_often_than_usual_or_with_exercise"
+},
+{
+  "title": "Problems concentrating or thinking",
+  "name": "Problems_concentrating_or_thinking"
+},
+{
+  "title": "Irritability",
+  "name": "Irritability"
+},
+{
+  "title": "Numbness and tingling of hands or feet",
+  "name": "Numbness_and_tingling_of_hands_or_feet"
+},
+{
+  "title": "Blue color to the whites of the eyes",
+  "name": "Blue_color_to_the_whites_of_the_eyes"
+},
+{
+  "title": "Brittle nails",
+  "name": "Brittle_nails"
+},
+{
+  "title": "Desire to eat ice or other non-food things (pica syndrome)",
+  "name": "Desire_to_eat_ice_or_other_non_food_things_pica_syndrome"
+},
+{
+  "title": "Lightheadedness when you stand up",
+  "name": "Lightheadedness_when_you_stand_up"
+},
+{
+  "title": "Sore or inflamed tongue",
+  "name": "Sore_or_inflamed_tongue"
+},
+{
+  "title": "Abnormal or increased menstrual bleeding in females",
+  "name": "Abnormal_or_increased_menstrual_bleeding_in_females"
+},
+{
+  "title": "Loss of sexual desire in men",
+  "name": "Loss_of_sexual_desire_in_men"
+},
+{
+  "title": "Loss of muscle tone (floppiness)",
+  "name": "Loss_of_muscle_tone_floppiness"
+},
+{
+  "title": "Trouble feeding",
+  "name": "Trouble_feeding"
+},
+{
+  "title": "Heartburn (acid reflux)",
+  "name": "Heartburn_acid_reflux"
+},
+{
+  "title": "Trembling arm and leg movements",
+  "name": "Trembling_arm_and_leg_movements"
+},
+{
+  "title": "Unstable or jerky walking",
+  "name": "Unstable_or_jerky_walking"
+},
+{
+  "title": "Little or no speech",
+  "name": "Little_or_no_speech"
+},
+{
+  "title": "Laughing and smiling often",
+  "name": "Laughing_and_smiling_often"
+},
+{
+  "title": "Light hair, skin, and eye color compared to the rest of the family",
+  "name": "Light_hair_skin_and_eye_color_compared_to_rest_of_the_family"
+},
+{
+  "title": "Small head size compared to body, flattened back of the head",
+  "name": "Small_head_size_compared_to_body_flattened_back_of_the_head"
+},
+{
+  "title": "Excessive movement of the hands and limbs",
+  "name": "Excessive_movement_of_the_hands_and_limbs"
+},
+{
+  "title": "Sleep problems",
+  "name": "Sleep_problems"
+},
+{
+  "title": "Tongue thrusting, drooling",
+  "name": "Tongue_thrusting_drooling"
+},
+{
+  "title": "Unusual chewing and mouthing movements",
+  "name": "Unusual_chewing_and_mouthing_movements"
+},
+{
+  "title": "Walking with arms uplifted and hands waving",
+  "name": "Walking_with_arms_uplifted_and_hands_waving"
+},
+{
+  "title": "Discharge of pus from the rectum",
+  "name": "Discharge_of_pus_from_the_rectum"
+},
+{
+  "title": "Redness, painful and hardened tissue in the area of the anus",
+  "name": "Redness_painful_and_hardened_tissue_in_the_area_of_the_anus"
+},
+{
+  "title": "Tenderness in anus swollen part",
+  "name": "Tenderness_in_anus_swollen_part"
+},
+{
+  "title": "Intense fear of gaining weight or becoming fat",
+  "name": "Intense_fear_of_gaining_weight_or_becoming_fat"
+},
+{
+  "title": "Refuses to keep their weight at what is considered normal for their age and height (15% or more below the normal weight)",
+  "name": "Refuses_to_keep_their_weight_at_what_is_considered_normal_for_their_age_and_height_15_percent_or_more_below_the_normal_weight"
+},
+{
+  "title": "Has a body image that is very distorted, is very focused on body weight or shape, and refuses to admit the danger of weight loss",
+  "name": "Has_a_body_image_that_is_very_distorted_is_very_focused_on_body_weight_or_shape_and_refuses_to_admit_the_danger_of_weight_loss"
+},
+{
+  "title": "Cutting food into small pieces or moving them around the plate instead of eating",
+  "name": "Cutting_food_into_small_pieces_or_moving_them_around_the_plate_instead_of_eating"
+},
+{
+  "title": "Exercising all the time, even when the weather is bad, they are hurt, or their schedule is busy",
+  "name": "Exercising_all_the_time_even_when_the_weather_is_bad_they_are_hurt_or_their_schedule_is_busy"
+},
+{
+  "title": "Going to the bathroom right after meals",
+  "name": "Going_to_the_bathroom_right_after_meals"
+},
+{
+  "title": "Refusing to eat around other people",
+  "name": "Refusing_to_eat_around_other_people"
+},
+{
+  "title": "Using pills to make themselves urinate",
+  "name": "Using_pills_to_make_themselves_urinate"
+},
+{
+  "title": "A 'popping' sound at the time of injury",
+  "name": "A_popping_sound_at_the_time_of_injury"
+},
+{
+  "title": "Obvious knee swelling within 6 hours of injury",
+  "name": "Obvious_knee_swelling_within_6_hours_of_injury"
+},
+{
+  "title": "Pain, especially when you try to put weight on the injured leg",
+  "name": "Pain_especially_when_you_try_to_put_weight_on_the_injured_leg"
+},
+{
+  "title": "Difficulty in continuing with your sport",
+  "name": "Difficulty_in_continuing_with_your_sport"
+},
+{
+  "title": "Feeling of instability",
+  "name": "Feeling_of_instability"
+},
+{
+  "title": "An itchy sore develops that is similar to an insect bite",
+  "name": "An_itchy_sore_develops_that_is_similar_to_an_insect_bite"
+},
+{
+  "title": "The sore is usually painless",
+  "name": "The_sore_is_usually_painless"
+},
+{
+  "title": "A scab often forms, and then dries and falls off within 2 weeks",
+  "name": "A_scab_often_forms_and_then_dries_and_falls_off_within_2_weeks"
+},
+{
+  "title": "Chest pain",
+  "name": "Chest_pain"
+},
+{
+  "title": "Bloody urine",
+  "name": "Bloody_urine"
+},
+{
+  "title": "Burning sensation when urinating",
+  "name": "Burning_sensation_when_urinating"
+},
+{
+  "title": "Swelling (edema) in any area of the body, especially in the legs",
+  "name": "Swelling_edema_in_any_area_of_the_body_especially_in_the_legs"
+},
+{
+  "title": "Vomiting",
+  "name": "Vomiting"
+},
+{
+  "title": "Collapse of heart beat",
+  "name": "Collapse_of_heart_beat"
+},
+{
+  "title": "Methemoglobinemia (very dark blood from abnormal red blood cells)",
+  "name": "Methemoglobinemia_very_dark_blood_from_abnormal_red_blood_cells"
+},
+{
+  "title": "Too much or too little acid in the blood, which leads to damage in all of the body organs",
+  "name": "Too_much_or_too_little_acid_in_the_blood_which_leads_to_damage_in_all_of_the_body_organs"
+},
+{
+  "title": "Asphyxia",
+  "name": "Asphyxia"
+},
+{
+  "title": "Chemical pneumonitis",
+  "name": "Chemical_pneumonitis"
+},
+{
+  "title": "Viral infection",
+  "name": "Viral_infection"
+},
+{
+  "title": "Hemorrhagic pulmonary edema",
+  "name": "Hemorrhagic_pulmonary_edema"
+},
+{
+  "title": "Respiratory distress or failure",
+  "name": "Respiratory_distress_or_failure"
+},
+{
+  "title": "Pneumothorax",
+  "name": "Pneumothorax"
+},
+{
+  "title": "Pleural effusion",
+  "name": "Pleural_effusion"
+},
+{
+  "title": "Empyema",
+  "name": "Empyema"
+},
+{
+  "title": "Incoordination",
+  "name": "Incoordination"
+},
+{
+  "title": "Somnolence",
+  "name": "Somnolence"
+},
+{
+  "title": "Blurred vision",
+  "name": "Blurred_vision"
+},
+{
+  "title": "Brain damage from low oxygen level",
+  "name": "Brain_damage_from_low_oxygen_level"
+},
+{
+  "title": "Burns in the skin",
+  "name": "Burns_in_the_skin"
+},
+{
+  "title": "Irritation in the skin",
+  "name": "Irritation_in_the_skin"
+},
+{
+  "title": "Holes (necrosis) in the skin or tissues underneath",
+  "name": "Holes_necrosis_in_the_skin_or_tissues_underneath"
+},
+{
+  "title": "Bruising and bleeding under the skin",
+  "name": "Bruising_and_bleeding_under_the_skin"
+},
+{
+  "title": "Apathy (loss of desire to do anything)",
+  "name": "Apathy_loss_of_desire_to_do_anything"
+},
+{
+  "title": "Slow breathing",
+  "name": "Slow_breathing"
+},
+{
+  "title": "Pounding or racing heartbeat (palpitations)",
+  "name": "Pounding_or_racing_heartbeat_palpitations"
+},
+{
+  "title": "Slowdown or stoppage of the bowels",
+  "name": "Slowdown_or_stoppage_of_the_bowels"
+},
+{
+  "title": "Dry mucous membranes in the mouth",
+  "name": "Dry_mucous_membranes_in_the_mouth"
+},
+{
+  "title": "Eye changes in pupil size",
+  "name": "Eye_changes_in_pupil_size"
+},
+{
+  "title": "Eyes move quickly from side to side",
+  "name": "Eyes_move_quickly_from_side_to_side"
+},
+{
+  "title": "Flushed skin",
+  "name": "Flushed_skin"
+},
+{
+  "title": "Restlessness",
+  "name": "Restlessness"
+},
+{
+  "title": "Urination difficulty",
+  "name": "Urination_difficulty"
+},
+{
+  "title": "Leg cramps",
+  "name": "Leg_cramps"
+},
+{
+  "title": "Unsteady walk",
+  "name": "Unsteady_walk"
+},
+{
+  "title": "Blue lips and fingernails",
+  "name": "Blue_lips_and_fingernails"
+},
+{
+  "title": "Act witty and charming",
+  "name": "Act_witty_and_charming"
+},
+{
+  "title": "Good at flattery and manipulating other people's emotions",
+  "name": "Good_at_flattery_and_manipulating_other_people's_emotions"
+},
+{
+  "title": "Break the law repeatedly",
+  "name": "Break_the_law_repeatedly"
+},
+{
+  "title": "Disregard the safety of self and others",
+  "name": "Disregard_the_safety_of_self_and_others"
+},
+{
+  "title": "Have problems with substance abuse",
+  "name": "Have_problems_with_substance_abuse"
+},
+{
+  "title": "Lie, steal, and fight often",
+  "name": "Lie_steal_and_fight_often"
+},
+{
+  "title": "Not show guilt or remorse",
+  "name": "Not_show_guilt_or_remorse"
+},
+{
+  "title": "Often be angry or arrogant",
+  "name": "Often_be_angry_or_arrogant"
+},
+{
+  "title": "Blood pressure changes",
+  "name": "Blood_pressure_changes"
+},
+{
+  "title": "Reduced pulse",
+  "name": "Reduced_pulse"
+},
+{
+  "title": "Transient ischemic attacks (TIA)",
+  "name": "Transient_ischemic_attacks_TIA"
+},
+{
+  "title": "Sharp, stabbing, tearing, or ripping chest pain",
+  "name": "Sharp_stabbing_tearing_or_ripping_chest_pain"
+},
+{
+  "title": "Anxiety and a feeling of doom",
+  "name": "Anxiety_and_a_feeling_of_doom"
+},
+{
+  "title": "Rapid, weak pulse",
+  "name": "Rapid_weak_pulse"
+},
+{
+  "title": "Stroke symptoms",
+  "name": "Stroke_symptoms"
+},
+{
+  "title": "Bounding pulse",
+  "name": "Bounding_pulse"
+},
+{
+  "title": "Waking up short of breath some time after falling asleep",
+  "name": "Waking_up_short_of_breath_some_time_after_falling_asleep"
+},
+{
+  "title": "Uneven, rapid, racing, pounding, or fluttering pulse",
+  "name": "Uneven_rapid_racing_pounding_or_fluttering_pulse"
+},
+{
+  "title": "Breathing problems when exercising",
+  "name": "Breathing_problems_when_exercising"
+},
+{
+  "title": "Becoming easily tired",
+  "name": "Becoming_easily_tired"
+},
+{
+  "title": "Failure to gain weight",
+  "name": "Failure_to_gain_weight"
+},
+{
+  "title": "Poor feeding",
+  "name": "Poor_feeding"
+},
+{
+  "title": "Heart failure",
+  "name": "Heart_failure"
+},
+{
+  "title": "Respiratory infections",
+  "name": "Respiratory_infections"
+},
+{
+  "title": "Early closure of sutures between bones of the skull, noted by ridging along sutures",
+  "name": "Early_closure_of_sutures_between_bones_of_the_skull_noted_by_ridging_along_sutures"
+},
+{
+  "title": "Frequent ear infections",
+  "name": "Frequent_ear_infections"
+},
+{
+  "title": "Fusion or severe webbing of the 2nd, 3rd, and 4th fingers, often called 'mitten hands'",
+  "name": "Fusion_or_severe_webbing_of_the_2nd_3rd_and_4th_fingers_often_called_mitten_hands"
+},
+{
+  "title": "Large or late-closing soft spot on a baby's skull",
+  "name": "Large_or_late_closing_soft_spot_on_a_baby's_skull"
+},
+{
+  "title": "Possible, slow intellectual development",
+  "name": "Possible_slow_intellectual_development"
+},
+{
+  "title": "Prominent or bulging eyes",
+  "name": "Prominent_or_bulging_eyes"
+},
+{
+  "title": "Severe under-development of the midface",
+  "name": "Severe_under_development_of_the_midface"
+},
+{
+  "title": "Skeletal (limb) abnormalities",
+  "name": "Skeletal_limb_abnormalities"
+},
+{
+  "title": "Webbing or fusion of the toes",
+  "name": "Webbing_or_fusion_of_the_toes"
+},
+{
+  "title": "Lightheadedness upon standing",
+  "name": "Lightheadedness_upon_standing"
+},
+{
+  "title": "Low white cell count (leukopenia)",
+  "name": "Low_white_cell_count_leukopenia"
+},
+{
+  "title": "Low platelet count (thrombocytopenia)",
+  "name": "Low_platelet_count_thrombocytopenia"
+},
+{
+  "title": "Bleeding gums",
+  "name": "Bleeding_gums"
+},
+{
+  "title": "Nose bleeds",
+  "name": "Nose_bleeds"
+},
+{
+  "title": "Rash, small pinpoint red marks on the skin (petechiae)",
+  "name": "Rash_small_pinpoint_red_marks_on_the_skin_petechiae"
+},
+{
+  "title": "Severe infections",
+  "name": "Severe_infections"
+},
+{
+  "title": "Pain may be worse when you walk, cough, or make sudden movements",
+  "name": "Pain_may_be_worse_when_you_walk_cough_or_make_sudden_movements"
+},
+{
+  "title": "Chills and shaking",
+  "name": "Chills_and_shaking"
+},
+{
+  "title": "Hard stools",
+  "name": "Hard_stools"
+},
+{
+  "title": "Distorted, repeated, or left out speech sounds or words. The person has difficulty putting words together in the correct order",
+  "name": "Distorted_repeated_or_left_out_speech_sounds_or_words_The_person_has_difficulty_putting_words_together_in_the_correct_order"
+},
+{
+  "title": "Struggling to pronounce the right word",
+  "name": "Struggling_to_pronounce_the_right_word"
+},
+{
+  "title": "More difficulty using longer words, either all the time, or sometimes",
+  "name": "More_difficulty_using_longer_words_either_all_the_time_or_sometimes"
+},
+{
+  "title": "Ability to use short, everyday phrases or sayings (such as 'How are you?') without a problem",
+  "name": "Ability_to_use_short_everyday_phrases_or_sayings_such_as_How_are_you_without_a_problem"
+},
+{
+  "title": "Better writing ability than speaking ability",
+  "name": "Better_writing_ability_than_speaking_ability"
+},
+{
+  "title": "Too slow (bradycardia) heart rate",
+  "name": "Too_slow_bradycardia_heart_rate"
+},
+{
+  "title": "Too quick (tachycardia) heart rate",
+  "name": "Too_quick_tachycardia_heart_rate"
+},
+{
+  "title": "Irregular, uneven, possibly with extra or skipped heart beats",
+  "name": "Irregular_uneven_possibly_with_extra_or_skipped_heart_beats"
+},
+{
+  "title": "Cold arm or leg",
+  "name": "Cold_arm_or_leg"
+},
+{
+  "title": "Decreased or no pulse in an arm or leg",
+  "name": "Decreased_or_no_pulse_in_an_arm_or_leg"
+},
+{
+  "title": "Lack of movement in the arm or leg",
+  "name": "Lack_of_movement_in_the_arm_or_leg"
+},
+{
+  "title": "Pale color of the arm or leg (pallor)",
+  "name": "Pale_color_of_the_arm_or_leg_pallor"
+},
+{
+  "title": "Weakness of an arm or leg",
+  "name": "Weakness_of_an_arm_or_leg"
+},
+{
+  "title": "Joint swelling",
+  "name": "Joint_swelling"
+},
+{
+  "title": "Reduced ability to move the joint",
+  "name": "Reduced_ability_to_move_the_joint"
+},
+{
+  "title": "Redness and warmth of the skin around a joint",
+  "name": "Redness_and_warmth_of_the_skin_around_a_joint"
+},
+{
+  "title": "Joint stiffness, especially in the morning",
+  "name": "Joint_stiffness_especially_in_the_morning"
+},
+{
+  "title": "Clubbing of fingers",
+  "name": "Clubbing_of_fingers"
+},
+{
+  "title": "Nail abnormalities",
+  "name": "Nail_abnormalities"
+},
+{
+  "title": "Bloody sputum",
+  "name": "Bloody_sputum"
+},
+{
+  "title": "Passing worms in stool",
+  "name": "Passing_worms_in_stool"
+},
+{
+  "title": "Skin rash",
+  "name": "Skin_rash"
+},
+{
+  "title": "Stomach pain",
+  "name": "Stomach_pain"
+},
+{
+  "title": "Coughing up worms",
+  "name": "Coughing_up_worms"
+},
+{
+  "title": "Worms leaving the body through the nose or mouth",
+  "name": "Worms_leaving_the_body_through_the_nose_or_mouth"
+},
+{
+  "title": "Increased phlegm production, which may be bloody",
+  "name": "Increased_phlegm_production_may_be_bloody"
+},
+{
+  "title": "Skin sores (lesions)",
+  "name": "Skin_sores_lesions"
+},
+{
+  "title": "Coughing up foul-smelling, greenish or dark phlegm (sputum), or phlegm that contains pus or blood",
+  "name": "Coughing_up_foul_smelling_greenish_or_dark_phlegm_sputum_or_phlegm_that_contains_pus_or_blood"
+},
+{
+  "title": "Seeing food or tube feed material (if being fed artificially) in your sputum",
+  "name": "Seeing_food_or_tube_feed_material_in_your_sputum"
+},
+{
+  "title": "Cough with or without sputum (phlegm) production",
+  "name": "Cough_with_or_without_sputum_phlegm_production"
+},
+{
+  "title": "Pulling in of the skin between the ribs when breathing (intercostal retractions)",
+  "name": "Pulling_in_of_the_skin_between_the_ribs_when_breathing_intercostal_retractions"
+},
+{
+  "title": "Whistling sound or wheezing as you breathe",
+  "name": "Whistling_sound_or_wheezing_as_you_breathe"
+},
+{
+  "title": "Pain or tightness in the chest",
+  "name": "Pain_or_tightness_in_the_chest"
+},
+{
+  "title": "Abnormal breathing pattern (breathing out takes more than twice as long as breathing in)",
+  "name": "Abnormal_breathing_pattern_breathing_out_takes_more_than_twice_as_long_as_breathing_in"
+},
+{
+  "title": "Bluish color to the lips and face (cyanosis)",
+  "name": "Bluish_color_to_the_lips_and_face_cyanosis"
+},
+{
+  "title": "Decreased coordination of movements (ataxia) in late childhood that can include ataxic gait (cerebellar ataxia), jerky gait, unsteadiness",
+  "name": "Decreased_coordination_of_movements_ataxia_in_late_childhood_that_can_include_ataxic_gait_cerebellar_ataxia_jerky_gait_unsteadiness"
+},
+{
+  "title": "Decreasing mental development, slows or stops after age 10 to 12",
+  "name": "Decreasing_mental_development_slows_or_stops_after_age_10_to_12"
+},
+{
+  "title": "Delayed walking",
+  "name": "Delayed_walking"
+},
+{
+  "title": "Discoloration of skin areas exposed to sunlight",
+  "name": "Discoloration_of_skin_areas_exposed_to_sunlight"
+},
+{
+  "title": "Discoloration of skin (coffee-with-milk-colored spots)",
+  "name": "Discoloration_of_skin_coffee_with_milk_colored_spots"
+},
+{
+  "title": "Enlarged blood vessels in skin of nose, ears, and inside of the elbow and knee",
+  "name": "Enlarged_blood_vessels_in_skin_of_nose_ears_and_inside_of_the_elbow_and_knee"
+},
+{
+  "title": "Enlarged blood vessels in the whites of the eyes",
+  "name": "Enlarged_blood_vessels_in_the_whites_of_the_eyes"
+},
+{
+  "title": "Jerky or abnormal eye movements (nystagmus) late in the disease",
+  "name": "Jerky_or_abnormal_eye_movements_nystagmus_late_in_the_disease"
+},
+{
+  "title": "Premature graying of the hair",
+  "name": "Premature_graying_of_the_hair"
+},
+{
+  "title": "Sensitivity to radiation, including x-rays",
+  "name": "Sensitivity_to_radiation_including_x_rays"
+},
+{
+  "title": "Severe respiratory infections that keep coming back (recurring)",
+  "name": "Severe_respiratory_infections_that_keep_coming_back_recurring"
+},
+{
+  "title": "Blisters with oozing and crusting",
+  "name": "Blisters_with_oozing_and_crusting"
+},
+{
+  "title": "Dry skin all over the body, or areas of bumpy skin on the back of the arms and front of the thighs",
+  "name": "Dry_skin_all_over_the_body_or_areas_of_bumpy_skin_on_the_back_of_the_arms_and_front_of_the_thighs"
+},
+{
+  "title": "Ear discharge or bleeding",
+  "name": "Ear_discharge_or_bleeding"
+},
+{
+  "title": "Raw areas of the skin from scratching",
+  "name": "Raw_areas_of_the_skin_from_scratching"
+},
+{
+  "title": "Skin color changes, such as more or less color than the normal skin tone",
+  "name": "Skin_color_changes_such_as_more_or_less_color_than_the_normal_skin_tone"
+},
+{
+  "title": "Skin redness or inflammation around the blisters",
+  "name": "Skin_redness_or_inflammation_around_the_blisters"
+},
+{
+  "title": "Thickened or leather-like areas, which can occur after long-term irritation and scratching",
+  "name": "Thickened_or_leather_like_areas_which_can_occur_after_long_term_irritation_and_scratching"
+},
+{
+  "title": "Fainting",
+  "name": "Fainting"
+},
+{
+  "title": "Loss of ability to exercise.",
+  "name": "Loss_of_ability_to_exercise"
+},
+{
+  "title": "Breathing difficulty when lying flat",
+  "name": "Breathing_difficulty_when_lying_flat"
+},
+{
+  "title": "Breathing difficulty when asleep",
+  "name": "Breathing_difficulty_when_asleep"
+},
+{
+  "title": "Symptoms due to embolism of tumor material",
+  "name": "Symptoms_due_to_embolism_of_tumor_material"
+},
+{
+  "title": "Bluish skin, especially on the fingers (Raynaud phenomenon)",
+  "name": "Bluish_skin_especially_on_the_fingers_Raynaud_phenomenon"
+},
+{
+  "title": "Curvature of nails accompanied by soft tissue swelling (clubbing) of the fingers",
+  "name": "Curvature_of_nails_accompanied_by_soft_tissue_swelling_clubbing_of_the_fingers"
+},
+{
+  "title": "Fingers that change color upon pressure or with cold or stress",
+  "name": "Fingers_that_change_color_upon_pressure_or_with_cold_or_stress"
+},
+{
+  "title": "Swelling of the whole body",
+  "name": "Swelling_of_the_whole_body"
+},
+{
+  "title": "Doesn't pay attention to details or makes careless mistakes",
+  "name": "Doesnt_pay_attention_to_details_or_makes_careless_mistakes"
+},
+{
+  "title": "Has problems focusing during tasks or play",
+  "name": "Has_problems_focusing_during_tasks_or_play"
+},
+{
+  "title": "Doesn't listen when spoken to directly",
+  "name": "Doesnt_listen_when_spoken_to_directly"
+},
+{
+  "title": "Doesn't follow through on instructions and doesn't finish schoolwork or chores",
+  "name": "Doesnt_follow_through_on_instructions_and_doesnt_finish_schoolwork_or_chores"
+},
+{
+  "title": "Has problems organizing tasks and activities",
+  "name": "Has_problems_organizing_tasks_and_activities"
+},
+{
+  "title": "Avoids or doesn't like tasks that require mental effort",
+  "name": "Avoids_or_doesnt_like_tasks_that_require_mental_effort"
+},
+{
+  "title": "Often loses things",
+  "name": "Often_loses_things"
+},
+{
+  "title": "Easily distracted",
+  "name": "Easily_distracted"
+},
+{
+  "title": "Often forgetful",
+  "name": "Often_forgetful"
+},
+{
+  "title": "Fidgets or squirms in seat",
+  "name": "Fidgets_or_squirms_in_seat"
+},
+{
+  "title": "Leaves their seat when they should stay in their seat",
+  "name": "Leaves_their_seat_when_they_should_stay_in_their_seat"
+},
+{
+  "title": "Runs about or climbs when they shouldn't be doing so",
+  "name": "Runs_about_or_climbs_when_they_shouldnt_be_doing_so"
+},
+{
+  "title": "Has problems playing or working quietly",
+  "name": "Has_problems_playing_or_working_quietly"
+},
+{
+  "title": "Is often 'on the go,' acts as if 'driven by a motor'",
+  "name": "Is_often_on_the_go_acts_as_if_driven_by_a_motor"
+},
+{
+  "title": "Talks all the time",
+  "name": "Talks_all_the_time"
+},
+{
+  "title": "Blurts out answers before questions have been completed",
+  "name": "Blurts_out_answers_before_questions_have_been_completed"
+},
+{
+  "title": "Has problems awaiting their turn",
+  "name": "Has_problems_awaiting_their_turn"
+},
+{
+  "title": "Interrupts or intrudes on others",
+  "name": "Interrupts_or_intrudes_on_others"
+},
+{
+  "title": "Be very sensitive to sight, hearing, touch, smell, or taste",
+  "name": "Be_very_sensitive_to_sight_hearing_touch_smell_or_taste"
+},
+{
+  "title": "Be very upset when routines are changed",
+  "name": "Be_very_upset_when_routines_are_changed"
+},
+{
+  "title": "Repeat body movements over and over",
+  "name": "Repeat_body_movements_over_and_over"
+},
+{
+  "title": "Be unusually attached to things",
+  "name": "Be_unusually_attached_to_things"
+},
+{
+  "title": "Can't start or maintain a conversation",
+  "name": "Cant_start_or_maintain_a_conversation"
+},
+{
+  "title": "Uses gestures instead of words",
+  "name": "Uses_gestures_instead_of_words"
+},
+{
+  "title": "Develops language slowly or not at all",
+  "name": "Develops_language_slowly_or_not_at_all"
+},
+{
+  "title": "Doesn't adjust gaze to look at objects that others are looking at",
+  "name": "Doesnt_adjust_gaze_to_look_at_objects_that_others_are_looking_at"
+},
+{
+  "title": "Doesn't refer to self the right way",
+  "name": "Doesnt_refer_to_self_the_right_way"
+},
+{
+  "title": "Doesn't point to show other people objects",
+  "name": "Doesnt_point_to_show_other_people_objects"
+},
+{
+  "title": "Repeats words or memorized passages, such as commercials",
+  "name": "Repeats_words_or_memorized_passages_such_as_commercials"
+},
+{
+  "title": "Doesn't make friends",
+  "name": "Doesnt_make_friends"
+},
+{
+  "title": "Doesn't play interactive games",
+  "name": "Doesnt_play_interactive_games"
+},
+{
+  "title": "Is withdrawn from social activity",
+  "name": "Is_withdrawn_from_social_activity"
+},
+{
+  "title": "May not respond to eye contact or smiles, or may avoid eye contact",
+  "name": "May_not_respond_to_eye_contact_or_smiles_or_may_avoid_eye_contact"
+},
+{
+  "title": "May treat others as objects",
+  "name": "May_treat_others_as_objects"
+},
+{
+  "title": "Prefers to be alone rather than with others",
+  "name": "Prefers_to_be_alone_rather_than_with_others"
+},
+{
+  "title": "Isn't able to show empathy",
+  "name": "Isnt_able_to_show_empathy"
+},
+{
+  "title": "Doesn't startle at loud noises",
+  "name": "Doesnt_startle_at_loud_noises"
+},
+{
+  "title": "Has very high or very low senses of sight, hearing, touch, smell, or taste",
+  "name": "Has_very_high_or_very_low_senses_of_sight_hearing_touch_smell_or_taste"
+},
+{
+  "title": "May find normal noises painful and hold their hands over their ears",
+  "name": "May_find_normal_noises_painful_and_hold_their_hands_over_their_ears"
+},
+{
+  "title": "May withdraw from physical contact because it's too stimulating or overwhelming",
+  "name": "May_withdraw_from_physical_contact_because_its_too_stimulating_or_overwhelming"
+},
+{
+  "title": "Rubs surfaces, mouths or licks objects",
+  "name": "Rubs_surfaces_mouths_or_licks_objects"
+},{
+  "title": "Avoids or doesn't like tasks that require mental effort",
+  "name": "Avoids_or_doesnt_like_tasks_that_require_mental_effort"
+},
+{
+  "title": "Often loses things",
+  "name": "Often_loses_things"
+},
+{
+  "title": "Easily distracted",
+  "name": "Easily_distracted"
+},
+{
+  "title": "Often forgetful",
+  "name": "Often_forgetful"
+},
+{
+  "title": "Fidgets or squirms in seat",
+  "name": "Fidgets_or_squirms_in_seat"
+},
+{
+  "title": "Leaves their seat when they should stay in their seat",
+  "name": "Leaves_their_seat_when_they_should_stay_in_their_seat"
+},
+{
+  "title": "Runs about or climbs when they shouldn't be doing so",
+  "name": "Runs_about_or_climbs_when_they_shouldnt_be_doing_so"
+},
+{
+  "title": "Has problems playing or working quietly",
+  "name": "Has_problems_playing_or_working_quietly"
+},
+{
+  "title": "Is often 'on the go,' acts as if 'driven by a motor'",
+  "name": "Is_often_on_the_go_acts_as_if_driven_by_a_motor"
+},
+{
+  "title": "Talks all the time",
+  "name": "Talks_all_the_time"
+},
+{
+  "title": "Blurts out answers before questions have been completed",
+  "name": "Blurts_out_answers_before_questions_have_been_completed"
+},
+{
+  "title": "Has problems awaiting their turn",
+  "name": "Has_problems_awaiting_their_turn"
+},
+{
+  "title": "Interrupts or intrudes on others",
+  "name": "Interrupts_or_intrudes_on_others"
+},
+{
+  "title": "Be very sensitive to sight, hearing, touch, smell, or taste",
+  "name": "Be_very_sensitive_to_sight_hearing_touch_smell_or_taste"
+},
+{
+  "title": "Be very upset when routines are changed",
+  "name": "Be_very_upset_when_routines_are_changed"
+},
+{
+  "title": "Repeat body movements over and over",
+  "name": "Repeat_body_movements_over_and_over"
+},
+{
+  "title": "Be unusually attached to things",
+  "name": "Be_unusually_attached_to_things"
+},
+{
+  "title": "Can't start or maintain a conversation",
+  "name": "Cant_start_or_maintain_a_conversation"
+},
+{
+  "title": "Uses gestures instead of words",
+  "name": "Uses_gestures_instead_of_words"
+},
+{
+  "title": "Develops language slowly or not at all",
+  "name": "Develops_language_slowly_or_not_at_all"
+},
+{
+  "title": "Doesn't adjust gaze to look at objects that others are looking at",
+  "name": "Doesnt_adjust_gaze_to_look_at_objects_that_others_are_looking_at"
+},
+{
+  "title": "Doesn't refer to self the right way",
+  "name": "Doesnt_refer_to_self_the_right_way"
+},
+{
+  "title": "Doesn't point to show other people objects",
+  "name": "Doesnt_point_to_show_other_people_objects"
+},
+{
+  "title": "Repeats words or memorized passages, such as commercials",
+  "name": "Repeats_words_or_memorized_passages_such_as_commercials"
+},
+{
+  "title": "Doesn't make friends",
+  "name": "Doesnt_make_friends"
+},
+{
+  "title": "Doesn't play interactive games",
+  "name": "Doesnt_play_interactive_games"
+},
+{
+  "title": "Is withdrawn from social activity",
+  "name": "Is_withdrawn_from_social_activity"
+},
+{
+  "title": "May not respond to eye contact or smiles, or may avoid eye contact",
+  "name": "May_not_respond_to_eye_contact_or_smiles_or_may_avoid_eye_contact"
+},
+{
+  "title": "May treat others as objects",
+  "name": "May_treat_others_as_objects"
+},
+{
+  "title": "Prefers to be alone rather than with others",
+  "name": "Prefers_to_be_alone_rather_than_with_others"
+},
+{
+  "title": "Isn't able to show empathy",
+  "name": "Isnt_able_to_show_empathy"
+},
+{
+  "title": "Doesn't startle at loud noises",
+  "name": "Doesnt_startle_at_loud_noises"
+},
+{
+  "title": "Has very high or very low senses of sight, hearing, touch, smell, or taste",
+  "name": "Has_very_high_or_very_low_senses_of_sight_hearing_touch_smell_or_taste"
+},
+{
+  "title": "May find normal noises painful and hold their hands over their ears",
+  "name": "May_find_normal_noises_painful_and_hold_their_hands_over_their_ears"
+},
+{
+  "title": "May withdraw from physical contact because it's too stimulating or overwhelming",
+  "name": "May_withdraw_from_physical_contact_because_its_too_stimulating_or_overwhelming"
+},
+{
+  "title": "Rubs surfaces, mouths or licks objects",
+  "name": "Rubs_surfaces_mouths_or_licks_objects"
+},{
+  "title": "Avoids or doesn't like tasks that require mental effort",
+  "name": "Avoids_or_doesnt_like_tasks_that_require_mental_effort"
+},
+{
+  "title": "Often loses things",
+  "name": "Often_loses_things"
+},
+{
+  "title": "Easily distracted",
+  "name": "Easily_distracted"
+},
+{
+  "title": "Often forgetful",
+  "name": "Often_forgetful"
+},
+{
+  "title": "Fidgets or squirms in seat",
+  "name": "Fidgets_or_squirms_in_seat"
+},
+{
+  "title": "Leaves their seat when they should stay in their seat",
+  "name": "Leaves_their_seat_when_they_should_stay_in_their_seat"
+},
+{
+  "title": "Runs about or climbs when they shouldn't be doing so",
+  "name": "Runs_about_or_climbs_when_they_shouldnt_be_doing_so"
+},
+{
+  "title": "Has problems playing or working quietly",
+  "name": "Has_problems_playing_or_working_quietly"
+},
+{
+  "title": "Is often 'on the go,' acts as if 'driven by a motor'",
+  "name": "Is_often_on_the_go_acts_as_if_driven_by_a_motor"
+},
+{
+  "title": "Talks all the time",
+  "name": "Talks_all_the_time"
+},
+{
+  "title": "Blurts out answers before questions have been completed",
+  "name": "Blurts_out_answers_before_questions_have_been_completed"
+},
+{
+  "title": "Has problems awaiting their turn",
+  "name": "Has_problems_awaiting_their_turn"
+},
+{
+  "title": "Interrupts or intrudes on others",
+  "name": "Interrupts_or_intrudes_on_others"
+},
+{
+  "title": "Be very sensitive to sight, hearing, touch, smell, or taste",
+  "name": "Be_very_sensitive_to_sight_hearing_touch_smell_or_taste"
+},
+{
+  "title": "Be very upset when routines are changed",
+  "name": "Be_very_upset_when_routines_are_changed"
+},
+{
+  "title": "Repeat body movements over and over",
+  "name": "Repeat_body_movements_over_and_over"
+},
+{
+  "title": "Be unusually attached to things",
+  "name": "Be_unusually_attached_to_things"
+},
+{
+  "title": "Can't start or maintain a conversation",
+  "name": "Cant_start_or_maintain_a_conversation"
+},
+{
+  "title": "Uses gestures instead of words",
+  "name": "Uses_gestures_instead_of_words"
+},
+{
+  "title": "Develops language slowly or not at all",
+  "name": "Develops_language_slowly_or_not_at_all"
+},
+{
+  "title": "Doesn't adjust gaze to look at objects that others are looking at",
+  "name": "Doesnt_adjust_gaze_to_look_at_objects_that_others_are_looking_at"
+},
+{
+  "title": "Doesn't refer to self the right way",
+  "name": "Doesnt_refer_to_self_the_right_way"
+},
+{
+  "title": "Doesn't point to show other people objects",
+  "name": "Doesnt_point_to_show_other_people_objects"
+},
+{
+  "title": "Repeats words or memorized passages, such as commercials",
+  "name": "Repeats_words_or_memorized_passages_such_as_commercials"
+},
+{
+  "title": "Doesn't make friends",
+  "name": "Doesnt_make_friends"
+},
+{
+  "title": "Doesn't play interactive games",
+  "name": "Doesnt_play_interactive_games"
+},
+{
+  "title": "Is withdrawn from social activity",
+  "name": "Is_withdrawn_from_social_activity"
+},
+{
+  "title": "May not respond to eye contact or smiles, or may avoid eye contact",
+  "name": "May_not_respond_to_eye_contact_or_smiles_or_may_avoid_eye_contact"
+},
+{
+  "title": "May treat others as objects",
+  "name": "May_treat_others_as_objects"
+},
+{
+  "title": "Prefers to be alone rather than with others",
+  "name": "Prefers_to_be_alone_rather_than_with_others"
+},
+{
+  "title": "Isn't able to show empathy",
+  "name": "Isnt_able_to_show_empathy"
+},
+{
+  "title": "Doesn't startle at loud noises",
+  "name": "Doesnt_startle_at_loud_noises"
+},
+{
+  "title": "Has very high or very low senses of sight, hearing, touch, smell, or taste",
+  "name": "Has_very_high_or_very_low_senses_of_sight_hearing_touch_smell_or_taste"
+},
+{
+  "title": "May find normal noises painful and hold their hands over their ears",
+  "name": "May_find_normal_noises_painful_and_hold_their_hands_over_their_ears"
+},
+{
+  "title": "May withdraw from physical contact because it's too stimulating or overwhelming",
+  "name": "May_withdraw_from_physical_contact_because_its_too_stimulating_or_overwhelming"
+},
+{
+  "title": "Rubs surfaces, mouths or licks objects",
+  "name": "Rubs_surfaces_mouths_or_licks_objects"
+},
+{
+  "title": "May have a very high or very low response to pain",
+  "name": "May_have_a_very_high_or_very_low_response_to_pain"
+},
+{
+  "title": "Doesn't imitate the actions of others",
+  "name": "Doesnt_imitate_the_actions_of_others"
+},
+{
+  "title": "Prefers solitary or ritualistic play",
+  "name": "Prefers_solitary_or_ritualistic_play"
+},
+{
+  "title": "Shows little pretend or imaginative play",
+  "name": "Shows_little_pretend_or_imaginative_play"
+},
+{
+  "title": "Acts out with intense tantrums",
+  "name": "Acts_out_with_intense_tantrums"
+},
+{
+  "title": "Gets stuck on a single topic or task",
+  "name": "Gets_stuck_on_a_single_topic_or_task"
+},
+{
+  "title": "Has a short attention span",
+  "name": "Has_a_short_attention_span"
+},
+{
+  "title": "Has very narrow interests",
+  "name": "Has_very_narrow_interests"
+},
+{
+  "title": "Is overactive or very passive",
+  "name": "Is_overactive_or_very_passive"
+},
+{
+  "title": "Is aggressive toward others or self",
+  "name": "Is_aggressive_toward_others_or_self"
+},
+{
+  "title": "Shows a strong need for things being the same",
+  "name": "Shows_a_strong_need_for_things_being_the_same"
+},
+{
+  "title": "Repeats body movements",
+  "name": "Repeats_body_movements"
+},
+{
+  "title": "Abdominal distention",
+  "name": "Abdominal_distention"
+},
+{
+  "title": "Bladder or bowel problems",
+  "name": "Bladder_or_bowel_problems"
+},
+{
+  "title": "Blurry vision, widened (dilated) pupils",
+  "name": "Blurry_vision_widened_dilated_pupils"
+},
+{
+  "title": "Goosebumps, flushed (red) skin above the level of the spinal cord injury",
+  "name": "Goosebumps_flushed_red_skin_above_the_level_of_the_spinal_cord_injury"
+},
+{
+  "title": "Irregular heartbeat, slow or fast pulse",
+  "name": "Irregular_heartbeat_slow_or_fast_pulse"
+},
+{
+  "title": "Muscle spasms, especially in the jaw",
+  "name": "Muscle_spasms_especially_in_the_jaw"
+},
+{
+  "title": "Nasal congestion",
+  "name": "Nasal_congestion"
+},
+{
+  "title": "Throbbing headache",
+  "name": "Throbbing_headache"
+},
+{
+  "title": "Feeling full after only a few bites",
+  "name": "Feeling_full_after_only_a_few_bites"
+},
+{
+  "title": "Problems controlling bowel movements",
+  "name": "Problems_controlling_bowel_movements"
+},
+{
+  "title": "Abnormal heart rate",
+  "name": "Abnormal_heart_rate"
+},
+{
+  "title": "Blood pressure drop with position that causes dizziness when standing",
+  "name": "Blood_pressure_drop_with_position_that_causes_dizziness_when_standing"
+},
+{
+  "title": "Difficulty beginning to urinate",
+  "name": "Difficulty_beginning_to_urinate"
+},
+{
+  "title": "Feeling of incomplete bladder emptying",
+  "name": "Feeling_of_incomplete_bladder_emptying"
+},
+{
+  "title": "Leaking urine",
+  "name": "Leaking_urine"
+},
+{
+  "title": "Easily hurt when people criticize or disapprove of them",
+  "name": "Easily_hurt_when_people_criticize_or_disapprove_of_them"
+},
+{
+  "title": "Hold back too much in intimate relationships",
+  "name": "Hold_back_too_much_in_intimate_relationships"
+},
+{
+  "title": "Reluctant to become involved with people",
+  "name": "Reluctant_to_become_involved_with_people"
+},
+{
+  "title": "Avoid activities or jobs that involve contact with others",
+  "name": "Avoid_activities_or_jobs_that_involve_contact_with_others"
+},
+{
+  "title": "Be shy in social situations out of fear of doing something wrong",
+  "name": "Be_shy_in_social_situations_out_of_fear_of_doing_something_wrong"
+},
+{
+  "title": "Make potential difficulties seem worse than they are",
+  "name": "Make_potential_difficulties_seem_worse_than_they_are"
+},
+{
+  "title": "Hold the view they are not good socially, not as good as other people, or unappealing",
+  "name": "Hold_the_view_they_are_not_good_socially_not_as_good_as_other_people_or_unappealing"
+},
+{
+  "title": "Redness of foreskin or penis",
+  "name": "Redness_of_foreskin_or_penis"
+},
+{
+  "title": "Other rashes on the head of the penis",
+  "name": "Other_rashes_on_the_head_of_the_penis"
+},
+{
+  "title": "Foul-smelling discharge",
+  "name": "Foul_smelling_discharge"
+},
+{
+  "title": "Painful penis and foreskin",
+  "name": "Painful_penis_and_foreskin"
+},
+{
+  "title": "Altered level of consciousness",
+  "name": "Altered_level_of_consciousness"
+},
+{
+  "title": "Difficulty in thinking",
+  "name": "Difficulty_in_thinking"
+},
+{
+  "title": "Faulty judgment",
+  "name": "Faulty_judgment"
+},
+{
+  "title": "Lack of coordination",
+  "name": "Lack_of_coordination"
+},
+{
+  "title": "Sluggishness",
+  "name": "Sluggishness"
+},
+{
+  "title": "Staggering, difficulty with balance",
+  "name": "Staggering_difficulty_with_balance"
+},
+{
+  "title": "A tender lump on either side of the vaginal opening",
+  "name": "A_tender_lump_on_either_side_of_the_vaginal_opening"
+},
+{
+  "title": "Swelling and redness",
+  "name": "Swelling_and_redness"
+},
+{
+  "title": "Pain with sitting or walking",
+  "name": "Pain_with_sitting_or_walking"
+},
+{
+  "title": "Pain with sexual intercourse",
+  "name": "Pain_with_sexual_intercourse"
+},
+{
+  "title": "Vaginal discharge",
+  "name": "Vaginal_discharge"
+},
+{
+  "title": "Vaginal pressure",
+  "name": "Vaginal_pressure"
+},
+{
+  "title": "Rate of weight gain is much lower than that of other children of similar age and sex",
+  "name": "Rate_of_weight_gain_is_much_lower_than_that_of_other_children_of_similar_age_and_sex"
+},
+{
+  "title": "Needing to urinate more often than usual",
+  "name": "Needing_to_urinate_more_often_than_usual"
+},
+{
+  "title": "Kidney stones",
+  "name": "Kidney_stones"
+},
+{
+  "title": "Movement changes, such as involuntary or slowed movements",
+  "name": "Movement_changes_such_as_involuntary_or_slowed_movements"
+},
+{
+  "title": "Increased muscle tone",
+  "name": "Increased_muscle_tone"
+},
+{
+  "title": "Tremor in full body",
+  "name": "Tremor_in_full_body"
+},
+{
+  "title": "Problems finding words",
+  "name": "Problems_finding_words"
+},
+{
+  "title": "Uncontrollable, repeated movements, speech, or cries (tics)",
+  "name": "Uncontrollable_repeated_movements_speech_or_cries_tics"
+},
+{
+  "title": "Walking difficulty",
+  "name": "Walking_difficulty"
+},
+{
+  "title": "Balance and coordination difficulties",
+  "name": "Balance_and_coordination_difficulties"
+},
+{
+  "title": "Curvature of spine",
+  "name": "Curvature_of_spine"
+},
+{
+  "title": "Poor muscle coordination that usually develops after age 10",
+  "name": "Poor_muscle_coordination_that_usually_develops_after_age_10"
+},
+{
+  "title": "Protruding abdomen",
+  "name": "Protruding_abdomen"
+},
+{
+  "title": "Stool abnormalities, including fatty stools that appear pale in color, frothy stools, and abnormally foul-smelling stools",
+  "name": "Stool_abnormalities_including_fatty_stools_that_appear_pale_in_color_frothy_stools_and_abnormally_foul_smelling_stools"
+},
+{
+  "title": "Difficulty walking that gets worse over time; by age 25 to 30, the person is usually unable to walk",
+  "name": "Difficulty_walking_that_gets_worse_over_time_by_age_25_to_30_the_person_is_usually_unable_to_walk"
+},
+{
+  "title": "Frequent falls",
+  "name": "Frequent_falls"
+},
+{
+  "title": "Difficulty getting up from the floor and climbing stairs",
+  "name": "Difficulty_getting_up_from_the_floor_and_climbing_stairs"
+},
+{
+  "title": "Difficulty with running, hopping, and jumping",
+  "name": "Difficulty_with_running_hopping_and_jumping"
+},
+{
+  "title": "Loss of muscle mass",
+  "name": "Loss_of_muscle_mass"
+},
+{
+  "title": "Toe walking",
+  "name": "Toe_walking"
+},
+{
+  "title": "Muscle weakness in the arms, neck, and other areas is not as severe as in the lower body",
+  "name": "Muscle_weakness_in_the_arms_neck_and_other_areas_is_not_as_severe_as_in_the_lower_body"
+},
+{
+  "title": "Large size for a newborn",
+  "name": "Large_size_for_a_newborn"
+},
+{
+  "title": "Red birthmark on forehead or eyelids (nevus flammeus)",
+  "name": "Red_birthmark_on_forehead_or_eyelids_nevus_flammeus"
+},
+{
+  "title": "Creases in earlobes",
+  "name": "Creases_in_earlobes"
+},
+{
+  "title": "Large tongue (macroglossia)",
+  "name": "Large_tongue_macroglossia"
+},
+{
+  "title": "Abdominal wall defect",
+  "name": "Abdominal_wall_defect"
+},
+{
+  "title": "Enlargement of some organ",
+  "name": "Enlargement_of_some_organ"
+},
+{
+  "title": "Overgrowth of one side of the body (hemihyperplasia/hemihypertrophy)",
+  "name": "Overgrowth_of_one_side_of_the_body_hemihyperplasia_hemihypertrophy"
+},
+{
+  "title": "Tumor growth, such as Wilms tumors and hepatoblastomas",
+  "name": "Tumor_growth_such_as_Wilms_tumors_and_hepatoblastomas"
+},
+{
+  "title": "Difficulty closing one eye",
+  "name": "Difficulty_closing_one_eye"
+},
+{
+  "title": "Difficulty eating and drinking because food falls out of one side of the mouth",
+  "name": "Difficulty_eating_and_drinking_because_food_falls_out_of_one_side_of_the_mouth"
+},
+{
+  "title": "Drooling due to a lack of control over the muscles of the face",
+  "name": "Drooling_due_to_a_lack_of_control_over_the_muscles_of_the_face"
+},
+{
+  "title": "Drooping of the face, such as the eyelid or corner of the mouth",
+  "name": "Drooping_of_the_face_such_as_the_eyelid_or_corner_of_the_mouth"
+},
+{
+  "title": "Problems smiling, grimacing, or making facial expressions",
+  "name": "Problems_smiling_grimacing_or_making_facial_expressions"
+},
+{
+  "title": "Dry eye, which may lead to eye sores or infections",
+  "name": "Dry_eye_which_may_lead_to_eye_sores_or_infections"
+},
+{
+  "title": "Dry mouth",
+  "name": "Dry_mouth"
+},
+{
+  "title": "Headache if there is an infection such as Lyme disease",
+  "name": "Headache_if_there_is_an_infection_such_as_Lyme_disease"
+},
+{
+  "title": "Loss of sense of taste",
+  "name": "Loss_of_sense_of_taste"
+},
+{
+  "title": "Sound that is louder in one ear (hyperacusis)",
+  "name": "Sound_that_is_louder_in_one_ear_hyperacusis"
+},
+{
+  "title": "Feeling like you are spinning or moving",
+  "name": "Feeling_like_you_are_spinning_or_moving"
+},
+{
+  "title": "Feeling like the world is spinning around you",
+  "name": "Feeling_like_the_world_is_spinning_around_you"
+},
+{
+  "title": "Vision problems, such as a feeling that things are jumping or moving",
+  "name": "Vision_problems_such_as_a_feeling_that_things_are_jumping_or_moving"
+},
+{
+  "title": "Difficulty walking",
+  "name": "Difficulty_walking"
+},
+{
+  "title": "Loss of feeling (sensation) in hands and feet",
+  "name": "Loss_of_feeling_sensation_in_hands_and_feet"
+},
+{
+  "title": "Loss of muscle function or paralysis of the lower legs",
+  "name": "Loss_of_muscle_function_or_paralysis_of_the_lower_legs"
+},
+{
+  "title": "Strange eye movements (nystagmus)",
+  "name": "Strange_eye_movements_nystagmus"
+},
+{
+  "title": "Awakening at night short of breath",
+  "name": "Awakening_at_night_short_of_breath"
+},
+{
+  "title": "Urinary incontinence",
+  "name": "Urinary_incontinence"
+},
+{
+  "title": "Abdominal pain in the upper right side",
+  "name": "Abdominal_pain_in_the_upper_right_side"
+},
+{
+  "title": "Eats large amounts of food in a short period",
+  "name": "Eats_large_amounts_of_food_in_a_short_period"
+},
+{
+  "title": "Is not able to control overeating",
+  "name": "Is_not_able_to_control_overeating"
+},
+{
+  "title": "Eats food very fast each time",
+  "name": "Eats_food_very_fast_each_time"
+},
+{
+  "title": "Keeps eating even when full (gorging) or until uncomfortably full",
+  "name": "Keeps_eating_even_when_full_gorging_or_until_uncomfortably_full"
+},
+{
+  "title": "Eats even though not hungry",
+  "name": "Eats_even_though_not_hungry"
+},
+{
+  "title": "Eats alone (in secret)",
+  "name": "Eats_alone_in_secret"
+},
+{
+  "title": "Feels guilty, disgusted, ashamed, or depressed after eating so much",
+  "name": "Feels_guilty_disgusted_ashamed_or_depressed_after_eating_so_much"
+},
+{
+  "title": "Excess involvement in activities",
+  "name": "Excess_involvement_in_activities"
+},
+{
+  "title": "Little need for sleep",
+  "name": "Little_need_for_sleep"
+},
+{
+  "title": "Poor judgment",
+  "name": "Poor_judgment"
+},
+{
+  "title": "Poor temper control",
+  "name": "Poor_temper_control"
+},
+{
+  "title": "Lack of self-control and reckless behavior",
+  "name": "Lack_of_self-control_and_reckless_behavior"
+},
+{
+  "title": "Very irritable mood, racing thoughts, talking a lot, and false beliefs about self or abilities",
+  "name": "Very_irritable_mood_racing_thoughts_talking_a_lot_and_false_beliefs_about_self_or_abilities"
+},
+{
+  "title": "Rapid speech",
+  "name": "Rapid_speech"
+},
+{
+  "title": "Concerns about things that are not true (delusions)",
+  "name": "Concerns_about_things_that_are_not_true_delusions"
+},
+{
+  "title": "Painful urination",
+  "name": "Painful_urination"
+},
+{
+  "title": "Continuous feeling of a full bladder",
+  "name": "Continuous_feeling_of_a_full_bladder"
+},
+{
+  "title": "Pain during urination (dysuria)",
+  "name": "Pain_during_urination_dysuria"
+},
+{
+  "title": "Straining to urinate",
+  "name": "Straining_to_urinate"
+},
+{
+  "title": "Urinary tract infection",
+  "name": "Urinary_tract_infection"
+},
+{
+  "title": "Waking up at night to urinate (nocturia)",
+  "name": "Waking_up_at_night_to_urinate_nocturia"
+}
   ]
