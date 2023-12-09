@@ -13,6 +13,7 @@ export const SiteContextProvider = (props) => {
                                                     age: "",
                                                     quesList :{},
                                                     SymList: {},
+                                                    SymValList: {},
                                                 })
 
     const logout = ()=>{

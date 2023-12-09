@@ -15,11 +15,11 @@ const Gender = () => {
   };
 
   const onNext = ()=>{
-    console.log('User state :', userState);
+    // console.log('User state :', userState);
     let newState = {...userState}
     newState.path = "/symptom/age"
     newState.gender = selectedGender
-    console.log('New UserState :',newState);
+    // console.log('New UserState :',newState);
     setUserState(newState)
     saveUserState(newState)
     navigate('/symptom/age')

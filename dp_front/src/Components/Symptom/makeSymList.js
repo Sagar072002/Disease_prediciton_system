@@ -1,4 +1,5 @@
-export const SymList = {
+export default ()=>{
+   const SymList = {
     "Belly_button_that_sticks_out" : 0,
     "Bulge_in_the_groin_or_scrotum" : 0,
     "Delayed_sexual_maturity" : 0,
@@ -274,7 +275,7 @@ export const SymList = {
     "Tearing_watery_eyes" : 0,
     "Widened_blood_vessels_in_the_clear_tissue_covering_the_white_of_the_eye" : 0,
     "Hives_especially_over_the_neck_and_face" : 0,
-    "Itching" : 1,
+    "Itching" : 0,
     "Nasal1_congestion" : 0,
     "Rashes" : 0,
     "Problems_with_smell" : 0,
@@ -482,7 +483,7 @@ export const SymList = {
     "Nail_abnormalities" : 0,
     "Bloody_sputum" : 0,
     "Passing_worms_in_stool" : 0,
-    "Skin_rash" : 1,
+    "Skin_rash" : 0,
     "Stomach_pain" : 0,
     "coughing_up_worms" : 0,
     "Worms_leaving_the_body_through_the_nose_or_mouth" : 0,
@@ -684,4 +685,7 @@ export const SymList = {
     "Straining_to_urinate" : 0,
     "Urinary_tract_infection" : 0,
     "Waking_up_at_night_to_urinate_nocturia" : 0
+    }
+
+    return SymList;
 }

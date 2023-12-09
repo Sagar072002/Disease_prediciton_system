@@ -13,7 +13,7 @@ const Terms = () => {
 
   useEffect(()=>{
     if(userState.path){
-      console.log('Navigating to :',userState.path);
+      // console.log('Navigating to :',userState.path);
       navigate(userState.path)
     }
   },[])
@@ -23,10 +23,10 @@ const Terms = () => {
   };
 
   const onNext = ()=>{
-    console.log('User state :', userState);
+    // console.log('User state :', userState);
     let newState = {...userState}
     newState.path = "/symptom/gender"
-    console.log('New UserState :',newState);
+    // console.log('New UserState :',newState);
     setUserState(newState)
     saveUserState(newState)
     navigate('/symptom/gender')

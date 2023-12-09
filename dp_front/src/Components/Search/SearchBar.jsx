@@ -21,8 +21,8 @@ function SearchBar({ placeholder, data, onSymptomSelect }) {
     }
   };
 
-  const handleSelect = (selectedSymptom) => {
-    onSymptomSelect(selectedSymptom);
+  const handleSelect = (selectedSymptom, symptomVal) => {
+    onSymptomSelect(selectedSymptom , symptomVal);
     setFilteredData([]);
     setWordEntered("");
   };
@@ -56,7 +56,7 @@ function SearchBar({ placeholder, data, onSymptomSelect }) {
               <a
                 className="dataItem"
                 key={key}
-                onClick={() => handleSelect(value.title)}
+                onClick={() => handleSelect(value.title, value.name)}
               >
                 <p>{value.title} </p>
               </a>
