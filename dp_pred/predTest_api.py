@@ -1,14 +1,16 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-import pickle
 import joblib
 import json
 from pathlib import Path
 import numpy as np
 import pandas as pd
+import pickle
+print(pickle.format_version)
 
 HERE = Path(__file__).parent
+
 
 app = FastAPI()
 
@@ -715,7 +717,8 @@ class model_input(BaseModel):
     # class Config:
     #     arbitrary_types_allowed = True
 
-# pred_model = joblib.load("model_knn.sav")
+model_rfc = joblib.load("model_rfc.sav")
+
 with open(HERE / "model_knn.sav",'rb') as f:
     model_knn = pickle.load(f)
 
@@ -729,7 +732,7 @@ with open(HERE / "model_svc.sav",'rb') as f:
 # C:\Users\Harshit Bajpai\Desktop\Disease_prediciton\dp_pred\dp_model.sav
 
 disease_list = ['Aarskog syndrome', 'Aase syndrome',
-       'Abdominal aortic\xa0aneurysm', 'Abnormal uterine bleeding (AUB)',
+       'Abdominal aortic_aneurysm', 'Abnormal uterine bleeding (AUB)',
        'Acetaminophen and codeine overdose', 'Acetone poisoning',
        'Achalasia', 'Achondrogenesis', 'Achondroplasia',
        'Acid soldering flux poisoning', 'Acidosis', 'Acne',
@@ -788,12 +791,16 @@ def dp_predictor(input_parameters:model_input):
     print("input values are = ", input_list)
         # input_list2 = [33, 35, 35, 50, 38, 32, 26, 21, 22, 21, 18, 11, 8, 4, 3, 3, 1]
     prediction_knn = model_knn.predict([input_list])
-    # prediction_rfc = model_rfc.predict([input_list])
+    prediction_rfc = model_rfc.predict([input_list])
     prediction_svc = model_svc.predict([input_list])
     # print("Result of pred: ", prediction)
     dis1 = int(prediction_knn)
     dis2 = int(prediction_svc)
-    pred_list = disease_list[dis1]+", "+disease_list[dis2]
-    pred_json = json.dumps(pred_list)
-    # print("Result of pred in json: ", pred_json)
-    return pred_json
+    dis3 = int(prediction_rfc)
+    pred_res = {
+        "KNN-res" : disease_list[dis1],
+        "SVC-res" : disease_list[dis2],
+        "RFC-res" : disease_list[dis3]
+    }
+    print(pred_res)
+    return pred_res
