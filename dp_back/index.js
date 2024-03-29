@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const mongoose = require('mongoose')
 const users = require('./routes/users')
+const admin = require('./routes/admin')
 const app = express()
 
 
@@ -13,6 +14,7 @@ mongoose
 app.use(cors())
 app.use(express.json())
 app.use('/api/users', users);
+app.use('/api/admin', admin);
 
 const port = 3000;
 

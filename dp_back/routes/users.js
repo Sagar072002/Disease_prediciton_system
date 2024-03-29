@@ -3,6 +3,12 @@ const router = express.Router();
 const joi = require('joi');
 const mongoose = require('mongoose');
 const User = require('../models/userModel');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const dotenv = require('dotenv');
+dotenv.config();
+
+const jwtSecret = process.env.JWT_SECRET;
 
 function validateUser(user){
     const schema = joi.object({
@@ -22,12 +28,14 @@ router.post('/',async (req, res)=>{
 
     if(error){ return res.status(400).send(error.details[0].message); }
 
+    const encryptedpass = await bcrypt.hash(req.body.password1, 10);
+
     try{
         let newUser = new User({
             username: req.body.username,
             email: req.body.email,
             phone: req.body.phone,
-            password: req.body.password1
+            password: encryptedpass
         })
 
         newUser = await newUser.save();
@@ -42,6 +50,16 @@ router.post('/get', async (req, res)=>{
 
     try{
         const user= await User.findOne({ _id: uid });
+
+        res.json(user)
+    }catch(err){
+        res.status(400).send(err);
+    }
+});
+
+router.post('/getAll', async (req, res)=>{
+    try{
+        const user= await User.find({});
 
         res.json(user)
     }catch(err){
@@ -75,12 +93,30 @@ router.post('/login', async(req, res)=>{
     if(!username || !password){ return res.status(400).send("Invalid request!"); }
     
     try{
-        const user = await User.findOne({ username: username, password: password });
-        if(user){ res.json(user._id); }
-        else{ res.status(400).send("Invalid Credentials!"); }
+        const user = await User.findOne({ username: username });
+        if(!user){
+            res.status(400).send("User Not Found!");
+        }
+        if(user){
+            if(await bcrypt.compare(password,user.password)){
+                const token=jwt.sign({},jwtSecret);
+                res.json(user._id)
+                // res.json({status:"OK",data:token});
+            }
+            else{ res.status(400).send("Invalid Credentials!"); }
+        }
     }catch(err){
         res.status(400).send(err);
     }
 });
+
+// router.post('/userData',async(req,res)=>{
+//     const token = req.token;
+//     try{
+//         const user = jwt.verify(token, jwtSecret);
+//         const name = user.username;
+//         user.findOne
+//     }
+// });
 
 module.exports = router;
