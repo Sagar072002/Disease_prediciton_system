@@ -1,12 +1,19 @@
 import React from 'react';
 import './About.css';
 import img from '../../assets/man.jpg';
+import mission from '../../assets/mission.png';
+import value from '../../assets/value.png';
+import vision from '../../assets/vision.png';
+import visiontop from '../../assets/visiontop.png';
+import about from '../../assets/about.png';
 
 
 const About = () => {
   return (
     <>
-    <div className="values">
+   
+    {/* <div className="values">
+      <h2>About Us</h2>
       <div className="col ">
         <div className="first">MISSION</div>
         <div className="second firstcol">
@@ -25,8 +32,62 @@ const About = () => {
         Every day, Sutter teammates live our values and deliver exceptional care and service to our patients and communities. Learn more about our values.
         </div>
       </div>
+    </div> */}
+    <div className="about">
+      <div className="left-side">
+        <h2>What is Dispred?</h2>
+        <p>Dispred is an intelligent tool for symptom assessment, made for you. Each time you add extra symptoms, the interview adjusts itself to you. This is made possible through the combination of our cutting edge, AI-based inference engine and our meticulously maintained medical knowledge base.
+          <br />
+          <br />
+        Dispred has evolved to be the most accurate and accessible symptom assessment tool available. We’d like to keep it this way, ensuring that anyone in need can use if for free, privately, at any time they need to. It cares about our data, ensuring your privacy and security are respected.
+<br /><br />
+Dispred is always available, regardless of what you need it for. Stick to using it for one purpose or swap as the situation demands, the choice is yours.
+        </p>
+      </div>
+      <div className="right-side">
+        <img src={about} alt="" />
+      </div>
     </div>
+<div className="mvg">
+<div className="container">
+  <div className="card">
+    <div className="imgBx">
+      <img className='missionimg' src={mission} />
+      
+    </div>
+    <div className="contentBx">
+      <h2>Mission</h2>
+      <p className='content-text'>We enhance the well-being of people in the communities we serve through a not-for-profit commitment to compassion and excellence in healthcare services.</p>
+    </div>
+  </div>
+</div>
+<div className="container">
+  <div className="card card1">
+    <div className="imgBx">
+      <img className='topimg' src={visiontop} alt="" />
+      <img className="belowimg" src={vision} />
+    </div>
+    <div className="contentBx">
+      <h2>Vision</h2>
+      <p className='content-text'>Dispred's visionary leadership and relentless pursuit of excellence are driving unparalleled advancements, making healthcare more inclusive and effective for all.</p>
+    </div>
+  </div>
+</div>
 
+<div className="container">
+  <div className="card card2">
+    <div className="imgBx">
+      <img className='valueimg' src={value} />
+    </div>
+   
+    <div className="contentBx">
+      <h2>Values</h2>
+      <p className='content-text'>Every day, Dispred teammates live our values and deliver exceptional care and service to our patients and communities. Learn more about our values.</p>
+    </div>
+  </div>
+</div>
+
+</div>
 <div className="message">
   <h2>Message to our community</h2>
   <p>Our teammates live Sutter's values on a daily basis as we support and provide high-quality, inclusive patient care. Sutter Health's commitment to our values and diversity and inclusion does not stop at our doors. When conduct by our employees outside of work — online or off — impacts our patients, teammates or organization, we will stand by our commitment to equality and non-discriminatory practices and look into the matter.

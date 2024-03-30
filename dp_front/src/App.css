@@ -10,9 +10,8 @@
   text-decoration: none;
   outline: none;
   border: none;
-  transition: all 0.2s linear;
-  /* font-family: 'Domine',sans-serif,"Segoe UI",Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; */
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Domine',sans-serif,"Segoe UI",Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  /* font-family: 'Raleway', sans-serif; */
 
 }
 img{

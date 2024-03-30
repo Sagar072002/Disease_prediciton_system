@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import './header.css';
-import img from "../../assets/dispred.png"
+import img from "../../assets/logo.png"
 import { NavLink, Link } from 'react-router-dom'
 import { SiteContext } from '../../context/siteContext';
 import { ToastContainer, toast } from 'react-toastify';
@@ -26,16 +26,18 @@ const Header = () => {
     <>
     <ToastContainer/>
     <div className="header">
-      
+      <div className='logo'>
     <img src={img} alt="" />
-    <input className="searchbar" type="search" name="" placeholder='Search here...' id="" />
+    <p>DISPRED</p>
+    </div>
+    {/* <input className="searchbar" type="search" name="" placeholder='Search here...' id="" /> */}
     <div className="links">
     <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
     <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>About</NavLink>
     {/* <a href="#">Appointment</a> */}
     
     <NavLink to="/symptom" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Prediction</NavLink>
-    <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Contact</NavLink>
+    {/* <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Contact</NavLink> */}
     <Link onClick={LogOut} to="/">Logout</Link>
     {/* <a href="#">Register</a> */}
     </div>

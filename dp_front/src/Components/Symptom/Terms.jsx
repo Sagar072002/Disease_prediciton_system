@@ -25,11 +25,11 @@ const Terms = () => {
   const onNext = ()=>{
     // console.log('User state :', userState);
     let newState = {...userState}
-    newState.path = "/symptom/gender"
+    newState.path = "/symptom/predict"
     // console.log('New UserState :',newState);
     setUserState(newState)
     saveUserState(newState)
-    navigate('/symptom/gender')
+    navigate('/symptom/predict')
   }
 
   return (
@@ -59,7 +59,7 @@ const Terms = () => {
               checked={isChecked}
               onChange={handleCheckboxChange}
             />
-            <span>I read and accept Terms of service</span>
+            <span>I read and accept terms of service</span>
             <div className="next-button-container">
               {isChecked &&
               // <Link className='nextlink' to="/symptom/gender">

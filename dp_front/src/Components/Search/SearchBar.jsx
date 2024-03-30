@@ -37,6 +37,7 @@ function SearchBar({ placeholder, data, onSymptomSelect }) {
       <div className="searchInputs">
         <input
           type="text"
+          className="search"
           placeholder={placeholder}
           value={wordEntered}
           onChange={handleFilter}

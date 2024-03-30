@@ -1,38 +1,41 @@
 footer{
-    background-color: rgb(39, 74, 74);
+    background-color: #e8f2f9;
     padding:40px 35px ;
+    border-top: 1px solid #ddd;
 }
 .first-footer{
     display: flex;
 width:100%;
-border-bottom:2px solid #fff;
+border-bottom:2px solid #000;
 padding-bottom:20px;
 }
 .footer-left{
     display: flex;
     width:60%;
-    border-right:2px solid #fff;
+    border-right:2px solid #000;
 }
 .footer-right{
     padding-left:40px;
     width:40%;
 }
 .footer-left div h2{
-color:#fff;
-font-size:20px;
-font-weight:600;
+color:#008080;
+font-size:23px;
+font-weight:800;
 text-transform: uppercase;
 margin-bottom:35px;
 }
 .footer-left div a{
+    font-weight:500;
     display: block;
-    color:#bbb;
+    color:#000;
     text-decoration: none;
     font-size:18px;
     margin:35px 0;
 }
 .footer-left div a:hover{
-color:#fff !important;
+color:#008080 !important;
+font-weight: 600 !important;
 background: transparent !important;
 }
 .footer-left div {
@@ -44,21 +47,21 @@ background: transparent !important;
    margin-right:15px;
 }
 .footer-right div h3{
-    color:#fff;
-    font-size:18px;
+    color:#008080;
+    font-size:20px;
     font-weight: 600;
     letter-spacing: .8px;
     margin-bottom:20px;
 }
 
 .footer-right div p{
-    color:#bbb;
+    color:#000;
     font-size: 18px;
     margin:30px 0;
 }
 .footer-right div p span{
-    font-weight: 500;
-    color:#fff;
+    font-weight: 600;
+    color:#008080;
 }
 .footer-right div .subscribe{
     border:none;
@@ -90,24 +93,24 @@ background: transparent !important;
     outline:none;
     padding:0 20px;
     height:100%;
-    background: #666;
+    background: #000;
     color:#fff;
     font-size: 16px;
 }
 
 .footer-right div.getapp h2{
     margin-bottom: 20px;
-    font-size:16px;
-    color:#fff;
+    font-size:20px;
+    color:#008080;
     font-weight: 600;
 }
 .footer-right div.getapp button span{
     font-weight: 800;
-    color:#000;
+    color:#fff;
     font-size: 16px;
 }
 .footer-right div.getapp button p{
-    color:#000;
+    color:#fff;
     font-size: 15px;
     margin-top:5px;
 }
@@ -118,17 +121,19 @@ background: transparent !important;
     height:55px;
     width:150px;
     border:none;
-    background-color: #fff;
     border-radius: 3px;
     display: flex;
     margin-right:20px;
+    background-color: #000;
+    color:#fff;
     padding-top:5px;
 }
 .footer-right div.getapp button:hover{
-    background-color: #444;
+    background-color: #fff;
+    border:1px solid #000;
 }
 .footer-right div.getapp button:hover .fa-brands,.footer-right div.getapp button:hover .gettext,.footer-right div.getapp button:hover .getspan{
-color:#fff;
+color:#000;
 }
 
 
@@ -141,9 +146,9 @@ color:#fff;
 }
 
 .second-footer h3{
-    color:#fff;
-    font-size: 20px;
+    color:#008080;
+    font-size: 22px;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 30px;
     letter-spacing: 1px;
 }
