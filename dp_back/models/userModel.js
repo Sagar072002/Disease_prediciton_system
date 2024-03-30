@@ -14,6 +14,7 @@ const userSchema = mongoose.Schema({
     },
     phone: { type: Number, minlength: 10, required: true },
     password: { type: String, minlength: 8, required: true },
+    appointments: [{type: mongoose.Types.ObjectId, ref: "Appointment"}],
 });
 
 const User = new mongoose.model('User', userSchema);
