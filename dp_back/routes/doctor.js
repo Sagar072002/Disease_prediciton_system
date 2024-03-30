@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const joi = require('joi');
 const mongoose = require('mongoose');
-const User = require('../models/userModel');
+const Doctor = require('../models/doctorModel');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
@@ -17,7 +17,13 @@ function validateUser(user){
         phone: joi.number().min(10).required(),
         address: joi.string().min(8).required(),
         password1: joi.string().min(8).required(),
-        password2: joi.string().min(8).required().valid(joi.ref('password1')),        
+        password2: joi.string().min(8).required().valid(joi.ref('password1')),
+        price: joi.number().required(),        
+        photo: joi.string().min(0),    
+        qualifications: joi.array(),        
+        specialization: joi.string(),        
+        about: joi.string(),        
+        timeSlots: joi.array(),        
     });
 
     return schema.validate(user);
@@ -31,15 +37,23 @@ router.post('/',async (req, res)=>{
     const encryptedpass = await bcrypt.hash(req.body.password1, 10);
 
     try{
-        let newUser = new User({
-            username: req.body.username,
+        let newDoctor = new Doctor({
+            name: req.body.username,
             email: req.body.email,
             phone: req.body.phone,
-            password: encryptedpass
+            address: req.body.address,
+            password: encryptedpass,
+            price:req.body.price,
+            photo:req.body.photo,
+            role:req.body.role,
+            specialization:req.body.specialization,
+            qualifications:req.body.qualifications,
+            about:req.body.about,
+            timeSlots:req.body.timeSlots,
         })
 
-        newUser = await newUser.save();
-        res.json(newUser);
+        newDoctor = await newDoctor.save();
+        res.json(newDoctor);
     }catch(err) {
         res.status(400).send(err);
     }
@@ -49,7 +63,7 @@ router.post('/get', async (req, res)=>{
     const uid = req.body.uid;
 
     try{
-        const user= await User.findOne({ _id: uid });
+        const user= await Doctor.findOne({ _id: uid });
 
         res.json(user)
     }catch(err){
@@ -59,7 +73,7 @@ router.post('/get', async (req, res)=>{
 
 router.post('/getAll', async (req, res)=>{
     try{
-        const user= await User.find({});
+        const user= await Doctor.find({});
 
         res.json(user)
     }catch(err){
@@ -72,9 +86,9 @@ router.patch('/', async(req, res)=>{
     if(!uid){ return res.status(400).send("User id is missing!"); }
 
     try{
-        let user = await User.findOne({ _id: uid })
+        let user = await Doctor.findOne({ _id: uid })
 
-        if(req.body.username) user.username = req.body.username;
+        if(req.body.username) user.name = req.body.username;
         if(req.body.address) user.address = req.body.addressphone
         if(req.body.phone) user.phone = req.body.phone;
         if(req.body.email) user.email = req.body.email;
@@ -87,19 +101,19 @@ router.patch('/', async(req, res)=>{
 });
 
 router.post('/login', async(req, res)=>{
-    const username= req.body.username;
+    const email= req.body.email;
     const password= req.body.password;
 
-    if(!username || !password){ return res.status(400).send("Invalid request!"); }
+    if(!email || !password){ return res.status(400).send("Invalid request!"); }
     
     try{
-        const user = await User.findOne({ username: username });
+        const user = await Doctor.findOne({ email: email });
         if(!user){
             res.status(400).send("User Not Found!");
         }
         if(user){
             if(await bcrypt.compare(password,user.password)){
-                const token=jwt.sign({},jwtSecret);
+                const token=jwt.sign({id:user._id},jwtSecret);
                 res.json(user._id)
                 // res.json({status:"OK",data:token});
             }
@@ -109,14 +123,5 @@ router.post('/login', async(req, res)=>{
         res.status(400).send(err);
     }
 });
-
-// router.post('/userData',async(req,res)=>{
-//     const token = req.token;
-//     try{
-//         const user = jwt.verify(token, jwtSecret);
-//         const name = user.username;
-//         user.findOne
-//     }
-// });
 
 module.exports = router;
