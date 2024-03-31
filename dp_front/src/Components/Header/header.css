@@ -1,32 +1,46 @@
 .header {
     overflow: hidden;
-    background-color: #eee;
+    background-color: #e8f2f9;
     padding: 10px 20px;
     display: flex;
-    height:90px;
+    height:100px;
     align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top:0;
+    border-bottom:1px solid #ccc;
   }
   .header img{
-    height:60px;
-    width:200px;
+    height:70px;
+    width:100px;
   }
-  
+  .header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .logo p{
+    font-weight: 700;
+    font-size: 26px;
+    color:#008080
+  }
  .header .searchbar{
-    width:500px;
+    width:600px;
     padding:0px 20px;
     padding-top:5px;
     margin:0px 50px;
-    height:50px;
-    border:1px solid #ddd;
-    border-radius: 25px;
+    height:60px;
+    border:1px solid #eee;
+    border-radius: 30px;
+    font-size: 20px;
  }
- .header .searchbar::placeholder{
-    font-size: 18px;
- }
+ 
   .header a {
     color: black;
-    padding: 15px 20px;
-    margin-left:10px;
+    padding:  20px 25px;
+    margin-left:15px;
     text-decoration: none;
     font-size: 22px;
     border-radius: 4px;
@@ -35,16 +49,12 @@
  
   
   .header a:hover {
-    background-color: rgb(45, 83, 83);
-    background-image: linear-gradient(180deg,hsla(0,0%,100%,.2),rgba(22,189,206,.2) 51%,rgba(98,218,96,.2));
-
+    background-color: #008080;
     color: #fff;
   }
   
   .header a.active {
-    background-color: rgb(45, 83, 83);
-    background-image: linear-gradient(180deg,hsla(0,0%,100%,.2),rgba(22,189,206,.2) 51%,rgba(98,218,96,.2));
-
+    background-color: #008080;
     color: white;
   }
   
