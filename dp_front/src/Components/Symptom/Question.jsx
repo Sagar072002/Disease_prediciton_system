@@ -75,7 +75,7 @@ const Question = () => {
         <h2>Please check all the statements below that apply to you</h2>
         <pre>Select one answer in each row</pre>
 
-        <QuestionRow
+        <QuestionRow 
           question="I have diabetes"
           name="diabetes"
           handleChange={handleAnswerChange}

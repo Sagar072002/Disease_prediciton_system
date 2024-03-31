@@ -67,7 +67,9 @@ const Login = () => {
     <div className="login-left">
     <form onSubmit={handleSubmit}>
 
-      <h2>Login form</h2>
+      <h2>User Login </h2>
+      <div className='formbox'>
+
       <div className="box">
         <i className="fa-solid fa-user" />
         <div>
@@ -100,27 +102,15 @@ const Login = () => {
                       ) : null}
                     </div>
       </div>
+      </div>
+
       <a href="" className='forgot'>Forgot Password?</a> <br />
       <button type="submit">Login</button>
       </form>
       <p>
         Don't have an account? <Link to="/register">Sign up now</Link>{" "}
       </p>
-      <p className="ortext">OR</p>
-      <div className="loginbtn">
-        <button type="submit" className="google">
-          <i className="fa-brands fa-google" style={{ color: "#ffffff" }} />
-        </button>
-        <button type="submit" className="facebook">
-          <i className="fa-brands fa-facebook-f" style={{ color: "#ffffff" }} />
-        </button>
-        <button type="submit" className="twitter">
-          <i className="fa-brands fa-twitter" style={{ color: "#ffffff" }} />
-        </button>
-        <button type="submit" className="insta">
-          <i className="fa-brands fa-instagram" style={{ color: "#ffffff" }} />
-        </button>
-      </div>
+      
     </div>
     <div className="login-right">
       <img src={img} alt="" />

@@ -1,24 +1,32 @@
-.contact{
+/* .contact{
+    margin-top:120px;
     display: flex;
-    margin:40px 0;
-    justify-content: center;
-    align-items: center;
+    padding:20px;
 }
 .contact-form{
+    margin:30px 100px;
     border:1px solid #ccc;
     display: flex;
-    height:420px;
-    width:70%;
+    width: 85%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.contact-form .first{
+    width:50%;
 }
 .contact-form .left-side{
     padding:30px;
-    width:40%;
+    display: flex;
+    gap:10px;
+    justify-content: space-around;
     background-color: #003333;
     color:#fff;
 }
 .contact-form .inside-form{
     display: flex;
+    justify-content: center ;
+    align-items: center;
+    margin-left:30px;
+    margin-left: 100px;
 }
 .contact-form .inside-form div{
     width:50%;
@@ -29,20 +37,26 @@
     font-weight: 600;
     margin-bottom:30px;
 }
-.contact-form .left-side .follow{
-    margin-top:50px;
-}
+
 .contact-form .left-side .icons{
-    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top: -10px;
+}
+.contact-form .left-side .icons p{
+width:150px;
+color:#fff;
+height:45px;
 }
 .contact-form .left-side .icons i{
     margin-right:10px;
     background-color: #fff;
     color:#003333;
-    width:50px;
-    height:50px;
+    width:45px;
+    height:45px;
     font-size: 20px;
-    padding:13px 16px;
+    padding:12px 14px ;
     border-radius: 50%;
     transition: all 0.3s ease;
 }
@@ -51,7 +65,10 @@
 }
 .contact-form .left-side .box{
     display: flex;
-    margin-bottom:30px;
+    margin-bottom:40px;
+}
+.contact-form .left-side .lastbox{
+    margin-bottom:0px;
 }
 .contact-form .left-side .box i{
     font-size:20px;
@@ -64,9 +81,10 @@
     font-weight: bold;
 }
 .right-side{
-    width:60%;
-    padding:30px;
+    padding:30px 0;
+   
 }
+
 .right-side input,.right-side textarea{
     display: block;
     border:none;
@@ -76,13 +94,13 @@
     border-bottom:1px solid #bbb;
     margin-bottom:40px;
 }
+
 .right-side textarea{
     border:1px solid #bbb;
     margin-top:18px;
     padding-top:15px;
-    padding-left:15px;
-    height:180px;
-    width:270px;
+    padding-left:10px;
+    height:140px;
     resize: none;
 }
 .right-side button{
@@ -95,4 +113,4 @@
 }
 .right-side h2{
     text-align: center;
-}
+} */
