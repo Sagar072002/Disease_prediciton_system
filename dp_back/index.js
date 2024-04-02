@@ -5,6 +5,7 @@ const users = require('./routes/users')
 const admin = require('./routes/admin')
 const doctor = require('./routes/doctor')
 const review = require('./routes/review')
+const booking = require('./routes/booking')
 const app = express()
 
 
@@ -19,6 +20,7 @@ app.use('/api/users', users);
 app.use('/api/admin', admin);
 app.use('/api/doctor', doctor);
 app.use('/api/review', review);
+app.use('/api/booking', booking);
 
 const port = 3000;
 
