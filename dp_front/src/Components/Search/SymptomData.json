@@ -1,0 +1,4043 @@
+{
+    "headdata": [
+      {
+        "title": "Pale skin",
+        "name": "Pale_skin"
+      },
+      {
+        "title": "Triple-jointed thumbs",
+        "name": "Triple_jointed_thumbs"
+      },
+      {
+        "title": "Pain in the abdomen",
+        "name": "Pain_in_the_abdomen"
+      },
+      {
+        "title": "Pale skin",
+        "name": "Pale_skin"
+      },
+      {
+        "title": "Triple-jointed thumbs",
+        "name": "Triple_jointed_thumbs"
+      },
+      {
+        "title": "Pain in the abdomen",
+        "name": "Pain_in_the_abdomen"
+      },
+      {
+        "title": "Pale skin",
+        "name": "Pale_skin"
+      },
+      {
+        "title": "Triple-jointed thumbs",
+        "name": "Triple_jointed_thumbs"
+      },
+      {
+        "title": "Pain in the abdomen",
+        "name": "Pain_in_the_abdomen"
+      },
+      {
+        "title": "Pale skin",
+        "name": "Pale_skin"
+      },
+      {
+        "title": "Triple-jointed thumbs",
+        "name": "Triple_jointed_thumbs"
+      },
+      {
+        "title": "Pain in the abdomen",
+        "name": "Pain_in_the_abdomen"
+      }
+    ],
+    "eyesData": [
+      
+{
+  "title": "Downward_palpebral_slant_to_eyes",
+  "name": "Downward_palpebral_slant_to_eyes"
+  },
+  {
+  "title": "Wide-set_eyes_with_droopy_eyelids",
+  "name": "Wide-set_eyes_with_droopy_eyelids"
+  },
+  {
+  "title": "Very_small_pupils",
+  "name": "Very_small_pupils"
+  },
+  {
+  "title": "Loss_of_vision",
+  "name": "Loss_of_vision"
+  },
+  {
+  "title": "Decreased_peripheral_vision",
+  "name": "Decreased_peripheral_vision"
+  },
+  {
+  "title": "Repetitive_eye_movements_nystagmus",
+  "name": "Repetitive_eye_movements_nystagmus"
+  },
+  {
+  "title": "Uncoordinated_eye_movements",
+  "name": "Uncoordinated_eye_movements"
+  },
+  {
+  "title": "Drooping_eyelids",
+  "name": "Drooping_eyelids"
+  },
+  {
+  "title": "Difficulty_moving_the_eyes",
+  "name": "Difficulty_moving_the_eyes"
+  },
+  {
+  "title": "Swelling_of_eye",
+  "name": "Swelling_of_eye"
+  },
+  {
+  "title": "Crossed_eyes",
+  "name": "Crossed_eyes"
+  },
+  {
+  "title": "Visual_impairment_or_blindness",
+  "name": "Visual_impairment_or_blindness"
+  },
+  {
+  "title": "Conjunctivitis",
+  "name": "Conjunctivitis"
+  },
+  {
+  "title": "Light_sensitivity",
+  "name": "Light_sensitivity"
+  },
+  {
+  "title": "Rapid_eye_movements",
+  "name": "Rapid_eye_movements"
+  },
+  {
+  "title": "Vision_problems_or_functional_blindness",
+  "name": "Vision_problems_or_functional_blindness"
+  },
+  {
+  "title": "Intense_itching_or_burning_eyes",
+  "name": "Intense_itching_or_burning_eyes"
+  },
+  {
+  "title": "Puffy_eyelids_most_often_in_the_morning",
+  "name": "Puffy_eyelids_most_often_in_the_morning"
+  },
+  {
+  "title": "Red_eyes",
+  "name": "Red_eyes"
+  },
+  {
+  "title": "Stringy_eye_discharge",
+  "name": "Stringy_eye_discharge"
+  },
+  {
+  "title": "Tearing_watery_eyes",
+  "name": "Tearing_watery_eyes"
+  },
+  {
+  "title": "Widened_blood_vessels_in_the_clear_tissue_covering_the_white_of_the_eye",
+  "name": "Widened_blood_vessels_in_the_clear_tissue_covering_the_white_of_the_eye"
+  },
+  {
+  "title": "Abnormal_shape_of_the_lens",
+  "name": "Abnormal_shape_of_the_lens"
+  },
+  {
+  "title": "Corneal_erosion",
+  "name": "Corneal_erosion"
+  },
+  {
+  "title": "Abnormal_coloring_of_the_retina",
+  "name": "Abnormal_coloring_of_the_retina"
+  },
+  {
+  "title": "Macular_hole",
+  "name": "Macular_hole"
+  },
+  {
+  "title": "Blue_color_to_the_whites_of_the_eyes",
+  "name": "Blue_color_to_the_whites_of_the_eyes"
+  },
+  {
+  "title": "Light_hair_skin_and_eye_color_compared_to_rest_of_family",
+  "name": "Light_hair_skin_and_eye_color_compared_to_rest_of_family"
+  },
+  {
+  "title": "Blurred_vision",
+  "name": "Blurred_vision"
+  },
+  {
+  "title": "Eye_changes_in_pupil_size",
+  "name": "Eye_changes_in_pupil_size"
+  },
+  {
+  "title": "Eyes_move_quickly_from_side_to_side",
+  "name": "Eyes_move_quickly_from_side_to_side"
+  },
+  {
+  "title": "Prominent_or_bulging_eyes",
+  "name": "Prominent_or_bulging_eyes"
+  },
+  {
+  "title": "Enlarged_blood_vessels_in_the_whites_of_the_eyes",
+  "name": "Enlarged_blood_vessels_in_the_whites_of_the_eyes"
+  },
+  {
+  "title": "Jerky_or_abnormal_eye_movements_nystagmus_late_in_the_disease",
+  "name": "Jerky_or_abnormal_eye_movements_nystagmus_late_in_the_disease"
+  },
+  {
+  "title": "Red_birth_mark_on_forehead_or_eyelids_nevus_flammeus",
+  "name": "Red_birth_mark_on_forehead_or_eyelids_nevus_flammeus"
+  },
+  {
+  "title": "Difficulty_closing_one_eye",
+  "name": "Difficulty_closing_one_eye"
+  },
+  {
+  "title": "Dry_eye_which_may_lead_to_eye_sores_or_infections",
+  "name": "Dry_eye_which_may_lead_to_eye_sores_or_infections"
+  },
+  {
+  "title": "Vision_problems_such_as_a_feeling_that_things_are_jumping_or_moving",
+  "name": "Vision_problems_such_as_a_feeling_that_things_are_jumping_or_moving"
+  },
+  {
+  "title": "Strange_eye_movements_nystagmus",
+  "name": "Strange_eye_movements_nystagmus"
+  },
+  {
+  "title": "Wide_dilated_pupils_and_no_movement_in_one_or_both_eyes",
+  "name": "Wide_dilated_pupils_and_no_movement_in_one_or_both_eyes"
+  },
+  {
+  "title": "Poor_visual_tracking_or_blindness",
+  "name": "Poor_visual_tracking_or_blindness"
+  },
+  {
+  "title": "Being_sensitive_to_glare",
+  "name": "Being_sensitive_to_glare"
+  },
+  {
+  "title": "Cloudy_fuzzy_foggy_or_filmy_vision",
+  "name": "Cloudy_fuzzy_foggy_or_filmy_vision"
+  },
+  {
+  "title": "Difficulty_seeing_at_night_or_in_dim_light",
+  "name": "Difficulty_seeing_at_night_or_in_dim_light"
+  },
+  {
+  "title": "Double_vision",
+  "name": "Double_vision"
+  },
+  {
+  "title": "Loss_of_color_intensity",
+  "name": "Loss_of_color_intensity"
+  },
+  {
+  "title": "Problems_seeing_shapes_against_a_background_or_the_difference_between_shades_of_colors",
+  "name": "Problems_seeing_shapes_against_a_background_or_the_difference_between_shades_of_colors"
+  },
+  {
+  "title": "Seeing_halos_around_lights",
+  "name": "Seeing_halos_around_lights"
+  },
+  {
+  "title": "Frequent_changes_in_eyeglass_prescriptions",
+  "name": "Frequent_changes_in_eyeglass_prescriptions"
+  },
+  {
+  "title": "Bulging_eyeball_usually_on_one_side_of_face",
+  "name": "Bulging_eyeball_usually_on_one_side_of_face"
+  }
+  ,
+  
+{
+  "title": "Cannot_move_the_eye_in_a_particular_direction",
+  "name": "Cannot_move_the_eye_in_a_particular_direction"
+  },
+  {
+  "title": "Dim_and_blurred_blind_spot_in_the_center_of_vision",
+  "name": "Dim_and_blurred_blind_spot_in_the_center_of_vision"
+  },
+  {
+  "title": "Distortion_of_straight_lines_with_the_affected_eye",
+  "name": "Distortion_of_straight_lines_with_the_affected_eye"
+  },
+  {
+  "title": "Objects_appearing_smaller_or_farther_away_with_the_affected_eye",
+  "name": "Objects_appearing_smaller_or_farther_away_with_the_affected_eye"
+  },
+  {
+  "title": "Silver_hair_light-colored_eyes_albinism",
+  "name": "Silver_hair_light-colored_eyes_albinism"
+  },
+  {
+  "title": "Your_eyes_moving_on_their_own_making_it_hard_to_focus_them",
+  "name": "Your_eyes_moving_on_their_own_making_it_hard_to_focus_them"
+  },
+  {
+  "title": "Jerky_eye_movements_nystagmus",
+  "name": "Jerky_eye_movements_nystagmus"
+  },
+  {
+  "title": "Glassy_or_sunken_eyes",
+  "name": "Glassy_or_sunken_eyes"
+  },
+  {
+  "title": "Lack_of_tears",
+  "name": "Lack_of_tears"
+  },
+  {
+  "title": "Yellow_skin_or_eyes",
+  "name": "Yellow_skin_or_eyes"
+  },
+  {
+  "title": "Excessive_blinking",
+  "name": "Excessive_blinking"
+  },
+  {
+  "title": "Blind_spots",
+  "name": "Blind_spots"
+  },
+  {
+  "title": "Floaters",
+  "name": "Floaters"
+  },
+  {
+  "title": "An_infant_does_not_seem_to_be_visually_aware_of_the_world_around_them_if_cataracts_are_in_both_eyes",
+  "name": "An_infant_does_not_seem_to_be_visually_aware_of_the_world_around_them_if_cataracts_are_in_both_eyes"
+  },
+  {
+  "title": "Gray_or_white_cloudiness_of_the_pupil_which_is_normally_black",
+  "name": "Gray_or_white_cloudiness_of_the_pupil_which_is_normally_black"
+  },
+  {
+  "title": "The_red_eye_glow_red_reflex_of_the_pupil_is_missing_in_photos_or_is_different_between_the_2_eyes",
+  "name": "The_red_eye_glow_red_reflex_of_the_pupil_is_missing_in_photos_or_is_different_between_the_2_eyes"
+  },
+  {
+  "title": "Unusual_rapid_eye_movements_nystagmus",
+  "name": "Unusual_rapid_eye_movements_nystagmus"
+  },
+  {
+  "title": "Inflammation_of_the_retina",
+  "name": "Inflammation_of_the_retina"
+  },
+  {
+  "title": "Crusts_that_form_on_the_eyelid_overnight_most_often_caused_by_bacteria",
+  "name": "Crusts_that_form_on_the_eyelid_overnight_most_often_caused_by_bacteria"
+  },
+  {
+  "title": "Eye_pain",
+  "name": "Eye_pain"
+  },
+  {
+  "title": "Gritty_feeling_in_the_eyes",
+  "name": "Gritty_feeling_in_the_eyes"
+  },
+  {
+  "title": "Enlarged_pupil_that_does_not_get_smaller_when_a_light_shines_on_it",
+  "name": "Enlarged_pupil_that_does_not_get_smaller_when_a_light_shines_on_it"
+  },
+  {
+  "title": "Pressure_or_damage_to_the_optic_nerve",
+  "name": "Pressure_or_damage_to_the_optic_nerve"
+  },
+  {
+  "title": "Purple_color_to_the_upper_eyelids",
+  "name": "Purple_color_to_the_upper_eyelids"
+  },
+  {
+  "title": "Upward_slanting_eyes",
+  "name": "Upward_slanting_eyes"
+  },
+  {
+  "title": "White_spots_on_the_colored_part_of_the_eye_Brushfield_spots",
+  "name": "White_spots_on_the_colored_part_of_the_eye_Brushfield_spots"
+  },
+  {
+  "title": "Poor_vision_with_decreased_tear_production",
+  "name": "Poor_vision_with_decreased_tear_production"
+  },
+  {
+  "title": "Blisters_around_the_eyes_and_nose",
+  "name": "Blisters_around_the_eyes_and_nose"
+  },
+  {
+  "title": "Enlarged_pupil_in_one_eye",
+  "name": "Enlarged_pupil_in_one_eye"
+  },
+  {
+  "title": "A_pink_or_purple_color_to_the_normally_white_part_of_the_eyeVertigo_sensation_that_surroundings_are_spinning_with_nausea_and_vomiting",
+  "name": "A_pink_or_purple_color_to_the_normally_white_part_of_the_eyeVertigo_sensation_that_surroundings_are_spinning_with_nausea_and_vomiting"
+  },
+  {
+  "title": "Eye_tenderness",
+  "name": "Eye_tenderness"
+  },
+  {
+  "title": "Tearing_of_the_eye",
+  "name": "Tearing_of_the_eye"
+  },
+  {
+  "title": "Headache_between_the_eyes",
+  "name": "Headache_between_the_eyes"
+  },
+  {
+  "title": "Eye_blinking",
+  "name": "Eye_blinking"
+  },
+  {
+  "title": "Squinting",
+  "name": "Squinting"
+  },
+  {
+  "title": "Fatty_skin_deposits_called_xanthomas_over_parts_of_the_hands_elbows_knees_ankles_and_around_the_cornea_of_the_eye",
+  "name": "Fatty_skin_deposits_called_xanthomas_over_parts_of_the_hands_elbows_knees_ankles_and_around_the_cornea_of_the_eye"
+  },
+  {
+  "title": "Cholesterol_deposits_in_the_eyelids_xanthelasmas",
+  "name": "Cholesterol_deposits_in_the_eyelids_xanthelasmas"
+  },
+  {
+  "title": "Eye_strain",
+  "name": "Eye_strain"
+  },
+  {
+  "title": "Dilated_pupils",
+  "name": "Dilated_pupils"
+  },
+  {
+  "title": "Tendency_to_avoid_eye_contact",
+  "name": "Tendency_to_avoid_eye_contact"
+  },
+  {
+  "title": "Changes_in_vision_particularly_color_vision",
+  "name": "Changes_in_vision_particularly_color_vision"
+  },
+  {
+  "title": "Seeing_colored_halos_around_lights",
+  "name": "Seeing_colored_halos_around_lights"
+  },
+  
+{
+  "title": "Worsening_vision_throughout_the_day",
+  "name": "Worsening_vision_throughout_the_day"
+  },
+  {
+  "title": "Rainbow-like_halos_around_lights",
+  "name": "Rainbow-like_halos_around_lights"
+  },
+  {
+  "title": "Nearsightedness",
+  "name": "Nearsightedness"
+  },
+  {
+  "title": "Sinking_of_the_eyeball_into_the_face",
+  "name": "Sinking_of_the_eyeball_into_the_face"
+  },
+  {
+  "title": "Bloodshot_eyes",
+  "name": "Bloodshot_eyes"
+  },
+  {
+  "title": "Different_sizes_of_pupils_of_the_eyes_anisocoria_with_the_affected_side_pupil_being_smaller",
+  "name": "Different_sizes_of_pupils_of_the_eyes_anisocoria_with_the_affected_side_pupil_being_smaller"
+  },
+  {
+  "title": "Bleeding_in_the_anterior_chamber_of_the_eye",
+  "name": "Bleeding_in_the_anterior_chamber_of_the_eye"
+  },
+  {
+  "title": "Movement_of_the_lens_of_the_eye_from_its_normal_position_dislocation",
+  "name": "Movement_of_the_lens_of_the_eye_from_its_normal_position_dislocation"
+  },
+  {
+  "title": "Swelling_and_redness_of_eyelid_edges",
+  "name": "Swelling_and_redness_of_eyelid_edges"
+  },
+  {
+  "title": "Slight_blurring_of_vision_due_to_excess_oil_in_tears",
+  "name": "Slight_blurring_of_vision_due_to_excess_oil_in_tears"
+  },
+  {
+  "title": "Frequent_styes_bumps",
+  "name": "Frequent_styes_bumps"
+  }
+    ],
+
+
+
+
+
+
+
+    "earData": [
+      {
+        "title": "Top portion of the ear folded over slightly",
+        "name": "Top_portion_of_the_ear_folded_over_slightly"
+      },
+      {
+        "title": "Deformed ears",
+        "name": "Deformed_ears"
+      },
+      {
+        "title": "Hearing loss",
+        "name": "Hearing_loss"
+      },
+      {
+        "title": "Ringing (tinnitus) in the affected ear",
+        "name": "Ringing_(tinnitus)_in_the_affected_ear"
+      },
+      {
+        "title": "Frequent middle ear infections",
+        "name": "Frequent_middle_ear_infections"
+      },
+      {
+        "title": "Hearing problems",
+        "name": "Hearing_problems"
+      },
+      {
+        "title": "Otitis media(middle ear infection)",
+        "name": "Otitis_media(middle_ear_infection)"
+      },
+      {
+        "title": "Deafness",
+        "name": "Deafness"
+      },
+      {
+        "title": "Frequent ear infections",
+        "name": "Frequent_ear_infections"
+      },
+      {
+        "title": "Enlarged blood vessels in skin of nose, ears, and inside of the elbow and knee",
+        "name": "Enlarged_blood_vessels_in_skin_of_nose_ears_and_inside_of_the_elbow_and_knee"
+      },
+      {
+        "title": "Ear discharge or bleeding",
+        "name": "Ear_discharge_or_bleeding"
+      },
+      {
+        "title": "Creases in ear lobes",
+        "name": "Creases_in_ear_lobes"
+      },
+      {
+        "title": "Sound that is louder in one ear (hyperacusis)",
+        "name": "Sound_that_is_louder_in_one_ear_(hyperacusis)"
+      },
+      {
+        "title": "Ear noise/buzzing (also called pulsatile tinnitus)",
+        "name": "Ear_noise/buzzing_(also_called_pulsatile_tinnitus)"
+      },
+      {
+        "title": "High risk of hearing loss due to infections",
+        "name": "High_risk_of_hearing_loss_due_to_infections"
+      },
+      {
+        "title": "Small ears",
+        "name": "Small_ears"
+      },
+      {
+        "title": "Ear discomfort or pain in one or both ears",
+        "name": "Ear_discomfort_or_pain_in_one_or_both_ears"
+      },
+      {
+        "title": "Sensation of fullness or stuffiness in the ears",
+        "name": "Sensation_of_fullness_or_stuffiness_in_the_ears"
+      },
+      {
+        "title": "Drainage of fluid from the ear",
+        "name": "Drainage_of_fluid_from_the_ear"
+      },
+      {
+        "title": "Poor hearing",
+        "name": "Poor_hearing"
+      },
+      {
+        "title": "One sided neck and ear pain",
+        "name": "One_sided_neck_and_ear_pain"
+      },
+      {
+        "title": "Inflammation of ear canal",
+        "name": "Inflammation_of_ear_canal"
+      },
+      {
+        "title": "Ongoing drainage from the ear that is yellow or green and smells bad",
+        "name": "Ongoing_drainage_from_the_ear_that_is_yellow_or_green_and_smells_bad"
+      },
+      {
+        "title": "Ear pain deep inside the ear. Pain may get worse when you move your head",
+        "name": "Ear_pain_deep_inside_the_ear._Pain_may_get_worse_when_you_move_your_head"
+      },
+      {
+        "title": "Itching of the ear or ear canal",
+        "name": "Itching_of_the_ear_or_ear_canal"
+      },
+      {
+        "title": "Drainage from the ear",
+        "name": "Drainage_from_the_ear"
+      },
+      {
+        "title": "Redness of the ear or behind the ear",
+        "name": "Redness_of_the_ear_or_behind_the_ear"
+      },
+      {
+        "title": "Pressure in the ear",
+        "name": "Pressure_in_the_ear"
+      },
+      {
+        "title": "Swelling behind the ear, may cause ear to stick out or feel as if it is filled with fluid",
+        "name": "Swelling_behind_the_ear_may_cause_ear_to_stick_out_or_feel_as_if_it_is_filled_with_fluid"
+      }
+    ]
+    ,
+    "noseData": [
+      {
+        "title": "Small nose with nostrils tipped forward",
+        "name": "Small_nose_with_nostrils_tipped_forward"
+      },
+      {
+        "title": "Shallow breathing",
+        "name": "Shallow_breathing"
+      },
+      {
+        "title": "Slow and labored breathing",
+        "name": "Slow_and_labored_breathing"
+      },
+      {
+        "title": "Difficulty breathing",
+        "name": "Difficulty_breathing"
+      },
+      {
+        "title": "Severe pain or burning in the nose, eyes, ears, lips, or tongue",
+        "name": "Severe_pain_or_burning_in_the_nose_eyes_ears_lips_or_tongue"
+      },
+      {
+        "title": "Large forehead and flat bridge of the nose",
+        "name": "Large_forehead_and_flat_bridge_of_the_nose"
+      },
+      {
+        "title": "Shortness of breath",
+        "name": "Shortness_of_breath"
+      },
+      {
+        "title": "Rapid respiratory rate",
+        "name": "Rapid_respiratory_rate"
+      },
+      {
+        "title": "Shortness of breath that gets worse with activity",
+        "name": "Shortness_of_breath_that_gets_worse_with_activity"
+      },
+      {
+        "title": "Sinusitis (sinus infection)",
+        "name": "Sinusitis_(sinus_infection)"
+      },
+      {
+        "title": "Wheezing",
+        "name": "Wheezing"
+      },
+      {
+        "title": "Stuffy nose",
+        "name": "Stuffy_nose"
+      },
+      {
+        "title": "Respiratory failure, when muscles involved in breathing become weak",
+        "name": "Respiratory_failure_when_muscles_involved_in_breathing_become_weak"
+      },
+      {
+        "title": "Nosebleeds",
+        "name": "Nosebleeds"
+      },
+      {
+        "title": "Upper respiratory tract infections",
+        "name": "Upper_respiratory_tract_infections"
+      },
+      {
+        "title": "Nasal congestion",
+        "name": "Nasal_congestion"
+      },
+      {
+        "title": "Problems with smell",
+        "name": "Problems_with_smell"
+      },
+      {
+        "title": "Runny nose",
+        "name": "Runny_nose"
+      },
+      {
+        "title": "Sneezing",
+        "name": "Sneezing"
+      },
+      {
+        "title": "Loud breathing",
+        "name": "Loud_breathing"
+      },
+      {
+        "title": "Respiratory distress or failure",
+        "name": "Respiratory_distress_or_failure"
+      },
+      {
+        "title": "Waking up short of breath some time after falling asleep",
+        "name": "Waking_up_short_of_breath_some_time_after_falling_asleep"
+      },
+      {
+        "title": "Breathing problems when exercising",
+        "name": "Breathing_problems_when_exercising"
+      },
+      {
+        "title": "Respiratory infections",
+        "name": "Respiratory_infections"
+      },
+      {
+        "title": "Worms leaving the body through the nose or mouth",
+        "name": "Worms_leaving_the_body_through_the_nose_or_mouth"
+      },
+      {
+        "title": "Abnormal breathing pattern (breathing out takes more than twice as long as breathing in)",
+        "name": "Abnormal_breathing_pattern_(breathing_out_takes_more_than_twice_as_long_as_breathing_in)"
+      },
+      {
+        "title": "Enlarged blood vessels in skin of nose, ears, and inside of the elbow and knee",
+        "name": "Enlarged_blood_vessels_in_skin_of_nose_ears_and_inside_of_the_elbow_and_knee"
+      },
+      {
+        "title": "Severe respiratory infections that keep coming back (recurring)",
+        "name": "Severe_respiratory_infections_that_keep_coming_back_(recurring)"
+      },
+      {
+        "title": "Breathing difficulty when lying flat",
+        "name": "Breathing_difficulty_when_lying_flat"
+      },
+      {
+        "title": "Breathing difficulty when asleep",
+        "name": "Breathing_difficulty_when_asleep"
+      },
+      {
+        "title": "Awakening at night short of breath",
+        "name": "Awakening_at_night_short_of_breath"
+      },
+      {
+        "title": "Noisy breathing",
+        "name": "Noisy_breathing"
+      },
+      {
+        "title": "Infant's nostrils get wide when breathing",
+        "name": "Infant's_nostrils_get_wide_when_breathing"
+      },
+      {
+        "title": "Food material flows back into the nose",
+        "name": "Food_material_flows_back_into_the_nose"
+      },
+      {
+        "title": "Trouble breathing while lying down",
+        "name": "Trouble_breathing_while_lying_down"
+      },
+      {
+        "title": "Frequent respiratory infections",
+        "name": "Frequent_respiratory_infections"
+      },
+      {
+        "title": "Trouble catching one's breath",
+        "name": "Trouble_catching_one's_breath"
+      },
+      {
+        "title": "Nasal flaring",
+        "name": "Nasal_flaring"
+      },
+      {
+        "title": "Nosebleeds that do not stop easily",
+        "name": "Nosebleeds_that_do_not_stop_easily"
+      },
+      {
+        "title": "Bloody, watery drainage from nose",
+        "name": "Bloody_watery_drainage_from_nose"
+      },
+      {
+        "title": "High-pitched sound during breathing (stridor)",
+        "name": "High-pitched_sound_during_breathing_(stridor)"
+      },
+      {
+        "title": "Flattened nose",
+        "name": "Flattened_nose"
+      },
+      {
+        "title": "Low nasal bridge",
+        "name": "Low_nasal_bridge"
+      },
+      {
+        "title": "Blisters around the eyes and nose",
+        "name": "Blisters_around_the_eyes_and_nose"
+      },
+      {
+        "title": "Hoarse cry, cough, or other breathing problems",
+        "name": "Hoarse_cry_cough_or_other_breathing_problems"
+      },
+      {
+        "title": "Abnormal breathing sounds (stridor)",
+        "name": "Abnormal_breathing_sounds_(stridor)"
+      },
+      {
+        "title": "Nose wrinkling",
+        "name": "Nose_wrinkling"
+      },
+      {
+        "title": "Breath-holding spells, resulting in fainting",
+        "name": "Breath-holding_spells_resulting_in_fainting"
+      }
+    ]
+    ,
+    "mouthData": [
+      {
+        "title": "Sweet_taste_in_mouth",
+        "name": "Sweet_taste_in_mouth"
+        },
+        {
+        "title": "Backflow_regurgitation_of_food",
+        "name": "Backflow_regurgitation_of_food"
+        },
+        {
+        "title": "Cough",
+        "name": "Cough"
+        },
+        {
+        "title": "Difficulty_swallowing_liquids_and_solids",
+        "name": "Difficulty_swallowing_liquids_and_solids"
+        },
+        {
+        "title": "Small_lower_jaw",
+        "name": "Small_lower_jaw"
+        },
+        {
+        "title": "Crowded_or_crooked_teeth",
+        "name": "Crowded_or_crooked_teeth"
+        },
+        {
+        "title": "Vomiting_blood",
+        "name": "Vomiting_blood"
+        },
+        {
+        "title": "Gaps_between_the_teeth",
+        "name": "Gaps_between_the_teeth"
+        },
+        {
+        "title": "Enlarged_tongue",
+        "name": "Enlarged_tongue"
+        },
+        {
+        "title": "Jaw_pain",
+        "name": "Jaw_pain"
+        },
+        {
+        "title": "Slurred_speech_or_difficulty_swallowing",
+        "name": "Slurred_speech_or_difficulty_swallowing"
+        },
+        {
+        "title": "Breath_odor_and_metallic_taste_in_the_mouth",
+        "name": "Breath_odor_and_metallic_taste_in_the_mouth"
+        },
+        {
+        "title": "Persistent_hiccups",
+        "name": "Persistent_hiccups"
+        },
+        {
+        "title": "Bleeding_and_swelling_in_the_gums",
+        "name": "Bleeding_and_swelling_in_the_gums"
+        },
+        {
+        "title": "Salt_craving",
+        "name": "Salt_craving"
+        },
+        {
+        "title": "Sore_throat",
+        "name": "Sore_throat"
+        },
+        {
+        "title": "Mouth_and_throat_ulcers",
+        "name": "Mouth_and_throat_ulcers"
+        },
+        {
+        "title": "Excessive_thirst",
+        "name": "Excessive_thirst"
+        },
+        {
+        "title": "Nausea_and_vomiting",
+        "name": "Nausea_and_vomiting"
+        },
+        {
+        "title": "Difficulty_swallowing_choking_easily_drooling_or_gagging",
+        "name": "Difficulty_swallowing_choking_easily_drooling_or_gagging"
+        },
+        {
+        "title": "Hoarseness_voice_changes",
+        "name": "Hoarseness_voice_changes"
+        },
+        {
+        "title": "Swelling_of_tongue",
+        "name": "Swelling_of_tongue"
+        },
+        {
+        "title": "Coughing_up_blood",
+        "name": "Coughing_up_blood"
+        },
+        {
+        "title": "Desire_to_eat_ice_or_other_non-food_things_pica_syndrome",
+        "name": "Desire_to_eat_ice_or_other_non-food_things_pica_syndrome"
+        },
+        {
+        "title": "Sore_or_inflamed_tongue",
+        "name": "Sore_or_inflamed_tongue"
+        },
+        {
+        "title": "Laughing_and_smiling_often",
+        "name": "Laughing_and_smiling_often"
+        },
+        {
+          "title": "Tongue_thrusting_drooling",
+          "name": "Tongue_thrusting_drooling"
+        },
+        {
+          "title": "Unusual_chewing_and_mouthing_movements",
+          "name": "Unusual_chewing_and_mouthing_movements"
+        },
+        {
+          "title": "Vomiting",
+          "name": "Vomiting"
+        },
+        {
+          "title": "Dry_mucous_membranes_in_the_mouth",
+          "name": "Dry_mucous_membranes_in_the_mouth"
+        },
+        {
+          "title": "Poor_feeding",
+          "name": "Poor_feeding"
+        },
+        {
+          "title": "Bleeding_gums",
+          "name": "Bleeding_gums"
+        },
+        {
+          "title": "Pain_may_be_worse_when_you_walk_cough_or_make_sudden_movements",
+          "name": "Pain_may_be_worse_when_you_walk_cough_or_make_sudden_movements"
+        },
+        {
+          "title": "Bloody_sputum",
+          "name": "Bloody_sputum"
+        },
+        {
+          "title": "Coughing_up_worms",
+          "name": "Coughing_up_worms"
+        },
+        {
+          "title": "Yellow_color_inside_the_mouth",
+          "name": "Yellow_color_inside_the_mouth"
+        },
+        {
+          "title": "Worms_leaving_the_body_through_the_nose_or_mouth",
+          "name": "Worms_leaving_the_body_through_the_nose_or_mouth"
+        },
+        {
+          "title": "Coughing_up_foul-smelling_greenish_or_dark_phlegm_sputum_or_phlegm_that_contains_pus_or_blood",
+          "name": "Coughing_up_foul-smelling_greenish_or_dark_phlegm_sputum_or_phlegm_that_contains_pus_or_blood"
+        },
+        {
+          "title": "Seeing_food_or_tube_feed_material_in_your_sputum",
+          "name": "Seeing_food_or_tube_feed_material_in_your_sputum"
+        },
+        {
+          "title": "Cough_with_or_without_sputum_production",
+          "name": "Cough_with_or_without_sputum_production"
+        },
+        {
+          "title": "Large_tongue_macroglossia",
+          "name": "Large_tongue_macroglossia"
+        },
+        {
+          "title": "Difficulty_eating_and_drinking_because_food_falls_out_of_one_side_of_the_mouth",
+          "name": "Difficulty_eating_and_drinking_because_food_falls_out_of_one_side_of_the_mouth"
+        },
+        {
+          "title": "Dry_mouth",
+          "name": "Dry_mouth"
+        },
+        {
+          "title": "Loss_of_sense_of_taste",
+          "name": "Loss_of_sense_of_taste"
+        },
+        {
+          "title": "Reflux_with_vomiting",
+          "name": "Reflux_with_vomiting"
+        },
+        {
+          "title": "One_or_more_painful_red_spots_or_bumps_that_develops_into_an_open_ulcer",
+          "name": "One_or_more_painful_red_spots_or_bumps_that_develops_into_an_open_ulcer"
+        },
+        {
+          "title": "White_or_yellow_center_sores_on_the_inner_surface_of_the_cheeks_and_lips_tongue_upper_surface_of_the_mouth_and_the_base_of_the_gums",
+          "name": "White_or_yellow_center_sores_on_the_inner_surface_of_the_cheeks_and_lips_tongue_upper_surface_of_the_mouth_and_the_base_of_the_gums"
+        },
+        {
+          "title": "Small_size_sores_on_the_inner_surface_of_the_cheeks_and_lips_tongue_upper_surface_of_the_mouth_and_the_base_of_the_gums",
+          "name": "Small_size_sores_on_the_inner_surface_of_the_cheeks_and_lips_tongue_upper_surface_of_the_mouth_and_the_base_of_the_gums"
+        },
+        {
+          "title": "Gray_color_as_healing_starts_on_the_sores_developed_on_the_inner_surface_of_the_cheeks_and_lips_tongue_upper_surface_of_the_mouth_and_the_base_of_the_gums",
+          "name": "Gray_color_as_healing_starts_on_the_sores_developed_on_the_inner_surface_of_the_cheeks_and_lips_tongue_upper_surface_of_the_mouth_and_the_base_of_the_gums"
+        },
+        {
+          "title": "Dry_or_sticky_mouth",
+          "name": "Dry_or_sticky_mouth"
+        },
+        {
+          "title": "Small_mouth",
+          "name": "Small_mouth"
+        },
+        {
+          "title": "Sounding_as_though_they_are_mumbling",
+          "name": "Sounding_as_though_they_are_mumbling"
+        },
+        {
+          "title": "Speaking_softly_or_in_a_whisper",
+          "name": "Speaking_softly_or_in_a_whisper"
+        },
+        {
+          "title": "Speaking_in_a_nasal_or_stuffy_hoarse_strained_or_breathy_voice",
+          "name": "Speaking_in_a_nasal_or_stuffy_hoarse_strained_or_breathy_voice"
+        },
+        {
+          "title": "Mouth_sores",
+          "name": "Mouth_sores"
+        },
+        {
+          "title": "Abnormal_or_missing_teeth_or_fewer_than_normal_number_of_teeth",
+          "name": "Abnormal_or_missing_teeth_or_fewer_than_normal_number_of_teeth"
+        },
+        {
+          "title": "Cleft_palate",
+          "name": "Cleft_palate"
+        },
+        {
+          "title": "Blue_lips_and_fingernails",
+          "name": "Blue_lips_and_fingernails"
+        },
+        {
+          "title": "Bluish_color_to_the_lips_and_face_cyanosis",
+          "name": "Bluish_color_to_the_lips_and_face_cyanosis"
+        },
+        {
+          "title": "Delayed_teeth",
+          "name": "Delayed_teeth"
+        },
+        {
+          "title": "Bad_breath",
+          "name": "Bad_breath"
+        },
+        {
+          "title": "Cracked_lips",
+          "name": "Cracked_lips"
+        },
+        {
+          "title": "Tooth_abnormalities_peg_teeth_widely-spaced_teeth",
+          "name": "Tooth_abnormalities_peg_teeth_widely-spaced_teeth"
+        },
+        {
+          "title": "Teeth_present_at_birth_natal_teeth",
+          "name": "Teeth_present_at_birth_natal_teeth"
+        },
+        {
+          "title": "Blisters_in_or_around_the_mouth_and_throat_causing_feeding_problems_or_swallowing_difficulty",
+          "name": "Blisters_in_or_around_the_mouth_and_throat_causing_feeding_problems_or_swallowing_difficulty"
+        },
+        {
+          "title": "Backward_movement_of_food_through_the_esophagus_and_possibly_mouth_regurgitation",
+          "name": "Backward_movement_of_food_through_the_esophagus_and_possibly_mouth_regurgitation"
+        },
+        {
+          "title": "Mouth_twitching",
+          "name": "Mouth_twitching"
+        },
+        {
+          "title": "Swallowing_problems_in_infants_resulting_in_aspiration_pneumonia_or_poor_growth",
+          "name": "Swallowing_problems_in_infants_resulting_in_aspiration_pneumonia_or_poor_growth"
+        },
+        {
+          "title": "Unusually_smooth_pale_tongue_surface_and_lack_of_taste_buds_and_decrease_in_sense_of_taste",
+          "name": "Unusually_smooth_pale_tongue_surface_and_lack_of_taste_buds_and_decrease_in_sense_of_taste"
+        },
+        {
+          "title": "Bright_red_or_reddish-purple_gums",
+          "name": "Bright_red_or_reddish-purple_gums"
+        },
+        {
+          "title": "Gums_that_are_tender_when_touched_but_otherwise_painless",
+          "name": "Gums_that_are_tender_when_touched_but_otherwise_painless"
+        },
+        {
+          "title": "Swollen_gums",
+          "name": "Swollen_gums"
+        },
+        {
+          "title": "Shiny_appearance_to_gums",
+          "name": "Shiny_appearance_to_gums"
+        },
+        {
+          "title": "Sores_on_the_inside_of_the_cheeks_or_gums",
+          "name": "Sores_on_the_inside_of_the_cheeks_or_gums"
+        },
+        {
+          "title": "Very_sore_mouth_with_no_desire_to_eat",
+          "name": "Very_sore_mouth_with_no_desire_to_eat"
+        },
+        {
+          "title": "Smooth_surface_of_the_tongue",
+          "name": "Smooth_surface_of_the_tongue"
+        },
+        {
+          "title": "Pale_or_bright_red_color_to_the_tongue",
+          "name": "Pale_or_bright_red_color_to_the_tongue"
+        },
+        {
+          "title": "Pain_in_back_of_the_tongue",
+          "name": "Pain_in_back_of_the_tongue"
+        },
+        {
+          "title": "Ulcers_in_the_mouth_and_throat_and_similar_sores_on_the_feet_hands_and_buttocks",
+          "name": "Ulcers_in_the_mouth_and_throat_and_similar_sores_on_the_feet_hands_and_buttocks"
+        },
+        {
+          "title": "Itching_of_the_lips_or_skin_around_the_mouth",
+          "name": "Itching_of_the_lips_or_skin_around_the_mouth"
+        },
+        {
+          "title": "Burning_near_the_lips_or_mouth_area",
+          "name": "Burning_near_the_lips_or_mouth_area"
+        },
+        {
+          "title": "Tingling_near_the_lips_or_mouth_area",
+          "name": "Tingling_near_the_lips_or_mouth_area"
+        },
+        {
+          "title": "Blisters_in_the_mouth_often_on_the_tongue_cheeks_roof_of_the_mouth_gums_and_on_the_border_between_the_inside_of_the_lip_and_the_skin_next_to_it",
+          "name": "Blisters_in_the_mouth_often_on_the_tongue_cheeks_roof_of_the_mouth_gums_and_on_the_border_between_the_inside_of_the_lip_and_the_skin_next_to_it"
+        },
+        {
+          "title": "After_blisters_pop_they_form_ulcers_in_the_mouth_often_on_the_tongue_or_cheeks",
+          "name": "After_blisters_pop_they_form_ulcers_in_the_mouth_often_on_the_tongue_or_cheeks"
+        },
+        {
+          "title": "Mouth_pain",
+          "name": "Mouth_pain"
+        },
+        {
+          "title": "Tongue_swelling_or_protrusion_of_the_tongue_out_of_the_mouth",
+          "name": "Tongue_swelling_or_protrusion_of_the_tongue_out_of_the_mouth"
+        },
+        {
+          "title": "Tooth_pain",
+          "name": "Tooth_pain"
+        },
+        {
+          "title": "Highly_arched_palate_and_crowded_teeth",
+          "name": "Highly_arched_palate_and_crowded_teeth"
+        },
+        {
+          "title": "Tiny_white_spots_inside_the_mouth_Koplik_spots",
+          "name": "Tiny_white_spots_inside_the_mouth_Koplik_spots"
+        }
+    ],
+
+
+    "faceData": [
+      {
+        "title": "Poorly developed middle section of the face",
+        "name": "Poorly_developed_middle_section_of_the_face"
+      },
+      {
+        "title": "Numbness in the face or one ear",
+        "name": "Numbness_in_the_face_or_one_ear"
+      },
+      {
+        "title": "Pain in the face or one ear",
+        "name": "Pain_in_the_face_or_one_ear"
+      },
+      {
+        "title": "Weakness of the face or facial asymmetry",
+        "name": "Weakness_of_the_face_or_facial_asymmetry"
+      },
+      {
+        "title": "Distinct facial features",
+        "name": "Distinct_facial_features"
+      },
+      {
+        "title": "Large bones of the face, large jaw and tongue, widely spaced teeth",
+        "name": "Large_bones_of_the_face_large_jaw_and_tongue_widely_spaced_teeth"
+      },
+      {
+        "title": "Unusual and excessive sweating on face or palms",
+        "name": "Unusual_and_excessive_sweating_on_face_or_palms"
+      },
+      {
+        "title": "Swelling of the face",
+        "name": "Swelling_of_the_face"
+      },
+      {
+        "title": "Hives (especially over the neck and face)",
+        "name": "Hives_especially_over_the_neck_and_face"
+      },
+      {
+        "title": "Severe under-development of the midface",
+        "name": "Severe_under-development_of_the_midface"
+      },
+      {
+        "title": "Bluish color to the lips and face (cyanosis)",
+        "name": "Bluish_color_to_the_lips_and_face_cyanosis"
+      },
+      {
+        "title": "Drooling due to lack of control over the muscles of the face",
+        "name": "Drooling_due_to_lack_of_control_over_the_muscles_of_the_face"
+      },
+      {
+        "title": "Drooping of the face, such as the eyelid or corner of the mouth",
+        "name": "Drooping_of_the_face_such_as_the_eyelid_or_corner_of_the_mouth"
+      },
+      {
+        "title": "Problems smiling, grimacing, or making facial expressions",
+        "name": "Problems_smiling_grimacing_or_making_facial_expressions"
+      },
+      {
+        "title": "Grimaces of the face",
+        "name": "Grimaces_of_the_face"
+      },
+      {
+        "title": "Weakness or numbness of arms, legs, face",
+        "name": "Weakness_or_numbness_of_arms_legs_face"
+      },
+      {
+        "title": "Inability to whistle due to weakness of the cheek muscles",
+        "name": "Inability_to_whistle_due_to_weakness_of_the_cheek_muscles"
+      },
+      {
+        "title": "Decreased facial expression due to weakness of facial muscles",
+        "name": "Decreased_facial_expression_due_to_weakness_of_facial_muscles"
+      },
+      {
+        "title": "Depressed or angry facial expression",
+        "name": "Depressed_or_angry_facial_expression"
+      },
+      {
+        "title": "Flushed face",
+        "name": "Flushed_face"
+      },
+      {
+        "title": "Weakness or loss of movement in the face",
+        "name": "Weakness_or_loss_of_movement_in_the_face"
+      },
+      {
+        "title": "Flush across the cheeks",
+        "name": "Flush_across_the_cheeks"
+      },
+      {
+        "title": "Decreased sweating on the affected side of the face",
+        "name": "Decreased_sweating_on_the_affected_side_of_the_face"
+      },
+      {
+        "title": "Thin, narrow face",
+        "name": "Thin_narrow_face"
+      }
+    ]
+    ,
+    "skinData": [
+      {
+        "title": "Pale_skin",
+        "name": "Pale_skin"
+      },
+      {
+        "title": "Clammy_skin",
+        "name": "Clammy_skin"
+      },
+      {
+        "title": "Bluish_skin_fingernails_and_lips",
+        "name": "Bluish_skin_fingernails_and_lips"
+      },
+      {
+        "title": "Holes_in_the_skin_or_tissues_under_the_skin",
+        "name": "Holes_in_the_skin_or_tissues_under_the_skin"
+      },
+      {
+        "title": "Crusting_of_skin_bumps",
+        "name": "Crusting_of_skin_bumps"
+      },
+      {
+        "title": "Cysts",
+        "name": "Cysts"
+      },
+      {
+        "title": "Papules_small_red_bumps",
+        "name": "Papules_small_red_bumps"
+      },
+      {
+        "title": "Pustules_small_red_bumps_containing_white_or_yellow_pus",
+        "name": "Pustules_small_red_bumps_containing_white_or_yellow_pus"
+      },
+      {
+        "title": "Redness_around_the_skin_eruptions",
+        "name": "Redness_around_the_skin_eruptions"
+      },
+      {
+        "title": "Scarring_of_the_skin",
+        "name": "Scarring_of_the_skin"
+      },
+      {
+        "title": "Blackheads",
+        "name": "Blackheads"
+      },
+      {
+        "title": "Large_glands_in_the_skin_sebaceous_glands_causing_oily_skin_thickening_of_the_skin_skin_tags_growths",
+        "name": "Large_glands_in_the_skin_sebaceous_glands_causing_oily_skin_thickening_of_the_skin_skin_tags_growths"
+      },
+      {
+        "title": "Yellowing_of_skin_and_whites_of_the_eyes_jaundice",
+        "name": "Yellowing_of_skin_and_whites_of_the_eyes_jaundice"
+      },
+      {
+        "title": "Paleness",
+        "name": "Paleness"
+      },
+      {
+        "title": "Pinpoint_red_spots_on_the_skin",
+        "name": "Pinpoint_red_spots_on_the_skin"
+      },
+      {
+        "title": "Darkening_of_the_skin",
+        "name": "Darkening_of_the_skin"
+      },
+      {
+        "title": "Skin_infections",
+        "name": "Skin_infections"
+      },
+      {
+        "title": "Lighter_than_normal_skin_and_hair",
+        "name": "Lighter_than_normal_skin_and_hair"
+      },
+      {
+        "title": "Patches_of_missing_skin_color",
+        "name": "Patches_of_missing_skin_color"
+      },
+      {
+        "title": "Itching",
+        "name": "Itching"
+      },
+      {
+        "title": "Rashes",
+        "name": "Rashes"
+      },
+      {
+        "title": "Light_hair_skin_and_eye_color_compared_to_rest_of_family",
+        "name": "Light_hair_skin_and_eye_color_compared_to_rest_of_family"
+      },
+      {
+        "title": "An_itchy_sore_develops_that_is_similar_to_an_insect_bite",
+        "name": "An_itchy_sore_develops_that_is_similar_to_an_insect_bite"
+      },
+      {
+        "title": "The_sore_is_usually_painless",
+        "name": "The_sore_is_usually_painless"
+      },
+      {
+        "title": "A_scab_often_forms_and_then_dries_and_falls_off_within_2_weeks",
+        "name": "A_scab_often_forms_and_then_dries_and_falls_off_within_2_weeks"
+      },
+      {
+        "title": "Burns_in_skin",
+        "name": "Burns_in_skin"
+      },
+      {
+        "title": "Irritation_in_skin",
+        "name": "Irritation_in_skin"
+      },
+      {
+        "title": "Holes_necrosis_in_the_skin_or_tissues_underneath",
+        "name": "Holes_necrosis_in_the_skin_or_tissues_underneath"
+      },
+      {
+        "title": "Bruising_and_bleeding_under_the_skin",
+        "name": "Bruising_and_bleeding_under_the_skin"
+      },
+      {
+        "title": "Flushed_skin",
+        "name": "Flushed_skin"
+      },
+      {
+        "title": "Rash_small_pinpoint_red_marks_on_the_skin_petechiae",
+        "name": "Rash_small_pinpoint_red_marks_on_the_skin_petechiae"
+      },
+      {
+        "title": "Skin_sores_lesions",
+        "name": "Skin_sores_lesions"
+      },
+      {
+        "title": "Discoloration_of_skin_areas_exposed_to_sunlight",
+        "name": "Discoloration_of_skin_areas_exposed_to_sunlight"
+      },
+      {
+        "title": "Discoloration_of_skin_coffee-with-milk-colored_spots",
+        "name": "Discoloration_of_skin_coffee-with-milk-colored_spots"
+      },
+      {
+        "title": "Enlarged_blood_vessels_in_skin_of_nose_ears_and_inside_of_the_elbow_and_knee",
+        "name": "Enlarged_blood_vessels_in_skin_of_nose_ears_and_inside_of_the_elbow_and_knee"
+      },
+      {
+        "title": "Blisters_with_oozing_and_crusting",
+        "name": "Blisters_with_oozing_and_crusting"
+      },
+      {
+        "title": "Raw_areas_of_the_skin_from_scratching",
+        "name": "Raw_areas_of_the_skin_from_scratching"
+      },
+      {
+        "title": "Skin_color_changes_such_as_more_or_less_color_than_the_normal_skin_tone",
+        "name": "Skin_color_changes_such_as_more_or_less_color_than_the_normal_skin_tone"
+      },
+      {
+        "title": "Skin_redness",
+        "name": "Skin_redness"
+      },
+      {
+        "title": "Thickened_or_leather-like_areas",
+        "name": "Thickened_or_leather-like_areas"
+      },
+      {
+        "title": "Bluish_skin_especially_on_the_fingers_Raynaud_phenomenon",
+        "name": "Bluish_skin_especially_on_the_fingers_Raynaud_phenomenon"
+      },
+      {
+        "title": "Reddish_or_purplish_color_in_a_circle_around_spider_bite",
+        "name": "Reddish_or_purplish_color_in_a_circle_around_spider_bite"
+      },
+      {
+        "title": "Large_sore_ulcer_in_the_area_of_the_bite",
+        "name": "Large_sore_ulcer_in_the_area_of_the_bite"
+      },
+      {
+        "title": "Flushing_or_widened_blood_vessels_seen_on_the_skin_telangiectasias",
+        "name": "Flushing_or_widened_blood_vessels_seen_on_the_skin_telangiectasias"
+      },
+      {
+        "title": "Skin_redness_or_inflammation_that_gets_bigger_as_the_infection_spreads",
+        "name": "Skin_redness_or_inflammation_that_gets_bigger_as_the_infection_spreads"
+      },
+      {
+        "title": "Skin_sore_or_rash_that_starts_suddenly_and_grows_quickly_in_the_first_24_hours",
+        "name": "Skin_sore_or_rash_that_starts_suddenly_and_grows_quickly_in_the_first_24_hours"
+      },
+      {
+        "title": "Tight_glossy_stretched_appearance_of_the_skin",
+        "name": "Tight_glossy_stretched_appearance_of_the_skin"
+      },
+      {
+        "title": "Warm_skin_in_the_area_of_redness",
+        "name": "Warm_skin_in_the_area_of_redness"
+      },
+      {
+        "title": "Dry_skin",
+        "name": "Dry_skin"
+      },
+      {
+        "title": "Yellow_skin_or_eyes",
+        "name": "Yellow_skin_or_eyes"
+      },
+      {
+        "title": "Rash_small_pinpoint_red_marks_on_the_skin_petechiae",
+        "name": "Rash_small_pinpoint_red_marks_on_the_skin_petechiae"
+      },
+      {
+        "title": "Skin_pain",
+        "name": "Skin_pain"
+      },
+      {
+        "title": "Yellow_deposits_of_fatty_material_in_the_skin_called_xanthomas",
+        "name": "Yellow_deposits_of_fatty_material_in_the_skin_called_xanthomas"
+      },
+      {
+        "title": "Small_red_spider-like_blood_vessels_on_the_skin",
+        "name": "Small_red_spider-like_blood_vessels_on_the_skin"
+      },
+      {
+        "title": "Changes_in_skin_temperature_switching_between_warm_or_cold",
+        "name": "Changes_in_skin_temperature_switching_between_warm_or_cold"
+      },
+      {
+        "title": "Skin_that_slowly_becomes_blotchy_purple_pale_or_red_thin_and_shiny_swollen_more_sweaty",
+        "name": "Skin_that_slowly_becomes_blotchy_purple_pale_or_red_thin_and_shiny_swollen_more_sweaty"
+      },
+      {
+        "title": "Purpura",
+        "name": "Purpura"
+      },
+      {
+        "title": "Skin_death",
+        "name": "Skin_death"
+      },
+      {
+        "title": "Skin_ulcers",
+        "name": "Skin_ulcers"
+      },
+      {
+        "title": "Skin_lesions_that_are_lighter_than_your_normal_skin_color",
+        "name": "Skin_lesions_that_are_lighter_than_your_normal_skin_color"
+      },
+      {
+        "title": "Lesions_that_have_decreased_sensation_to_touch_heat_or_pain",
+        "name": "Lesions_that_have_decreased_sensation_to_touch_heat_or_pain"
+      },
+      {
+        "title": "Lesions_that_do_not_heal_after_several_weeks_to_months",
+        "name": "Lesions_that_do_not_heal_after_several_weeks_to_months"
+      },
+      {
+        "title": "Skin_that_feels_warm_to_the_touch",
+        "name": "Skin_that_feels_warm_to_the_touch"
+      },
+      {
+        "title": "Rashes_that_are_usually_the_same_size_and_shape_on_both_sides",
+        "name": "Rashes_that_are_usually_the_same_size_and_shape_on_both_sides"
+      },
+      {
+        "title": "The_rash_can_look_like_eczema",
+        "name": "The_rash_can_look_like_eczema"
+      },
+      {
+        "title": "Scratch_marks_and_skin_erosions_instead_of_blisters_in_some_people",
+        "name": "Scratch_marks_and_skin_erosions_instead_of_blisters_in_some_people"
+      },
+      {
+        "title": "Purple-red_skin_rash",
+        "name": "Purple-red_skin_rash"
+      },
+      {
+        "title": "Pale_skin_due_to_anemia_pallor",
+        "name": "Pale_skin_due_to_anemia_pallor"
+      },
+      {
+        "title": "Severe_allergic_reaction",
+        "name": "Severe_allergic_reaction"
+      },
+      {
+        "title": "Decreased_skin_color_pigment",
+        "name": "Decreased_skin_color_pigment"
+      },
+      {
+        "title": "Very_soft_and_velvety_skin",
+        "name": "Very_soft_and_velvety_skin"
+      },
+      {
+        "title": "Changes_in_skin_pigment",
+        "name": "Changes_in_skin_pigment"
+      },
+      {
+        "title": "Thickened_skin_that_looks_puckered",
+        "name": "Thickened_skin_that_looks_puckered"
+      },
+      {
+        "title": "Tender_or_sore_skin",
+        "name": "Tender_or_sore_skin"
+      },
+      {
+        "title": "Warm_skin_in_the_affected_area",
+        "name": "Warm_skin_in_the_affected_area"
+      },
+      {
+        "title": "Blisters_on_the_skin_as_a_result_of_minor_injury_or_temperature_change_especially_of_the_feet",
+        "name": "Blisters_on_the_skin_as_a_result_of_minor_injury_or_temperature_change_especially_of_the_feet"
+      },
+      {
+        "title": "Tiny_white_bumps_on_previously_injured_skin",
+        "name": "Tiny_white_bumps_on_previously_injured_skin"
+      },
+      {
+        "title": "Pea-sized_skin_bumps",
+        "name": "Pea-sized_skin_bumps"
+      },
+      {
+        "title": "Waxy_skin_bumps",
+        "name": "Waxy_skin_bumps"
+      },
+      {
+        "title": "Firm_skin_bumps",
+        "name": "Firm_skin_bumps"
+      },
+      {
+        "title": "Throbbing_pain_with_itching_or_burning_sensation",
+        "name": "Throbbing_pain_with_itching_or_burning_sensation"
+      },
+      {
+        "title": "Fluid-filled_blisters",
+        "name": "Fluid-filled_blisters"
+      },
+      {
+        "title": "Redness_over_80_to_90_percent_of_the_body",
+        "name": "Redness_over_80_to_90_percent_of_the_body"
+      },
+      {
+        "title": "Scaly_skin_patches",
+        "name": "Scaly_skin_patches"
+      },
+      {
+        "title": "Fatty_skin_deposits_called_xanthomas_over_parts_of_the_hands_elbows_knees_ankles_and_around_the_cornea_of_the_eye",
+        "name": "Fatty_skin_deposits_called_xanthomas_over_parts_of_the_hands_elbows_knees_ankles_and_around_the_cornea_of_the_eye"
+      },
+      {
+        "title": "Skin_sores_lesions_that_are_red_and_swollen_and_range_from_5_to_20_cm_in_diameter",
+        "name": "Skin_sores_lesions_that_are_red_and_swollen_and_range_from_5_to_20_cm_in_diameter"
+      },
+      {
+        "title": "Unusual_skin_color_pigmentation_which_occurs_with_McCune-Albright_syndrome",
+        "name": "Unusual_skin_color_pigmentation_which_occurs_with_McCune-Albright_syndrome"
+      },
+      {
+        "title": "Discoloration_blue_or_black_if_skin_is_affected_red_or_bronze_if_the_affected_area_is_beneath_the_skin",
+        "name": "Discoloration_blue_or_black_if_skin_is_affected_red_or_bronze_if_the_affected_area_is_beneath_the_skin"
+      },
+      {
+        "title": "Foul-smelling_discharge",
+        "name": "Foul-smelling_discharge"
+      },
+      {
+        "title": "Loss_of_feeling_in_the_area_which_may_happen_after_severe_pain_in_the_area",
+        "name": "Loss_of_feeling_in_the_area_which_may_happen_after_severe_pain_in_the_area"
+      },
+      {
+        "title": "Air_under_the_skin",
+        "name": "Air_under_the_skin"
+      },
+      {
+        "title": "Drainage_from_the_tissues_foul-smelling_brown-red_or_bloody_fluid",
+        "name": "Drainage_from_the_tissues_foul-smelling_brown-red_or_bloody_fluid"
+      },
+      {
+        "title": "Moderate_to_severe_pain_around_a_skin_injury",
+        "name": "Moderate_to_severe_pain_around_a_skin_injury"
+      },
+      {
+        "title": "Pale_skin_color_later_becoming_dusky_and_changing_to_dark_red_or_purple",
+        "name": "Pale_skin_color_later_becoming_dusky_and_changing_to_dark_red_or_purple"
+      },
+      {
+        "title": "Swelling_that_worsens_around_a_skin_injury",
+        "name": "Swelling_that_worsens_around_a_skin_injury"
+      },
+      {
+        "title": "Vesicle_formation_combining_into_large_blisters",
+        "name": "Vesicle_formation_combining_into_large_blisters"
+      },
+      {
+        "title": "Brownish-red_or_copper-colored_patch_that_is_firm_and_flat_on_top",
+        "name": "Brownish-red_or_copper-colored_patch_that_is_firm_and_flat_on_top"
+      },
+      {
+        "title": "String_of_bumps_may_appear_in_a_line",
+        "name": "String_of_bumps_may_appear_in_a_line"
+      },
+      {
+        "title": "Possible_skin_thickening",
+        "name": "Possible_skin_thickening"
+      },
+      {
+        "title": "Mild_itching_of_the_skin",
+        "name": "Mild_itching_of_the_skin"
+      },
+      {
+        "title": "Swelling_of_the_surface_of_the_skin_into_red-_or_skin-colored_welts_called_wheals_with_clearly_defined_edges",
+        "name": "Swelling_of_the_surface_of_the_skin_into_red-_or_skin-colored_welts_called_wheals_with_clearly_defined_edges"
+      },
+      {
+        "title": "Wheals_may_get_bigger_spread_and_join_together_to_form_larger_areas_of_flat_raised_skin",
+        "name": "Wheals_may_get_bigger_spread_and_join_together_to_form_larger_areas_of_flat_raised_skin"
+      },
+      {
+        "title": "Wheals_often_change_shape_disappear_and_reappear_within_minutes_or_hours_It_is_unusual_for_a_wheal_to_last_more_than_48_hours",
+        "name": "Wheals_often_change_shape_disappear_and_reappear_within_minutes_or_hours_It_is_unusual_for_a_wheal_to_last_more_than_48_hours"
+      },
+      {
+        "title": "New_rash_with_tender_purple_or_brownish-red_spots_over_large_areas",
+        "name": "New_rash_with_tender_purple_or_brownish-red_spots_over_large_areas"
+      },
+      {
+        "title": "Skin_sores_mostly_located_on_the_legs_buttocks_or_trunk",
+        "name": "Skin_sores_mostly_located_on_the_legs_buttocks_or_trunk"
+      },
+      {
+        "title": "Blisters_on_the_skin",
+        "name": "Blisters_on_the_skin"
+      },
+      {
+        "title": "Hives_urticaria_may_last_longer_than_24_hours",
+        "name": "Hives_urticaria_may_last_longer_than_24_hours"
+      },
+      {
+        "title": "Open_sores_with_dead_tissue_necrotic_ulcers",
+        "name": "Open_sores_with_dead_tissue_necrotic_ulcers"
+      },
+      {
+        "title": "Low_level_of_one_or_more_types_of_blood_cells",
+        "name": "Low_level_of_one_or_more_types_of_blood_cells"
+      },
+      {
+        "title": "Bleeding_into_the_skin_often_around_the_shins_causing_a_skin_rash_that_looks_like_pinpoint_red_spots_petechial_rash",
+        "name": "Bleeding_into_the_skin_often_around_the_shins_causing_a_skin_rash_that_looks_like_pinpoint_red_spots_petechial_rash"
+      },
+      {
+        "title": "One_or_many_blisters_that_are_filled_with_pus_and_easy_to_pop_In_infants_the_skin_is_reddish_or_raw-looking_where_a_blister_has_broken",
+        "name": "One_or_many_blisters_that_are_filled_with_pus_and_easy_to_pop_In_infants_the_skin_is_reddish_or_raw-looking_where_a_blister_has_broken"
+      },
+      {
+        "title": "Blisters_that_itch_are_filled_with_yellow_or_honey-colored_fluid_and_ooze_and_crust_over_Rash_that_may_begin_as_a_single_spot_but_spreads_to_other_areas_due_to_scratching",
+        "name": "Blisters_that_itch_are_filled_with_yellow_or_honey-colored_fluid_and_ooze_and_crust_over_Rash_that_may_begin_as_a_single_spot_but_spreads_to_other_areas_due_to_scratching"
+      },
+      {
+        "title": "Skin_sores_on_the_face_lips_arms_or_legs_that_spread_to_other_areas",
+        "name": "Skin_sores_on_the_face_lips_arms_or_legs_that_spread_to_other_areas"
+      },
+      {
+        "title": "Swollen_lymph_nodes_near_the_infection",
+        "name": "Swollen_lymph_nodes_near_the_infection"
+      },
+      {
+        "title": "Small_bumps_that_look_like_goose_bumps_on_the_back_of_the_upper_arms_and_thighs",
+        "name": "Small_bumps_that_look_like_goose_bumps_on_the_back_of_the_upper_arms_and_thighs"
+      },
+      {
+        "title": "Bumps_feel_like_very_rough_sandpaper",
+        "name": "Bumps_feel_like_very_rough_sandpaper"
+      },
+      {
+        "title": "Skin-colored_bumps_are_the_size_of_a_grain_of_sand",
+        "name": "Skin-colored_bumps_are_the_size_of_a_grain_of_sand"
+      },
+      {
+        "title": "Slight_pinkness_may_be_seen_around_some_bumps",
+        "name": "Slight_pinkness_may_be_seen_around_some_bumps"
+      },
+      {
+        "title": "Bumps_may_appear_on_the_face_and_be_mistaken_for_acne",
+        "name": "Bumps_may_appear_on_the_face_and_be_mistaken_for_acne"
+      },
+      {
+        "title": "Mild_to_severe_pain",
+        "name": "Mild_to_severe_pain"
+      }
+    ],
+
+
+    "hairData": [
+      {
+        "title": "No color in the hair, skin, or iris of the eye",
+        "name": "No_color_in_the_hair_skin_or_iris_of_the_eye"
+      },
+      {
+        "title": "Light hair, skin, and eye color compared to rest of family",
+        "name": "Light_hair_skin_and_eye_color_compared_to_rest_of_family"
+      },
+      {
+        "title": "Premature graying of the hair",
+        "name": "Premature_graying_of_the_hair"
+      },
+      {
+        "title": "Silver hair, light-colored eyes (albinism)",
+        "name": "Silver_hair_light-colored_eyes_albinism"
+      },
+      {
+        "title": "Hair loss",
+        "name": "Hair_loss"
+      },
+      {
+        "title": "Faster growth of nails and hair",
+        "name": "Faster_growth_of_nails_and_hair"
+      },
+      {
+        "title": "Thin, sparse hair",
+        "name": "Thin_sparse_hair"
+      },
+      {
+        "title": "Sparse, absent, or fine textured hair",
+        "name": "Sparse_absent_or_fine_textured_hair"
+      },
+      {
+        "title": "Hair changes (change in color or texture)",
+        "name": "Hair_changes_change_in_color_or_texture"
+      }
+    ],    
+    "neckData": [
+      {
+        "title": "Severe pain in the throat",
+        "name": "Severe_pain_in_the_throat"
+      },
+      {
+        "title": "Burns of the food pipe (esophagus)",
+        "name": "Burns_of_the_food_pipe_esophagus"
+      },
+      {
+        "title": "Throat swelling",
+        "name": "Throat_swelling"
+      },
+      {
+        "title": "Hoarseness, voice changes",
+        "name": "Hoarseness_voice_changes"
+      },
+      {
+        "title": "Stiffness in the neck",
+        "name": "Stiffness_in_the_neck"
+      },
+      {
+        "title": "Swollen lymph nodes in the neck, under arms, and groin",
+        "name": "Swollen_lymph_nodes_in_neck_under_arms_groin"
+      },
+      {
+        "title": "Hives (especially over the neck and face)",
+        "name": "Hives_over_neck_and_face"
+      },
+      {
+        "title": "Head drop due to weakness of the neck muscles",
+        "name": "Head_drop_weakness_of_neck_muscles"
+      },
+      {
+        "title": "Lower neck lump, which often grows quickly",
+        "name": "Lower_neck_lump_grows_quickly"
+      },
+      {
+        "title": "Pain in throat",
+        "name": "Pain_in_throat"
+      },
+      {
+        "title": "Vocal cord paralysis",
+        "name": "Vocal_cord_paralysis"
+      },
+      {
+        "title": "Overactive thyroid",
+        "name": "Overactive_thyroid"
+      },
+      {
+        "title": "Small pits, lumps, or skin tags at either side of the neck or just below the jawbone",
+        "name": "Small_pits_lumps_skin_tags_neck_jawbone"
+      },
+      {
+        "title": "Fluid drainage from a pit on the neck",
+        "name": "Fluid_drainage_from_pit_on_neck"
+      },
+      {
+        "title": "Poor muscle tone, especially of the neck muscles",
+        "name": "Poor_muscle_tone_neck_muscles"
+      },
+      {
+        "title": "Neck stiffness that gets worse over time",
+        "name": "Neck_stiffness_gets_worse_over_time"
+      },
+      {
+        "title": "Enlarged neck or presence of goiter, which may be the only early symptom",
+        "name": "Enlarged_neck_or_goiter_early_symptom"
+      },
+      {
+        "title": "Small or shrunken thyroid gland (late in the disease)",
+        "name": "Small_shrunken_thyroid_gland_late_in_disease"
+      },
+      {
+        "title": "Scratchy throat",
+        "name": "Scratchy_throat"
+      },
+      {
+        "title": "Enlarged lymph nodes, especially in the neck",
+        "name": "Enlarged_lymph_nodes_in_neck"
+      },
+      {
+        "title": "Neck pain",
+        "name": "Neck_pain"
+      },
+      {
+        "title": "Excess skin at the nape of the neck",
+        "name": "Excess_skin_at_nape_of_neck"
+      },
+      {
+        "title": "Blisters in or around the mouth and throat, causing feeding problems or swallowing difficulty",
+        "name": "Blisters_around_mouth_throat_feeding_swallowing_difficulty"
+      },
+      {
+        "title": "Backward movement of food through the esophagus and possibly mouth (regurgitation)",
+        "name": "Backward_movement_food_esophagus_regurgitation"
+      },
+      {
+        "title": "Pain in back of the nose and throat (nasopharynx)",
+        "name": "Pain_in_back_of_nose_and_throat_nasopharynx"
+      },
+      {
+        "title": "Pain in tonsil area",
+        "name": "Pain_in_tonsil_area"
+      },
+      {
+        "title": "One sided neck and ear pain",
+        "name": "One_sided_neck_and_ear_pain"
+      },
+      {
+        "title": "Neck swelling",
+        "name": "Neck_swelling"
+      },
+      {
+        "title": "Redness of the neck",
+        "name": "Redness_of_the_neck"
+      },{
+        "title": "pain when moving your neck, deep pain near or over the shoulder blade, or pain that moves to the upper arm, forearm, and fingers",
+        "name": "pain_when_moving_your_neck_deep_pain_near_or_over_the_shoulder_blade_or_pain_that_moves_to_the_upper_arm_forearm_and_fingers"
+      }
+         
+    ],
+    "shoulderData": [
+      {
+        "title": "Narrow shoulders",
+        "name": "Narrow_shoulders"
+      },
+      {
+        "title": "Numbness or abnormal sensations in the shoulders or arms",
+        "name": "Numbness_or_abnormal_sensations_in_the_shoulders_or_arms"
+      },
+      {
+        "title": "Pain on the inside of the shoulder blade and shoulder pain",
+        "name": "Pain_on_the_inside_of_the_shoulder_blade_and_shoulder_pain"
+      },
+      {
+        "title": "Ability to touch shoulders together in front of body",
+        "name": "Ability_to_touch_shoulders_together_in_front_of_body"
+      },
+      {
+        "title": "Sharp chest or shoulder pain, made worse by a deep breath or a cough",
+        "name": "Sharp_chest_or_shoulder_pain,_made_worse_by_a_deep_breath_or_a_cough"
+      },
+      {
+        "title": "Difficulty reaching above the shoulder level",
+        "name": "Difficulty_reaching_above_the_shoulder_level"
+      },
+      {
+        "title": "pain when moving your neck, deep pain near or over the shoulder blade, or pain that moves to the upper arm, forearm, and fingers",
+        "name": "pain_when_moving_your_neck_deep_pain_near_or_over_the_shoulder_blade_or_pain_that_moves_to_the_upper_arm_forearm_and_fingers"
+      }
+    ],
+    "chestData": [
+      {
+        "title": "Mildly_sunken_chest_(pectus_excavatum)",
+        "name": "Mildly_sunken_chest_(pectus_excavatum)"
+      },
+      {
+        "title": "Chest_pain,_which_may_increase_after_eating,_or_may_be_felt_as_pain_in_the_back,_neck,_and_arms",
+        "name": "Chest_pain,_which_may_increase_after_eating,_or_may_be_felt_as_pain_in_the_back,_neck,_and_arms"
+      },
+      {
+        "title": "Narrow_chest",
+        "name": "Narrow_chest"
+      },
+      {
+        "title": "A_chest_that_sinks_in_or_sticks_out,_called_funnel_chest_(pectus_excavatum)_or_pigeon_breast_(pectus_carinatum)",
+        "name": "A_chest_that_sinks_in_or_sticks_out,_called_funnel_chest_(pectus_excavatum)_or_pigeon_breast_(pectus_carinatum)"
+      },
+      {
+        "title": "Chest_discomfort",
+        "name": "Chest_discomfort"
+      },
+      {
+        "title": "Cough_that_produces_mucus_--_the_mucus_may_be_clear_or_yellow-green",
+        "name": "Cough_that_produces_mucus_--_the_mucus_may_be_clear_or_yellow-green"
+      },
+      {
+        "title": "Discomfort_that_feels_like_tightness,_squeezing,_crushing,_burning,_choking,_or_aching",
+        "name": "Discomfort_that_feels_like_tightness,_squeezing,_crushing,_burning,_choking,_or_aching"
+      },
+      {
+        "title": "Chest_tightness_or_congestion",
+        "name": "Chest_tightness_or_congestion"
+      },
+      {
+        "title": "Bronchitis",
+        "name": "Bronchitis"
+      },
+      {
+        "title": "Pneumonia_(lung_infection)",
+        "name": "Pneumonia_(lung_infection)"
+      },
+      {
+        "title": "chest_pain",
+        "name": "chest_pain"
+      },
+      {
+        "title": "sharp,_stabbing,_tearing,_or_ripping_chest_pain",
+        "name": "sharp,_stabbing,_tearing,_or_ripping_chest_pain"
+      },
+      {
+        "title": "Pulling_in_of_the_skin_between_the_ribs_when_breathing_(intercostal_retractions)",
+        "name": "Pulling_in_of_the_skin_between_the_ribs_when_breathing_(intercostal_retractions)"
+      },
+      {
+        "title": "Breast_lump_or_lump_in_the_armpit_that_is_hard,_has_uneven_edges,_and_usually_does_not_hurt.",
+        "name": "Breast_lump_or_lump_in_the_armpit_that_is_hard,_has_uneven_edges,_and_usually_does_not_hurt."
+      },
+      {
+        "title": "Change_in_the_size,_shape,_or_feel_of_the_breast_or_nipple",
+        "name": "Change_in_the_size,_shape,_or_feel_of_the_breast_or_nipple"
+      },
+      {
+        "title": "Fluid_from_the_nipple._Fluid_may_be_bloody,_clear_to_yellow,_green,_or_look_like_pus.",
+        "name": "Fluid_from_the_nipple._Fluid_may_be_bloody,_clear_to_yellow,_green,_or_look_like_pus."
+      },
+      {
+        "title": "Muscles_around_the_ribs_sink_in_as_the_child_tries_to_breathe_in_(intercostal_retractions)",
+        "name": "Muscles_around_the_ribs_sink_in_as_the_child_tries_to_breathe_in_(intercostal_retractions)"
+      },
+      {
+        "title": "Increased_infections_in_the_lungs,_skin,_and_mucous_membranes",
+        "name": "Increased_infections_in_the_lungs,_skin,_and_mucous_membranes"
+      },
+      {
+        "title": "Pressure_under_the_lower_left_ribs_from_a_swollen_spleen",
+        "name": "Pressure_under_the_lower_left_ribs_from_a_swollen_spleen"
+      },
+      {
+        "title": "In_men,_impotence,_shrinking_of_the_testicles,_and_breast_swelling",
+        "name": "In_men,_impotence,_shrinking_of_the_testicles,_and_breast_swelling"
+      },
+      {
+        "title": "Chest_pain_or_pressure_(more_likely_with_exercise)",
+        "name": "Chest_pain_or_pressure_(more_likely_with_exercise)"
+      },
+      {
+        "title": "Croup-like_(barking)_cough",
+        "name": "Croup-like_(barking)_cough"
+      },
+      {
+        "title": "Cough,_with_or_without_mucus",
+        "name": "Cough,_with_or_without_mucus"
+      },
+      {
+        "title": "Repeated_pneumonias",
+        "name": "Repeated_pneumonias"
+      },
+      {
+        "title": "Chest_pain,_which_worsens_when_you_breathe_in_deeply_(pleurisy)",
+        "name": "Chest_pain,_which_worsens_when_you_breathe_in_deeply_(pleurisy)"
+      },
+      {
+        "title": "Dry_cough",
+        "name": "Dry_cough"
+      },
+      {
+        "title": "Excess_growth_of_breast_tissue",
+        "name": "Excess_growth_of_breast_tissue"
+      },
+      {
+        "title": "Chest_pain_(angina)_or_other_signs_of_coronary_artery_disease_may_be_present_at_a_young_age",
+        "name": "Chest_pain_(angina)_or_other_signs_of_coronary_artery_disease_may_be_present_at_a_young_age"
+      },
+      {
+        "title": "Pain_or_discomfort_in_both_breasts_that_may_come_and_go_with_your_period,_but_may_last_through_the_whole_month",
+        "name": "Pain_or_discomfort_in_both_breasts_that_may_come_and_go_with_your_period,_but_may_last_through_the_whole_month"
+      },
+      {
+        "title": "Enlarged_breasts",
+        "name": "Enlarged_breasts"
+      },
+      {
+        "title": "Breasts_that_feel_full,_swollen,_or_heavy",
+        "name": "Breasts_that_feel_full,_swollen,_or_heavy"
+      },
+      {
+        "title": "Pain_or_discomfort_under_the_arms",
+        "name": "Pain_or_discomfort_under_the_arms"
+      },
+      {
+        "title": "Breast_lumps_that_change_in_size_with_the_menstrual_period",
+        "name": "Breast_lumps_that_change_in_size_with_the_menstrual_period"
+      },
+      {
+        "title": "A_tight_band_around_the_chest",
+        "name": "A_tight_band_around_the_chest"
+      },
+      {
+        "title": "Squeezing_or_heavy_pressure_on_chest",
+        "name": "Squeezing_or_heavy_pressure_on_chest"
+      },
+      {
+        "title": "Something_heavy_sitting_on_your_chest",
+        "name": "Something_heavy_sitting_on_your_chest"
+      },
+      {
+        "title": "Chest_deformities",
+        "name": "Chest_deformities"
+      }
+    ]
+    ,
+    "heartData": [
+      {
+        "title": "Rapid heart rate",
+        "name": "Rapid_heart_rate"
+      },
+      {
+        "title": "Shock",
+        "name": "Shock"
+      },
+      {
+        "title": "Stopped breathing or respiratory arrest",
+        "name": "Stopped_breathing_or_respiratory_arrest"
+      },
+      {
+        "title": "Low blood pressure",
+        "name": "Low_blood_pressure"
+      },
+      {
+        "title": "Heartburn",
+        "name": "Heartburn"
+      },
+      {
+        "title": "Irregular heart beat",
+        "name": "Irregular_heart_beat"
+      },
+      {
+        "title": "Heart enlargement, which can cause fainting or shortness of breath",
+        "name": "Heart_enlargement,_which_can_cause_fainting_or_shortness_of_breath"
+      },
+      {
+        "title": "Fast or irregular heartbeat",
+        "name": "Fast_or_irregular_heartbeat"
+      },
+      {
+        "title": "Heart murmur",
+        "name": "Heart_murmur"
+      },
+      {
+        "title": "High blood pressure",
+        "name": "High_blood_pressure"
+      },
+      {
+        "title": "Skipped heartbeats and other physical complaints",
+        "name": "Skipped_heartbeats_and_other_physical_complaints"
+      },
+      {
+        "title": "Impaired heart function",
+        "name": "Impaired_heart_function"
+      },
+      {
+        "title": "Palpitations",
+        "name": "Palpitations"
+      },
+      {
+        "title": "Collapse of heart beat",
+        "name": "Collapse_of_heart_beat"
+      },
+      {
+        "title": "Blood pressure changes",
+        "name": "Blood_pressure_changes"
+      },
+      {
+        "title": "Reduced pulse",
+        "name": "Reduced_pulse"
+      },
+      {
+        "title": "Transient ischemic attacks (TIA)",
+        "name": "Transient_ischemic_attacks_(TIA)"
+      },
+      {
+        "title": "Stroke symptoms",
+        "name": "Stroke_symptoms"
+      },
+      {
+        "title": "Bounding pulse",
+        "name": "Bounding_pulse"
+      },
+      {
+        "title": "Uneven, rapid, racing, pounding, or fluttering pulse",
+        "name": "Uneven,_rapid,_racing,_pounding,_or_fluttering_pulse"
+      },
+      {
+        "title": "Heart failure",
+        "name": "Heart_failure"
+      },
+      {
+        "title": "Too slow (bradycardia) heart rate",
+        "name": "Too_slow_(bradycardia)_heart_rate"
+      },
+      {
+        "title": "Too quick (tachycardia) heart rate",
+        "name": "Too_quick_(tachycardia)_heart_rate"
+      },
+      {
+        "title": "Irregular, uneven, possibly with extra or skipped heart beats",
+        "name": "Irregular,_uneven,_possibly_with_extra_or_skipped_heart_beats"
+      },
+      {
+        "title": "Irregular heartbeat, slow or fast pulse",
+        "name": "Irregular_heartbeat,_slow_or_fast_pulse"
+      },
+      {
+        "title": "Blood pressure drop with position that causes dizziness when standing",
+        "name": "Blood_pressure_drop_with_position_that_causes_dizziness_when_standing"
+      },
+      {
+        "title": "Cardiac arrest",
+        "name": "Cardiac_arrest"
+      },
+      {
+        "title": "Heart problems, such as leaking heart valves, slow heartbeat, low or high blood pressure",
+        "name": "Heart_problems,_such_as_leaking_heart_valves,_slow_heartbeat,_low_or_high_blood_pressure"
+      },
+      {
+        "title": "A racing heart",
+        "name": "A_racing_heart"
+      },
+      {
+        "title": "Drop in blood pressure",
+        "name": "Drop_in_blood_pressure"
+      },
+      {
+        "title": "Sudden collapse, when the heartbeat gets too slow or even stops",
+        "name": "Sudden_collapse,_when_the_heartbeat_gets_too_slow_or_even_stops"
+      }
+    ]
+,    
+    "liverData": [
+      {
+        "title": "Liver failure",
+        "name": "Liver_failure"
+      },
+      {
+        "title": "Pain or feeling of fullness below the ribs from an enlarged liver or spleen",
+        "name": "Pain_or_feeling_of_fullness_below_the_ribs_from_an_enlarged_liver_or_spleen"
+      },
+      {
+        "title": "Symptoms of chronic liver disease",
+        "name": "Symptoms_of_chronic_liver_disease"
+      },
+      {
+        "title": "Enlarged lymph nodes, liver, or spleen",
+        "name": "Enlarged_lymph_nodes,_liver,_or_spleen"
+      },
+      {
+        "title": "Infections that keep coming back (recur), despite treatment",
+        "name": "Infections_that_keep_coming_back_(recur),_despite_treatment"
+      }
+    ]
+    ,
+    "fingerData": [
+      {
+        "title": "Short fingers and toes with mild webbing",
+        "name": "Short_fingers_and_toes_with_mild_webbing"
+      },
+      {
+        "title": "Absent or small knuckles",
+        "name": "Absent_or_small_knuckles"
+      },
+      {
+        "title": "Triple-jointed thumbs",
+        "name": "Triple-jointed_thumbs"
+      },
+      {
+        "title": "Short fingers with an extra space between the ring and middle finger (trident hand)",
+        "name": "Short_fingers_with_an_extra_space_between_the_ring_and_middle_finger_trident_hand"
+      },
+      {
+        "title": "Brittle nails",
+        "name": "Brittle_nails"
+      },
+      {
+        "title": "Blue lips and fingernails",
+        "name": "Blue_lips_and_fingernails"
+      },
+      {
+        "title": "Fusion or severe webbing of the 2nd, 3rd, and 4th fingers, often called \"mitten hands\"",
+        "name": "Fusion_or_severe_webbing_of_the_2nd_3rd_and_4th_fingers_often_called_mitten_hands"
+      },
+      {
+        "title": "Clubbing of fingers",
+        "name": "Clubbing_of_fingers"
+      },
+      {
+        "title": "Nail abnormalities",
+        "name": "Nail_abnormalities"
+      },
+      {
+        "title": "Bluish skin, especially on the fingers (Raynaud phenomenon)",
+        "name": "Bluish_skin_especially_on_the_fingers_Raynaud_phenomenon"
+      },
+      {
+        "title": "Curvature of nails accompanied by soft tissue swelling (clubbing) of the fingers",
+        "name": "Curvature_of_nails_accompanied_by_soft_tissue_swelling_clubbing_of_the_fingers"
+      },
+      {
+        "title": "Fingers that change color upon pressure or with cold or stress",
+        "name": "Fingers_that_change_color_upon_pressure_or_with_cold_or_stress"
+      },
+      {
+        "title": "Numbness or tingling or tingling in the thumb and next two or three fingers of one or both hands",
+        "name": "Numbness_or_tingling_or_tingling_in_the_thumb_and_next_two_or_three_fingers_of_one_or_both_hands"
+      },
+      {
+        "title": "Wasting away of the muscle under the thumb (in advanced or long-term cases)",
+        "name": "Wasting_away_of_the_muscle_under_the_thumb_in_advanced_or_long-term_cases"
+      },
+      {
+        "title": "Problems with fine finger movements (coordination) in one or both hands",
+        "name": "Problems_with_fine_finger_movements_coordination_in_one_or_both_hands"
+      },
+      {
+        "title": "Short fingers",
+        "name": "Short_fingers"
+      },
+      {
+        "title": "Faster growth of nails and hair",
+        "name": "Faster_growth_of_nails_and_hair"
+      },
+      {
+        "title": "Wide, short hands with short fingers",
+        "name": "Wide_short_hands_with_short_fingers"
+      },
+      {
+        "title": "Abnormal nails",
+        "name": "Abnormal_nails"
+      },
+      {
+        "title": "Nail problems, including missing or deformed nails",
+        "name": "Nail_problems_including_missing_or_deformed_nails"
+      },
+      {
+        "title": "Extra fingers (polydactyly)",
+        "name": "Extra_fingers_polydactyly"
+      },
+      {
+        "title": "Spidery fingers",
+        "name": "Spidery_fingers"
+      }
+    ]
+    ,
+    "armData": [
+      {
+        "title": "Very short trunk, arms, legs, and neck",
+        "name": "Very_short_trunk,_arms,_legs,_and_neck"
+      },
+      {
+        "title": "Average size trunk with short arms and legs (especially the upper arms and thighs)",
+        "name": "Average_size_trunk_with_short_arms_and_legs_(especially_the_upper_arms_and_thighs)"
+      },
+      {
+        "title": "Difficulty controlling arm movements",
+        "name": "Difficulty_controlling_arm_movements"
+      },
+      {
+        "title": "Pain in the shoulder, arm, neck, jaw, back, or belly area",
+        "name": "Pain_in_the_shoulder,_arm,_neck,_jaw,_back,_or_belly_area"
+      },
+      {
+        "title": "Pain in the arms or legs",
+        "name": "Pain_in_the_arms_or_legs"
+      },
+      {
+        "title": "Swelling of arms",
+        "name": "Swelling_of_arms"
+      },
+      {
+        "title": "Trembling arm and leg movements",
+        "name": "Trembling_arm_and_leg_movements"
+      },
+      {
+        "title": "Walking with arms uplifted and hands waving",
+        "name": "Walking_with_arms_uplifted_and_hands_waving"
+      },
+      {
+        "title": "Skeletal (limb) abnormalities",
+        "name": "Skeletal_(limb)_abnormalities"
+      },
+      {
+        "title": "Cold arm or leg",
+        "name": "Cold_arm_or_leg"
+      },
+      {
+        "title": "Decreased or no pulse in an arm or leg",
+        "name": "Decreased_or_no_pulse_in_an_arm_or_leg"
+      },
+      {
+        "title": "Lack of movement in the arm or leg",
+        "name": "Lack_of_movement_in_the_arm_or_leg"
+      },
+      {
+        "title": "Pale color of the arm or leg (pallor)",
+        "name": "Pale_color_of_the_arm_or_leg_(pallor)"
+      },
+      {
+        "title": "Weakness of an arm or leg",
+        "name": "Weakness_of_an_arm_or_leg"
+      },
+      {
+        "title": "Dry skin all over the body, or areas of bumpy skin on the back of the arms and front of the thighs",
+        "name": "Dry_skin_all_over_the_body,_or_areas_of_bumpy_skin_on_the_back_of_the_arms_and_front_of_the_thighs"
+      },
+      {
+        "title": "Abnormal posture with flexed arms and straight legs",
+        "name": "Abnormal_posture_with_flexed_arms_and_straight_legs"
+      },
+      {
+        "title": "Numbness or abnormal sensations in the shoulders or arms",
+        "name": "Numbness_or_abnormal_sensations_in_the_shoulders_or_arms"
+      },
+      {
+        "title": "Quick movements of the arms, legs, or other areas",
+        "name": "Quick_movements_of_the_arms,_legs,_or_other_areas"
+      },
+      {
+        "title": "Weakness or numbness of arms, legs, face",
+        "name": "Weakness_or_numbness_of_arms,_legs,_face"
+      },
+      {
+        "title": "Short forearms",
+        "name": "Short_forearms"
+      },
+      {
+        "title": "Increased risk of fracture due to decreased bone density",
+        "name": "Increased_risk_of_fracture_due_to_decreased_bone_density"
+      },
+      {
+        "title": "Short arms and legs, especially forearm and lower leg",
+        "name": "Short_arms_and_legs,_especially_forearm_and_lower_leg"
+      },
+      {
+        "title": "Tenderness and swelling of the skin on the arms, legs, or sometimes the joints (most often on both sides of the body)",
+        "name": "Tenderness_and_swelling_of_the_skin_on_the_arms,_legs,_or_sometimes_the_joints_(most_often_on_both_sides_of_the_body)"
+      },
+      {
+        "title": "Rash or patch on the skin, usually on the arms and legs",
+        "name": "Rash_or_patch_on_the_skin,_usually_on_the_arms_and_legs"
+      }
+    ]
+    ,
+    "elbowData": [
+      {
+        "title": "Limited range of motion of the elbows",
+        "name": "Limited_range_of_motion_of_the_elbows"
+      },
+      {
+        "title": "Enlarged blood vessels in skin of nose, ears, and inside of the elbow and knee",
+        "name": "Enlarged_blood_vessels_in_skin_of_nose_ears_inside_elbow_knee"
+      },
+      {
+        "title": "Extremely itchy bumps or blisters, most often on the elbows, knees, back, and buttocks",
+        "name": "Extremely_itchy_bumps_blisters_on_elbows_knees_back_buttocks"
+      },
+      {
+        "title": "Fatty skin deposits called xanthomas over parts of the hands, elbows, knees, ankles and around the cornea of the eye",
+        "name": "Fatty_skin_deposits_xanthomas_over_parts_of_hands_elbows_knees_ankles_around_cornea_of_eye"
+      },
+      {
+        "title": "Numbness along your shoulder, elbow, forearm, and fingers",
+        "name": "Numbness_along_shoulder_elbow_forearm_fingers"
+      }
+    ]
+    ,
+    "handData": [
+      {
+        "title": "Single crease in the palm of the hand",
+        "name": "Single_crease_in_the_palm_of_the_hand"
+      },
+      {
+        "title": "Carpal tunnel syndrome",
+        "name": "Carpal_tunnel_syndrome"
+      },
+      {
+        "title": "Hand tremor",
+        "name": "Hand_tremor"
+      },
+      {
+        "title": "Swelling of hands",
+        "name": "Swelling_of_hands"
+      },
+      {
+        "title": "Numbness and tingling of hands or feet",
+        "name": "Numbness_and_tingling_of_hands_or_feet"
+      },
+      {
+        "title": "Excessive movement of the hands and limbs",
+        "name": "Excessive_movement_of_the_hands_and_limbs"
+      },
+      {
+        "title": "Walking with arms uplifted and hands waving",
+        "name": "Walking_with_arms_uplifted_and_hands_waving"
+      },
+      {
+        "title": "Reduced pulse",
+        "name": "Reduced_pulse"
+      },
+      {
+        "title": "Bounding pulse",
+        "name": "Bounding_pulse"
+      },
+      {
+        "title": "Uneven, rapid, racing, pounding, or fluttering pulse",
+        "name": "Uneven_rapid_racing_pounding_or_fluttering_pulse"
+      },
+      {
+        "title": "Skeletal (limb) abnormalities",
+        "name": "Skeletal_limb_abnormalities"
+      },
+      {
+        "title": "Loss of feeling (sensation) in hands and feet",
+        "name": "Loss_of_feeling_sensation_in_hands_and_feet"
+      },
+      {
+        "title": "Clumsiness of the hand when gripping objects",
+        "name": "Clumsiness_of_the_hand_when_gripping_objects"
+      },
+      {
+        "title": "Numbness or tingling of the palm of the hand",
+        "name": "Numbness_or_tingling_of_the_palm_of_the_hand"
+      },
+      {
+        "title": "Pain that extends to the elbow",
+        "name": "Pain_that_extends_to_the_elbow"
+      },
+      {
+        "title": "Pain in the wrist or hand in one or both hands",
+        "name": "Pain_in_the_wrist_or_hand_in_one_or_both_hands"
+      },
+      {
+        "title": "Weak grip",
+        "name": "Weak_grip"
+      },
+      {
+        "title": "Weakness in one or both hands",
+        "name": "Weakness_in_one_or_both_hands"
+      },
+      {
+        "title": "Redness on the palms of the hands",
+        "name": "Redness_on_the_palms_of_the_hands"
+      },
+      {
+        "title": "Mitten-like hands or feet",
+        "name": "Mitten-like_hands_or_feet"
+      },
+      {
+        "title": "Thickening of skin on hands and feet",
+        "name": "Thickening_of_skin_on_hands_and_feet"
+      },
+      {
+        "title": "Fatty skin deposits called xanthomas over parts of the hands, elbows, knees, ankles and around the cornea of the eye",
+        "name": "Fatty_skin_deposits_called_xanthomas_over_parts_of_the_hands_elbows_knees_ankles_and_around_the_cornea_of_the_eye"
+      },
+      {
+        "title": "Rash may appear on the palms and soles, but not on the back, chest, or belly area",
+        "name": "Rash_may_appear_on_the_palms_and_soles_but_not_on_the_back_chest_or_belly_area"
+      },
+      {
+        "title": "Pain in the hands or wrists due to tendon inflammation",
+        "name": "Pain_in_the_hands_or_wrists_due_to_tendon_inflammation"
+      }
+    ]
+    ,
+    "pelvicData": [
+      {
+        "title": "Bulge_in_the_groin_or_scrotum",
+        "name": "Bulge_in_the_groin_or_scrotum"
+      },
+      {
+        "title": "Delayed_sexual_maturity",
+        "name": "Delayed_sexual_maturity"
+      },
+      {
+        "title": "Testicles_that_have_not_come_down_undescended",
+        "name": "Testicles_that_have_not_come_down_undescended"
+      },
+      {
+        "title": "Bleeding_or_spotting_from_the_vagina_between_periods",
+        "name": "Bleeding_or_spotting_from_the_vagina_between_periods"
+      },
+      {
+        "title": "Periods_that_occur_less_than_28_days_apart_more_common_or_more_than_35_days_apart",
+        "name": "Periods_that_occur_less_than_28_days_apart_more_common_or_more_than_35_days_apart"
+      },
+      {
+        "title": "Time_between_periods_changes_each_month",
+        "name": "Time_between_periods_changes_each_month"
+      },
+      {
+        "title": "Heavier_bleeding",
+        "name": "Heavier_bleeding"
+      },
+      {
+        "title": "Bleeding_that_lasts_for_more_days_than_normal_or_for_more_than_7_days",
+        "name": "Bleeding_that_lasts_for_more_days_than_normal_or_for_more_than_7_days"
+      },
+      {
+        "title": "Tenderness_and_dryness_of_the_vagina",
+        "name": "Tenderness_and_dryness_of_the_vagina"
+      },
+      {
+        "title": "Hot_flashes",
+        "name": "Hot_flashes"
+      },
+      {
+        "title": "Increased_need_to_urinate",
+        "name": "Increased_need_to_urinate"
+      },
+      {
+        "title": "Decreased_urine_output",
+        "name": "Decreased_urine_output"
+      },
+      {
+        "title": "Blood_in_the_urine",
+        "name": "Blood_in_the_urine"
+      },
+      {
+        "title": "Inability_to_pass_urine",
+        "name": "Inability_to_pass_urine"
+      },
+      {
+        "title": "Urination_changes_such_as_little_or_no_urine_excessive_urination_at_night_or_urination_that_stops_completely",
+        "name": "Urination_changes_such_as_little_or_no_urine_excessive_urination_at_night_or_urination_that_stops_completely"
+      },
+      {
+        "title": "Heavy_menstrual_periods",
+        "name": "Heavy_menstrual_periods"
+      },
+      {
+        "title": "heavy_menstrual_bleeding",
+        "name": "heavy_menstrual_bleeding"
+      },
+      {
+        "title": "Painful_menstrual_periods",
+        "name": "Painful_menstrual_periods"
+      },
+      {
+        "title": "Abnormal_or_increased_menstrual_bleeding_in_females",
+        "name": "Abnormal_or_increased_menstrual_bleeding_in_females"
+      },
+      {
+        "title": "Pelvic_pain_during_intercourse",
+        "name": "Pelvic_pain_during_intercourse"
+      },
+      {
+        "title": "Abnormal_urine_color",
+        "name": "Abnormal_urine_color"
+      },
+      {
+        "title": "Loss_of_sexual_desire",
+        "name": "Loss_of_sexual_desire"
+      },
+      {
+        "title": "Using_pills_to_make_themselves_urinate",
+        "name": "Using_pills_to_make_themselves_urinate"
+      },
+      {
+        "title": "Burning_sensation_when_urinating",
+        "name": "Burning_sensation_when_urinating"
+      },
+      {
+        "title": "Urination_difficulty",
+        "name": "Urination_difficulty"
+      },
+      {
+        "title": "Difficulty_beginning_to_urinate",
+        "name": "Difficulty_beginning_to_urinate"
+      },
+      {
+        "title": "Feeling_of_incomplete_bladder_emptying",
+        "name": "Feeling_of_incomplete_bladder_emptying"
+      },
+      {
+        "title": "Leaking_urine",
+        "name": "Leaking_urine"
+      },
+      {
+        "title": "Redness_of_foreskin_or_penis",
+        "name": "Redness_of_foreskin_or_penis"
+      },
+      {
+        "title": "Other_rashes_on_the_head_of_the_penis",
+        "name": "Other_rashes_on_the_head_of_the_penis"
+    },
+    {
+    "title": "Foul-smelling_discharge",
+    "name": "Foul-smelling_discharge"
+    },
+    {
+    "title": "Painful_penis_and_foreskin",
+    "name": "Painful_penis_and_foreskin"
+    },
+    {
+    "title": "A_tender_lump_on_either_side_of_the_vaginal_opening",
+    "name": "A_tender_lump_on_either_side_of_the_vaginal_opening"
+    },
+    {
+    "title": "Swelling_and_redness",
+    "name": "Swelling_and_redness"
+    },
+    {
+    "title": "Pain_with_sitting_or_walking",
+    "name": "Pain_with_sitting_or_walking"
+    },
+    {
+    "title": "Pain_with_sexual_intercourse",
+    "name": "Pain_with_sexual_intercourse"
+    },
+    {
+    "title": "Vaginal_discharge",
+    "name": "Vaginal_discharge"
+    },
+    {
+    "title": "Vaginal_pressure",
+    "name": "Vaginal_pressure"
+    },
+    {
+    "title": "Urinary_incontinence",
+    "name": "Urinary_incontinence"
+    },
+    {
+    "title": "Painful_urination",
+    "name": "Painful_urination"
+    },
+    {
+    "title": "Continuous_feeling_of_a_full_bladder",
+    "name": "Continuous_feeling_of_a_full_bladder"
+    },
+    {
+    "title": "Pain_during_urination_dysuria",
+    "name": "Pain_during_urination_dysuria"
+    },
+    {
+    "title": "Straining_to_urinate",
+    "name": "Straining_to_urinate"
+    },
+    {
+    "title": "Urinary_tract_infection",
+    "name": "Urinary_tract_infection"
+    },
+    {
+    "title": "Urine_that_smells_like_maple_syrup",
+    "name": "Urine_that_smells_like_maple_syrup"
+    },
+    {
+      "title": "Waking_up_at_night_to_urinate_nocturia",
+      "name": "Waking_up_at_night_to_urinate_nocturia"
+    },
+    {
+      "title": "Inability_to_urinate_except_in_certain_positions",
+      "name": "Inability_to_urinate_except_in_certain_positions"
+    },
+    {
+      "title": "Interruption_of_the_urine_stream",
+      "name": "Interruption_of_the_urine_stream"
+    },
+    {
+      "title": "Pain_discomfort_in_the_penis",
+      "name": "Pain_discomfort_in_the_penis"
+    },
+    {
+      "title": "Signs_of_UTI_such_as_fever_pain_when_urinating_and_need_to_urinate_often",
+      "name": "Signs_of_UTI_such_as_fever_pain_when_urinating_and_need_to_urinate_often"
+    },
+    {
+      "title": "Foul_or_strong_urine_odor",
+      "name": "Foul_or_strong_urine_odor"
+    },
+    {
+      "title": "Frequent_and_strong_urge_to_urinate",
+      "name": "Frequent_and_strong_urge_to_urinate"
+    },
+    {
+      "title": "Abnormal_vaginal_bleeding_between_periods_after_intercourse_or_after_menopause",
+      "name": "Abnormal_vaginal_bleeding_between_periods_after_intercourse_or_after_menopause"
+    },
+    {
+      "title": "Vaginal_discharge_that_does_not_stop_and_may_be_pale_watery_pink_brown_bloody_or_foul-smelling",
+      "name": "Vaginal_discharge_that_does_not_stop_and_may_be_pale_watery_pink_brown_bloody_or_foul-smelling"
+    },
+    {
+      "title": "Periods_that_become_heavier_and_last_longer_than_usual",
+      "name": "Periods_that_become_heavier_and_last_longer_than_usual"
+    },
+    {
+      "title": "Vaginal_bleeding_after_douching_or_intercourse",
+      "name": "Vaginal_bleeding_after_douching_or_intercourse"
+    },
+    {
+      "title": "Abnormal_vaginal_bleeding_after_menopause_or_between_periods",
+      "name": "Abnormal_vaginal_bleeding_after_menopause_or_between_periods"
+    },
+    {
+      "title": "White_or_yellow_mucus_leukorrhea",
+      "name": "White_or_yellow_mucus_leukorrhea"
+    },
+    {
+      "title": "Unusual_vaginal_discharge_that_does_not_go_away_discharge_may_be_gray_white_or_yellow_in_color",
+      "name": "Unusual_vaginal_discharge_that_does_not_go_away_discharge_may_be_gray_white_or_yellow_in_color"
+    },
+    {
+      "title": "Painful_sexual_intercourse",
+      "name": "Painful_sexual_intercourse"
+    },
+    {
+      "title": "Pain_in_the_vagina",
+      "name": "Pain_in_the_vagina"
+    },
+    {
+      "title": "Gastrointestinal_tract_and_urinary_tract_bleeding",
+      "name": "Gastrointestinal_tract_and_urinary_tract_bleeding"
+    },
+    {
+      "title": "Bleeding_that_starts_without_cause",
+      "name": "Bleeding_that_starts_without_cause"
+    },
+    {
+      "title": "Pressure_or_heaviness_in_the_pelvis",
+      "name": "Pressure_or_heaviness_in_the_pelvis"
+    },
+    {
+      "title": "Vaginal_itching",
+      "name": "Vaginal_itching"
+    },
+    {
+      "title": "Discharge_from_the_penis_or_rectum",
+      "name": "Discharge_from_the_penis_or_rectum"
+    },
+    {
+      "title": "Tenderness_or_pain_in_the_testicles",
+      "name": "Tenderness_or_pain_in_the_testicles"
+    },
+    {
+      "title": "Rectal_discharge_or_pain",
+      "name": "Rectal_discharge_or_pain"
+    },
+    {
+      "title": "Symptoms_of_pelvic_inflammatory_disease_PID_salpingitis_inflammation_of_the_fallopian_tubes_or_liver_inflammation_similar_to_hepatitis",
+      "name": "Symptoms_of_pelvic_inflammatory_disease_PID_salpingitis_inflammation_of_the_fallopian_tubes_or_liver_inflammation_similar_to_hepatitis"
+    },
+    {
+      "title": "dark_urine",
+      "name": "dark_urine"
+    },
+    {
+      "title": "In_men_impotence_shrinking_of_the_testicles_and_breast_swelling",
+      "name": "In_men_impotence_shrinking_of_the_testicles_and_breast_swelling"
+    },
+    {
+      "title": "Foamy_appearance_of_urine",
+      "name": "Foamy_appearance_of_urine"
+    },
+    {
+      "title": "A_bend_in_the_penis_which_most_often_begins_at_the_area_where_you_feel_the_scar_tissue_or_hardening",
+      "name": "A_bend_in_the_penis_which_most_often_begins_at_the_area_where_you_feel_the_scar_tissue_or_hardening"
+    },
+    {
+      "title": "Softening_of_the_portion_of_the_penis_beyond_the_area_of_scar_tissue",
+      "name": "Softening_of_the_portion_of_the_penis_beyond_the_area_of_scar_tissue"
+    },
+    {
+      "title": "Narrowing_of_the_penis",
+      "name": "Narrowing_of_the_penis"
+    },
+    {
+      "title": "Problems_with_penetration_or_pain_during_intercourse",
+      "name": "Problems_with_penetration_or_pain_during_intercourse"
+    },
+    {
+      "title": "Shortening_of_the_penis",
+      "name": "Shortening_of_the_penis"
+    },
+    {
+      "title": "Pain_or_burning_with_urination",
+      "name": "Pain_or_burning_with_urination"
+    },
+    {
+      "title": "Strong_need_to_urinate_often_even_right_after_the_bladder_has_been_emptied",
+      "name": "Strong_need_to_urinate_often_even_right_after_the_bladder_has_been_emptied"
+    },
+    {
+      "title": "Premature_rupture_of_membranes_during_pregnancy",
+      "name": "Premature_rupture_of_membranes_during_pregnancy"
+    },
+    {
+      "title": "Epispadias_or_undescended_testicle_cryptorchidism",
+      "name": "Epispadias_or_undescended_testicle_cryptorchidism"
+    },
+    {
+      "title": "Menstrual_bleeding_that_is_not_regular_or_predictable",
+      "name": "Menstrual_bleeding_that_is_not_regular_or_predictable"
+    },
+    {
+      "title": "Trouble_getting_or_staying_pregnant_infertility",
+      "name": "Trouble_getting_or_staying_pregnant_infertility"
+    },
+    {
+      "title": "Painful_periods_Cramps_or_pain_in_your_lower_belly_may_begin_a_week_or_two_before_your_period_Cramps_may_be_steady_and_range_from_dull_to_severe",
+      "name": "Painful_periods_Cramps_or_pain_in_your_lower_belly_may_begin_a_week_or_two_before_your_period_Cramps_may_be_steady_and_range_from_dull_to_severe"
+    },
+    {
+      "title": "Dribbling_at_the_end_of_urinating",
+      "name": "Dribbling_at_the_end_of_urinating"
+    },
+    {
+      "title": "Incomplete_emptying_of_your_bladder",
+      "name": "Incomplete_emptying_of_your_bladder"
+    }
+  ,
+    {
+      "title": "Needing_to_urinate_2_or_more_times_per_night",
+      "name": "Needing_to_urinate_2_or_more_times_per_night"
+    },
+    {
+      "title": "Slowed_or_delayed_start_of_the_urinary_stream",
+      "name": "Slowed_or_delayed_start_of_the_urinary_stream"
+    },
+    {
+      "title": "Straining_to_urinate",
+      "name": "Straining_to_urinate"
+    },
+    {
+      "title": "Weak_urine_stream",
+      "name": "Weak_urine_stream"
+    },
+    {
+      "title": "Bowel_or_bladder_incontinence",
+      "name": "Bowel_or_bladder_incontinence"
+    },
+    {
+      "title": "Red_or_swollen_opening_of_penis_urethra",
+      "name": "Red_or_swollen_opening_of_penis_urethra"
+    },
+    {
+      "title": "Abnormal_uterine_bleeding",
+      "name": "Abnormal_uterine_bleeding"
+    },
+    {
+      "title": "Bleeding_after_sex",
+      "name": "Bleeding_after_sex"
+    },
+    {
+      "title": "Abnormal_vaginal_discharge_with_greenish_yellow_or_foul_smelling_discharge",
+      "name": "Abnormal_vaginal_discharge_with_greenish_yellow_or_foul_smelling_discharge"
+    },
+    {
+      "title": "Loss_of_interest_in_sex",
+      "name": "Loss_of_interest_in_sex"
+    },
+    {
+      "title": "Loss_of_menstrual_periods",
+      "name": "Loss_of_menstrual_periods"
+    },
+    {
+      "title": "Infertility",
+      "name": "Infertility"
+    },
+    {
+      "title": "In_boys_no_development_of_sex_characteristics_such_as_enlargement_of_the_testes_and_penis_deepening_of_the_voice_and_facial_hair",
+      "name": "In_boys_no_development_of_sex_characteristics_such_as_enlargement_of_the_testes_and_penis_deepening_of_the_voice_and_facial_hair"
+    },
+    {
+      "title": "In_girls_a_lack_of_breast_development_and_menstrual_periods",
+      "name": "In_girls_a_lack_of_breast_development_and_menstrual_periods"
+    },
+    {
+      "title": "Pain_may_move_to_the_groin_area_groin_pain_testicles_testicle_pain_in_men_and_labia_vaginal_pain_in_women",
+      "name": "Pain_may_move_to_the_groin_area_groin_pain_testicles_testicle_pain_in_men_and_labia_vaginal_pain_in_women"
+    },
+    {
+      "title": "Urethra_on_the_underside_of_the_penis",
+      "name": "Urethra_on_the_underside_of_the_penis"
+    },
+    {
+      "title": "Testicles_that_have_not_moved_into_the_scrotum",
+      "name": "Testicles_that_have_not_moved_into_the_scrotum"
+    },
+    {
+      "title": "Delayed_puberty",
+      "name": "Delayed_puberty"
+    },
+    {
+      "title": "Small_penis_size",
+      "name": "Small_penis_size"
+    },
+    {
+      "title": "Sexual_problems",
+      "name": "Sexual_problems"
+    },
+    {
+      "title": "Enlargement_of_a_testicle_or_change_in_the_way_it_feels",
+      "name": "Enlargement_of_a_testicle_or_change_in_the_way_it_feels"
+    },
+    {
+      "title": "Heaviness_in_the_scrotum",
+      "name": "Heaviness_in_the_scrotum"
+    },
+    {
+      "title": "Lump_or_swelling_in_either_testicle",
+      "name": "Lump_or_swelling_in_either_testicle"
+    },
+    {
+      "title": "Abnormal_strength_and_direction_of_urine_stream",
+      "name": "Abnormal_strength_and_direction_of_urine_stream"
+    },
+    {
+      "title": "Bed_wetting",
+      "name": "Bed_wetting"
+    },
+    {
+      "title": "Bleeding_hematuria_at_end_of_urination",
+      "name": "Bleeding_hematuria_at_end_of_urination"
+    },
+    {
+      "title": "Visible_narrowing_of_the_urethral_opening_in_boys",
+      "name": "Visible_narrowing_of_the_urethral_opening_in_boys"
+    }
+  
+  
+  
+    ],
+
+
+
+    "abdomenData": [
+      {
+        "title": "Belly_button_that_sticks_out",
+        "name": "Belly_button_that_sticks_out"
+      },
+      {
+        "title": "Pain_in_the_abdomen",
+        "name": "Pain_in_the_abdomen"
+      },
+      {
+        "title": "Spasms_of_the_stomach_and_intestines",
+        "name": "Spasms_of_the_stomach_and_intestines"
+      },
+      {
+        "title": "Unintentional_weight_loss",
+        "name": "Unintentional_weight_loss"
+      },
+      {
+        "title": "Loss_of_appetite",
+        "name": "Loss_of_appetite"
+      },
+      {
+        "title": "Swelling_of_abdomen",
+        "name": "Swelling_of_abdomen"
+      },
+      {
+        "title": "Bloating_or_abdominal_gas",
+        "name": "Bloating_or_abdominal_gas"
+      },
+      {
+        "title": "Indigestion",
+        "name": "Indigestion"
+      },
+      {
+        "title": "Diarrhea",
+        "name": "Diarrhea"
+      },
+      {
+        "title": "Constipation",
+        "name": "Constipation"
+      },
+      {
+        "title": "No_longer_being_able_to_pass_gas",
+        "name": "No_longer_being_able_to_pass_gas"
+      },
+      {
+        "title": "Obesity",
+        "name": "Obesity"
+      },
+      {
+        "title": "Abdominal_cramps",
+        "name": "Abdominal_cramps"
+      },
+      {
+        "title": "Excessive_gas",
+        "name": "Excessive_gas"
+      },
+      {
+        "title": "Abdominal_pain_more_so_in_the_right_upper_part_of_the_abdomen_pain_is_intense_continuous_or_stabbing",
+        "name": "Abdominal_pain_more_so_in_the_right_upper_part_of_the_abdomen_pain_is_intense_continuous_or_stabbing"
+      },
+      {
+        "title": "Failure_to_gain_weight",
+        "name": "Failure_to_gain_weight"
+      },
+      {
+        "title": "Abdominal_distention",
+        "name": "Abdominal_distention"
+      },
+      {
+        "title": "Feeling_full_after_only_a_few_bites",
+        "name": "Feeling_full_after_only_a_few_bites"
+      },
+      {
+        "title": "Rate_of_weight_gain_is_much_lower_than_that_of_other_children_of_similar_age_and_sex",
+        "name": "Rate_of_weight_gain_is_much_lower_than_that_of_other_children_of_similar_age_and_sex"
+      },
+      {
+        "title": "Protruding_abdomen",
+        "name": "Protruding_abdomen"
+      },
+      {
+        "title": "Abdominal_wall_defect",
+        "name": "Abdominal_wall_defect"
+      },
+      {
+        "title": "Abdominal_pain_in_the_upper_right_side",
+        "name": "Abdominal_pain_in_the_upper_right_side"
+      },
+      {
+        "title": "Eats_large_amounts_of_food_in_a_short_period",
+        "name": "Eats_large_amounts_of_food_in_a_short_period"
+      },
+      {
+        "title": "Is_not_able_to_control_overeating",
+        "name": "Is_not_able_to_control_overeating"
+      },
+      {
+        "title": "Eats_food_very_fast_each_time",
+        "name": "Eats_food_very_fast_each_time"
+      },
+      {
+        "title": "Keeps_eating_even_when_full_gorging_or_until_uncomfortably_full",
+        "name": "Keeps_eating_even_when_full_gorging_or_until_uncomfortably_full"
+      },
+      {
+        "title": "Eats_even_though_not_hungry",
+        "name": "Eats_even_though_not_hungry"
+      },
+      {
+        "title": "Eats_alone_in_secret",
+        "name": "Eats_alone_in_secret"
+      },
+      {
+        "title": "Feels_guilty_disgusted_ashamed_or_depressed_after_eating_so_much",
+        "name": "Feels_guilty_disgusted_ashamed_or_depressed_after_eating_so_much"
+      },
+      {
+        "title": "Cramping_abdominal_pain",
+        "name": "Cramping_abdominal_pain"
+      },
+      {
+        "title": "Watery_diarrhea_sometimes_bloody",
+        "name": "Watery_diarrhea_sometimes_bloody"
+      },
+      {
+        "title": "Pressure_pain_or_spasms_in_your_back_or_the_lower_part_of_your_belly",
+        "name": "Pressure_pain_or_spasms_in_your_back_or_the_lower_part_of_your_belly"
+      },
+      {
+        "title": "Decreased_appetite_may_also_be_increased_or_unchanged",
+        "name": "Decreased_appetite_may_also_be_increased_or_unchanged"
+      },
+      {
+        "title": "Diarrhea_either_constant_or_off_and_on",
+        "name": "Diarrhea_either_constant_or_off_and_on"
+      },
+      {
+        "title": "Lactose_intolerance_common_when_the_person_is_diagnosed_often_goes_away_after_treatment",
+        "name": "Lactose_intolerance_common_when_the_person_is_diagnosed_often_goes_away_after_treatment"
+      },
+      {
+        "title": "Pain_in_the_upper_right_abdomen_that_may_radiate_to_the_back",
+        "name": "Pain_in_the_upper_right_abdomen_that_may_radiate_to_the_back"
+      },
+      {
+        "title": "Pain_on_the_upper_right_side_or_upper_middle_part_of_the_abdomen_It_may_also_be_felt_in_the_back_or_below_the_right_shoulder_blade_The_pain_may_come_and_go_and_feel_sharp_cramp-like_or_dull",
+        "name": "Pain_on_the_upper_right_side_or_upper_middle_part_of_the_abdomen_It_may_also_be_felt_in_the_back_or_below_the_right_shoulder_blade_The_pain_may_come_and_go_and_feel_sharp_cramp-like_or_dull"
+      },
+      {
+        "title": "Inability_to_digest_certain_foods",
+        "name": "Inability_to_digest_certain_foods"
+      },
+      {
+        "title": "Sharp_cramping_or_dull_pain_in_upper_right_or_upper_middle_of_your_belly_lasting_for_30_minutes",
+        "name": "Sharp_cramping_or_dull_pain_in_upper_right_or_upper_middle_of_your_belly_lasting_for_30_minutes"
+      },
+      {
+        "title": "Pain_in_the_right_upper_part_of_the_abdomen",
+        "name": "Pain_in_the_right_upper_part_of_the_abdomen"
+      },
+      {
+        "title": "Pain_in_the_right_upper_or_middle_upper_abdomen_for_at_least_30_minutes_The_pain_may_be_constant_and_intense_It_can_be_mild_or_severe",
+        "name": "Pain_in_the_right_upper_or_middle_upper_abdomen_for_at_least_30_minutes_The_pain_may_be_constant_and_intense_It_can_be_mild_or_severe"
+      },
+      {
+        "title": "Sounds_grunts_throat_clearing_contractions_of_the_abdomen_or_diaphragm",
+        "name": "Sounds_grunts_throat_clearing_contractions_of_the_abdomen_or_diaphragm"
+      },
+      {
+        "title": "Abdominal_pain_may_last_from_hours_to_days_over_time_may_always_be_present",
+        "name": "Abdominal_pain_may_last_from_hours_to_days_over_time_may_always_be_present"
+      },
+      {
+        "title": "Abdominal_pain_may_get_worse_from_eating",
+        "name": "Abdominal_pain_may_get_worse_from_eating"
+      },
+      {
+        "title": "Abdominal_pain_may_get_worse_from_drinking_alcohol",
+        "name": "Abdominal_pain_may_get_worse_from_drinking_alcohol"
+      },
+      {
+        "title": "Chronic_weight_loss_even_when_eating_habits_and_amounts_are_normal",
+        "name": "Chronic_weight_loss_even_when_eating_habits_and_amounts_are_normal"
+      },
+      {
+        "title": "Weight_gain",
+        "name": "Weight_gain"
+      },
+      {
+        "title": "Abdominal_pain_due_to_pancreatitis_inflammation_of_the_pancreas",
+        "name": "Abdominal_pain_due_to_pancreatitis_inflammation_of_the_pancreas"
+      },
+      {
+        "title": "Fluid_buildup_in_the_legs_edema_and_in_the_abdomen_ascites",
+        "name": "Fluid_buildup_in_the_legs_edema_and_in_the_abdomen_ascites"
+      },
+      {
+        "title": "Easy_bruising_and_abnormal_bleeding_most_often_from_swollen_veins_in_the_digestive_tract",
+        "name": "Easy_bruising_and_abnormal_bleeding_most_often_from_swollen_veins_in_the_digestive_tract"
+      },
+      {
+        "title": "Bleeding_from_upper_or_lower_gastrointestinal_tract",
+        "name": "Bleeding_from_upper_or_lower_gastrointestinal_tract"
+      },
+      {
+        "title": "Failure_to_thrive",
+        "name": "Failure_to_thrive"
+      },
+      {
+        "title": "Abdominal_pain_and_tenderness_in_the_lower_abdomen",
+        "name": "Abdominal_pain_and_tenderness_in_the_lower_abdomen"
+      },
+      {
+        "title": "Low_birth_weight",
+        "name": "Low_birth_weight"
+      },
+      {
+        "title": "Bleeding_from_the_umbilical_cord_just_after_birth",
+        "name": "Bleeding_from_the_umbilical_cord_just_after_birth"
+      },
+      {
+        "title": "Watery_diarrhea_which_may_be_bloody",
+        "name": "Watery_diarrhea_which_may_be_bloody"
+      },
+      {
+        "title": "Diarrhea_which_is_often_watery_non-bloody_large-volume_and_occurs_many_times_a_day",
+        "name": "Diarrhea_which_is_often_watery_non-bloody_large-volume_and_occurs_many_times_a_day"
+      },
+      {
+        "title": "Pressure_or_cramping_in_the_lower_middle_abdomen_or_back",
+        "name": "Pressure_or_cramping_in_the_lower_middle_abdomen_or_back"
+      },
+      {
+        "title": "Hunger",
+        "name": "Hunger"
+      },
+      {
+        "title": "Tenderness_usually_in_the_left_lower_part_of_the_abdomen",
+        "name": "Tenderness_usually_in_the_left_lower_part_of_the_abdomen"
+      },
+      {
+        "title": "Not_feeling_hungry_and_not_eating",
+        "name": "Not_feeling_hungry_and_not_eating"
+      },
+      {
+        "title": "Pain_in_the_upper_right_part_of_the_abdomen",
+        "name": "Pain_in_the_upper_right_part_of_the_abdomen"
+      },
+      {
+        "title": "Chronic_inflammation_of_the_pancreas",
+        "name": "Chronic_inflammation_of_the_pancreas"
+      },
+      {
+        "title": "Pain_in_the_right_upper_or_middle_upper_abdomen_for_at_least_30_minutes_The_pain_may_be_constant_or_cramping_It_can_feel_sharp_or_dull",
+        "name": "Pain_in_the_right_upper_or_middle_upper_abdomen_for_at_least_30_minutes_The_pain_may_be_constant_or_cramping_It_can_feel_sharp_or_dull"
+      },
+      {
+        "title": "Premature_abdominal_fullness_after_meals",
+        "name": "Premature_abdominal_fullness_after_meals"
+      },
+      {
+        "title": "Increased_appetite",
+        "name": "Increased_appetite"
+      },
+      {
+        "title": "Feeling_full_after_eating_only_a_small_amount",
+        "name": "Feeling_full_after_eating_only_a_small_amount"
+      },
+      {
+        "title": "Pain_or_fullness_in_the_upper_left_belly_enlarged_spleen",
+        "name": "Pain_or_fullness_in_the_upper_left_belly_enlarged_spleen"
+      },
+      {
+        "title": "Pain_in_the_right_upper_abdomen",
+        "name": "Pain_in_the_right_upper_abdomen"
+      },
+      {
+        "title": "Intestinal_infection",
+        "name": "Intestinal_infection"
+      },
+      {
+        "title": "Abdominal_discomfort",
+        "name": "Abdominal_discomfort"
+      },
+      {
+        "title": "Pain_may_be_felt_in_the_belly_area_or_side_of_the_back",
+        "name": "Pain_may_be_felt_in_the_belly_area_or_side_of_the_back"
+      },
+      {
+        "title": "Stomach_pain_on_the_left_side",
+        "name": "Stomach_pain_on_the_left_side"
+      },
+      {
+        "title": "Large_belly_that_sticks_out_protrudes",
+        "name": "Large_belly_that_sticks_out_protrudes"
+      }
+        
+    
+    ],
+    "kidneyData": [
+      {
+        "title": "Kidney failure",
+        "name": "Kidney_failure"
+      },
+      {
+        "title": "Pain in the side",
+        "name": "Pain_in_the_side"
+      },
+      {
+        "title": "Progressive kidney failure",
+        "name": "Progressive_kidney_failure"
+      },
+      {
+        "title": "Kidney stones",
+        "name": "Kidney_stones"
+      },
+      {
+        "title": "Glomerulonephritis (kidney inflammation)",
+        "name": "Glomerulonephritis_(kidney_inflammation)"
+      },
+      {
+        "title": "Nephrocalcinosis (too much calcium deposited in the kidneys)",
+        "name": "Nephrocalcinosis_(too_much_calcium_deposited_in_the_kidneys)"
+      }
+    ]
+    ,
+    "backData": [
+      {
+        "title": "Spine curvatures called kyphosis and lordosis",
+        "name": "Spine_curvatures_kyphosis_lordosis"
+      },
+      {
+        "title": "Back pain",
+        "name": "Back_pain"
+      },
+      {
+        "title": "Pain that spreads to your back or below your right shoulder blade",
+        "name": "Pain_spreads_to_back_or_below_right_shoulder_blade"
+      },
+      {
+        "title": "Difficulty lifting, climbing stairs, and walking",
+        "name": "Difficulty_lifting_climbing_stairs_walking"
+      },
+      {
+        "title": "Pain may be worse when you walk, cough, or make sudden movements",
+        "name": "Pain_worse_when_walk_cough_or_make_sudden_movements"
+      },
+      {
+        "title": "Goosebumps, flushed (red) skin above the level of the spinal cord injury",
+        "name": "Goosebumps_flushed_skin_above_spinal_cord_injury"
+      },
+      {
+        "title": "Curvature of spine",
+        "name": "Curvature_of_spine"
+      },
+      {
+        "title": "Pressure, pain, or spasms in your back or the lower part of your belly",
+        "name": "Pressure_pain_spasms_in_back_or_lower_belly"
+      },
+      {
+        "title": "Increased risk of getting flat foot, abnormal curvature of spine (scoliosis) and knee deformities",
+        "name": "Increased_risk_flat_foot_scoliosis_knee_deformities"
+      },
+      {
+        "title": "Extremely itchy bumps or blisters, most often on the elbows, knees, back, and buttocks",
+        "name": "Extremely_itchy_bumps_blisters_on_elbows_knees_back_buttocks"
+      },
+      {
+        "title": "Difficulty getting up and standing",
+        "name": "Difficulty_getting_up_and_standing"
+      },
+      {
+        "title": "Increased curvature of the back",
+        "name": "Increased_curvature_of_the_back"
+      },
+      {
+        "title": "Refusal to sit up, stand, or walk (younger child)",
+        "name": "Refusal_to_sit_up_stand_walk_younger_child"
+      },
+      {
+        "title": "Back stiffness",
+        "name": "Back_stiffness"
+      },
+      {
+        "title": "Fragile bones of the limbs and spine that can break easily",
+        "name": "Fragile_bones_of_limbs_spine_break_easily"
+      },
+      {
+        "title": "Long-term pelvic or low back pain that may occur at any time and last for 6 months or more",
+        "name": "Long-term_pelvic_low_back_pain_last_6_months_or_more"
+      },
+      {
+        "title": "Muscle aches in the lower back, buttocks, thighs, or knees",
+        "name": "Muscle_aches_lower_back_buttocks_thighs_knees"
+      },
+      {
+        "title": "Low back pain, radiating along both legs",
+        "name": "Low_back_pain_radiating_along_both_legs"
+      },
+      {
+        "title": "Pain get worse after standing or sitting",
+        "name": "Pain_gets_worse_after_standing_or_sitting"
+      },
+      {
+        "title": "Pain get worse at night",
+        "name": "Pain_gets_worse_at_night"
+      },
+      {
+        "title": "Pain get worse when sneezing, coughing, or laughing",
+        "name": "Pain_gets_worse_when_sneezing_coughing_laughing"
+      },
+      {
+        "title": "Pain gets worse when bending backward or walking more than a few yards or meters",
+        "name": "Pain_gets_worse_when_bending_backward_walking_more_than_few_yards_or_meters"
+      },
+      {
+        "title": "Pain get worse when straining or holding your breath, such as when having a bowel movement",
+        "name": "Pain_gets_worse_when_straining_or_holding_breath_bowel_movement"
+      },
+      {
+        "title": "Spine that curves to one side",
+        "name": "Spine_curves_to_one_side"
+      }
+    ]
+    ,
+    "hipsData": [
+      {
+        "title": "Blood in the stool",
+        "name": "Blood_in_the_stool"
+      },
+      {
+        "title": "Clay-colored stools",
+        "name": "Clay-colored_stools"
+      },
+      {
+        "title": "Rectal pain while having a bowel movement (tenesmus)",
+        "name": "Rectal_pain_while_having_a_bowel_movement_tenesmus"
+      },
+      {
+        "title": "A lump in or near the anus",
+        "name": "Lump_in_or_near_the_anus"
+      },
+      {
+        "title": "Anal pain",
+        "name": "Anal_pain"
+      },
+      {
+        "title": "Itching in anal",
+        "name": "Itching_in_anal"
+      },
+      {
+        "title": "Discharge from the anus",
+        "name": "Discharge_from_the_anus"
+      },
+      {
+        "title": "Change in bowel habits",
+        "name": "Change_in_bowel_habits"
+      },
+      {
+        "title": "Swollen lymph nodes in the groin or anal region",
+        "name": "Swollen_lymph_nodes_groin_anal_region"
+      },
+      {
+        "title": "Discharge of pus from the rectum",
+        "name": "Discharge_of_pus_from_the_rectum"
+      },
+      {
+        "title": "Redness, painful and hardened tissue in the area of the anus",
+        "name": "Redness_painful_hardened_tissue_area_of_anus"
+      },
+      {
+        "title": "Tenderness In anus swollen part",
+        "name": "Tenderness_In_anus_swollen_part"
+      },
+      {
+        "title": "Slowdown or stoppage of the bowels",
+        "name": "Slowdown_or_stoppage_of_the_bowels"
+      },
+      {
+        "title": "Hard stools",
+        "name": "Hard_stools"
+      },
+      {
+        "title": "Passing worms in stool",
+        "name": "Passing_worms_in_stool"
+      },
+      {
+        "title": "Bladder or bowel problems",
+        "name": "Bladder_or_bowel_problems"
+      },
+      {
+        "title": "Problems controlling bowel movements",
+        "name": "Problems_controlling_bowel_movements"
+      },
+      {
+        "title": "Stool abnormalities, including fatty stools that appear pale in color, frothy stools, and abnormally foul-smelling stools",
+        "name": "Stool_abnormalities_fatty_pale_frothy_foul-smelling"
+      },
+      {
+        "title": "Black, tarry stools",
+        "name": "Black_tarry_stools"
+      },
+      {
+        "title": "Stools that are foul smelling, oily, or stick to the toilet when flushed",
+        "name": "Foul_smelling_oily_sticky_stools"
+      },
+      {
+        "title": "Constant urge to have a bowel movement",
+        "name": "Constant_urges_to_have_a_bowel_movement"
+      },
+      {
+        "title": "Narrow stools",
+        "name": "Narrow_stools"
+      },
+      {
+        "title": "Muscle aches in the lower back, buttocks, thighs, or knees",
+        "name": "Muscle_aches_lower_back_buttocks_thighs_knees"
+      },
+      {
+        "title": "Feeling that you need to pass stools, even though your bowels are already empty (tenesmus). It may involve straining, pain, and cramping",
+        "name": "Feeling_to_pass_stools_even_though_bowels_empty_tenesmus"
+      },
+      {
+        "title": "Extremely itchy bumps or blisters, most often on the elbows, knees, back, and buttocks",
+        "name": "Extremely_itchy_bumps_blisters_on_elbows_knees_back_buttocks"
+      },
+      {
+        "title": "Pain with bowel movements",
+        "name": "Pain_with_bowel_movements"
+      },
+      {
+        "title": "Bowel or bladder incontinence",
+        "name": "Bowel_or_bladder_incontinence"
+      },
+      {
+        "title": "Leakage of liquid or sudden episodes of watery diarrhea in someone who has chronic (long-term) constipation",
+        "name": "Leakage_of_liquid_sudden_episodes_watery_diarrhea_chronic_constipation"
+      },
+      {
+        "title": "Rectal bleeding",
+        "name": "Rectal_bleeding"
+      },
+      {
+        "title": "Small, semi-formed stools",
+        "name": "Small_semi-formed_stools"
+      },
+      {
+        "title": "Straining when trying to pass stools",
+        "name": "Straining_when_trying_to_pass_stools"
+      },
+      {
+        "title": "Recurrent infections",
+        "name": "Recurrent_infections"
+      },
+      {
+        "title": "Sudden groin or thigh pain",
+        "name": "Sudden_groin_or_thigh_pain"
+      },
+      {
+        "title": "Painless bright red blood from the rectum",
+        "name": "Painless_bright_red_blood_from_rectum"
+      },
+      {
+        "title": "Unable to pass stools",
+        "name": "Unable_to_pass_stools"
+      },
+      {
+        "title": "Sharp pain in one part of the leg, hip, or buttocks, and numbness in other parts",
+        "name": "Sharp_pain_leg_hip_buttocks_numbness_other_parts"
+      },
+      {
+        "title": "Bulky stools",
+        "name": "Bulky_stools"
+      }
+    ]
+    ,
+    "thighData": [
+      {
+        "title": "Flank pain (between the ribs and hips)",
+        "name": "Flank_pain_between_the_ribs_and_hips"
+      },
+      {
+        "title": "Dry skin all over the body, or areas of bumpy skin on the back of the arms and front of the thighs",
+        "name": "Dry_skin_all_over_the_body_or_areas_of_bumpy_skin_on_the_back_of_the_arms_and_front_of_the_thighs"
+      }
+    ]
+    ,
+    "kneeData": [
+      {
+        "title": "Inability to fully extend the joints from birth",
+        "name": "Inability_to_fully_extend_the_joints_from_birth"
+      },
+      {
+        "title": "Joint pain",
+        "name": "Joint_pain"
+      },
+      {
+        "title": "Bone and joint pain",
+        "name": "Bone_and_joint_pain"
+      },
+      {
+        "title": "Obvious knee swelling within 6 hours of injury",
+        "name": "Obvious_knee_swelling_within_6_hours_of_injury"
+      },
+      {
+        "title": "Joint swelling",
+        "name": "Joint_swelling"
+      },
+      {
+        "title": "Reduced ability to move the joint",
+        "name": "Reduced_ability_to_move_the_joint"
+      },
+      {
+        "title": "Redness and warmth of the skin around a joint",
+        "name": "Redness_and_warmth_of_the_skin_around_a_joint"
+      },
+      {
+        "title": "Joint stiffness",
+        "name": "Joint_stiffness"
+      },
+      {
+        "title": "Enlarged blood vessels in skin of nose, ears, and inside of the elbow and knee",
+        "name": "Enlarged_blood_vessels_in_skin_of_nose_ears_and_inside_of_the_elbow_and_knee"
+      },
+      {
+        "title": "Pain over the joint, which pressure from shoes makes worse",
+        "name": "Pain_over_the_joint_which_pressure_from_shoes_makes_worse"
+      },
+      {
+        "title": "Muscle aches and joint stiffness from swelling of the tissue over the joint",
+        "name": "Muscle_aches_and_joint_stiffness_from_swelling_of_the_tissue_over_the_joint"
+      },
+      {
+        "title": "Loose joints",
+        "name": "Loose_joints"
+      },
+      {
+        "title": "Increased risk of getting flat foot, abnormal curvature of spine (scoliosis) and knee deformities",
+        "name": "Increased_risk_of_getting_flat_foot_abnormal_curvature_of_spine_scoliosis_and_knee_deformities"
+      },
+      {
+        "title": "Bleeding in the joints",
+        "name": "Bleeding_in_the_joints"
+      },
+      {
+        "title": "Extremely itchy bumps or blisters, most often on the elbows, knees, back, and buttocks",
+        "name": "Extremely_itchy_bumps_or_blisters_most_often_on_the_elbows_knees_back_and_buttocks"
+      },
+      {
+        "title": "Double-jointedness",
+        "name": "Double-jointedness"
+      },
+      {
+        "title": "Increased joint mobility, joints popping, early arthritis",
+        "name": "Increased_joint_mobility_joints_popping_early_arthritis"
+      },
+      {
+        "title": "Joint dislocation",
+        "name": "Joint_dislocation"
+      },
+      {
+        "title": "Swelling in the joints caused by too much uric acid (gout)",
+        "name": "Swelling_in_the_joints_caused_by_too_much_uric_acid_gout"
+      },
+      {
+        "title": "Tenderness and swelling of the skin on the arms, legs, or sometimes the joints (most often on both sides of the body)",
+        "name": "Tenderness_and_swelling_of_the_skin_on_the_arms_legs_or_sometimes_the_joints_most_often_on_both_sides_of_the_body"
+      },
+      {
+        "title": "Arthritis",
+        "name": "Arthritis"
+      },
+      {
+        "title": "Fatty skin deposits called xanthomas over parts of the hands, elbows, knees, ankles and around the cornea of the eye",
+        "name": "Fatty_skin_deposits_called_xanthomas_over_parts_of_the_hands_elbows_knees_ankles_and_around_the_cornea_of_the_eye"
+      },
+      {
+        "title": "Muscle aches in the lower back, buttocks, thighs, or knees",
+        "name": "Muscle_aches_in_the_lower_back_buttocks_thighs_or_knees"
+      },
+      {
+        "title": "Joint appears warm and red",
+        "name": "Joint_appears_warm_and_red"
+      },
+      {
+        "title": "Knock knees",
+        "name": "Knock_knees"
+      },
+      {
+        "title": "Abnormal, sometimes waddling, walk",
+        "name": "Abnormal_sometimes_waddling_walk"
+      },
+      {
+        "title": "Joints that are fixed in a contracted position",
+        "name": "Joints_that_are_fixed_in_a_contracted_position"
+      },
+      {
+        "title": "Joints that are too flexible (but the elbows may be less flexible)",
+        "name": "Joints_that_are_too_flexible_but_the_elbows_may_be_less_flexible"
+      }
+    ]
+    ,
+    "legData": [
+      {
+        "title": "Bowed legs",
+        "name": "Bowed_legs"
+      },
+      {
+        "title": "Swelling due to the body keeping in fluid (may be seen in the legs, ankles, and feet)",
+        "name": "Swelling_due_to_the_body_keeping_in_fluid_(may_be_seen_in_the_legs,_ankles,_and_feet)"
+      },
+      {
+        "title": "Swelling of legs",
+        "name": "Swelling_of_legs"
+      },
+      {
+        "title": "Difficulty lifting, climbing stairs, and walking",
+        "name": "Difficulty_lifting,_climbing_stairs,_and_walking"
+      },
+      {
+        "title": "Trembling arm and leg movements",
+        "name": "Trembling_arm_and_leg_movements"
+      },
+      {
+        "title": "Unstable or jerky walking",
+        "name": "Unstable_or_jerky_walking"
+      },
+      {
+        "title": "Excessive movement of the hands and limbs",
+        "name": "Excessive_movement_of_the_hands_and_limbs"
+      },
+      {
+        "title": "Pain, especially when you try to put weight on the injured leg",
+        "name": "Pain,_especially_when_you_try_to_put_weight_on_the_injured_leg"
+      },
+      {
+        "title": "Swelling (edema) in any area of the body, especially in the legs",
+        "name": "Swelling_(edema)_in_any_area_of_the_body,_especially_in_the_legs"
+      },
+      {
+        "title": "Leg cramps",
+        "name": "Leg_cramps"
+      },
+      {
+        "title": "Unsteady walk",
+        "name": "Unsteady_walk"
+      },
+      {
+        "title": "Skeletal (limb) abnormalities",
+        "name": "Skeletal_(limb)_abnormalities"
+      },
+      {
+        "title": "Pain may be worse when you walk, cough, or make sudden movements",
+        "name": "Pain_may_be_worse_when_you_walk,_cough,_or_make_sudden_movements"
+      },
+      {
+        "title": "Cold arm or leg",
+        "name": "Cold_arm_or_leg"
+      },
+      {
+        "title": "Decreased or no pulse in an arm or leg",
+        "name": "Decreased_or_no_pulse_in_an_arm_or_leg"
+      },
+      {
+        "title": "Abnormal, sometimes waddling, walk",
+        "name": "Abnormal,_sometimes_waddling,_walk"
+      },
+      {
+        "title": "Lack of movement in the arm or leg",
+        "name": "Lack_of_movement_in_the_arm_or_leg"
+      },
+      {
+        "title": "Pale color of the arm or leg (pallor)",
+        "name": "Pale_color_of_the_arm_or_leg_(pallor)"
+      },
+      {
+        "title": "Weakness of an arm or leg",
+        "name": "Weakness_of_an_arm_or_leg"
+      },
+      {
+        "title": "Delayed walking",
+        "name": "Delayed_walking"
+      },
+      {
+        "title": "Movement changes, such as involuntary or slowed movements",
+        "name": "Movement_changes,_such_as_involuntary_or_slowed_movements"
+      },
+      {
+        "title": "Difficulty walking that gets worse over time; by age 25 to 30, the person is usually unable to walk",
+        "name": "Difficulty_walking_that_gets_worse_over_time;_by_age_25_to_30,_the_person_is_usually_unable_to_walk"
+      },
+      {
+        "title": "Frequent falls",
+        "name": "Frequent_falls"
+      },
+      {
+        "title": "Difficulty getting up from the floor and climbing stairs",
+        "name": "Difficulty_getting_up_from_the_floor_and_climbing_stairs"
+      },
+      {
+        "title": "Difficulty with running, hopping, and jumping",
+        "name": "Difficulty_with_running,_hopping,_and_jumping"
+      },
+      {
+        "title": "Loss of muscle mass",
+        "name": "Loss_of_muscle_mass"
+      },
+      {
+        "title": "Toe walking",
+        "name": "Toe_walking"
+      },
+      {
+        "title": "Muscle weakness in the arms, neck, and other areas is not as severe as in the lower body",
+        "name": "Muscle_weakness_in_the_arms,_neck,_and_other_areas_is_not_as_severe_as_in_the_lower_body"
+      },
+      {
+        "title": "Loss of muscle function or paralysis of the lower legs",
+        "name": "Loss_of_muscle_function_or_paralysis_of_the_lower_legs"
+      },
+      {
+        "title": "Weakness in a limb",
+        "name": "Weakness_in_a_limb"
+      },
+      {
+        "title": "Abnormal posture with flexed arms and straight legs",
+        "name": "Abnormal_posture_with_flexed_arms_and_straight_legs"
+      },
+      {
+        "title": "Trouble using the arms and hands or legs and feet due to weakness",
+        "name": "Trouble_using_the_arms_and_hands_or_legs_and_feet_due_to_weakness"
+      },
+      {
+        "title": "Quick movements of the arms, legs, or other areas",
+        "name": "Quick_movements_of_the_arms,_legs,_or_other_areas"
+      },
+      {
+        "title": "Weakness or numbness of arms, legs, face",
+        "name": "Weakness_or_numbness_of_arms,_legs,_face"
+      },
+      {
+        "title": "Fluid buildup in the legs (edema) and in the abdomen (ascites)",
+        "name": "Fluid_buildup_in_the_legs_(edema)_and_in_the_abdomen_(ascites)"
+      },
+      {
+        "title": "Increased risk of fracture due to decreased bone density",
+        "name": "Increased_risk_of_fracture_due_to_decreased_bone_density"
+      },
+      {
+        "title": "Rash or patch on the skin, usually on the arms and legs",
+        "name": "Rash_or_patch_on_the_skin,_usually_on_the_arms_and_legs"
+      },
+      {
+        "title": "Decreased sensation, numbness, or tingling in the top of the foot or the outer part of the upper or lower leg",
+        "name": "Decreased_sensation,_numbness,_or_tingling_in_the_top_of_the_foot_or_the_outer_part_of_the_upper_or_lower_leg"
+      },
+      {
+        "title": "Cramping of one or both calves when walking",
+        "name": "Cramping_of_one_or_both_calves_when_walking"
+      },
+      {
+        "title": "Changes in gait (walking)",
+        "name": "Changes_in_gait_(walking)"
+      },
+      {
+        "title": "Limited range of motion",
+        "name": "Limited_range_of_motion"
+      },
+      {
+        "title": "Short arms and legs, especially forearm and lower leg",
+        "name": "Short_arms_and_legs,_especially_forearm_and_lower_leg"
+      },
+      {
+        "title": "Large and muscular-looking calves (pseudohypertrophy), which are not actually strong",
+        "name": "Large_and_muscular-looking_calves_(pseudohypertrophy),_which_are_not_actually_strong"
+      },
+      {
+        "title": "Tenderness and swelling of the skin on the arms, legs, or sometimes the joints (most often on both sides of the body)",
+        "name": "Tenderness_and_swelling_of_the_skin_on_the_arms,_legs,_or_sometimes_the_joints_(most_often_on_both_sides_of_the_body)"
+      },
+      {
+        "title": "Decrease in ability to feel vibrations in lower limbs",
+        "name": "Decrease_in_ability_to_feel_vibrations_in_lower_limbs"
+      },
+      {
+        "title": "No reflexes in the legs",
+        "name": "No_reflexes_in_the_legs"
+      },
+      {
+        "title": "Long limbs",
+        "name": "Long_limbs"
+      },
+      {
+        "title": "Sharp pain in one part of the leg, hip, or buttocks, and numbness in other parts",
+        "name": "Sharp_pain_in_one_part_of_the_leg,_hip,_or_buttocks,_and_numbness_in_other_parts"
+      },
+      {
+        "title": "Red skin bumps, most often on the lower legs",
+        "name": "Red_skin_bumps,_most_often_on_the_lower_legs"
+      }
+    
+    ]
+    ,
+    "feetData": [
+      {
+        "title": "Large feet (change in shoe size), large hands (change in ring or glove size)",
+        "name": "Large_feet_change_in_shoe_size_large_hands_change_in_ring_or_glove_size"
+      },
+      {
+        "title": "Swelling of feet",
+        "name": "Swelling_of_feet"
+      },
+      {
+        "title": "Numbness and tingling of hands or feet",
+        "name": "Numbness_and_tingling_of_hands_or_feet"
+      },
+      {
+        "title": "Webbing or fusion of the toes",
+        "name": "Webbing_or_fusion_of_the_toes"
+      },
+      {
+        "title": "Loss of feeling (sensation) in hands and feet",
+        "name": "Loss_of_feeling_in_hands_and_feet"
+      },
+      {
+        "title": "Red, thickened skin along the inside edge at the base of the big toe",
+        "name": "Red_thickened_skin_at_base_of_big_toe"
+      },
+      {
+        "title": "A bony bump at the first toe joint, with decreased movement in the toe site",
+        "name": "Bony_bump_at_first_toe_joint_decreased_movement_in_toe"
+      },
+      {
+        "title": "Big toe turned outward toward the other toes and may cross over the second toe. As a result, corns and calluses often develop where the first and second toes overlap",
+        "name": "Big_toe_turned_outward_corns_calluses_develop"
+      },
+      {
+        "title": "Difficulty wearing regular shoes",
+        "name": "Difficulty_wearing_regular_shoes"
+      },
+      {
+        "title": "Problems walking due to weakness or lack of feeling in the feet",
+        "name": "Walking_problems_weakness_lack_of_feeling_in_feet"
+      },
+      {
+        "title": "Sensation changes, such as numbness or decreased sensation, pain, burning, tingling, or other abnormal sensations (usually affects the feet first, then the arms and hands)",
+        "name": "Sensation_changes_feet_arms_hands"
+      },
+      {
+        "title": "Increased risk of getting flat foot, abnormal curvature of spine (scoliosis) and knee deformities",
+        "name": "Increased_risk_flat_foot_scoliosis_knee_deformities"
+      },
+      {
+        "title": "Cold feet or legs",
+        "name": "Cold_feet_or_legs"
+      },
+      {
+        "title": "Foot that drops (unable to hold the foot up)",
+        "name": "Foot_that_drops_unable_to_hold_up"
+      },
+      {
+        "title": "\"Slapping\" gait (walking pattern in which each step makes a slapping noise)",
+        "name": "Slapping_gait_walking_pattern_makes_slapping_noise"
+      },
+      {
+        "title": "Toes drag while walking",
+        "name": "Toes_drag_while_walking"
+      },
+      {
+        "title": "Weakness of the ankles or feet",
+        "name": "Weakness_of_ankles_or_feet"
+      },
+      {
+        "title": "Swelling of ankles",
+        "name": "Swelling_of_ankles"
+      },
+      {
+        "title": "Flat feet",
+        "name": "Flat_feet"
+      },
+      {
+        "title": "Rounded fingernails and toenails (clubbing)",
+        "name": "Rounded_fingernails_and_toenails_clubbing"
+      },
+      {
+        "title": "Numbness and tingling of fingers and toes",
+        "name": "Numbness_and_tingling_of_fingers_and_toes"
+      },
+      {
+        "title": "Mitten-like hands or feet",
+        "name": "Mitten-like_hands_or_feet"
+      },
+      {
+        "title": "Thickening of skin on hands and feet",
+        "name": "Thickening_of_skin_on_hands_and_feet"
+      },
+      {
+        "title": "Sores on the toes that do not heal",
+        "name": "Sores_on_toes_that_do_not_heal"
+      },
+      {
+        "title": "Foot problems, such as hammer toe and high arches",
+        "name": "Foot_problems_hammer_toe_high_arches"
+      },
+      {
+        "title": "Rash may appear on the palms and soles, but not on the back, chest, or belly area",
+        "name": "Rash_on_palms_and_soles_not_on_back_chest_belly"
+      },
+      {
+        "title": "Pain or numbness on the back of the calf or sole of the foot",
+        "name": "Pain_or_numbness_on_back_of_calf_or_sole_of_foot"
+      },
+      {
+        "title": "Shortened foot length",
+        "name": "Shortened_foot_length"
+      },
+      {
+        "title": "Difficulty fitting shoes",
+        "name": "Difficulty_fitting_shoes"
+      },
+      {
+        "title": "Foot pain with walking, standing, and running",
+        "name": "Foot_pain_with_walking_standing_running"
+      },
+      {
+        "title": "High arches of the feet",
+        "name": "High_arches_of_feet"
+      }
+    ]
+    ,
+    "otherData": [
+      {
+        "title": "Passing out",
+        "name": "Passing_out"
+      },
+      {
+        "title": "Clammy skin",
+        "name": "Clammy_skin"
+      },
+      {
+        "title": "Dizziness",
+        "name": "Dizziness"
+      }
+    ]
+  }
+  

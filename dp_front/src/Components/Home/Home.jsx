@@ -7,6 +7,7 @@ import flow from "../../assets/flow.svg"
 import patient from "../../assets/patient.svg"
 import symptom from "../../assets/symptom.svg"
 import consult from "../../assets/consult.png"
+import doctorfaq from "../../assets/pointing.jpeg"
 import img from "../../assets/sekiro.jpg";
 import img1 from "../../assets/google.png";
 import img2 from "../../assets/intel.png";
@@ -37,12 +38,14 @@ const Home = () => {
     <>
       <div className="banner">
         <div className="left-side">
-          <h2>More than a  <br />Symptom Checker</h2>
+          <h2>More than a Symptom Checker</h2>
+          <div className="bannerp">
           <p>
-            Sensely's comprehensive clinical decision support <br />  solution navigates
-            users from problem to solution, <br /> all through a simple conversation
+            Sensely's comprehensive clinical decision support  solution navigates
+            users from problem to solution, all through a simple conversation
             to:
           </p>
+          </div>
           <ul>
             <li>Assess symptoms</li>
             <li>Route patients to care</li>
@@ -140,25 +143,31 @@ const Home = () => {
      
 <div className="stats">
   <div className="first">
+    <div>
     <h2>Individuals</h2>
     <p><TiTick  className="tick" />5 levels of medical care</p>
 <p><TiTick  className="tick" />simple language and common <span>names</span> 
 </p>
 <p><TiTick  className="tick" />educational articles</p>
+</div>
 <img src={stats1} alt="" />
   </div>
   <div className="second">
+    <div>
     <h2>Parents</h2>
     <p><TiTick  className="tick" />pediatrics conditions</p>
 <p><TiTick  className="tick" />Symptom pair analysis
 </p>
 <p><TiTick  className="tick" />body maps of children in <span>different groups</span> </p>
+</div>
 <img src={stats2} alt="" />
   </div>
   <div className="third">
+    <div>
     <h2>Family members</h2>
     <p><TiTick  className="tick" /> Third-person mode</p>
 <p><TiTick  className="tick" />Instructions and  Explanations</p>
+</div>
 <img src={stats3} className="img3" alt="" />
   </div>
 </div>
@@ -227,10 +236,7 @@ of cases can be self-treated or treated through teleconsultation</p>
   <input type="radio" id="female" name="gender" defaultValue="female" />
   <label htmlFor="css">Female</label>
   </div>
-  <div className="choosediv">
-  <input type="radio" id="other" name="gender" defaultValue="other" />
-  <label htmlFor="css">Other</label>
-  </div>
+  
   <br />
     <Link className="checkbtn" to="/symptom">Start Symptom Checker</Link>
   </div>
@@ -474,7 +480,9 @@ of cases can be self-treated or treated through teleconsultation</p>
     </div>
     <div className="accordion">
         <h1>FAQ'S</h1>
-        <div className={`accordion-item ${activeIndex === 0 ? "active" : ""}`}>
+        <div className="faq">
+          <div>
+          <div className={`accordion-item ${activeIndex === 0 ? "active" : ""}`}>
           <div
             className={`accordion-item-header ${
               activeIndex === 0 ? "active" : ""
@@ -562,93 +570,16 @@ Do I still need to see a doctor after using Dispred?          </div>
           </div>
         </div>
         
-        <div className={`accordion-item ${activeIndex === 0 ? "active" : ""}`}>
-          <div
-            className={`accordion-item-header ${
-              activeIndex === 0 ? "active" : ""
-            }`}
-            onClick={() => handleAccordionClick(0)}
-          >
-            How is Dispred different from other symptom checkers?
+      
           </div>
-          <div
-            className="accordion-item-body"
-            style={{
-              maxHeight: activeIndex === 0 ? "1000px" : "0",
-              overflow: "hidden",
-              transition: "max-height 0.4s ease-out",
-            }}
-          >
-            <div className="accordion-item-body-content">
-           Isabel is built in a completely different way to other symptom checkers, utilizing sophisticated Artificial Intelligence technology which searches over 6,000 disease presentations - many more than other tools. Most importantly, Isabel can understand multiple symptoms entered in everyday language, all in one go without going through a long list of questions. Other tools restrict the user to entering just one single symptom, or force them to select common symptoms from a list or body map, severely limiting the user’s ability to accurately describe their own problem.
-            </div>
+          <div>
+
+          <img src={doctorfaq} alt="" />
           </div>
+
         </div>
-        <div className={`accordion-item ${activeIndex === 1 ? "active" : ""}`}>
-          <div
-            className={`accordion-item-header ${
-              activeIndex === 1 ? "active" : ""
-            }`}
-            onClick={() => handleAccordionClick(1)}
-          >
-           Why should I trust the results from Dispred?
-          </div>
-          <div
-            className="accordion-item-body"
-            style={{
-              maxHeight: activeIndex === 1 ? "1000px" : "0",
-              overflow: "hidden",
-              transition: "max-height 0.2s ease-out",
-            }}
-          >
-            <div className="accordion-item-body-content">
-            Isabel Symptom Checker is adapted from the Isabel Pro which has been used by doctors in hospitals around the world for almost two decades and is widely recognised in the medical community as one of the most accurate on the market. The tool has been professionally validated over many years with several peer-reviewed articles appearing in medical journals.
-            </div>
-          </div>
-        </div>
-        <div className={`accordion-item ${activeIndex === 2 ? "active" : ""}`}>
-          <div
-            className={`accordion-item-header ${
-              activeIndex === 2 ? "active" : ""
-            }`}
-            onClick={() => handleAccordionClick(2)}
-          >
-           Why should I bother with all this research rather than just going to see the doctor?
-          </div>
-          <div
-            className="accordion-item-body"
-            style={{
-              maxHeight: activeIndex === 2 ? "1000px" : "0",
-              overflow: "hidden",
-              transition: "max-height 0.2s ease-out",
-            }}
-          >
-            <div className="accordion-item-body-content">
-            We understand that many patients, particularly when feeling worried and unwell, will not want to go through this process. However, today’s doctors are increasingly time- pressured and may not be able to offer you an appointment quickly. During your consultation, they will not always have the time to go through your case in detail or, in some cases, the skills and knowledge to work out your condition, particularly if it’s rare or your presentation is unusual. Doctors are only human and make mistakes like the rest of us, especially if what you’re suffering from is unusual. You can considerably improve the chances of getting a correct diagnosis first time if you are well informed before your visit and can present an accurate report to your doctor of what you are experiencing and ask more relevant questions.
-            </div>
-          </div>
-        </div>
-        <div className={`accordion-item ${activeIndex === 3 ? "active" : ""}`}>
-          <div
-            className={`accordion-item-header ${
-              activeIndex === 3 ? "active" : ""
-            }`}
-            onClick={() => handleAccordionClick(3)}
-          >
-Do I still need to see a doctor after using Dispred?          </div>
-          <div
-            className="accordion-item-body"
-            style={{
-              maxHeight: activeIndex === 3 ? "1000px" : "0",
-              overflow: "hidden",
-              transition: "max-height 0.2s ease-out",
-            }}
-          >
-            <div className="accordion-item-body-content">
-            Almost certainly yes. You should not use Isabel as a substitute for going to see your doctor but as a tool to help you decide which type of doctor to see and make your consultation more productive with the aim of reaching the correct diagnosis more quickly.
-            </div>
-          </div>
-        </div>
+        
+       
         
       </div>
     </>

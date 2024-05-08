@@ -13,6 +13,8 @@ import About from './Components/About/About';
 import Symptom from './Components/Symptom/Symptom';
 import DRegister from './Components/Register/DRegister';
 import Dlogin from './Components/Login/Dlogin';
+import Doctor from './Components/Doctor/Doctor';
+import FindDoctor from './Components/Doctor/FindDoctor';
 
 const App = () => {
 
@@ -41,6 +43,8 @@ const App = () => {
                 <Route key={"terms"} path='/symptom' element={ <Terms/> } />,
                 <Route key={"symptom"} path='/symptom/predict' element={ <Symptom/> } />,
                 <Route key={"about"} path='/about' element={ <About/> } />,
+                <Route key={"finddoctor"} path='/finddoctor' element={ <FindDoctor/> } />,
+                <Route path='/doctorpage' element={ <Doctor/> } />,
               </Routes>,
               <Footer key={"footer"} />
             ]
