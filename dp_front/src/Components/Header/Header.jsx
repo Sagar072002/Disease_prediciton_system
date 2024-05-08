@@ -34,6 +34,7 @@ const Header = () => {
     <div className="links">
     <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
     <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>About</NavLink>
+    <NavLink to="/finddoctor" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Find a doctor</NavLink>
     {/* <a href="#">Appointment</a> */}
     
     <NavLink to="/symptom" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Prediction</NavLink>
