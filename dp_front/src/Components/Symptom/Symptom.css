@@ -64,19 +64,21 @@ font-size: 20px;
 }
 .termsdiv .rightdiv{
     width:45%;
+    
 }
 .termsdiv .rightdiv img{
-    height:90%;
-    width:100%;
-    margin-top:50px;
-    margin-left:20px;
+    height:80%;
+    width:85%;
+    margin-left:40px;
 }
 .next-button-container {
     display: flex;
     justify-content: flex-end;
-    margin-top: -25px; 
   }
-
+.next-button-container button{
+    margin-top:-40px;
+    margin-right:40px;
+}
 .quesdiv{
     display: flex;
     justify-content: center;
@@ -223,11 +225,73 @@ border-radius: 5px;
 
 .symptom-div{
     display: flex;
-    justify-content: center;
+    padding:70px 20px;
+}
+.partdiv{
+    width:940px;
+}
+.partdiv div{
+    flex-wrap: wrap;
+    display: flex;
+}
+.partdiv h2{
+    margin-bottom:25px;
+    color:#017272;
+}
+.partdiv p{
+background-color: #017272;
+color:#fff;
+margin-right:10px;
+border-radius: 3px;
+margin-bottom:20px;
+padding:15px;
+width:120px;
+font-size: 18px;
+border:1px solid transparent;
+}
+.partdiv p:hover{
+    border:1px solid #222;
+    color: #017272;
+    background-color:#fff;
+    cursor: pointer;
+}
+.svgdiv{
+    display: flex;
+    margin-left:-170px;
+    justify-content: center ;
     align-items: center;
-    padding:70px 0;
-    height:100vh;
-    padding-top:140px;
+    
+}
+.femalediv,.malediv{
+    margin-top:-40px;
+    width:600px !important;
+    overflow: hidden;
+}
+.femalediv p{
+    margin-left:90px;
+}
+
+.malediv p{
+    margin-left:90px;
+    margin-top:20px;
+}
+.rotate-model{
+    font-size:20px;
+    font-weight: bold;
+    color:#777;
+    cursor: pointer;
+}
+.rotate-model:hover{
+    color:#000;
+}
+.female_front{
+   
+    width:580px;
+    margin-left:-300px;
+}
+.male_front{
+    width:550px;
+   
 }
 .symptom-div ul li{
 list-style-type: none;
@@ -248,23 +312,38 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     margin-left:20px;
+    font-size:20px;
+}
+.predict p{
+    font-size:20px;
+    margin-bottom:0px !important;
+}
+.predict p span{
+    font-weight: bold;
+}
+.flexdiv{
+    display: flex;
 }
 
-.predict pre{
-    font-size:20px;
-    font-weight:bold;
-    margin:0px 20px;
-}
 .main-div{
     display: flex;
     padding:50px 30px;
     border:1px solid #eee;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    width:55%;
+    width:100%;
+    height:60vh;
+    margin-top:80px;
+    margin-left:30px;
 }
-.main-div .left-side{
-    width:65%;
+
+.main-div .left-side {
+    margin-right: 40px;
+    width:38%;
+
+}
+.main-div .left-side h2{
+    text-align: center;
 }
 .main-div .dataResult{
     width:574px !important;
@@ -280,13 +359,11 @@ cursor: pointer;
 }
 
 .main-div .left-side h2{
-    text-align: center;
     text-transform: uppercase;
     color:#017272;
 }
 .main-div .right-side{
     width:30%;
-    /* padding-left:100px; */
 }
 .main-div .right-side img{
     width:300px;
@@ -295,6 +372,25 @@ cursor: pointer;
 }
 .lower {
     display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top:-10px;
+}
+.lower .predict .predicthead{
+    font-weight: 600 !important;
+    margin-bottom: 10px;
+}
+.lower .predictbtn{
+    background-color: #017272 !important;
+    border:1px solid transparent;
+    font-size: 20px !important;
+    letter-spacing: .7px;
+    width:150px !important;
+}
+.lower .predictbtn:hover{
+    color: #017272 !important;
+    border:1px solid #017272;
+    background-color:#fff !important;
 }
 .main-div .left-side h2{
 font-size: 25px;
@@ -317,7 +413,7 @@ line-height: 1.5;
 }
 
 .main-div .content-div{
-    width:90%;
+    width:575px;
     background-color: #e8f2f9;
     height:190px;
     max-height: 200px; 
@@ -340,10 +436,29 @@ line-height: 1.5;
     margin-left:80px;
 }
 
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+    background-color: #f9f9f9;
+    width: 300px; /* Adjust width as needed */
+   
+  }
+  
+  /* Style for the options */
+  option {
+    font-size: 14px;
+    padding: 5px 10px;
+    height: 10px; /* Set specific height */
+    overflow-y: auto; /* Add scrollbar for overflow */
+  }
 .part1:hover {
-    fill: #ff8080 !important; /* Change the fill color when hovering */
+    fill: #ff8080 !important; 
     stroke: #ff8080 !important;
   }
+ 
 .age{
     display: flex;
     align-items: center;
@@ -393,3 +508,54 @@ line-height: 1.5;
   font-size: 17px;
   border-radius:5px;
 }
+
+.headdiv{
+    position: fixed;
+    top: 55%;
+    left: 60%;
+    width:600px;
+    height: 530px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding:60px 20px;
+    padding-top:20px;
+    border-radius: 8px;
+    border:1px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.headdiv p{
+    color:#fff ;
+    padding:12px 10px;
+    border:1px solid transparent;
+    border-radius: 4px;
+    background-color: #017272 ;
+    margin-bottom:10px;
+}
+.headdiv .btndiv{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.headdiv button{
+    background-color: #017272;
+    color:#fff;
+    padding:15px 20px;
+    margin-right:20px;
+    font-size: 16px;
+    border-radius: 3px;
+    margin-top:20px;
+    border:1px solid transparent;
+}
+.headdiv button:hover{
+    border:1px solid #222;
+    cursor: pointer;
+    color: #017272;
+    background-color:#fff;
+}
+.selected {
+    background-color: yellow;
+  }
+
+  .headdiv-hidden {
+    display: none;
+  }

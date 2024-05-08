@@ -798,9 +798,9 @@ def dp_predictor(input_parameters:model_input):
     dis2 = int(prediction_svc)
     dis3 = int(prediction_rfc)
     pred_res = {
-        "KNN-res" : disease_list[dis1],
-        "SVC-res" : disease_list[dis2],
-        "RFC-res" : disease_list[dis3]
+        "KNN" : disease_list[dis1],
+        "SVC" : disease_list[dis2],
+        "RFC" : disease_list[dis3]
     }
     print(pred_res)
     return pred_res
