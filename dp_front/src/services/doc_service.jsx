@@ -12,7 +12,6 @@ class doctorService{
 
     login(credentials){
         const req = clientApi.post(this.endpoint+'/login', credentials);
-        localStorage.setItem('docDetails', JSON.stringify(req))
         return req;
     }
 
@@ -34,3 +33,7 @@ class doctorService{
 }
 
 export default new doctorService;
+
+export function saveToken(tokenData){
+    localStorage.setItem('docDetails', JSON.stringify(tokenData))
+}
