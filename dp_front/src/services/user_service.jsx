@@ -70,4 +70,5 @@ export function checkUserState(){
 export function clearToken(){
     localStorage.removeItem('userDetails')
     localStorage.removeItem('userState')
+    localStorage.removeItem('docDetails')
 }
