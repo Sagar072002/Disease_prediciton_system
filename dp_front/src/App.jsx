@@ -13,8 +13,13 @@ import About from './Components/About/About';
 import Symptom from './Components/Symptom/Symptom';
 import DRegister from './Components/Register/DRegister';
 import Dlogin from './Components/Login/Dlogin';
-import Doctor from './Components/Doctor/Doctor';
 import FindDoctor from './Components/Doctor/FindDoctor';
+import Mainlogin from './Components/Login/Mainlogin';
+import Admin from './Components/Admin/Admin';
+import User from './Components/Admin/User';
+import Dctr from './Components/Admin/Dctr';
+import Doctor from './Components/Doctor/Doctor';
+import DoctorProfile from './Components/Doctor/DoctorProfile';
 
 const App = () => {
 
@@ -44,14 +49,19 @@ const App = () => {
                 <Route key={"symptom"} path='/symptom/predict' element={ <Symptom/> } />,
                 <Route key={"about"} path='/about' element={ <About/> } />,
                 <Route key={"finddoctor"} path='/finddoctor' element={ <FindDoctor/> } />,
-                <Route path='/doctorpage' element={ <Doctor/> } />,
+                <Route path='/doctorpage' element={ <DoctorProfile/> } />,
               </Routes>,
               <Footer key={"footer"} />
             ]
             :
             <Routes>
+                              <Route path='/mainlogin' element={ <Mainlogin/> } />,
+                              <Route path='/admin' element={ <Admin/> } />,
+                              <Route path='/doctor' element={ <Doctor/> } />,
+                              <Route path='/admin-user' element={ <User/> } />,
+                              <Route path='/admin-dctr' element={ <Dctr/> } />,
               <Route path="/" element={<Navigate replace to="/login"/>} />
-              <Route key={"doctorregister"} path='/doctor' element={<DRegister/> } />,
+              <Route key={"doctorregister"} path='/doctorregister' element={<DRegister/> } />,
                 <Route key={"doctorlogin"} path='/doctorlogin' element={<Dlogin/> } />,
               <Route path='/login' element={ <Login/> } />,
               <Route path='/register' element={ <Register/> } />,

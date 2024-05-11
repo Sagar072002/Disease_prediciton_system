@@ -7,7 +7,6 @@ import flow from "../../assets/flow.svg"
 import patient from "../../assets/patient.svg"
 import symptom from "../../assets/symptom.svg"
 import consult from "../../assets/consult.png"
-import doctorfaq from "../../assets/pointing.jpeg"
 import img from "../../assets/sekiro.jpg";
 import img1 from "../../assets/google.png";
 import img2 from "../../assets/intel.png";
@@ -196,8 +195,6 @@ of cases can be self-treated or treated through teleconsultation</p>
 <img className="infoimg" src={flow} alt="" />
         </div>
       </div>
-      
-      
 
       <div className="symptom">
         <div className="left-side">
@@ -437,6 +434,7 @@ of cases can be self-treated or treated through teleconsultation</p>
         <div className="left-side">
           <div>
             <h2>Contact Us:</h2>
+            <div className="contactdetail">
             <div className="box">
             <i class="fa-solid fa-location-dot"></i>
                 <p><span>Address: </span> Dehradun, Uttarakhand, India</p>
@@ -447,7 +445,8 @@ of cases can be self-treated or treated through teleconsultation</p>
             </div>
             <div className="box lastbox">
             <i className="fa-solid fa-envelope" />
-                <p><span>Email: </span> example@gmail.com</p>
+                <p><span>Email: </span> abc@gmail.com</p>
+            </div>
             </div>
             </div>
             <div>
@@ -480,7 +479,6 @@ of cases can be self-treated or treated through teleconsultation</p>
     </div>
     <div className="accordion">
         <h1>FAQ'S</h1>
-        <div className="faq">
           <div>
           <div className={`accordion-item ${activeIndex === 0 ? "active" : ""}`}>
           <div
@@ -522,7 +520,7 @@ of cases can be self-treated or treated through teleconsultation</p>
             }}
           >
             <div className="accordion-item-body-content">
-            Isabel Symptom Checker is adapted from the Isabel Pro which has been used by doctors in hospitals around the world for almost two decades and is widely recognised in the medical community as one of the most accurate on the market. The tool has been professionally validated over many years with several peer-reviewed articles appearing in medical journals.
+            Dispred Symptom Checker is adapted from the Isabel Pro which has been used by doctors in hospitals around the world for almost two decades and is widely recognised in the medical community as one of the most accurate on the market. The tool has been professionally validated over many years with several peer-reviewed articles appearing in medical journals.
             </div>
           </div>
         </div>
@@ -572,12 +570,8 @@ Do I still need to see a doctor after using Dispred?          </div>
         
       
           </div>
-          <div>
+          
 
-          <img src={doctorfaq} alt="" />
-          </div>
-
-        </div>
         
        
         

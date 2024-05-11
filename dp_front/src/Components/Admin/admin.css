@@ -1,0 +1,252 @@
+.admin {
+  background-color: aliceblue;
+  display: flex;
+  padding-bottom:40px;
+  min-height: 100vh;
+}
+.admindct{
+    background-color: #fff;
+}
+.admin .sidebar {
+  width: 15%;
+  height: 100vh;
+  border-right: 1px solid #222;
+  background-color: white;
+  padding-left: 20px;
+  position: fixed;
+}
+.admin .sidebar p{
+    color:#000;
+}
+.user .admin-table th,
+.user .admin-table td{
+
+    text-align: center;
+}
+.admin .searchbar{
+    background-color: #008080;
+    padding:40px 50px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:50px;
+}
+.admin .admin-table span{
+    background-color: #008080;
+    padding:10px 20px;
+    margin-left: 20px;
+    border-radius: 4px;
+    color:#fff;
+    cursor: pointer;
+}
+.admin .searchbar input{
+    height:50px;
+    width:500px;
+    border-radius: 25px;
+    padding:0 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.admin .sidebar .image img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+.admin .sidebar .image p {
+  margin-top: 20px;
+  margin-left: 15px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.admin .det {
+  margin-top: 30px;
+}
+.admin .det p {
+  font-size: 20px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  width: 200px;
+  padding: 12px 20px;
+}
+.admin .det p:hover {
+  cursor: pointer;
+  background-color: #10aeae;
+  color: #fff;
+}
+.sidebar .det p.active {
+  background-color: #008080;
+  color: #fff;
+}
+.admin .det button {
+  margin-top: 50px;
+  margin-left: 15px;
+  background-color: #008080;
+  color: #fff;
+  padding: 15px 50px;
+  border-radius: 3px;
+  font-size: 20px;
+}
+.admin .rightside {
+  width: 85%;
+  margin-left:15%;
+}
+.admin .innercounter {
+  width: 350px;
+}
+.count-div {
+  display: flex;
+  justify-content: center;
+  padding: 20px 30px;
+}
+.innercounter {
+  height: 200px;
+  background-color: #008080;
+  color: #fff;
+  border: 1px solid #ddd;
+  margin: 40px 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+}
+
+.innercounter:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.innercounter h1,
+.innercounter .counter {
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
+}
+.innercounter h1 p {
+  font-size: 22px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.admin .logo {
+  display: flex;
+  justify-content: start;
+  margin-left: -20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.admin .logo img {
+  height: 60px;
+  width: 80px;
+}
+.admin .logo p {
+  font-weight: 600;
+  font-size: 22px;
+  margin-left: 10px;
+}
+.admin .midiv {
+  display: flex;
+  padding: 0px 30px;
+  gap: 30px;
+}
+.admin .midiv div {
+  width: 50%;
+  margin-top:20px;
+}
+.admin .doctrdiv h2{
+    margin-bottom:22px;
+}
+.table-container {
+    margin-top: 20px;
+  }
+  
+ 
+  .admin-table {
+    width: 600px;
+    border-collapse: collapse;
+  }
+  .user .admin-table{
+    width:1100px;
+    margin-left:150px;
+  }
+  
+  .admin-table th,
+  .admin-table td {
+    border: 1px solid #666;
+    padding: 20px 15px;
+    text-align: left;
+  }
+  .admin-table td{
+    background-color: #fff;
+    
+  }
+  .admin-table th {
+    background-color: #008080;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .admin-table .lastcol{
+    background-color: #008080 ;
+    color:#fff;
+    text-align: center;
+    font-size: 18px;
+  }
+  .admin-table .lastcol:hover{
+    color: #008080 ;
+    background-color:#fff;
+    cursor: pointer;
+  }
+
+.admin .dctrimg{
+    display: flex;
+    justify-content: center;
+    padding:15px 0;
+    background-color: #fff;
+}
+.admin .dctrimg img{
+    width:140px;
+    height:120px;
+}
+  .admin .userlist{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    padding:20px;
+    padding-top:0;
+  }
+  
+  .admin .userlist .userdiv{
+    background-color: #008080;
+    color: #fff;
+    border: 1px solid #888;
+    width:320px;
+    height:400px;
+    margin:15px 5px;
+  }
+
+  .admin .userlist .detail{
+    display: flex;
+    padding:20px 15px;
+    justify-content: center;
+    gap:20px;
+  }
+  .admin .userlist .detail p{
+font-size: 17px;
+margin-bottom: 18px;
+  }
+  .admin .userlist button{
+    background-color: #fff;
+    color:#008080;
+    width:150px;
+    border-radius: 3px;
+    padding:15px 25px;
+    font-size: 17px;
+    margin-top:-10px;
+    margin-left:80px;
+  }

@@ -53,12 +53,13 @@ const Login = () => {
           await delay(3000);
           setUid(res.data);
           saveToken({"uid": res.data})
-        }).catch((err)=>{console.log('Login Err:',err.response.data);})
+        }).catch((err)=>{
+          toast.warning('Invalid credentials',err.response.data);
+        })
         action.resetForm();
       },
     });
 
-  // console.log(errors);
   return (
     <>
     <ToastContainer/>

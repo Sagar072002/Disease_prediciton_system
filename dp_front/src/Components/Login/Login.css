@@ -109,26 +109,63 @@
             color:tomato;
             font-size:15px !important;
             }
+.mainlogindiv{
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap:100px;
+background-color: #c3cfe2;
+/* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+}
+.mainlogindiv .options{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap:50px;
+}
+.mainlogindiv h2{
+    font-size:30px;
+}
+.mainlogindiv .options div{
+    background-color: #fff;
+    color: red;
+    border:1px solid transparent;
+    border-radius: 3px;
+    height:300px;
+    width:400px;
+    display: flex;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+font-weight: bold;
+}
 
+.userlog, .doctorlog, .adminlog {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .selected {
+    background-color: #008080; /* Change to the color you desire */
+    color: white; /* Change to the text color you desire */
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           
+  .mainlogindiv .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+  }
+  .mainlogindiv .btns button{
+    background-color: #008080;
+    color:#fff;
+    font-size: 20px;
+    border:1px solid transparent;
+    padding:20px 30px;
+  }
+  .mainlogindiv .btns button:hover{
+    cursor: pointer;
+  }

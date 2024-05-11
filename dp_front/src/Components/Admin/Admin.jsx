@@ -1,15 +1,13 @@
-
-
 import React, { useState } from "react";
 import Countup from "react-countup";
-// import "./admin.css";
+import "./admin.css";
 import img from '../../assets/man.jpg';
 import img1 from "../../assets/logo.png"
 import ScrollTrigger from "react-scroll-trigger";
 import { Link } from "react-router-dom";
 
 
-const Doctor = () => {
+const Admin = () => {
   const [counteron, Setcounteron] = useState(false);
   const [activeMenu, setActiveMenu] = useState("Dashboard");
 
@@ -29,10 +27,10 @@ const Doctor = () => {
           <p>Sagar Negi</p>
         </div>
         <div className="det">
-        <Link to="/doctor">  <p className={activeMenu === "Dashboard" ? "active" : ""} onClick={() => handleMenuClick("Dashboard")}>Dashboard</p></Link>
-        <Link to="/doctor">  <p className={activeMenu === "Users" ? "active" : ""} onClick={() => handleMenuClick("Users")}>Users</p></Link>
+        <Link to="/admin">  <p className={activeMenu === "Dashboard" ? "active" : ""} onClick={() => handleMenuClick("Dashboard")}>Dashboard</p></Link>
+        <Link to="/admin-user">  <p className={activeMenu === "Users" ? "active" : ""} onClick={() => handleMenuClick("Users")}>Users</p></Link>
+         <Link to="/admin-dctr"> <p className={activeMenu === "Doctors" ? "active" : ""} onClick={() => handleMenuClick("Doctors")}>Doctors</p> </Link>
           <p className={activeMenu === "Appointments" ? "active" : ""} onClick={() => handleMenuClick("Appointments")}>Appointments</p>
-          <p className={activeMenu === "Reviews" ? "active" : ""} onClick={() => handleMenuClick("Reviews")}>Reviews</p>
           <p className={activeMenu === "Edit Profile" ? "active" : ""} onClick={() => handleMenuClick("Edit Profile")}>Edit Profile</p>
           <button>Logout</button>
         </div>
@@ -58,7 +56,25 @@ const Doctor = () => {
               <p>Users</p>
             </h1>
           </ScrollTrigger>
-         
+          <ScrollTrigger
+            className="innercounter"
+            onEnter={() => Setcounteron(true)}
+            onExit={() => Setcounteron(false)}
+          >
+            <h1>
+              {counteron && (
+                <Countup
+                  className="counter"
+                  start={0}
+                  end={200}
+                  duration={3}
+                  delay={0}
+                />
+              )}
+              + 
+              <p> Doctors</p>
+            </h1>
+          </ScrollTrigger>
           <ScrollTrigger
             className="innercounter"
             onEnter={() => Setcounteron(true)}
@@ -192,4 +208,4 @@ const Doctor = () => {
   );
 };
 
-export default Doctor;
+export default Admin;

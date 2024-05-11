@@ -39,7 +39,7 @@ const Header = () => {
     
     <NavLink to="/symptom" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Prediction</NavLink>
     {/* <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Contact</NavLink> */}
-    <Link onClick={LogOut} to="/">Logout</Link>
+    <Link onClick={LogOut} to="/mainlogin">Logout</Link>
     {/* <a href="#">Register</a> */}
     </div>
     </div>
