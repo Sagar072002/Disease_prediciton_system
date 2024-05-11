@@ -112,17 +112,19 @@ font-size:15px !important;
     display: flex;
     justify-content: center;
     height: 100vh;
-    padding:80px 0;
+    padding:40px 0;
 }
 .doctor-container{
-    border:1px solid #000;
-    width:65%;
+    border:1px solid #fff;
+    width:72%;
+    border-radius: 5px;
+    background-color: #068282;
     padding:30px 40px;
 }
 .doctor-container h2{
 text-align: center;
 font-size: 35px;
-color:#017272;
+color:#fff;
 margin-bottom:20px ;
 text-transform: uppercase;
 }
@@ -134,14 +136,15 @@ text-transform: uppercase;
 .doctor-main input{
 border:1px solid #ccc;
 padding: 20px;
-padding-left:10px;
+padding-left:15px;
 margin:10px 0;
 border-radius: 6px;
 width:340px;
-
+font-size: 15px;
 }
 .doctor-main input[type="file"]{
     height:55px;
+    background-color: #fff;
 }
 .doctor-main textarea{
     border:1px solid #ccc;
@@ -157,25 +160,35 @@ width:340px;
     display: block;
     margin-top: 20px;
     font-size: 19px;
-    font-weight: 600;
-    color: #017272;
+    font-weight: 500;
+    color: #fff;
 }
 
 .doctor-main button{
     border:1px solid transparent;
-    padding:20px 40px;
+    padding:17px 40px;
     width: 100%;
     font-size: 18px;
     border-radius: 5px;
-    /* margin-top: 55px; */
-    background-color: #017272;
-    color:#fff;
+    color: #fff;
+    background-color:#000;
+}
+.doctor-main button:hover{
+    background-color:#fff;
+color:#000;
+cursor: pointer;
 }
 .doctor-main .signin{
-font-size: 18px;
-margin:10px 0;
-margin-bottom: 25px;
+font-size: 16px;
+margin:25px 0;
+margin-bottom: 20px;
+color:#fff ;
 }
 .doctor-main .signin span{
-    color:#017272 ;
+    color:#ccc ;
 }
+.doctor-main .signin span:hover{
+    text-decoration: underline;
+
+}
+

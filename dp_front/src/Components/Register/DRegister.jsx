@@ -67,7 +67,7 @@ const DRegister = () => {
           <textarea name="" id="" cols="30" rows="10" placeholder='Your Introduction'></textarea>
           </div>
           <p className='signin'>
-        Don't have an account? <Link to="/doctorlogin"><span>  Sign in now </span></Link>
+        Already an user? <Link to="/doctorlogin"><span>  Sign in  </span></Link>
       </p>
           <div className='box'>
           <button>Register</button>
