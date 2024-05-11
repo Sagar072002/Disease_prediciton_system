@@ -4,9 +4,9 @@ import { Link, useNavigate } from 'react-router-dom'
 import img from '../../assets/doctor.png';
 
 import { useFormik } from "formik";
-import userService from '../../services/user_service.jsx'
-import { saveToken } from '../../services/user_service.jsx';
-import {loginschema} from '../Login/Loginschema.jsx'
+import doctorService from '../../services/doc_service.jsx'
+import { saveToken, clearToken } from '../../services/doc_service.jsx';
+import {Dloginschema} from '../Login/DLoginschema.jsx'
 import { SiteContext } from '../../context/siteContext.jsx';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -27,7 +27,7 @@ const Login = () => {
       });
     }
     else if(msg === "failed"){
-      toast.warning('Incorrect UserName or Password !', {
+      toast.warning('Incorrect email or Password !', {
           position: toast.POSITION.BOTTOM_CENTER,
           autoClose: 2000,
           pauseOnHover: false,
@@ -36,24 +36,24 @@ const Login = () => {
     };
 
   const initialValues = {
-    username: "",
+    email: "",
     password: ""
     };
 
   const { values, handleBlur, handleChange, handleSubmit, errors, touched } =
     useFormik({
       initialValues,
-      validationSchema: loginschema,
+      validationSchema: Dloginschema,
       validateOnChange: true,
       validateOnBlur: false,
       onSubmit: (values, action) => {
         console.log("Login Values:", values);
-        userService.login(values).then(async (res)=>{
+        doctorService.login(values).then(async (res)=>{
           console.log('Login Res:', res.data);
           showToastMessage("success");
           await delay(3000);
-          setUid(res.data);
-          saveToken({"uid": res.data})
+          setUid(res.data.uid);
+          saveToken({"uid": res.data.uid, "Token":res.data.token})
         }).catch((err)=>{
           toast.warning('Invalid credentials',err.response.data);
         })
@@ -75,15 +75,15 @@ const Login = () => {
       <div className="box">
         <i className="fa-solid fa-user" />
         <div>
-        <input  type="text"  placeholder="Username"  
+        <input  type="text"  placeholder="email"  
                       autoComplete="off"
-                      name="username"
-                      id="username"
-                      value={values.username}
+                      name="email"
+                      id="email"
+                      value={values.email}
                       onChange={handleChange}
                       onBlur={handleBlur}/>
-        {errors.username && touched.username ? (
-          <p className="form-error">{errors.username}</p>
+        {errors.email && touched.email ? (
+          <p className="form-error">{errors.email}</p>
           ) : null}
                     </div>
       </div>

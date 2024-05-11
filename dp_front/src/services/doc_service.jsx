@@ -37,3 +37,9 @@ export default new doctorService;
 export function saveToken(tokenData){
     localStorage.setItem('docDetails', JSON.stringify(tokenData))
 }
+
+export function clearToken(){
+    localStorage.removeItem('userDetails')
+    localStorage.removeItem('userState')
+    localStorage.removeItem('docDetails')
+}
