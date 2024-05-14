@@ -922,9 +922,13 @@ const [othersClick, setOthersClick] = useState(false);
     }
     let data = makeSymList();
     console.log("Selected Symptoms:", selectedSymptomsVal);
-    for (let i of selectedSymptomsVal) {
-      data[i] = 1;
-    }
+    // let c=0;
+    // for (let i of data) {
+    //   c++;
+    // }
+    const keysArray = Object.keys(data);
+    const count = keysArray.length;
+    console.log("count: ",count);
     PredictionService.getRes(data).then((res) => {
       console.log('Result of pred :', res.data);
       setResult(res.data);
