@@ -26,17 +26,7 @@
     font-size: 26px;
     color:#008080;
   }
- .header .searchbar{
-    width:600px;
-    padding:0px 20px;
-    padding-top:5px;
-    margin:0px 50px;
-    height:60px;
-    border:1px solid #eee;
-    border-radius: 30px;
-    font-size: 20px;
- }
- 
+
   .header a {
     color: black;
     padding:  18px 25px;
@@ -57,7 +47,54 @@
     background-color: #008080;
     color: white;
   }
-  
+  .header .ham{
+    display: none;
+    font-size: 30px;
+  }
  
-  
-  
+  .header .hamlinks{
+    position: absolute;
+    right:10%;
+    background-color: yellow;
+    top:50%;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    z-index: 99999999;
+  }
+  @media only screen and (max-width: 1070px) {
+
+  .header{
+    padding-left:0px;
+    justify-content:start;
+    gap:30px;
+  }
+  .header img{
+    height:60px;
+    width:80px;
+  }
+  .header .logo p{
+    font-size: 22px;
+  }
+  .header a {
+    padding:  15px 18px;
+    margin-left:5px;
+    font-size: 20px;
+  }
+    }
+    @media only screen and (max-width: 880px) {
+.header{
+  /* background-color: yellow; */
+  justify-content: space-between;
+}
+.header a{
+display: none ;
+}
+.header .ham{
+  display: block;
+}
+    }
+
+
+   
+    

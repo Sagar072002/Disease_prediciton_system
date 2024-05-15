@@ -43,7 +43,9 @@
 .main-div input{
   margin-right:10px;
 }
-
+.main-div .form {
+    margin-top:-150px;
+}
 .main-div .form button{
   margin-left:400px;
   padding:17px 30px;
@@ -61,6 +63,7 @@
 }
 .main-div .form span{
 font-size: 20px;
+
 }
 .termsdiv .rightdiv{
     width:45%;
@@ -73,7 +76,7 @@ font-size: 20px;
 }
 .next-button-container {
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
   }
 .next-button-container button{
     margin-top:-40px;
@@ -559,3 +562,51 @@ select {
   .headdiv-hidden {
     display: none;
   }
+
+
+  .diseasecontainer {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .input-field {
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .submit-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .info-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    text-align: left;
+  }
+  .clear-btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .clear-btn:hover {
+    background-color: #c82333;
+  }
+  

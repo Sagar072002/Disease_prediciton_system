@@ -711,7 +711,7 @@ font-size: 22px;
 width:310px;
 margin:0 20px;
 }
-.innercounter{
+.counter-div .innercounter{
     /* width:450px; */
     height:200px;
     background-color: #e8f2f9;
@@ -728,6 +728,9 @@ margin:0 20px;
 transform: scale(1.03);
 cursor: pointer;
 }
+/* .firstcount{
+  width:590px;
+} */
 .innercounter h1,.innercounter .counter{
     font-size:30px;
 }
