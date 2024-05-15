@@ -43,7 +43,7 @@ const App = () => {
               <Routes key={"routes"} >,
                 <Route key={"home"} path='/' element={ <Home/> } />,
                 <Route key={"login"} path='/login' element={ <Navigate replace to="/"/> } />,
-                
+                <Route key={"doctorlogin"} path='/doctorlogin' element={<Navigate replace to="/"/> } />,
                 {/* <Route key={"register"} path='/register' element={ <Register/> } />, */}
                 <Route key={"contact"} path='/contact' element={ <Contact/> } />,
                 <Route key={"terms"} path='/symptom' element={ <Terms/> } />,
@@ -56,15 +56,15 @@ const App = () => {
             ]
             :
             <Routes>
-                              <Route path='/mainlogin' element={ <Mainlogin/> } />,
-                              <Route path='/admin' element={ <Admin/> } />,
-                              <Route path='/doctor' element={ <Doctor/> } />,
-                              <Route path='/admin-user' element={ <User/> } />,
-                              <Route path='/admin-dctr' element={ <Dctr/> } />,
+              <Route path="/" element={<Navigate replace to="/mainlogin"/>} />
+              <Route path='/mainlogin' element={ <Mainlogin/> } />,
+              <Route path='/admin' element={ <Admin/> } />,
+              <Route path='/doctor' element={ <Doctor/> } />,
+              <Route path='/admin-user' element={ <User/> } />,
+              <Route path='/admin-dctr' element={ <Dctr/> } />,
                               <Route path='/disease' element={ <Disease/> } />,
-              <Route path="/" element={<Navigate replace to="/login"/>} />
               <Route key={"doctorregister"} path='/doctorregister' element={<DRegister/> } />,
-                <Route key={"doctorlogin"} path='/doctorlogin' element={<Dlogin/> } />,
+              <Route key={"doctorlogin"} path='/doctorlogin' element={<Dlogin/> } />,
               <Route path='/login' element={ <Login/> } />,
               <Route path='/register' element={ <Register/> } />,
             </Routes>
