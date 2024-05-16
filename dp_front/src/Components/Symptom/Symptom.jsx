@@ -1071,7 +1071,7 @@ const [othersClick, setOthersClick] = useState(false);
                 </div>
                 <div className='btndiv'>
                   <button onClick={handleSendEarItems}>Send</button>
-                  <button onClick={() => seteyeClick(false)}>Cancel</button>
+                  <button onClick={() => setearClick(false)}>Cancel</button>
                 </div>
               </div>
             )}
