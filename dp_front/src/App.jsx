@@ -20,6 +20,7 @@ import User from './Components/Admin/User';
 import Dctr from './Components/Admin/Dctr';
 import Doctor from './Components/Doctor/Doctor';
 import DoctorProfile from './Components/Doctor/DoctorProfile';
+import Disease from './Components/Symptom/Disease';
 
 const App = () => {
 
@@ -43,7 +44,6 @@ const App = () => {
                 <Route key={"home"} path='/' element={ <Home/> } />,
                 <Route key={"login"} path='/login' element={ <Navigate replace to="/"/> } />,
                 <Route key={"doctorlogin"} path='/doctorlogin' element={<Navigate replace to="/"/> } />,
-                {/* <Route key={"register"} path='/register' element={ <Register/> } />, */}
                 <Route key={"contact"} path='/contact' element={ <Contact/> } />,
                 <Route key={"terms"} path='/symptom' element={ <Terms/> } />,
                 <Route key={"symptom"} path='/symptom/predict' element={ <Symptom/> } />,
@@ -61,6 +61,7 @@ const App = () => {
               <Route path='/doctor' element={ <Doctor/> } />,
               <Route path='/admin-user' element={ <User/> } />,
               <Route path='/admin-dctr' element={ <Dctr/> } />,
+              <Route path='/disease' element={ <Disease/> } />,
               <Route key={"doctorregister"} path='/doctorregister' element={<DRegister/> } />,
               <Route key={"doctorlogin"} path='/doctorlogin' element={<Dlogin/> } />,
               <Route path='/login' element={ <Login/> } />,

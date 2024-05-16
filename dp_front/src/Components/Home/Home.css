@@ -5,7 +5,7 @@
     display: flex;
 justify-content: center;
 align-items: center;
-    height: 100vh;
+    padding-bottom:90px;
 }
 
 .banner .left-side{
@@ -15,7 +15,6 @@ align-items: center;
   width: 50%;
 }
 .banner div h2{
-  margin-top:60px;
   margin-bottom:60px;
   font-size:3rem;
   line-height: 1.3;
@@ -711,7 +710,7 @@ font-size: 22px;
 width:310px;
 margin:0 20px;
 }
-.innercounter{
+.counter-div .innercounter{
     /* width:450px; */
     height:200px;
     background-color: #e8f2f9;
@@ -728,6 +727,9 @@ margin:0 20px;
 transform: scale(1.03);
 cursor: pointer;
 }
+/* .firstcount{
+  width:590px;
+} */
 .innercounter h1,.innercounter .counter{
     font-size:30px;
 }

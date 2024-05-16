@@ -25,8 +25,8 @@ const Mainlogin = () => {
             padding: '10px',
             margin: '5px',
             cursor: 'pointer',
-            backgroundColor: selectedOption === 'user' ? '#008080' : '#fff',
-            color: selectedOption === 'user' ? 'white' : 'black'
+            backgroundColor: selectedOption === 'user' ? '#fff' : 'transparent',
+            color: selectedOption === 'user' ? 'black' : 'white'
           }}
           onClick={() => handleOptionClick('user')}
         >
@@ -39,8 +39,8 @@ const Mainlogin = () => {
             padding: '10px',
             margin: '5px',
             cursor: 'pointer',
-            backgroundColor: selectedOption === 'doctor' ? '#008080' : '#fff',
-            color: selectedOption === 'doctor' ? 'white' : 'black'
+            backgroundColor: selectedOption === 'doctor' ? '#fff' : 'transparent',
+            color: selectedOption === 'doctor' ? 'black' : 'white'
           }}
           onClick={() => handleOptionClick('doctor')}
         >

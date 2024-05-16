@@ -65,7 +65,7 @@ const Home = () => {
     </div>
     <div className="seconddiv">
         <ScrollTrigger
-          className="innercounter"
+          className="innercounter firstcount"
           onEnter={() => Setcounteron(true)}
           onExit={() => Setcounteron(false)}
         >

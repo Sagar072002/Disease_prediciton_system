@@ -1,0 +1,62 @@
+{
+    "diseases": {
+      "disease1": {
+        "disease_name": "Disease 1",
+        "disease_detail": "Details about Disease 1",
+        "symptoms": [
+          "Symptom 1 for Disease 1",
+          "Symptom 2 for Disease 1",
+          "Symptom 3 for Disease 1"
+        ],
+        "prevention": [
+          "Prevention method 1 for Disease 1",
+          "Prevention method 2 for Disease 1",
+          "Prevention method 3 for Disease 1"
+        ],
+        "remedies": [
+          "Remedy 1 for Disease 1",
+          "Remedy 2 for Disease 1",
+          "Remedy 3 for Disease 1"
+        ]
+      },
+      "disease2": {
+        "disease_name": "Disease 2",
+        "disease_detail": "Details about Disease 2",
+        "symptoms": [
+          "Symptom 1 for Disease 2",
+          "Symptom 2 for Disease 2",
+          "Symptom 3 for Disease 2"
+        ],
+        "prevention": [
+          "Prevention method 1 for Disease 2",
+          "Prevention method 2 for Disease 2",
+          "Prevention method 3 for Disease 2"
+        ],
+        "remedies": [
+          "Remedy 1 for Disease 2",
+          "Remedy 2 for Disease 2",
+          "Remedy 3 for Disease 2"
+        ]
+      },
+      "disease3": {
+        "disease_name": "Disease 3",
+        "disease_detail": "Details about Disease 3",
+        "symptoms": [
+          "Symptom 1 for Disease 3",
+          "Symptom 2 for Disease 3",
+          "Symptom 3 for Disease 3"
+        ],
+        "prevention": [
+          "Prevention method 1 for Disease 3",
+          "Prevention method 2 for Disease 3",
+          "Prevention method 3 for Disease 3"
+        ],
+        "remedies": [
+          "Remedy 1 for Disease 3",
+          "Remedy 2 for Disease 3",
+          "Remedy 3 for Disease 3"
+        ]
+      }
+    }
+  }
+  
