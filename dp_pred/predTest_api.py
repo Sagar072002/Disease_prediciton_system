@@ -2100,8 +2100,8 @@ def dp_predictor(input_parameters:model_input):
     values=[5]
     for i in res:
         value={j for j in db if db[j]==res[i]}
-        print(f'{value} with accuracy of {i*100}%')
-        keys.append(f'{value} with accuracy of {i*100}%')
+        print(f'{value} - {i*100}%')
+        keys.append(f'{value} - {i*100}%')
         c+=1
         if(c>5):break
 

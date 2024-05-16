@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <>
     <ToastContainer/>
-    <div className="header">
+    {/* <div className="header">
       <div className='logo'>
     <img src={img} alt="" />
     <p>DISPRED</p>
@@ -40,8 +40,28 @@ const Header = () => {
     </div>
     <GiHamburgerMenu className='ham' />
     
+    </div> */}
+    <header className="header">
+  <nav>
+  <div className='logo'>
+    <img src={img} alt="" />
+    <p>DISPRED</p>
     </div>
+    <input type="checkbox" id="menu-toggle" />
+    <label htmlFor="menu-toggle" className="menu-icon">
+      ☰
+    </label>
+    <div className=" menu">
+    <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
+    <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>About</NavLink>
+    <NavLink to="/finddoctor" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Find a doctor</NavLink>
     
+    <NavLink to="/symptom" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Prediction</NavLink>
+    <Link onClick={LogOut} to="/mainlogin">Logout</Link>
+    </div>
+  </nav>
+</header>
+
     </>
    )
   }

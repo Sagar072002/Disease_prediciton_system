@@ -2,13 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:50px;
-    height: 100vh;
+    padding:0 100px;
 }
 .terms .main-div{
     display: flex;
     flex-direction: column;
     height: 570px;
+    width: 1170px;
+    margin-bottom:50px;
 }
 .termsdiv{
     display: flex;
@@ -43,9 +44,7 @@
 .main-div input{
   margin-right:10px;
 }
-.main-div .form {
-    margin-top:-150px;
-}
+
 .main-div .form button{
   margin-left:400px;
   padding:17px 30px;
@@ -70,9 +69,9 @@ font-size: 20px;
     
 }
 .termsdiv .rightdiv img{
-    height:80%;
-    width:85%;
-    margin-left:40px;
+    height:90%;
+    width:100%;
+    margin-left:20px;
 }
 .next-button-container {
     display: flex;
@@ -82,76 +81,6 @@ font-size: 20px;
     margin-top:-40px;
     margin-right:40px;
 }
-.quesdiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:60px;
-    /* margin-bottom:60px; */
-    height: 100vh;
-}
-.questions{
-    border:1px solid #ddd;
-    background-color: #fff;
-    width:60%;
-    padding:50px;
-    padding-top:30px;
-    padding-bottom:10px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-height:70%;
-}
-.questions h2{
-    text-align: center;
-    margin-bottom:45px;
-}
-.questions pre{
-    margin-bottom:60px;
-    font-size: 20px;
-}
-.questions .row{
-    border-top:1px solid #bbb;
-    margin-bottom:20px;
-    padding:20px;
-    padding-bottom:10px;
-    display: flex;
-}
-.questions .row div{
-    width:60%;
-}
-.questions .row .secondrow{
-    width:40%;
-}
-.questions .row.first{
-    border-top:none;
-}
-.questions .row p{
-display: inline; 
-font-size: 18px;
-}
-.questions .row input{
-margin-right:5px;
-}
-.questions .row label{
-margin-right:30px;
-font-size: 18px;
-}
-
-.questions button{
-    margin-left:700px;
-    margin-top:-5px;
-    padding:17px 27px;
-    background-color: #003333;
-    color:#fff;
-    font-size: 17px;
-    border-radius:5px;
-  }
-
-
-
-
-
-
 
 
 
@@ -165,70 +94,11 @@ font-size: 18px;
   border:none;
 
 }
-.gender-div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top:160px;
-    margin-bottom:60px;
-}
-.gender button{
-    margin-left:400px;
-    padding:17px 27px;
-    background-color: #003333;
-    color:#fff;
-    font-size: 17px;
-    border-radius:5px;
-    
-}
-.nextlink{
-    color:#fff;
-}
-.gender{
-    width: 60%;
-border:1px solid #eee;
-background-color: #fff;
-height:500px;
-padding:30px;
-display: flex;
-flex-direction: column;
-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
-border-radius: 5px;
-
-}
-
-.gender div{
-    margin:20px;
-    height:300px;
-    padding:20px;
-    margin-left:50px;
-    display: flex;
-}
-.gender div .firstdiv,.gender div .seconddiv{
-    background-color: #f1f1f1;
-    width:300px;
-    border:3px solid #f1f1f1;
-    border-radius: 5px;
-    display: flex;
-    font-size:20px;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-    align-items: center;
-    justify-content: center;
-}
-.gender div .firstdiv:hover,.gender div .seconddiv:hover{
-    border:3px solid #bbb;
-
-}
-.gender h2{
-   text-align: center;
-   text-transform: uppercase;
-}
 
 .symptom-div{
     display: flex;
-    padding:70px 20px;
+    padding:70px 40px;
+    padding-top:10px;
 }
 .partdiv{
     width:940px;
@@ -311,19 +181,15 @@ cursor: pointer;
 .symptom-div .crossitem{
     margin-left:20px;
 }
+
 .predict{
     display: flex;
-    flex-direction: column;
-    margin-left:20px;
-    font-size:20px;
+    justify-content: center;
+    font-size:18px;
+    margin-bottom:40px;
 }
-.predict p{
-    font-size:20px;
-    margin-bottom:0px !important;
-}
-.predict p span{
-    font-weight: bold;
-}
+
+
 .flexdiv{
     display: flex;
 }
@@ -337,7 +203,7 @@ cursor: pointer;
     width:100%;
     height:60vh;
     margin-top:80px;
-    margin-left:30px;
+    /* margin-left:30px; */
 }
 
 .main-div .left-side {
@@ -608,5 +474,26 @@ select {
   
   .clear-btn:hover {
     background-color: #c82333;
+  }
+  
+
+
+  .predictions-table {
+    width:60%;
+    border-collapse: collapse;
+}
+
+.predictions-table th, .predictions-table td {
+    padding: 8px;
+    text-align: left;
+    border:1px solid #777 ;
+  }
+  
+  .predictions-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .predictions-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
   }
   

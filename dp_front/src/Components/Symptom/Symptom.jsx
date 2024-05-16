@@ -917,26 +917,28 @@ const [othersClick, setOthersClick] = useState(false);
  
   const handleSubmit = () => {
     if (selectedSymptoms.length === 0) {
-      setResult({});
+      setResult([]);
       return;
     }
     let data = makeSymList();
     console.log("Selected Symptoms:", selectedSymptomsVal);
-    // let c=0;
-    // for (let i of data) {
-    //   c++;
-    // }
     const keysArray = Object.keys(data);
     const count = keysArray.length;
-    console.log("count: ",count);
-    PredictionService.getRes(data).then((res) => {
-      console.log('Result of pred :', res.data);
-      setResult(res.data);
-    }).catch((err) => {
-      console.log('Pred error :', err);
-    });
+    console.log("count: ", count);
+    PredictionService.getRes(data)
+      .then((res) => {
+        console.log('Result of pred:', res.data);
+        // Check if res.data is an array, if not, parse it
+        const parsedResult = Array.isArray(res.data) ? res.data : JSON.parse(res.data);
+        setResult(parsedResult);
+      })
+      .catch((err) => {
+        console.log('Pred error:', err);
+        setResult([]);
+      });
   };
-
+  
+  
   return (
     <>
     <ToastContainer position="top-center" />
@@ -1494,14 +1496,61 @@ const [othersClick, setOthersClick] = useState(false);
         </div>
         
       </div>
-      <div className='predict'>
-                <span className='predicthead'>Prediction:</span>
-                {Object.keys(result).map((key) => (
-                  <p key={key}>
-                    <span> {key} : </span>{result[key]}
-                  </p>
-                ))}
-              </div>
+      {/* <div >
+  <p >Predictions:</p> <br />
+  {Object.keys(result).map((key) => (
+    <div key={key}>
+       {result[key]} <br />
+    </div>
+  ))}
+</div> */}
+
+<h2 style={{textAlign:'center',fontSize:'30px', textTransform:'uppercase'}}>Result:</h2>
+
+<div className='predict'>
+  {result && result.length > 0 ? (
+    <table className="predictions-table">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Prediction</th>
+          <th>Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        {result.slice(1).map((item, index) => { // Ignore the first row by using slice(1)
+          // Check if item is a string
+          if (typeof item === 'string') {
+            // Assuming each item is in the format: {'Prediction'} - Percentage%
+            const predictionParts = item.split(' - ');
+            let prediction = predictionParts[0].replace('{', '').replace('}', '');
+            prediction = prediction.replace(/'/g, ''); // Remove single quotes
+            const percentage = predictionParts[1];
+
+            return (
+              <tr key={index}>
+                <td>{index + 1}</td>
+                <td>{prediction}</td>
+                <td>{percentage}</td>
+              </tr>
+            );
+          } else {
+            return (
+              <tr key={index}>
+                <td>{index + 1}</td>
+                <td colSpan="2">{item}</td> {/* If item is not a string, display it in a single cell */}
+              </tr>
+            );
+          }
+        })}
+      </tbody>
+    </table>
+  ) : (
+    <p>No predictions available.</p>
+  )}
+</div>
+
+
     </>
   );
 }
