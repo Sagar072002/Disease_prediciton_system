@@ -2055,29 +2055,6 @@ model = pickle.load(open('model.sav', 'rb'))
 
 @app.post('/dp_pred')
 def dp_predictor(input_parameters:model_input):
-    # for sample dataset
-    pred=[]
-    for i in range(0,1330):
-        pred.append(0.0)
-    pred[0]=1
-    pred[1]=1
-    pred[2]=1
-    pred[3]=1
-    pred[4]=1
-    pred[5]=1
-    pred[6]=1
-    pred[7]=1
-    pred[8]=1
-    pred[9]=1
-    pred[10]=1
-    pred[11]=1
-    pred[12]=1
-    pred[14]=1
-    pred[20]=1
-    pred[121]=1
-    pred[112]=1
-    pred[113]=1
-    pred[1230]=1
     input_data = input_parameters.model_dump_json()
     input_dictionary = json.loads(input_data)
     input_list = list(input_dictionary.values())

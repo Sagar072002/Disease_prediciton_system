@@ -31,6 +31,7 @@ const handleSendHeadItems = () => {
 
   if (uniqueHeadItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniqueHeadItems]);
+    console.log("uniqueHeadItems: ",uniqueHeadItems)
     setHeadClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -909,6 +910,7 @@ const [othersClick, setOthersClick] = useState(false);
   };
   const handleRemoveSelectedItem = (indexToRemove) => {
     const updatedSelectedItems = selectedItems.filter((_, index) => index !== indexToRemove);
+    console.log("updatedSelectedItems: ",updatedSelectedItems)
     setSelectedItems(updatedSelectedItems);
     toast.success("Symptom removed.", {
       position: toast.POSITION.TOP_CENTER
@@ -922,9 +924,9 @@ const [othersClick, setOthersClick] = useState(false);
     }
     let data = makeSymList();
     console.log("Selected Symptoms:", selectedSymptomsVal);
-    const keysArray = Object.keys(data);
-    const count = keysArray.length;
-    console.log("count: ", count);
+    for (let i of selectedSymptomsVal) {
+      data[i] = 1;
+    }
     PredictionService.getRes(data)
       .then((res) => {
         console.log('Result of pred:', res.data);
