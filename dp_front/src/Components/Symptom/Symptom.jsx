@@ -24,14 +24,55 @@ const Symptom = () => {
 
 const [selectedItems, setSelectedItems] = useState([]);
 
+const handleSymptomSelect = (selectedSymptom, symVal) => {
+  if (!selectedSymptoms.includes(selectedSymptom)) {
+    setSelectedSymptoms([...selectedSymptoms, selectedSymptom]);
+    setSelectedSymptomsVal([...selectedSymptomsVal, symVal]);
+    toast.success("Symptom  added to the list.", {
+      position: toast.POSITION.TOP_CENTER
+    });
+  } else {
+    toast.warn('This symptom is already selected.', {
+      position: toast.POSITION.TOP_CENTER
+    });
+  }
+
+};
+
+const handleSymptomsSelect = (selectedSymptom, symVal) => {
+  if (!selectedSymptoms.includes(selectedSymptom)) {
+    setSelectedSymptoms([...selectedSymptoms, ...selectedSymptom]);
+    setSelectedSymptomsVal([...selectedSymptomsVal, ...symVal]);
+    toast.success("Symptom  added to the list.", {
+      position: toast.POSITION.TOP_CENTER
+    });
+  } else {
+    toast.warn('This symptom is already selected.', {
+      position: toast.POSITION.TOP_CENTER
+    });
+  }
+
+};
+
+const setSelecteditems = (selectedSymptoms)=>{
+  let symVal = []
+  for (let i of selectedSymptoms){
+    let Index = BookData.findIndex( 
+      (temp) => temp["title"] === i 
+    )
+    symVal = [...symVal, BookData[Index].name]
+  }
+  handleSymptomsSelect(selectedSymptoms,symVal)
+}
+
 
 const handleSendHeadItems = () => {
   const selectedHeadItems = selectedIndices.map(index => headdata[index].title);
-  const uniqueHeadItems = selectedHeadItems.filter(item => !selectedItems.includes(item));
+  const uniqueHeadItems = selectedHeadItems.filter(item => !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniqueHeadItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniqueHeadItems]);
-    console.log("uniqueHeadItems: ",uniqueHeadItems)
+    setSelecteditems(uniqueHeadItems)
     setHeadClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -52,10 +93,11 @@ const handleSendEyeItems = () => {
     return eyeDataItem ? eyeDataItem.title : null;
   });
 
-  const uniqueEyeItems = selectedEyeItems.filter(item => item && !selectedItems.includes(item));
+  const uniqueEyeItems = selectedEyeItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniqueEyeItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniqueEyeItems]);
+    setSelecteditems(uniqueEyeItems)
     seteyeClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -76,10 +118,11 @@ const handleSendEarItems = () => {
     return earDataItem ? earDataItem.title : null;
   });
 
-  const uniqueearItems = selectedEarItems.filter(item => item && !selectedItems.includes(item));
+  const uniqueearItems = selectedEarItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniqueearItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniqueearItems]);
+    setSelecteditems(uniqueearItems)
     setearClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -100,10 +143,11 @@ const handleSendnoseItems = () => {
     return noseDataItem ? noseDataItem.title : null;
   });
 
-  const uniquenoseItems = selectednoseItems.filter(item => item && !selectedItems.includes(item));
+  const uniquenoseItems = selectednoseItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniquenoseItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniquenoseItems]);
+    setSelecteditems(uniquenoseItems)
     setNoseClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -124,10 +168,11 @@ const handleSendmouthItems = () => {
     return mouthDataItem ? mouthDataItem.title : null;
   });
 
-  const uniquemouthItems = selectedmouthItems.filter(item => item && !selectedItems.includes(item));
+  const uniquemouthItems = selectedmouthItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniquemouthItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniquemouthItems]);
+    setSelecteditems(uniquemouthItems)
     setMouthClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -148,10 +193,11 @@ const handleSendfaceItems = () => {
     return faceDataItem ? faceDataItem.title : null;
   });
 
-  const uniquefaceItems = selectedfaceItems.filter(item => item && !selectedItems.includes(item));
+  const uniquefaceItems = selectedfaceItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniquefaceItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniquefaceItems]);
+    setSelecteditems(uniquefaceItems)
     setFaceClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -172,10 +218,11 @@ const handleSendskinItems = () => {
     return skinDataItem ? skinDataItem.title : null;
   });
 
-  const uniqueskinItems = selectedskinItems.filter(item => item && !selectedItems.includes(item));
+  const uniqueskinItems = selectedskinItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniqueskinItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniqueskinItems]);
+    setSelecteditems(uniqueskinItems)
     setSkinClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -196,10 +243,11 @@ const handleSendhairItems = () => {
     return hairDataItem ? hairDataItem.title : null;
   });
 
-  const uniquehairItems = selectedhairItems.filter(item => item && !selectedItems.includes(item));
+  const uniquehairItems = selectedhairItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniquehairItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniquehairItems]);
+    setSelecteditems(uniquehairItems)
     setHairClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -220,10 +268,11 @@ const handleSendneckItems = () => {
     return neckDataItem ? neckDataItem.title : null;
   });
 
-  const uniqueneckItems = selectedneckItems.filter(item => item && !selectedItems.includes(item));
+  const uniqueneckItems = selectedneckItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniqueneckItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniqueneckItems]);
+    setSelecteditems(uniqueneckItems)
     setNeckClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -248,10 +297,11 @@ const handleSendshoulderItems = () => {
     return shoulderDataItem ? shoulderDataItem.title : null;
   });
 
-  const uniqueshoulderItems = selectedshoulderItems.filter(item => item && !selectedItems.includes(item));
+  const uniqueshoulderItems = selectedshoulderItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniqueshoulderItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniqueshoulderItems]);
+    setSelecteditems(uniqueshoulderItems)
     setShouldersClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -276,10 +326,11 @@ const handleSendchestItems = () => {
     return chestDataItem ? chestDataItem.title : null;
   });
 
-  const uniquechestItems = selectedchestItems.filter(item => item && !selectedItems.includes(item));
+  const uniquechestItems = selectedchestItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniquechestItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniquechestItems]);
+    setSelecteditems(uniquechestItems)
     setChestClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -300,10 +351,11 @@ const handleSendheartItems = () => {
     return heartDataItem ? heartDataItem.title : null;
   });
 
-  const uniqueheartItems = selectedheartItems.filter(item => item && !selectedItems.includes(item));
+  const uniqueheartItems = selectedheartItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniqueheartItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniqueheartItems]);
+    setSelecteditems(uniqueheartItems)
     setHeartClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -324,10 +376,11 @@ const handleSendliverItems = () => {
     return liverDataItem ? liverDataItem.title : null;
   });
 
-  const uniqueliverItems = selectedliverItems.filter(item => item && !selectedItems.includes(item));
+  const uniqueliverItems = selectedliverItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniqueliverItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniqueliverItems]);
+    setSelecteditems(uniqueliverItems)
     setLiverClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -348,10 +401,11 @@ const handleSendfingerItems = () => {
     return fingerDataItem ? fingerDataItem.title : null;
   });
 
-  const uniquefingerItems = selectedfingerItems.filter(item => item && !selectedItems.includes(item));
+  const uniquefingerItems = selectedfingerItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniquefingerItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniquefingerItems]);
+    setSelecteditems(uniquefingerItems)
     setFingersClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -372,10 +426,11 @@ const handleSendarmItems = () => {
     return armDataItem ? armDataItem.title : null;
   });
 
-  const uniquearmItems = selectedarmItems.filter(item => item && !selectedItems.includes(item));
+  const uniquearmItems = selectedarmItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniquearmItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniquearmItems]);
+    setSelecteditems(uniquearmItems)
     setArmsClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -396,10 +451,11 @@ const handleSendelbowItems = () => {
     return elbowDataItem ? elbowDataItem.title : null;
   });
 
-  const uniqueelbowItems = selectedelbowItems.filter(item => item && !selectedItems.includes(item));
+  const uniqueelbowItems = selectedelbowItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniqueelbowItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniqueelbowItems]);
+    setSelecteditems(uniqueelbowItems)
     setElbowClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -420,10 +476,11 @@ const handleSendhandItems = () => {
     return handDataItem ? handDataItem.title : null;
   });
 
-  const uniquehandItems = selectedhandItems.filter(item => item && !selectedItems.includes(item));
+  const uniquehandItems = selectedhandItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniquehandItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniquehandItems]);
+    setSelecteditems(uniquehandItems)
     setHandsClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -444,10 +501,11 @@ const handleSendpelvicItems = () => {
     return pelvicDataItem ? pelvicDataItem.title : null;
   });
 
-  const uniquepelvicItems = selectedpelvicItems.filter(item => item && !selectedItems.includes(item));
+  const uniquepelvicItems = selectedpelvicItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniquepelvicItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniquepelvicItems]);
+    setSelecteditems(uniquepelvicItems)
     setPelvicClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -468,10 +526,11 @@ const handleSendabdomenItems = () => {
     return abdomenDataItem ? abdomenDataItem.title : null;
   });
 
-  const uniqueabdomenItems = selectedabdomenItems.filter(item => item && !selectedItems.includes(item));
+  const uniqueabdomenItems = selectedabdomenItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniqueabdomenItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniqueabdomenItems]);
+    setSelecteditems(uniqueabdomenItems)
     setAbdomenClick(false);
     setSelectedIndices([]);
     toast.success("Symptom added successfully.", {
@@ -493,10 +552,11 @@ const handleSendkidneyItems = () => {
     return kidneyDataItem ? kidneyDataItem.title : null;
   });
 
-  const uniquekidneyItems = selectedkidneyItems.filter(item => item && !selectedItems.includes(item));
+  const uniquekidneyItems = selectedkidneyItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   if (uniquekidneyItems.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...uniquekidneyItems]); // Update selectedItems state with unique kidney items
+    setSelecteditems(uniquekidneyItems)
     setKidneyClick(false); // Close the kidney div after sending
     setSelectedIndices([]); // Reset selected indices
     toast.success("Symptom added successfully.", {
@@ -519,12 +579,13 @@ const handleSendbackItems = () => {
     return backDataItem ? backDataItem.title : null;
   });
 
-  const uniquebackItems = selectedbackItems.filter(item => item && !selectedItems.includes(item));
+  const uniquebackItems = selectedbackItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   const itemsToAdd = uniquebackItems.filter(item => !selectedItems.includes(item));
 
   if (itemsToAdd.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...itemsToAdd]); // Update selectedItems state with unique items
+    setSelecteditems(itemsToAdd)
     setBackClick(false); // Close the eye div after sending
     setSelectedIndices([]); // Reset selected indices
     toast.success("Symptom added successfully.", {
@@ -546,12 +607,13 @@ const handleSendhipsItems = () => {
     return hipsDataItem ? hipsDataItem.title : null;
   });
 
-  const uniquehipsItems = selectedhipsItems.filter(item => item && !selectedItems.includes(item));
+  const uniquehipsItems = selectedhipsItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   const itemsToAdd = uniquehipsItems.filter(item => !selectedItems.includes(item));
 
   if (itemsToAdd.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...itemsToAdd]); // Update selectedItems state with unique items
+    setSelecteditems(itemsToAdd)
     setHipsClick(false); // Close the eye div after sending
     setSelectedIndices([]); // Reset selected indices
     toast.success("Symptom added successfully.", {
@@ -573,12 +635,13 @@ const handleSendthighItems = () => {
     return thighDataItem ? thighDataItem.title : null;
   });
 
-  const uniquethighItems = selectedthighItems.filter(item => item && !selectedItems.includes(item));
+  const uniquethighItems = selectedthighItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   const itemsToAdd = uniquethighItems.filter(item => !selectedItems.includes(item));
 
   if (itemsToAdd.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...itemsToAdd]); // Update selectedItems state with unique items
+    setSelecteditems(itemsToAdd)
     setThighsClick(false); // Close the eye div after sending
     setSelectedIndices([]); // Reset selected indices
     toast.success("Symptom added successfully.", {
@@ -600,12 +663,13 @@ const handleSendkneeItems = () => {
     return kneeDataItem ? kneeDataItem.title : null;
   });
 
-  const uniquekneeItems = selectedkneeItems.filter(item => item && !selectedItems.includes(item));
+  const uniquekneeItems = selectedkneeItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   const itemsToAdd = uniquekneeItems.filter(item => !selectedItems.includes(item));
 
   if (itemsToAdd.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...itemsToAdd]); // Update selectedItems state with unique items
+    setSelecteditems(itemsToAdd)
     setKneesClick(false); // Close the eye div after sending
     setSelectedIndices([]); // Reset selected indices
     toast.success("Symptom added successfully.", {
@@ -626,12 +690,13 @@ const handleSendlegItems = () => {
     return legDataItem ? legDataItem.title : null;
   });
 
-  const uniquelegItems = selectedlegItems.filter(item => item && !selectedItems.includes(item));
+  const uniquelegItems = selectedlegItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   const itemsToAdd = uniquelegItems.filter(item => !selectedItems.includes(item));
 
   if (itemsToAdd.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...itemsToAdd]); // Update selectedItems state with unique items
+    setSelecteditems(itemsToAdd)
     setLegsClick(false); // Close the eye div after sending
     setSelectedIndices([]); // Reset selected indices
     toast.success("Symptom added successfully.", {
@@ -653,12 +718,13 @@ const handleSendfeetItems = () => {
     return feetDataItem ? feetDataItem.title : null;
   });
 
-  const uniquefeetItems = selectedfeetItems.filter(item => item && !selectedItems.includes(item));
+  const uniquefeetItems = selectedfeetItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   const itemsToAdd = uniquefeetItems.filter(item => !selectedItems.includes(item));
 
   if (itemsToAdd.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...itemsToAdd]); // Update selectedItems state with unique items
+    setSelecteditems(itemsToAdd)
     setFeetClick(false); // Close the eye div after sending
     setSelectedIndices([]); // Reset selected indices
     toast.success("Symptom added successfully.", {
@@ -681,12 +747,13 @@ const handleSendotherItems = () => {
     return otherDataItem ? otherDataItem.title : null;
   });
 
-  const uniqueotherItems = selectedotherItems.filter(item => item && !selectedItems.includes(item));
+  const uniqueotherItems = selectedotherItems.filter(item => item && !selectedItems.includes(item)&&!selectedSymptoms.includes(item));
 
   const itemsToAdd = uniqueotherItems.filter(item => !selectedItems.includes(item));
 
   if (itemsToAdd.length > 0) {
     setSelectedItems(prevItems => [...prevItems, ...itemsToAdd]); // Update selectedItems state with unique items
+    setSelecteditems(itemsToAdd)
     setOthersClick(false); // Close the eye div after sending
     setSelectedIndices([]); // Reset selected indices
     toast.success("Symptom added successfully.", {
@@ -858,29 +925,6 @@ const [othersClick, setOthersClick] = useState(false);
     setUserState(newState);
     saveUserState(newState);
   }, [selectedSymptomsVal]);
-
- 
-
-  const handleSymptomSelect = (selectedSymptom, symVal) => {
-    if (!selectedSymptoms.includes(selectedSymptom)) {
-      setSelectedSymptoms([...selectedSymptoms, selectedSymptom]);
-      setSelectedSymptomsVal([...selectedSymptomsVal, symVal]);
-      toast.success("Symptom  added to the list.", {
-        position: toast.POSITION.TOP_CENTER
-      });
-    } else {
-      toast.warn('This symptom is already selected.', {
-        position: toast.POSITION.TOP_CENTER
-      });
-    }
-
-  };
-
-
-
-  
-
-
 
 
   const handleItemClick = (index) => {
