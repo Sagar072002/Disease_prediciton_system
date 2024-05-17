@@ -1,62 +1,62 @@
 {
-    "diseases": {
-      "disease1": {
-        "disease_name": "Disease 1",
-        "disease_detail": "Details about Disease 1",
-        "symptoms": [
-          "Symptom 1 for Disease 1",
-          "Symptom 2 for Disease 1",
-          "Symptom 3 for Disease 1"
-        ],
-        "prevention": [
-          "Prevention method 1 for Disease 1",
-          "Prevention method 2 for Disease 1",
-          "Prevention method 3 for Disease 1"
-        ],
-        "remedies": [
-          "Remedy 1 for Disease 1",
-          "Remedy 2 for Disease 1",
-          "Remedy 3 for Disease 1"
-        ]
-      },
-      "disease2": {
-        "disease_name": "Disease 2",
-        "disease_detail": "Details about Disease 2",
-        "symptoms": [
-          "Symptom 1 for Disease 2",
-          "Symptom 2 for Disease 2",
-          "Symptom 3 for Disease 2"
-        ],
-        "prevention": [
-          "Prevention method 1 for Disease 2",
-          "Prevention method 2 for Disease 2",
-          "Prevention method 3 for Disease 2"
-        ],
-        "remedies": [
-          "Remedy 1 for Disease 2",
-          "Remedy 2 for Disease 2",
-          "Remedy 3 for Disease 2"
-        ]
-      },
-      "disease3": {
-        "disease_name": "Disease 3",
-        "disease_detail": "Details about Disease 3",
-        "symptoms": [
-          "Symptom 1 for Disease 3",
-          "Symptom 2 for Disease 3",
-          "Symptom 3 for Disease 3"
-        ],
-        "prevention": [
-          "Prevention method 1 for Disease 3",
-          "Prevention method 2 for Disease 3",
-          "Prevention method 3 for Disease 3"
-        ],
-        "remedies": [
-          "Remedy 1 for Disease 3",
-          "Remedy 2 for Disease 3",
-          "Remedy 3 for Disease 3"
-        ]
-      }
+  "diseases": {
+    "Familial Mediterranean fever": {
+      "disease_name": "Familial Mediterranean fever",
+      "disease_detail": "Familial Mediterranean fever is an inherited condition characterized by recurrent episodes of painful inflammation in the abdomen, chest, or joints.  These episodes are often accompanied by fever and sometimes a rash or headache",
+      "causes": "Familial Mediterranean fever is caused by variants (also known as mutations) in the MEFV gene. The MEFV gene provides instructions for making a protein called pyrin (also known as marenostrin), which is found in white blood cells. This protein is involved in the immune system, helping to regulate the process of inflammation. Inflammation occurs when the immune system sends signaling molecules and white blood cells to a site of injury or disease to fight microbial invaders and facilitate tissue repair. When this process is complete, the body stops the inflammatory response to prevent damage to its own cells and tissues.",
+
+      "symptoms": [
+        "Recurrent fevers: Episodes typically last 1-3 days",
+        "Peritonitis: Inflammation of the abdominal lining, leading to severe abdominal pain",
+        "Pleuritis: Inflammation of the lining around the lungs, causing chest pain",
+        "Arthritis: Joint pain and swelling, particularly in the knees, ankles, and hips",
+        "Erysipelas-like skin rash: A red rash that often appears on the lower legs",
+        "Myalgia: Muscle pain"
+      ],
+      "prevention": [
+        "Consistent medication adherence, particularly with colchicine therapy",
+        " Adjusting colchicine dosage based on individual response",
+        " Prompt recognition and treatment of prodromal symptoms",
+        " Avoidance of known triggers like stress and infections",
+        " Regular follow-up appointments with healthcare providers",
+        "Consideration of genetic counseling for family planning and understanding inheritance patterns"
+      ],
+      "alternative": [
+        "Benign paroxysmal peritonitis",
+        "Familial paroxysmal polyserositis",
+        "FMF",
+        "MEF",
+        "Recurrent polyserositis",
+        "Reimann periodic disease",
+        "Siegal-Cattan-Mamou disease",
+        "Wolff periodic disease"
+      ],
+      "doctor": "rheumatologist",
+      "treatment": "The primary medication prescribed for Familial Mediterranean Fever (FMF) is colchicine, an anti-inflammatory medication that helps reduce the frequency and severity of FMF attacks. In some cases where colchicine is ineffective or not tolerated, interleukin-1 inhibitors like anakinra or canakinumab may be prescribed as alternative treatments"
+    },
+    "Fanconi syndrome": {
+      "disease_name": "Fanconi syndrome",
+      "disease_detail": "Fanconi syndrome is a rare disorder that affects the proximal renal tubules of the kidneys, leading to impaired reabsorption of various substances, including glucose, amino acids, bicarbonate, and electrolytes. This results in their excessive excretion in the urine, leading to various symptoms and complications.",
+      "cause": [
+        "Inherited: Some cases of Fanconi syndrome are inherited, such as those associated with certain genetic conditions like cystinosis or Wilson disease.",
+        "Acquired: It can also be acquired due to exposure to toxins (such as heavy metals or certain medications), kidney damage from other conditions (like multiple myeloma or certain infections), or as a result of certain metabolic disorders."
+      ],
+      "symptoms": [
+        "Passing large amounts of urine, which can lead to dehydration",
+        "Excessive thirst",
+        " Severe bone pain",
+        " Fractures due to bone weakness",
+        " Muscle weakness"
+      ],
+      "prevention": [
+        "Avoid exposure to toxins and medications known to cause Fanconi syndrome.",
+        "Practice medication safety and adhere to prescribed dosages.",
+        "Monitor kidney function regularly, especially in individuals with predisposing conditions.",
+        "Consider genetic counseling for conditions associated with genetic predisposition to Fanconi syndrome.",
+        "Maintain a healthy lifestyle to support kidney health.Seek prompt medical attention for symptoms suggestive of Fanconi syndrome."
+      ],
+      "alternative": ["De Toni-Fanconi-Debré syndrome"],
+      "doctor": "Nephrologists"
     }
   }
-  
+}

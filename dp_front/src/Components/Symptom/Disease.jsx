@@ -75,12 +75,18 @@ function Disease() {
             ))}
           </ul>
 
-          <h3>Remedies:</h3>
+          <h3>Alternative name:</h3>
           <ul>
-            {diseaseInfo.remedies.map((remedy, index) => (
+            {diseaseInfo.alternative.map((remedy, index) => (
               <li key={index}>{remedy}</li>
             ))}
           </ul>
+          <h3>Treatment:</h3>
+          <p>{diseaseInfo.treatment}
+</p>
+          <h3>Doctor:</h3>
+          <p>{diseaseInfo.doctor}
+</p>
         </div>
       )}
     </div>

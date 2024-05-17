@@ -3024,10 +3024,7 @@
     "title": "Pressure under the lower left ribs from a swollen spleen",
     "name": "Pressure_under_the_lower_left_ribs_from_a_swollen_spleen"
   },
-  {
-    "title": "Rash -- small pinpoint red marks on the skin (petechiae)",
-    "name": "Rash_small_pinpoint_red_marks_on_the_skin_petechiae"
-  },
+  
   {
     "title": "Cough, with or without mucus",
     "name": "Cough_with_or_without_mucus"
@@ -4012,10 +4009,7 @@
   "title": "Slowed or delayed start of the urinary stream",
   "name": "Slowed_or_delayed_start_of_the_urinary_stream"
 },
-{
-  "title": "Straining to urinate",
-  "name": "Straining_to_urinate"
-},
+
 {
   "title": "Weak urine stream",
   "name": "Weak_urine_stream"
@@ -4356,10 +4350,7 @@
   "title": "Discoloration (blue or black if skin is affected; red or bronze if the affected area is beneath the skin)",
   "name": "Discoloration_blue_or_black_if_skin_is_affected_red_or_bronze_if_the_affected_area_is_beneath_the_skin"
 },
-{
-  "title": "Foul-smelling discharge",
-  "name": "Foul_smelling_discharge"
-},
+
 {
   "title": "Loss of feeling in the area (which may happen after severe pain in the area)",
   "name": "Loss_of_feeling_in_the_area_which_may_happen_after_severe_pain_in_the_area"
