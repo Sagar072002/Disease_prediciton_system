@@ -956,9 +956,9 @@ const [othersClick, setOthersClick] = useState(false);
     const updatedSelectedItems = selectedItems.filter((_, index) => index !== indexToRemove);
     console.log("updatedSelectedItems: ",updatedSelectedItems)
     setSelectedItems(updatedSelectedItems);
-    toast.success("Symptom removed.", {
-      position: toast.POSITION.TOP_CENTER
-    });
+    // toast.success("Symptom removed.", {
+    //   position: toast.POSITION.TOP_CENTER
+    // });
   };
  
   const handleSubmit = () => {
@@ -1014,7 +1014,6 @@ const [othersClick, setOthersClick] = useState(false);
             onClick={() => {
               if (selectedSymptoms.includes(item)) {
                 handleRemoveSymptom(index);
-              } else {
                 handleRemoveSelectedItem(index);
               }
             }}
