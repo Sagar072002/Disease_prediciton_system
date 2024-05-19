@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react'
 import userService from '../services/user_service'
 import { checkToken, checkUserState, clearToken } from '../services/user_service';
+import { checkDoc } from '../services/doc_service';
 
 export const SiteContext = createContext(null);
 
@@ -27,8 +28,13 @@ export const SiteContextProvider = (props) => {
     useEffect(()=>{
         const res1 = checkToken();
         const res2 = checkUserState()
+        const res3 = checkDoc()
         // console.log("res: ",res)
-        setUid(res1)
+        if(res1!=''){
+            setUid(res1)
+        }else{
+            setUid(res3)
+        }
         setUserState(res2)
     },[])
     

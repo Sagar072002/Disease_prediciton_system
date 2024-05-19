@@ -56,6 +56,17 @@ export function saveToken(tokenData){
     localStorage.setItem('docDetails', JSON.stringify(tokenData))
 }
 
+export function checkDoc(){
+    const TokenDetails = localStorage.getItem('docDetails')
+
+    if(!TokenDetails){
+        return ''
+    }
+    const Token = JSON.parse(TokenDetails)
+    
+    return Token.uid
+}
+
 export function clearToken(){
     localStorage.removeItem('userDetails')
     localStorage.removeItem('userState')
