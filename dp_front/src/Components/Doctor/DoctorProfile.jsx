@@ -1,15 +1,20 @@
 // Doctor.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import img from "../../assets/man.jpg";
 import "./doctor.css";
 import { FaStar, FaStarHalf } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";
+import { useParams } from 'react-router-dom';
+import doctorService from '../../services/doc_service';
 
 const DoctorProfile = () => {
   const [showFeedbackForm, setShowFeedbackForm] = useState(false);
+  const [doctor, setDoctor] = useState({});
   const [userName, setUserName] = useState('');
   const [userRating, setUserRating] = useState(0);
   const [userComment, setUserComment] = useState('');
+  const params = useParams()
+  console.log(params)
   const [reviews, setReviews] = useState([
     {
       name: 'Sagar Negi',
@@ -25,6 +30,16 @@ const DoctorProfile = () => {
     },
     // Add more initial reviews here if needed
   ]);
+
+  useEffect(()=>{
+    doctorService.get(params.id).then((res)=>{
+      console.log("Doctor: ",res.data)
+      setDoctor(res.data)
+    }).catch((err)=>{
+      console.log(err)
+    })
+  },[])
+
 
   const handleSubmitFeedback = () => {
     // Validate user inputs here if needed
@@ -57,7 +72,7 @@ const DoctorProfile = () => {
             <img src={img} alt="" />
             <div>
               <p className='profession'>Surgeon</p>
-              <p className='name'>Sagar Negi</p>
+              <p className='name'>{doctor.name}</p>
               <div className="stars">
                 <FaStar />
                 <FaStar />
@@ -66,11 +81,11 @@ const DoctorProfile = () => {
                 <FaStarHalf />
                 <span>4.5</span>
               </div>
-              <p>Specialist in Surgery</p>
+              <p>Specialization: {doctor.specialization}</p>
             </div>
           </div>
           <div className="top-right">
-            <p className='price'>Price: <span>₹500</span></p>
+            <p className='price'>Price: <span>₹{doctor.price}</span></p>
             <div className="">
               <h3>Available slots:</h3>
               <div className='timing'>
@@ -93,14 +108,14 @@ const DoctorProfile = () => {
         <h1>Personal Information</h1>
         <div className='infodiv'>
           <div className='detail'>
-            <p>Name: <span>Sagar negi</span></p>
-            <p>Email: <span>abc@gmail.com</span></p>
-            <p>Phone: <span>9876543210</span></p>
-            <p>Address: <span>Dehradun</span></p>
+            <p>Name: <span>{doctor.name}</span></p>
+            <p>Email: <span>{doctor.email}</span></p>
+            <p>Phone: <span>{doctor.phone}</span></p>
+            <p>Address: <span>{doctor.address}</span></p>
           </div>
           <div className='aboutme'>
             <h2>About Me:</h2>
-            <p>Highly experienced General Surgeon with a passion for providing quality care and delivering positive patient outcomes. Skilled in a wide range of surgical procedures and techniques, with a strong commitment to patient safety and satisfaction.</p>
+            <p>{doctor.about}</p>
           </div>
         </div>
       </div>

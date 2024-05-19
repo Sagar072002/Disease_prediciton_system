@@ -49,7 +49,7 @@ const App = () => {
                 <Route key={"symptom"} path='/symptom/predict' element={ <Symptom/> } />,
                 <Route key={"about"} path='/about' element={ <About/> } />,
                 <Route key={"finddoctor"} path='/finddoctor' element={ <FindDoctor/> } />,
-                <Route path='/doctorpage' element={ <DoctorProfile/> } />,
+                <Route path='/doctorpage/:id' element={ <DoctorProfile/> } />,
               </Routes>,
               <Footer key={"footer"} />
             ]
@@ -57,6 +57,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Navigate replace to="/mainlogin"/>} />
               <Route path='/mainlogin' element={ <Mainlogin/> } />,
+              <Route key={"finddoctor"} path='/finddoctor' element={ <FindDoctor/> } />,
               <Route path='/admin' element={ <Admin/> } />,
               <Route path='/doctor' element={ <Doctor/> } />,
               <Route path='/admin-user' element={ <User/> } />,
@@ -64,6 +65,7 @@ const App = () => {
               <Route path='/disease' element={ <Disease/> } />,
               <Route key={"doctorregister"} path='/doctorregister' element={<DRegister/> } />,
               <Route key={"doctorlogin"} path='/doctorlogin' element={<Dlogin/> } />,
+              <Route path='/doctorpage/:id' element={ <DoctorProfile/> } />,
               <Route path='/login' element={ <Login/> } />,
               <Route path='/register' element={ <Register/> } />,
             </Routes>

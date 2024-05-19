@@ -75,7 +75,7 @@ router.post('/get', async (req, res)=>{
     }
 });
 
-router.post('/getAll', authenticate, restrict(["admin"]), async (req, res)=>{
+router.post('/getAll', authenticate, restrict(["admin","doctor","user"]), async (req, res)=>{
     try{
         const user= await Doctor.find({});
 
