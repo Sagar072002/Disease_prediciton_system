@@ -1,5 +1,7 @@
 .about{
     display: flex;
+    overflow-x: hidden;
+
 }
 .about .left-side{
     width:60%;
@@ -25,63 +27,12 @@
     margin-left:50px;
     margin-top:50px;
 }
-/* .values{
-    margin:30px 80px;
-    border-radius: 4px;
-    padding:20px;
-    margin-top:130px;
-    margin-bottom:60px;
-}
-.values h2{
-    text-align: center;
-    text-transform: uppercase;
-    font-size:35px;
-    margin-bottom: 50px;
-    font-weight:900;
-}
-.values .col{
-    display: flex;
-    height:180px;
-    line-height: 1.5;
-    justify-content: center;
-}
 
-.values .col div{
-    width:45%;
-}
-.values .firstcol{
-    border-top:1px solid #ddd;
-    border-right:1px solid #ddd;
-}
-.values .thirdcol{
-    border-bottom:1px solid #ddd;
-    border-right:1px solid #ddd;
-}
-.values .secondcol{
-    border-left:1px solid #ddd;
-}
-
-.values .col .first{
-    background-color:#e8f2f9;
-    color:#000 !important;
-
-}
-.values .col .second,.values .col .first{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size:18px;
-    text-align: justify;
-    padding:30px;
-}
-.values .col .first{
-    font-size:30px;
-    font-weight: bold;
-    color: #fff;
-} */
 .message{
     padding:30px 180px;
     background-color: #fff;
+    overflow-x: hidden;
+
 }
 .message h2{
     text-align: center;
@@ -116,17 +67,20 @@ align-items: center;
 margin-top:40px;
 }
 .team{
-    width:90%;
+    width:100%;
     align-items: center;
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+    overflow-x: hidden;
+
 }
 .teamdiv h1{
     text-transform: uppercase;
     font-size:40px;
 }
 .members {
+    flex-wrap: wrap;
     display: flex;
     margin-top:20px;
 }
@@ -183,9 +137,12 @@ margin-top:40px;
 
 .mvg{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap:70px;
+    overflow-x: hidden;
+
   }
 
 
@@ -315,5 +272,80 @@ margin-top:40px;
 
 
 
+@media screen and (max-width: 1420px) {
+
+.about .left-side p{
+    font-size: 20px;
+}
+.about .right-side img{
+    width:600px;
+    margin-left:-50px;
+}
+.mvg{
+    gap:30px;
+}
+}
+@media screen and (max-width: 1340px){
+   
+    .container{
+        margin:40px 0;
+    }
+}
 
 
+@media screen and (max-width: 1240px) {
+    .about{
+        margin-top: -20px;
+    }
+    .mvg{
+        margin-top:70px;
+    }
+    .about .left-side {
+       padding-left:20px;
+    }
+    .about .left-side p{
+       font-size:18px;
+    }
+    .about .right-side img{
+        width:550px;
+        margin-left:-80px;
+    }
+    .container{
+        margin:20px 0;
+    }
+   .message{
+    padding:30px 130px;
+
+   }
+    }
+
+
+    @media screen and (max-width: 1100px) {
+        .about{
+            flex-direction: column;
+        }
+        .about .left-side {
+            width:100%;
+            padding:60px 40px;
+            padding-bottom:0;
+        }
+        .about .left-side p{
+            font-size:18px;
+        }
+        .about .right-side img{
+            width:650px;
+            margin-top:0px;
+            margin-left:20%;
+        }
+        
+    }
+    @media screen and (max-width: 1000px) {
+        .message{
+            padding:30px 80px;
+
+        }
+        .members{
+            align-items: center;
+            justify-content: center;
+        }
+    }

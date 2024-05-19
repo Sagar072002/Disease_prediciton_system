@@ -5,6 +5,11 @@
     padding:50px 0;
     height: 100vh;
 }
+.doctor-register form{
+    display: flex ;
+    gap:80px;
+}
+
 .register-form{
     height:90%;
     width:60%;
@@ -129,7 +134,7 @@ margin-bottom:20px ;
 text-transform: uppercase;
 }
 .doctor-main{
-    display: flex;
+    display: flex ;
     width:100%;
     gap: 70px;
 }

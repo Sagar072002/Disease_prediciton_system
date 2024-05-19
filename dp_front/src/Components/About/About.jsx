@@ -12,27 +12,7 @@ const About = () => {
   return (
     <>
    
-    {/* <div className="values">
-      <h2>About Us</h2>
-      <div className="col ">
-        <div className="first">MISSION</div>
-        <div className="second firstcol">
-        We enhance the well-being of people in the communities we serve through a not-for-profit commitment to compassion and excellence in healthcare services.
-        </div>
-      </div>
-      <div className="col ">
-        <div className="second secondcol">
-        Sutter Health leads the transformation of healthcare to achieve the highest levels of quality, access and affordability.
-        </div>
-        <div className="first">VISION</div>
-      </div>
-      <div className="col">
-        <div className="first">VALUES</div>
-        <div className="second thirdcol">
-        Every day, Sutter teammates live our values and deliver exceptional care and service to our patients and communities. Learn more about our values.
-        </div>
-      </div>
-    </div> */}
+   
     <div className="about">
       <div className="left-side">
         <h2>What is Dispred?</h2>

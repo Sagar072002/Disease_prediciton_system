@@ -21,6 +21,7 @@ import Dctr from './Components/Admin/Dctr';
 import Doctor from './Components/Doctor/Doctor';
 import DoctorProfile from './Components/Doctor/DoctorProfile';
 import Disease from './Components/Symptom/Disease';
+import Medicine from './Components/Search/Medicine';
 
 const App = () => {
 
@@ -58,6 +59,7 @@ const App = () => {
               <Route path="/" element={<Navigate replace to="/mainlogin"/>} />
               <Route path='/mainlogin' element={ <Mainlogin/> } />,
               <Route path='/admin' element={ <Admin/> } />,
+              <Route path='/medicine' element={ <Medicine/> } />,
               <Route path='/doctor' element={ <Doctor/> } />,
               <Route path='/admin-user' element={ <User/> } />,
               <Route path='/admin-dctr' element={ <Dctr/> } />,
