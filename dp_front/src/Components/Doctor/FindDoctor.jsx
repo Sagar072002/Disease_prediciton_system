@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./doctor.css";
 import doctor2 from "../../assets/doctor2.jpeg";
 import doctor3 from "../../assets/doctor3.jpeg";
@@ -7,25 +7,45 @@ import { FaStar } from 'react-icons/fa';
 import { CiStar } from "react-icons/ci";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import doctorService from '../../services/doc_service';
 
 
 const FindDoctor = () => {
   const [filter, setFilter] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
+  const [doctors, setDoctors] = useState([]);
 
-  const doctors = [
-    { name: "Ayush Nautiyal", specialization: "Surgeon", image: doctor2 },
-    { name: "Ayush Nautiyal", specialization: "Pathologist", image: doctor3 },
-    { name: "Ayush Nautiyal", specialization: "Orthopedist", image: doctor4 },
-    { name: "Ayush Nautiyal", specialization: "Surgeon", image: doctor2 },
-    { name: "Ayush Nautiyal", specialization: "Pathologist", image: doctor3 },
-    { name: "Ayush Nautiyal", specialization: "Orthopedist", image: doctor4 },
-    // Add more doctors as needed
-    { name: "Ayush Nautiyal", specialization: "Surgeon", image: doctor2 },
-    { name: "Ayush Nautiyal", specialization: "Pathologist", image: doctor3 },
-    { name: "Ayush Nautiyal", specialization: "Orthopedist", image: doctor4 },
-    // Add more doctors as needed
-  ];
+  function getToken() {
+    const saved = localStorage.getItem("docDetails");
+    let initial = "";
+    if(saved){
+      initial = JSON.parse(saved).Token;
+      initial = initial.toString();
+    }
+    return initial;
+  }
+
+  // const doctors = [
+  //   { name: "Ayush Nautiyal", specialization: "Surgeon", image: doctor2 },
+  //   { name: "Ayush Nautiyal", specialization: "Pathologist", image: doctor3 },
+  //   { name: "Ayush Nautiyal", specialization: "Orthopedist", image: doctor4 },
+  //   { name: "Ayush Nautiyal", specialization: "Surgeon", image: doctor2 },
+  //   { name: "Ayush Nautiyal", specialization: "Pathologist", image: doctor3 },
+  //   { name: "Ayush Nautiyal", specialization: "Orthopedist", image: doctor4 },
+  //   // Add more doctors as needed
+  //   { name: "Ayush Nautiyal", specialization: "Surgeon", image: doctor2 },
+  //   { name: "Ayush Nautiyal", specialization: "Pathologist", image: doctor3 },
+  //   { name: "Ayush Nautiyal", specialization: "Orthopedist", image: doctor4 },
+  //   // Add more doctors as needed
+  // ];
+  useEffect(()=>{
+    doctorService.getAll().then((res)=>{
+      console.log("Doctors: ",res.data)
+      setDoctors(res.data)
+    }).catch((err)=>{
+      console.log(err)
+    })
+  },[])
 
   const handleFilterChange = (selectedFilter) => {
     setFilter(selectedFilter);
@@ -89,7 +109,7 @@ const FindDoctor = () => {
                 </div>
                 <div className="goto">
                   <p className='address'>Dehradun, Uttarakhand</p>
-                    <Link to="/doctorpage">
+                    <Link to={`/doctorpage/${doctor._id}`}>
                   <p className='right-icon'>
                     
                     <FaArrowRight className='right' />
