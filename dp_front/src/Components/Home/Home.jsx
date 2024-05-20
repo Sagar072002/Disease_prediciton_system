@@ -214,6 +214,7 @@ of cases can be self-treated or treated through teleconsultation</p>
   <div>
   <h2>Get started</h2>
   <h4>Who is this symptom check for:</h4>
+  <div className="chose">
   <div className="choosediv">
   <input type="radio" id="me" name="personal" defaultValue="me" />
   <label htmlFor="html">Me</label>
@@ -223,8 +224,9 @@ of cases can be self-treated or treated through teleconsultation</p>
   <label htmlFor="css">Someone else</label>
   </div>
   <br />
-  <br />
+  <div className="genderdiv">
   <h4>Choose your gender:</h4>
+  <div className="gend">
   <div className="choosediv">
   <input type="radio" id="male" name="gender" defaultValue="male" />
   <label htmlFor="html">Male</label>
@@ -233,7 +235,9 @@ of cases can be self-treated or treated through teleconsultation</p>
   <input type="radio" id="female" name="gender" defaultValue="female" />
   <label htmlFor="css">Female</label>
   </div>
-  
+  </div>
+  </div>
+  </div>
   <br />
     <Link className="checkbtn" to="/symptom">Start Symptom Checker</Link>
   </div>

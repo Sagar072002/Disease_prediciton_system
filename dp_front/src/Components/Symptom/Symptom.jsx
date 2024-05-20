@@ -984,7 +984,10 @@ const [othersClick, setOthersClick] = useState(false);
       });
   };
   
-  
+  const handleClear = () => {
+    setSelectedSymptoms([]);
+    setSelectedItems([]);
+  };
   return (
     <>
     <ToastContainer position="top-center" />
@@ -1022,14 +1025,16 @@ const [othersClick, setOthersClick] = useState(false);
       ))}
     </ul>
   ) : null}
+  
 </div>
-
-
 
 <div className="lower">
   {[...new Set([...selectedSymptoms, ...selectedItems])].length >= 3 && (
     <button className='predictbtn' onClick={handleSubmit}>Predict</button>
   )}
+  {(selectedSymptoms.length > 0 || selectedItems.length > 0) && (
+          <button className='clearbtn' onClick={handleClear}>Clear</button>
+        )}
 </div>
 
               

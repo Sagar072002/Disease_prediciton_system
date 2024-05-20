@@ -37,7 +37,7 @@ const Terms = () => {
       <div className="main-div">
         <div className="termsdiv">
           <div className="leftdiv">
-          <h2>Terms Of Service</h2>
+          <h2 className='termhead'>Terms Of Service</h2>
             <p>Before using the checkup, please read the Terms of Service and remember:</p>
             <ul>
               <li><span>Checkup isn't a diagnosis: </span> It's only for your information and not a qualified medical opinion.</li>

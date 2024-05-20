@@ -6,6 +6,8 @@
 justify-content: center;
 align-items: center;
     padding-bottom:90px;
+    min-height:90vh;
+    overflow-x: hidden;
 }
 
 .banner .left-side{
@@ -91,6 +93,8 @@ align-items: center;
 .patient{
   background-color: #fff;
   /* height:500px; */
+  overflow-x: hidden;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -663,6 +667,8 @@ font-size: 22px;
     justify-content: center;
     padding:60px 30px;
     padding-bottom: 80px;
+    overflow-x: hidden;
+
 }
 
 .counter-div .learn{
@@ -750,7 +756,7 @@ margin-left:40px;
 
 
 @media only screen and (max-width: 1700px) {
-
+  
   .contact{
     margin-left:-80px;
   }
@@ -762,6 +768,21 @@ margin-left:40px;
 @media only screen and (max-width: 1600px) {
 .seconddiv h1 span{
   font-size: 17px;
+}
+.review{
+  margin:20px;
+ }
+
+ 
+ .checkinfo{
+  width:95% !important;
+ }
+ .checkinfo h4{
+  font-size: 18px !important;
+ }
+ .checkbtn{
+width:300px;
+padding:22px 15px !important;
 }
   .banner .left-side h2{
     font-size:40px;
@@ -777,9 +798,19 @@ margin-left:40px;
   .contact button{
     margin-left:180px !important;
   }
+  
 }
 @media only screen and (max-width: 1420px) {
- 
+  
+   .checkinfo{
+    margin-left:40px;
+   }
+   .counter-div .seconddiv{
+    width:600px;
+   }
+   .checkinfo img{
+    width:250px;
+   }
   .seconddiv h1 span{
     font-size: 15px;
   }
@@ -857,6 +888,17 @@ height:40px !important;
 
 @media only screen and (max-width: 1250px) {
  
+   .symptom .left-side p,
+   .symptom .left-side p.last{
+   font-size: 20px;
+   }
+   .symptom .left-side h2{
+    font-size: 30px;
+   }
+   .symptom .checkinfo img{
+    display: none;
+   }
+   
   .stats .first,
    .stats .second,
    .stats .third
@@ -967,7 +1009,7 @@ height:40px !important;
   .banner{
     display: flex;
     flex-direction: column;
-    margin-top:270px;
+    margin-top:20px;
     padding-bottom:200px;
   }
   .banner .left-side {
@@ -989,10 +1031,18 @@ height:40px !important;
   display: flex;
   flex-direction: column;
 }
+
 .firstdiv{
   width:100% !important;
 }
 .seconddiv{
+  width:100% !important;
+  margin-left:120px !important;
+}
+.firstcount{
+  width:66% !important;
+}
+.seconddivv{
   width:70% !important;
 }
 
@@ -1019,7 +1069,26 @@ height:40px !important;
   .info{
     padding-left: 0;
   }
-  
+  .symptom{
+    flex-direction: column;
+   }
+   .symptom .left-side{
+    width:100%;
+   }
+   .symptom .checkinfo{
+    width: 700px !important;
+   }
+   .symptom .chose{
+    display: flex !important;
+    gap:50px;
+   }
+   .symptom .genderdiv{
+    margin-top:-50px;
+   }
+   .symptom .gend{
+    display: flex;
+    gap:40px;
+   }
   .contact .contact-form{
     margin-left:10%;
   }
@@ -1043,9 +1112,19 @@ height:40px !important;
    }
 }
 @media only screen and (max-width: 950px) {
- 
-  
- 
+  .checkinfo{
+    margin-left:-10px;
+   }
+  .seconddiv{
+    width:100% !important;
+    margin-left:70px !important;
+  }
+  .firstcount{
+    width:75% !important;
+  }
+  .seconddivv{
+    width:80% !important;
+  }
   .banner .left-side {   
     margin-left:120px;
   }
@@ -1073,7 +1152,11 @@ height:40px !important;
 }
 
 @media only screen and (max-width: 920px) {
-  
+ 
+  .seconddiv{
+    width:100% !important;
+    margin-left:50px !important;
+  }
   .contact-form{
     height: 950px;
     flex-direction: column;
@@ -1083,7 +1166,9 @@ height:40px !important;
   .contact-form .left-side{
     width: 100%;
   }
-  
+  .checkinfo{
+   margin-left:-40px;
+  }
   .contact-form .inside-form input{
     width: 550px;
     margin-left:250px;
@@ -1125,7 +1210,23 @@ height:40px !important;
 }
 
 @media only screen and (max-width: 830px) {
-  
+  .checkinfo{
+    margin-left:-100px;
+   }
+   
+   
+   .choosediv{
+    gap:0 !important;
+   }
+  .seconddiv{
+    margin-left:10px !important;
+  }
+  .firstcount{
+    width:90% !important;
+  }
+  .seconddivv{
+    width:95% !important;
+  }
   .contact .inside-form input{
     width:480px;
     margin-left:200px;

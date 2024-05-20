@@ -21,6 +21,9 @@ import Dctr from './Components/Admin/Dctr';
 import Doctor from './Components/Doctor/Doctor';
 import DoctorProfile from './Components/Doctor/DoctorProfile';
 import Disease from './Components/Symptom/Disease';
+import Medicine from './Components/Search/Medicine';
+import Adminlogin from './Components/Login/Adminlogin';
+import Adminreg from './Components/Register/Adminreg';
 
 const App = () => {
 
@@ -59,12 +62,15 @@ const App = () => {
               <Route path='/mainlogin' element={ <Mainlogin/> } />,
               <Route key={"finddoctor"} path='/finddoctor' element={ <FindDoctor/> } />,
               <Route path='/admin' element={ <Admin/> } />,
+              <Route path='/medicine' element={ <Medicine/> } />,
               <Route path='/doctor' element={ <Doctor/> } />,
               <Route path='/admin-user' element={ <User/> } />,
               <Route path='/admin-dctr' element={ <Dctr/> } />,
               <Route path='/disease' element={ <Disease/> } />,
               <Route key={"doctorregister"} path='/doctorregister' element={<DRegister/> } />,
               <Route key={"doctorlogin"} path='/doctorlogin' element={<Dlogin/> } />,
+              <Route key={"adminlogin"} path='/adminlogin' element={<Adminlogin/> } />,
+              <Route key={"adminregister"} path='/adminregister' element={<Adminreg/> } />,
               <Route path='/doctorpage/:id' element={ <DoctorProfile/> } />,
               <Route path='/login' element={ <Login/> } />,
               <Route path='/register' element={ <Register/> } />,
