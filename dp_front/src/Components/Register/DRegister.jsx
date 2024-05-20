@@ -5,6 +5,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import doctorService from '../../services/doc_service'
 
 const initialValues = {
   name: "",
@@ -16,7 +17,7 @@ const initialValues = {
   qualifications: "",
   specialization: "",
   timeSlots: "",
-  image: null,
+  image: "",
   address: "",
   about: ""
 };
@@ -31,7 +32,7 @@ const doctorSchema = Yup.object({
   phone: Yup.string()
     .matches(/^\d{10}$/, 'Phone number must be exactly 10 digits')
     .required('Phone number is required'),
-  password: Yup.string().min(6, 'Password must be at least 6 characters').required('Password is required'),
+  password: Yup.string().min(8, 'Password must be at least 8 characters').required('Password is required'),
   confirm_password: Yup.string()
     .oneOf([Yup.ref('password'), null], 'Passwords must match')
     .required('Please confirm your password'),
@@ -41,7 +42,7 @@ const doctorSchema = Yup.object({
   qualifications: Yup.string().required('Qualifications are required'),
   specialization: Yup.string().required('Specialization is required'),
   timeSlots: Yup.string().required('Time slots are required'),
-  image: Yup.mixed(), // Image field is now optional
+  image: Yup.string(),
   address: Yup.string().required('Address is required'),
   about: Yup.string().required('Introduction is required')
 });
@@ -73,10 +74,11 @@ const DRegister = () => {
       onSubmit: async (values, actions) => {
         try {
           const data = {
-            name: values.name,
+            username: values.name,
             email: values.email,
             phone: values.phone,
-            password: values.password,
+            password1: values.password,
+            password2: values.confirm_password,
             price: values.price,
             qualifications: values.qualifications,
             specialization: values.specialization,
@@ -85,17 +87,17 @@ const DRegister = () => {
             address: values.address,
             about: values.about
           };
-          
-
-          showToastMessage("success");
-
-          // Display browser alert on successful registration
-          window.alert("REGISTERED SUCCESSFULLY!");
-
+          console.log("Sent:",data)
+          doctorService.register(data).then(async (res)=>{
+            console.log("response: ",res)
+            showToastMessage("success");
+          }).catch((err)=>{
+            console.log("Error: ",err)
+          })
           actions.resetForm();
         } catch (error) {
           showToastMessage("An error occurred. Please try again later.");
-          console.error(error); // Log the error for debugging
+          console.error(error);
         }
       },
     });
