@@ -3,8 +3,7 @@ import './Login.css'
 import { Link, useNavigate } from 'react-router-dom'
 import img from '../../assets/login.gif';
 import { useFormik } from "formik";
-import userService from '../../services/user_service.jsx'
-import { saveToken } from '../../services/user_service.jsx';
+import adminService from '../../services/admin_service.jsx';
 import {loginschema} from '../Login/Loginschema.jsx'
 import { SiteContext } from '../../context/siteContext.jsx';
 import { ToastContainer, toast } from 'react-toastify';
@@ -44,13 +43,14 @@ const Adminlogin = () => {
         validateOnChange: true,
         validateOnBlur: false,
         onSubmit: (values, action) => {
-          console.log("Login Values:", values);
-          userService.login(values).then(async (res)=>{
+          const data={
+            adminname: values.username,
+            password: values.password
+          }
+          console.log("Login Values:", data);
+          adminService.login(data).then(async (res)=>{
             console.log('Login Res:', res.data);
             showToastMessage("success");
-            await delay(3000);
-            setUid(res.data);
-            saveToken({"uid": res.data})
           }).catch((err)=>{
             toast.warning('Invalid credentials',err.response.data);
           })
@@ -71,7 +71,7 @@ const Adminlogin = () => {
       <div className="box">
       <i class="fa fa-envelope" />
         <div>
-        <input  type="email"  placeholder="Email"  
+        <input  type="text"  placeholder="adminname"  
                       autoComplete="off"
                       name="username"
                       id="username"

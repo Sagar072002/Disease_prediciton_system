@@ -7,6 +7,7 @@ import { saveToken } from '../../services/user_service.jsx';
 import { SiteContext } from '../../context/siteContext.jsx';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import adminService from '../../services/admin_service.jsx'
 
 const AdminReg = () => {
   const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
@@ -29,13 +30,13 @@ const AdminReg = () => {
   };
 
   const initialValues = {
-    email: "",
+    adminname: "",
     password: "",
     confirmPassword: "",
     secretKey: ""
   };
   const registerSchema = Yup.object({
-    email: Yup.string().email("Invalid email format").required("Required"),
+    adminname: Yup.string().min(5, 'Name must be at least 5 characters').required("Name is Required"),
     password: Yup.string().min(8, "Password must be at least 8 characters").required("Required"),
     confirmPassword: Yup.string()
       .oneOf([Yup.ref('password'), null], "Passwords must match")
@@ -50,13 +51,16 @@ const AdminReg = () => {
       validateOnChange: true,
       validateOnBlur: false,
       onSubmit: (values, action) => {
-        console.log("Register Values:", values);
-        userService.register(values).then(async (res)=>{
+        const data={
+          adminname: values.adminname,
+          password1: values.password,
+          password2: values.confirmPassword,
+          secret: values.secretKey
+        }
+        console.log("Register Values:", data);
+        adminService.register(data).then(async (res)=>{
           console.log('Register Res:', res.data);
           showToastMessage("success");
-          await delay(3000);
-          setUid(res.data);
-          saveToken({"uid": res.data});
         }).catch((err)=>{
           toast.warning('Registration error', err.response.data);
         });
@@ -76,18 +80,18 @@ const AdminReg = () => {
                 <i className="fa-solid fa-envelope" />
                 <div>
                   <input
-                    type="email"
-                    placeholder="Email"
+                    type="text"
+                    placeholder="adminname"
                     autoComplete="off"
-                    name="email"
-                    id="email"
-                    value={values.email}
+                    name="adminname"
+                    id="adminname"
+                    value={values.adminname}
                     onChange={handleChange}
                     onBlur={handleBlur}
                   />
                 </div>
-                  {errors.email && touched.email ? (
-                    <p className="form-error">{errors.email}</p>
+                  {errors.adminname && touched.adminname ? (
+                    <p className="form-error">{errors.adminname}</p>
                   ) : null}
               </div>
               <div className="box">
