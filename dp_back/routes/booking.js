@@ -12,9 +12,10 @@ dotenv.config();
 router.post('/checkout-session/:doctorId',authenticate, async(req,res)=>{
 
     try {
-        console.log(req.params.doctorId)
+        console.log("Doctor:",req.params.doctorId)
+        console.log("User:",req.userid)
         const doctor = await Doctor.findById(req.params.doctorId)
-        const user = await User.findById('6607e3978d4177f59f4bc969')
+        const user = await User.findById(req.userid)
 
         const stripe = new Stripe(process.env.STRIPE_KEY)
         const session = await stripe.checkout.sessions.create({

@@ -4,10 +4,13 @@ import img from "../../assets/man.jpg";
 import "./doctor.css";
 import { FaStar, FaStarHalf } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import doctorService from '../../services/doc_service';
+import clientApi from '../../services/client_api';
 
 const DoctorProfile = () => {
+
+  const navigate = useNavigate()
   const [showFeedbackForm, setShowFeedbackForm] = useState(false);
   const [doctor, setDoctor] = useState({});
   const [userName, setUserName] = useState('');
@@ -40,6 +43,16 @@ const DoctorProfile = () => {
     })
   },[])
 
+  const handleBook=()=>{
+    clientApi.post(`/booking/checkout-session/${doctor._id}`).then((res)=>{
+      console.log("Booking Res: ",res.data)
+      if(res.data){
+        window.location.href=res.data.session.url
+      }
+    }).catch((err)=>{
+      console.log("Booking Error: ",err)
+    })
+  }
 
   const handleSubmitFeedback = () => {
     // Validate user inputs here if needed
@@ -101,7 +114,7 @@ const DoctorProfile = () => {
                 </div>
               </div>
             </div>
-            <button>Book Appointment</button>
+            <button onClick={()=>{handleBook()}}>Book Appointment</button>
           </div>
         </div>
         <div className="mid">
