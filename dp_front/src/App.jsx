@@ -24,6 +24,7 @@ import Disease from './Components/Symptom/Disease';
 import Medicine from './Components/Search/Medicine';
 import Adminlogin from './Components/Login/Adminlogin';
 import Adminreg from './Components/Register/Adminreg';
+import Success from './Components/Symptom/Success';
 
 const App = () => {
 
@@ -70,6 +71,7 @@ const App = () => {
               <Route key={"doctorregister"} path='/doctorregister' element={<DRegister/> } />,
               <Route key={"doctorlogin"} path='/doctorlogin' element={<Dlogin/> } />,
               <Route key={"adminlogin"} path='/adminlogin' element={<Adminlogin/> } />,
+              <Route key={"successpage"} path='/successpage' element={<Success/> } />,
               <Route key={"adminregister"} path='/adminregister' element={<Adminreg/> } />,
               <Route path='/doctorpage/:id' element={ <DoctorProfile/> } />,
               <Route path='/login' element={ <Login/> } />,

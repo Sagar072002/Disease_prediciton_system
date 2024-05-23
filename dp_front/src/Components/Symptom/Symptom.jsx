@@ -1564,7 +1564,7 @@ const [othersClick, setOthersClick] = useState(false);
         <tr>
           <th>Rank</th>
           <th>Prediction</th>
-          <th>Percentage</th>
+          {/* <th>Percentage</th> */}
         </tr>
       </thead>
       <tbody>
@@ -1581,7 +1581,7 @@ const [othersClick, setOthersClick] = useState(false);
               <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{prediction}</td>
-                <td>{percentage}</td>
+                {/* <td>{percentage}</td> */}
               </tr>
             );
           } else {

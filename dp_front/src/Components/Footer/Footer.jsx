@@ -16,7 +16,7 @@ const Footer = () => {
       <div>
         <h2>Our Team</h2>
         <a href="">For Employees</a>
-        <a href="">For Medical Professionals</a>
+        <a href="">For  Professionals</a>
         <a href="">For Vendors</a>
         <a href="">For Volunteers</a>
       </div>
