@@ -51,8 +51,8 @@ const Login = () => {
           console.log('Login Res:', res.data);
           showToastMessage("success");
           await delay(3000);
-          setUid(res.data);
-          saveToken({"uid": res.data})
+          setUid(res.data.uid);
+          saveToken({"uid": res.data.uid, "Token":res.data.token})
         }).catch((err)=>{
           toast.warning('Invalid credentials',err.response.data);
         })
