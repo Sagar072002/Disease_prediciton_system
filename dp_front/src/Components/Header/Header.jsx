@@ -18,7 +18,7 @@ const Header = () => {
       autoClose: 2000,
       pauseOnHover: false,
     });
-    await delay(2000)
+    // await delay(2000)
     logout()
   }
 

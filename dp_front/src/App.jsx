@@ -54,6 +54,7 @@ const App = () => {
                 <Route key={"about"} path='/about' element={ <About/> } />,
                 <Route key={"finddoctor"} path='/finddoctor' element={ <FindDoctor/> } />,
                 <Route path='/doctorpage/:id' element={ <DoctorProfile/> } />,
+                <Route key={"successpage"} path='/checkout-success' element={<Success/> } />,
               </Routes>,
               <Footer key={"footer"} />
             ]
@@ -71,7 +72,7 @@ const App = () => {
               <Route key={"doctorregister"} path='/doctorregister' element={<DRegister/> } />,
               <Route key={"doctorlogin"} path='/doctorlogin' element={<Dlogin/> } />,
               <Route key={"adminlogin"} path='/adminlogin' element={<Adminlogin/> } />,
-              <Route key={"successpage"} path='/successpage' element={<Success/> } />,
+              <Route key={"successpage"} path='/checkout-success' element={<Success/> } />,
               <Route key={"adminregister"} path='/adminregister' element={<Adminreg/> } />,
               <Route path='/doctorpage/:id' element={ <DoctorProfile/> } />,
               <Route path='/login' element={ <Login/> } />,

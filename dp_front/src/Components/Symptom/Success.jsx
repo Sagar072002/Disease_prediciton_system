@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Symptom.css"
 import pic from "../../assets/tick.jpg"
+import { Link } from 'react-router-dom'
 
 const Success = () => {
   return (
@@ -12,9 +13,9 @@ const Success = () => {
         successfully.
       </p>
       <img src={pic} alt="" />
-      <a href="/" className="btn">
-        Continue Shopping
-      </a>
+      <Link to="/" className="btn">
+        Continue
+      </Link>
     </div>
   </div>
   )
