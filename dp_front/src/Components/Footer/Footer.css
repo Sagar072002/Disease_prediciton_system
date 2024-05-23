@@ -41,7 +41,7 @@ footer {
     color: #000;
     text-decoration: none;
     font-size: 20px;
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 .footer-left div a:hover {
@@ -51,9 +51,9 @@ footer {
 }
 
 .footer-left div {
-    margin-right: 60px;
+    margin-right: 40px;
     margin-bottom: 20px; /* Adjust margin bottom for spacing */
-    flex: 1 1 200px; /* Ensure proper wrapping */
+    flex: 1 1 180px; /* Ensure proper wrapping */
 }
 
 .footer-left div i {
