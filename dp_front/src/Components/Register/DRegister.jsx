@@ -47,6 +47,7 @@ const doctorSchema = Yup.object({
 });
 
 const DRegister = () => {
+  const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
   const navigate = useNavigate();
   const [qualifications, setQualifications] = useState([""]);
   const [timeSlots, setTimeSlots] = useState([""]);
@@ -72,29 +73,29 @@ const DRegister = () => {
       initialValues,
       validationSchema: doctorSchema,
       onSubmit: async (values, actions) => {
-        const formData = new FormData();
-        formData.append('username', values.name);
-        formData.append('email', values.email);
-        formData.append('phone', values.phone);
-        formData.append('password1', values.password);
-        formData.append('password2', values.confirm_password);
-        formData.append('price', values.price);
-        formData.append('qualifications', JSON.stringify(values.qualifications));
-        formData.append('specialization', values.specialization);
-        formData.append('timeSlots', JSON.stringify(values.timeSlots));
-        // if (values.image) {
-        //   formData.append('image', values.image);
-        // }
-        formData.append('address', values.address);
-        formData.append('about', values.about);
+
+        const Data = {
+          'username': values.name,
+          'email': values.email,
+          'phone': values.phone,
+          'password1': values.password,
+          'password2': values.confirm_password,
+          'price': values.price,
+          'qualifications': values.qualifications,
+          'specialization': values.specialization,
+          'timeSlots': values.timeSlots,
+          'address': values.address,
+          'about': values.about
+        }
 
         try {
-          doctorService.register(formData).then(async (res) => {
-            showToastMessage("success");
+          doctorService.register(Data).then(async (res) => {
             actions.resetForm();
             setQualifications([""]);
             setTimeSlots([""]);
-            navigate('/mainlogin');  // Navigate to another page upon success
+            showToastMessage("success");
+            await delay(2000); 
+            navigate("/doctorlogin")
           }).catch((err) => {
             showToastMessage(err.response.data.message || "An error occurred. Please try again later.");
           });

@@ -44,39 +44,34 @@ const App = () => {
             ?
             [
               <Header key={"header"} />,
-              <Routes key={"routes"} >,
-                <Route key={"home"} path='/' element={ <Home/> } />,
-                <Route key={"login"} path='/login' element={ <Navigate replace to="/"/> } />,
-                <Route key={"doctorlogin"} path='/doctorlogin' element={<Navigate replace to="/"/> } />,
-                <Route key={"contact"} path='/contact' element={ <Contact/> } />,
-                <Route key={"terms"} path='/symptom' element={ <Terms/> } />,
-                <Route key={"symptom"} path='/symptom/predict' element={ <Symptom/> } />,
-                <Route key={"about"} path='/about' element={ <About/> } />,
-                <Route key={"finddoctor"} path='/finddoctor' element={ <FindDoctor/> } />,
-                <Route path='/doctorpage/:id' element={ <DoctorProfile/> } />,
-                <Route key={"successpage"} path='/checkout-success' element={<Success/> } />,
+              <Routes key={"routes"} >
+                <Route key={"home"} path='/' element={ <Home/> } />
+                <Route path='/admin' element={ <Admin/> } />
+                <Route path='/medicine' element={ <Medicine/> } />
+                <Route path='/doctor' element={ <Doctor/> } />
+                <Route path='/admin-user' element={ <User/> } />
+                <Route path='/admin-dctr' element={ <Dctr/> } />
+                <Route path='/disease' element={ <Disease/> } />
+                <Route key={"contact"} path='/contact' element={ <Contact/> } />
+                <Route key={"terms"} path='/symptom' element={ <Terms/> } />
+                <Route key={"symptom"} path='/symptom/predict' element={ <Symptom/> } />
+                <Route key={"about"} path='/about' element={ <About/> } />
+                <Route key={"finddoctor"} path='/finddoctor' element={ <FindDoctor/> } />
+                <Route path='/doctorpage/:id' element={ <DoctorProfile/> } />
+                <Route key={"successpage"} path='/checkout-success' element={<Success/> } />
               </Routes>,
               <Footer key={"footer"} />
             ]
             :
             <Routes>
-              <Route path="/" element={<Navigate replace to="/mainlogin"/>} />
-              <Route path='/mainlogin' element={ <Mainlogin/> } />,
-              <Route key={"finddoctor"} path='/finddoctor' element={ <FindDoctor/> } />,
-              <Route path='/admin' element={ <Admin/> } />,
-              <Route path='/medicine' element={ <Medicine/> } />,
-              <Route path='/doctor' element={ <Doctor/> } />,
-              <Route path='/admin-user' element={ <User/> } />,
-              <Route path='/admin-dctr' element={ <Dctr/> } />,
-              <Route path='/disease' element={ <Disease/> } />,
-              <Route key={"doctorregister"} path='/doctorregister' element={<DRegister/> } />,
-              <Route key={"doctorlogin"} path='/doctorlogin' element={<Dlogin/> } />,
-              <Route key={"adminlogin"} path='/adminlogin' element={<Adminlogin/> } />,
-              <Route key={"successpage"} path='/checkout-success' element={<Success/> } />,
-              <Route key={"adminregister"} path='/adminregister' element={<Adminreg/> } />,
-              <Route path='/doctorpage/:id' element={ <DoctorProfile/> } />,
-              <Route path='/login' element={ <Login/> } />,
-              <Route path='/register' element={ <Register/> } />,
+              <Route path="/*" element={<Navigate replace to="/mainlogin"/>} />
+              <Route exact key={"doctorregister"} path='/doctorregister' element={<DRegister/> } />
+              <Route exact key={"doctorlogin"} path='/doctorlogin' element={<Dlogin/> } />
+              <Route exact key={"adminregister"} path='/adminregister' element={<Adminreg/> } />
+              <Route exact key={"adminlogin"} path='/adminlogin' element={<Adminlogin/> } />
+              <Route exact path='/register' element={ <Register/> } />
+              <Route exact path='/login' element={ <Login/> } />
+              <Route exact path='/mainlogin' element={ <Mainlogin/> } />
             </Routes>
           }
         </Router>
