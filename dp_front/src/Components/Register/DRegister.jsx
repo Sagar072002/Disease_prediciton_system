@@ -94,7 +94,7 @@ const DRegister = () => {
             actions.resetForm();
             setQualifications([""]);
             setTimeSlots([""]);
-            navigate('/some/path');  // Navigate to another page upon success
+            navigate('/mainlogin');  // Navigate to another page upon success
           }).catch((err) => {
             showToastMessage(err.response.data.message || "An error occurred. Please try again later.");
           });
