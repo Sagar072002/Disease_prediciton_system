@@ -19,9 +19,10 @@ router.get('/', async(req,res)=>{
     }
 })
 
-router.post('/', async(req, res)=>{
-    if(!req.body.doctor) req.body.doctor = req.params.doctor;
-    if(!req.body.user) req.body.user = req.userID;
+router.post('/',authenticate,restrict(['user']), async(req, res)=>{
+
+    if(!req.body.doctor) req.body.doctor = req.params.doctorId;
+    if(!req.body.user) req.body.user = req.userid;
 
     const newReview = new Review(req.body);
 

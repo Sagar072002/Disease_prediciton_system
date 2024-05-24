@@ -19,7 +19,7 @@ app.use(express.json())
 app.use('/api/users', users);
 app.use('/api/admin', admin);
 app.use('/api/doctor', doctor);
-app.use('/api/review', review);
+app.use('/api/reviews', review);
 app.use('/api/booking', booking);
 
 const port = 3000;

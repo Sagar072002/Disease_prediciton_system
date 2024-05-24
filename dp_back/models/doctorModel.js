@@ -13,6 +13,8 @@ const doctorSchema = new mongoose.Schema({
     about:{type: String},
     timeSlots:{type: Array},
     reviews:[{type: mongoose.Types.ObjectId, ref: "Review"}],
+    totalRatings:{type: Number},
+    avgRating:{type: Number},
     isApproved: {
         type: String,
         enum: ["pending", "approved", "cancelled"],

@@ -1,5 +1,5 @@
 // Doctor.js
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import img from "../../assets/man.jpg";
 import "./doctor.css";
 import { FaStar, FaStarHalf } from "react-icons/fa";
@@ -7,42 +7,34 @@ import { CiStar } from "react-icons/ci";
 import { useNavigate, useParams } from 'react-router-dom';
 import doctorService from '../../services/doc_service';
 import clientApi from '../../services/client_api';
+import { SiteContext } from '../../context/siteContext'
 
 const DoctorProfile = () => {
 
-  const navigate = useNavigate()
+  const { user } = useContext( SiteContext )
   const [showFeedbackForm, setShowFeedbackForm] = useState(false);
   const [doctor, setDoctor] = useState({});
+  const [flag, setFlag] = useState(0);
   const [userName, setUserName] = useState('');
   const [userRating, setUserRating] = useState(0);
   const [userComment, setUserComment] = useState('');
   const params = useParams()
-  console.log(params)
-  const [reviews, setReviews] = useState([
-    {
-      name: 'Sagar Negi',
-      date: 'June 17, 2023',
-      rating: 4,
-      comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea a aut dignissimos reiciendis eos architecto voluptate ab expedita in!'
-    },
-    {
-      name: 'Sagar Negi',
-      date: 'June 17, 2023',
-      rating: 4,
-      comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ea a aut dignissimos reiciendis eos architecto voluptate ab expedita in!'
-    },
-    // Add more initial reviews here if needed
-  ]);
+  const [reviews, setReviews] = useState([]);
 
   useEffect(()=>{
     doctorService.get(params.id).then((res)=>{
       console.log("Doctor: ",res.data)
       setDoctor(res.data)
+      setReviews(res.data.reviews)
     }).catch((err)=>{
       console.log(err)
     })
-  },[])
+  },[flag])
 
+  useEffect(()=>{
+    setUserName(user.username)
+  },[user])
+  
   const handleBook=()=>{
     clientApi.post(`/booking/checkout-session/${doctor._id}`).then((res)=>{
       console.log("Booking Res: ",res.data)
@@ -55,21 +47,21 @@ const DoctorProfile = () => {
   }
 
   const handleSubmitFeedback = () => {
-    // Validate user inputs here if needed
 
     // Add the new review to the reviews state
-    setReviews([
-      ...reviews,
-      {
-        name: userName,
-        date: new Date().toLocaleDateString(),
-        rating: userRating,
-        comment: userComment
-      }
-    ]);
+    const data = {
+      reviewText: userComment,
+      rating: userRating
+    }
+    
+    clientApi.post(`/doctor/${doctor._id}/reviews`,data).then((res)=>{
+      console.log("Res :", res.data)
+      setFlag(flag?0:1);
+    }).catch((err)=>{
+      console.log("Error :",err);
+    })
 
     // Reset form inputs
-    setUserName('');
     setUserRating(0);
     setUserComment('');
 
@@ -92,7 +84,7 @@ const DoctorProfile = () => {
                 <FaStar />
                 <FaStar />
                 <FaStarHalf />
-                <span>4.5</span>
+                <span>{doctor.avgRating}</span>
               </div>
               <p>Specialization: {doctor.specialization}</p>
             </div>
@@ -139,7 +131,7 @@ const DoctorProfile = () => {
           <div className="feedback" key={index}>
             <img src={img} alt="" />
             <div className='feed'>
-              <p className='name'>{review.name}</p>
+              <p className='name'>{review.user.username}</p>
               <p>{review.date}</p>
               <div className="stars">
                 {[...Array(Math.floor(review.rating))].map((_, i) => (
@@ -153,7 +145,7 @@ const DoctorProfile = () => {
             </div>
             <div className='comment'>
               <h3>Comment:</h3>
-              <p>{review.comment}</p>
+              <p>{review.reviewText}</p>
             </div>
           </div>
         ))}

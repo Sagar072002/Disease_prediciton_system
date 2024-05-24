@@ -67,7 +67,7 @@ router.post('/get', async (req, res)=>{
     const uid = req.body.uid;
 
     try{
-        const user= await Doctor.findOne({ _id: uid }).select("-password");
+        const user= await Doctor.findOne({ _id: uid }).populate('reviews').select("-password");
 
         res.json(user)
     }catch(err){
