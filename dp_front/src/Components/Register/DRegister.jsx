@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './register.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import doctorService from '../../services/doc_service'
+import doctorService from '../../services/doc_service';
 
 const initialValues = {
   name: "",
@@ -14,10 +14,10 @@ const initialValues = {
   password: "",
   confirm_password: "",
   price: "",
-  qualifications: "",
+  qualifications: [""],
   specialization: "",
-  timeSlots: "",
-  image: "",
+  timeSlots: [""],
+  // image: null,
   address: "",
   about: ""
 };
@@ -39,17 +39,17 @@ const doctorSchema = Yup.object({
   price: Yup.number()
     .typeError('Price must be a number')
     .required('Price is required'),
-  qualifications: Yup.string().required('Qualifications are required'),
+  qualifications: Yup.array().of(Yup.string().required('Qualification is required')).min(1, 'At least one qualification is required'),
   specialization: Yup.string().required('Specialization is required'),
-  timeSlots: Yup.string().required('Time slots are required'),
-  image: Yup.string(),
+  timeSlots: Yup.array().of(Yup.string().required('Time slot is required')).min(1, 'At least one time slot is required'),
   address: Yup.string().required('Address is required'),
   about: Yup.string().required('Introduction is required')
 });
 
-
 const DRegister = () => {
   const navigate = useNavigate();
+  const [qualifications, setQualifications] = useState([""]);
+  const [timeSlots, setTimeSlots] = useState([""]);
 
   const showToastMessage = (msg) => {
     if (msg === "success") {
@@ -67,34 +67,37 @@ const DRegister = () => {
     }
   };
 
-  const { values, errors, touched, handleBlur, handleChange, handleSubmit, setFieldValue, isSubmitting } =
+  const { values, errors, touched, handleBlur, handleChange, handleSubmit, setFieldValue, isSubmitting, resetForm } =
     useFormik({
       initialValues,
       validationSchema: doctorSchema,
       onSubmit: async (values, actions) => {
+        const formData = new FormData();
+        formData.append('username', values.name);
+        formData.append('email', values.email);
+        formData.append('phone', values.phone);
+        formData.append('password1', values.password);
+        formData.append('password2', values.confirm_password);
+        formData.append('price', values.price);
+        formData.append('qualifications', JSON.stringify(values.qualifications));
+        formData.append('specialization', values.specialization);
+        formData.append('timeSlots', JSON.stringify(values.timeSlots));
+        // if (values.image) {
+        //   formData.append('image', values.image);
+        // }
+        formData.append('address', values.address);
+        formData.append('about', values.about);
+
         try {
-          const data = {
-            username: values.name,
-            email: values.email,
-            phone: values.phone,
-            password1: values.password,
-            password2: values.confirm_password,
-            price: values.price,
-            qualifications: values.qualifications,
-            specialization: values.specialization,
-            timeSlots: values.timeSlots,
-            image: values.image,
-            address: values.address,
-            about: values.about
-          };
-          console.log("Sent:",data)
-          doctorService.register(data).then(async (res)=>{
-            console.log("response: ",res)
+          doctorService.register(formData).then(async (res) => {
             showToastMessage("success");
-          }).catch((err)=>{
-            console.log("Error: ",err)
-          })
-          actions.resetForm();
+            actions.resetForm();
+            setQualifications([""]);
+            setTimeSlots([""]);
+            navigate('/some/path');  // Navigate to another page upon success
+          }).catch((err) => {
+            showToastMessage(err.response.data.message || "An error occurred. Please try again later.");
+          });
         } catch (error) {
           showToastMessage("An error occurred. Please try again later.");
           console.error(error);
@@ -102,15 +105,51 @@ const DRegister = () => {
       },
     });
 
+  const handleAddQualification = () => {
+    setQualifications([...qualifications, ""]);
+  };
+
+  const handleRemoveQualification = (index) => {
+    const newQualifications = [...qualifications];
+    newQualifications.splice(index, 1);
+    setQualifications(newQualifications);
+    setFieldValue('qualifications', newQualifications);
+  };
+
+  const handleQualificationChange = (index, event) => {
+    const newQualifications = [...qualifications];
+    newQualifications[index] = event.target.value;
+    setQualifications(newQualifications);
+    setFieldValue('qualifications', newQualifications);
+  };
+
+  const handleAddTimeSlot = () => {
+    setTimeSlots([...timeSlots, ""]);
+  };
+  
+
+  const handleRemoveTimeSlot = (index) => {
+    const newTimeSlots = [...timeSlots];
+    newTimeSlots.splice(index, 1);
+    setTimeSlots(newTimeSlots);
+    setFieldValue('timeSlots', newTimeSlots);
+  };
+
+  const handleTimeSlotChange = (index, event) => {
+    const newTimeSlots = [...timeSlots];
+    newTimeSlots[index] = event.target.value;
+    setTimeSlots(newTimeSlots);
+    setFieldValue('timeSlots', newTimeSlots);
+  };
 
   return (
     <>
       <ToastContainer />
       <div className="doctor-register">
-        <div className="doctor-container">
+        <div className="doctor-cont">
           <h2>Doctor Registration</h2>
           <div className="doctor-main">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} encType="multipart/form-data">
               <div>
                 <div className="box">
                   <label htmlFor="name">Name:</label>
@@ -194,15 +233,24 @@ const DRegister = () => {
                 </div>
                 <div className="box">
                   <label htmlFor="qualifications">Qualifications:</label>
-                  <input
-                    type="text"
-                    id="qualifications"
-                    name="qualifications"
-                    placeholder="Your qualifications"
-                    value={values.qualifications}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                  />
+                  {qualifications.map((qualification, index) => (
+                    <div key={index} className="dynamic-input">
+                      <input
+                        type="text"
+                        id={`qualifications-${index}`}
+                        name={`qualifications[${index}]`}
+                        placeholder="Qualification"
+                        value={qualification}
+                        onChange={(event) => handleQualificationChange(index, event)}
+                      />
+                      {qualifications.length > 1 && (
+                        <button type="button" onClick={() => handleRemoveQualification(index)}>
+                          -
+                        </button>
+                      )}
+                  <button type="button" onClick={handleAddQualification}>+</button>
+                    </div>
+                  ))}
                   {errors.qualifications && touched.qualifications && <p className="form-error">{errors.qualifications}</p>}
                 </div>
                 <div className="box">
@@ -211,47 +259,56 @@ const DRegister = () => {
                     type="text"
                     id="specialization"
                     name="specialization"
-                    placeholder="Area of Specialization"
+                    placeholder="Specialization"
                     value={values.specialization}
                     onChange={handleChange}
                     onBlur={handleBlur}
                   />
                   {errors.specialization && touched.specialization && <p className="form-error">{errors.specialization}</p>}
-
-                <div className="box">
-                  <label htmlFor="timeSlots">Available Time Slots:</label>
-                  <input
-                    type="text"
-                    id="timeSlots"
-                    name="timeSlots"
-                    placeholder="Time slots"
-                    value={values.timeSlots}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                  />
-                  {errors.timeSlots && touched.timeSlots && <p className="form-error">{errors.timeSlots}</p>}
                 </div>
                 <div className="box">
-                  <label htmlFor="image">Upload Your Image:</label>
+                  <label htmlFor="timeSlots">Time Slots:</label>
+                  {timeSlots.map((timeSlot, index) => (
+                    <div key={index} className="dynamic-input">
+                      <input
+                        type="text"
+                        id={`timeSlots-${index}`}
+                        name={`timeSlots[${index}]`}
+                        placeholder="Time Slot"
+                        value={timeSlot}
+                        onChange={(event) => handleTimeSlotChange(index, event)}
+                      />
+                      {timeSlots.length > 1 && (
+                        <button type="button" onClick={() => handleRemoveTimeSlot(index)}>
+                          -
+                        </button>
+                      )}
+                      <button type="button" onClick={handleAddTimeSlot}>+</button>
+                    </div>
+                  ))}
+                  {errors.timeSlots && touched.timeSlots && <p className="form-error">{errors.timeSlots}</p>}
+                </div>
+                {/* <div className="box">
+                  <label htmlFor="image">Profile Image:</label>
                   <input
                     type="file"
                     id="image"
                     name="image"
-                    onChange={(event) => setFieldValue("image", event.currentTarget.files[0])}
+                    onChange={(event) => setFieldValue('image', event.currentTarget.files[0])}
                     onBlur={handleBlur}
                   />
-                </div>
-              </div>
+                </div> */}
+               
               </div>
               <div>
-                <div className="box">
+              <div className="box">
                   <label htmlFor="address">Address:</label>
-                  <textarea
+                  <input
+                    type="text"
                     id="address"
+                    className='rightsidediv'
                     name="address"
-                    cols="30"
-                    rows="10"
-                    placeholder="Your address"
+                    placeholder="Address"
                     value={values.address}
                     onChange={handleChange}
                     onBlur={handleBlur}
@@ -259,25 +316,19 @@ const DRegister = () => {
                   {errors.address && touched.address && <p className="form-error">{errors.address}</p>}
                 </div>
                 <div className="box">
-                  <label htmlFor="about">About you:</label>
+                  <label htmlFor="about">Introduction:</label>
                   <textarea
+                    className='rightsidediv'
                     id="about"
                     name="about"
-                    cols="30"
-                    rows="10"
-                    placeholder="Your Introduction"
+                    placeholder="Write about yourself"
                     value={values.about}
                     onChange={handleChange}
                     onBlur={handleBlur}
                   />
                   {errors.about && touched.about && <p className="form-error">{errors.about}</p>}
                 </div>
-                <p className="signin">
-                  Already an user? <Link to="/doctorlogin"><span>Sign in</span></Link>
-                </p>
-                <div className="box">
-                  <button type="submit" disabled={isSubmitting}>Register</button>
-                </div>
+              <button type="submit" disabled={isSubmitting}>Register</button>
               </div>
             </form>
           </div>
