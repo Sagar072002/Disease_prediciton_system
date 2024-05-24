@@ -21,16 +21,18 @@ const Login = () => {
     // console.log("called ",msg)
     if(msg === "success"){
       toast.success('LOGIN SUCCESSFUL !', {
-          position: toast.POSITION.BOTTOM_CENTER,
-          autoClose: 2000,
-          pauseOnHover: false,
+        position: toast.POSITION.BOTTOM_CENTER,
+        autoClose: 2000,
+        pauseOnHover: false,
+        hideProgressBar: true
       });
     }
     else if(msg === "failed"){
       toast.warning('Incorrect email or Password !', {
-          position: toast.POSITION.BOTTOM_CENTER,
-          autoClose: 2000,
-          pauseOnHover: false,
+        position: toast.POSITION.BOTTOM_CENTER,
+        autoClose: 2000,
+        pauseOnHover: false,
+        hideProgressBar: true
       });
     }
     };
@@ -51,9 +53,11 @@ const Login = () => {
         doctorService.login(values).then(async (res)=>{
           console.log('Login Res:', res.data);
           showToastMessage("success");
-          await delay(3000);
+          await delay(2000);
           setUid(res.data.uid);
           saveToken({"uid": res.data.uid, "Token":res.data.token})
+          await delay(100);
+          navigate("/")
         }).catch((err)=>{
           toast.warning('Invalid credentials',err.response.data);
         })

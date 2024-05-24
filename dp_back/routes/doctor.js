@@ -37,7 +37,9 @@ router.use('/:doctorId/reviews', review);
 router.post('/',async (req, res)=>{
     const { error } = validateUser(req.body);
 
-    if(error){ return res.status(400).send(error.details[0].message); }
+    if(error){
+        console.log(error) 
+        return res.status(400).send(error.details[0].message); }
 
     const encryptedpass = await bcrypt.hash(req.body.password1, 10);
 
@@ -54,11 +56,14 @@ router.post('/',async (req, res)=>{
             qualifications:req.body.qualifications,
             about:req.body.about,
             timeSlots:req.body.timeSlots,
+            totalRatings:0,
+            avgRating:0,
         })
 
         newDoctor = await newDoctor.save();
         res.json(newDoctor);
     }catch(err) {
+        console.log(err)
         res.status(400).send(err);
     }
 });
