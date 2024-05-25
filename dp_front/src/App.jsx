@@ -48,7 +48,6 @@ const App = () => {
                 <Route path='/*' element={<Navigate replace to="/home"/>} />
                 <Route key={"home"} path='/home' element={ <Home/> } />
                 <Route exact path='/medicine' element={ <Medicine/> } />
-                <Route exact path='/doctor' element={ <Doctor/> } />
                 <Route exact path='/disease' element={ <Disease/> } />
                 <Route exact key={"contact"} path='/contact' element={ <Contact/> } />
                 <Route exact key={"terms"} path='/symptom' element={ <Terms/> } />
@@ -62,6 +61,7 @@ const App = () => {
             ]
             :
             <Routes>
+              <Route exact path='/doctor' element={ <Doctor/> } />
               <Route exact path='/admin' element={ <Admin/> } />
               <Route exact path='/admin-user' element={ <User/> } />
               <Route exact path='/admin-dctr' element={ <Dctr/> } />
