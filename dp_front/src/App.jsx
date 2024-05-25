@@ -45,25 +45,26 @@ const App = () => {
             [
               <Header key={"header"} />,
               <Routes key={"routes"} >
-                <Route key={"home"} path='/' element={ <Home/> } />
-                <Route path='/admin' element={ <Admin/> } />
-                <Route path='/medicine' element={ <Medicine/> } />
-                <Route path='/doctor' element={ <Doctor/> } />
-                <Route path='/admin-user' element={ <User/> } />
-                <Route path='/admin-dctr' element={ <Dctr/> } />
-                <Route path='/disease' element={ <Disease/> } />
-                <Route key={"contact"} path='/contact' element={ <Contact/> } />
-                <Route key={"terms"} path='/symptom' element={ <Terms/> } />
-                <Route key={"symptom"} path='/symptom/predict' element={ <Symptom/> } />
-                <Route key={"about"} path='/about' element={ <About/> } />
-                <Route key={"finddoctor"} path='/finddoctor' element={ <FindDoctor/> } />
-                <Route path='/doctorpage/:id' element={ <DoctorProfile/> } />
-                <Route key={"successpage"} path='/checkout-success' element={<Success/> } />
+                <Route path='/*' element={<Navigate replace to="/home"/>} />
+                <Route key={"home"} path='/home' element={ <Home/> } />
+                <Route exact path='/medicine' element={ <Medicine/> } />
+                <Route exact path='/doctor' element={ <Doctor/> } />
+                <Route exact path='/disease' element={ <Disease/> } />
+                <Route exact key={"contact"} path='/contact' element={ <Contact/> } />
+                <Route exact key={"terms"} path='/symptom' element={ <Terms/> } />
+                <Route exact key={"symptom"} path='/symptom/predict' element={ <Symptom/> } />
+                <Route exact key={"about"} path='/about' element={ <About/> } />
+                <Route exact key={"finddoctor"} path='/finddoctor' element={ <FindDoctor/> } />
+                <Route exact path='/doctorpage/:id' element={ <DoctorProfile/> } />
+                <Route exact key={"successpage"} path='/checkout-success' element={<Success/> } />
               </Routes>,
               <Footer key={"footer"} />
             ]
             :
             <Routes>
+              <Route exact path='/admin' element={ <Admin/> } />
+              <Route exact path='/admin-user' element={ <User/> } />
+              <Route exact path='/admin-dctr' element={ <Dctr/> } />
               <Route path="/*" element={<Navigate replace to="/mainlogin"/>} />
               <Route exact key={"doctorregister"} path='/doctorregister' element={<DRegister/> } />
               <Route exact key={"doctorlogin"} path='/doctorlogin' element={<Dlogin/> } />

@@ -14,6 +14,8 @@ const userSchema = mongoose.Schema({
     },
     phone: { type: Number, minlength: 10, required: true },
     password: { type: String, minlength: 8, required: true },
+    age: { type: Number, required: true },
+    gender: { type: String, required: true },
     appointments: [{type: mongoose.Types.ObjectId, ref: "Appointment"}],
 });
 

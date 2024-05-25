@@ -52,7 +52,7 @@ const Header = () => {
       ☰
     </label>
     <div className=" menu">
-    <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
+    <NavLink to="/home" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink>
     <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>About</NavLink>
     <NavLink to="/finddoctor" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Find a doctor</NavLink>
     
