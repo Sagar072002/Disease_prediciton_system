@@ -295,7 +295,7 @@ color:#fff ;
     background: #2980b9;
   }
   
-   button[type="submit"] {
+  .register-container button[type="submit"] {
     width: 90%;
     padding: 20px 10px;
     background: #2ecc71 !important;
@@ -306,7 +306,7 @@ color:#fff ;
     font-size: 17px;
   }
   
-   button[type="submit"]:hover {
+  .register-container button[type="submit"]:hover {
     background: #27ae60 !important;
   }
   

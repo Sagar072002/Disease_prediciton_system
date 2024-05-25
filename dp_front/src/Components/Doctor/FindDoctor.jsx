@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import "./doctor.css";
-import doctor2 from "../../assets/doctor2.jpeg";
-import doctor3 from "../../assets/doctor3.jpeg";
-import doctor4 from "../../assets/doctor4.jpeg";
-import { FaStar } from 'react-icons/fa';
+import { FaStar, FaUserMd, FaArrowRight } from 'react-icons/fa';
 import { CiStar } from "react-icons/ci";
-import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import doctorService from '../../services/doc_service';
-
 
 const FindDoctor = () => {
   const [filter, setFilter] = useState('All');
@@ -18,34 +13,21 @@ const FindDoctor = () => {
   function getToken() {
     const saved = localStorage.getItem("docDetails");
     let initial = "";
-    if(saved){
+    if (saved) {
       initial = JSON.parse(saved).Token;
       initial = initial.toString();
     }
     return initial;
   }
 
-  // const doctors = [
-  //   { name: "Ayush Nautiyal", specialization: "Surgeon", image: doctor2 },
-  //   { name: "Ayush Nautiyal", specialization: "Pathologist", image: doctor3 },
-  //   { name: "Ayush Nautiyal", specialization: "Orthopedist", image: doctor4 },
-  //   { name: "Ayush Nautiyal", specialization: "Surgeon", image: doctor2 },
-  //   { name: "Ayush Nautiyal", specialization: "Pathologist", image: doctor3 },
-  //   { name: "Ayush Nautiyal", specialization: "Orthopedist", image: doctor4 },
-  //   // Add more doctors as needed
-  //   { name: "Ayush Nautiyal", specialization: "Surgeon", image: doctor2 },
-  //   { name: "Ayush Nautiyal", specialization: "Pathologist", image: doctor3 },
-  //   { name: "Ayush Nautiyal", specialization: "Orthopedist", image: doctor4 },
-  //   // Add more doctors as needed
-  // ];
-  useEffect(()=>{
-    doctorService.getAll().then((res)=>{
-      console.log("Doctors: ",res.data)
-      setDoctors(res.data)
-    }).catch((err)=>{
-      console.log(err)
-    })
-  },[])
+  useEffect(() => {
+    doctorService.getAll().then((res) => {
+      console.log("Doctors: ", res.data);
+      setDoctors(res.data);
+    }).catch((err) => {
+      console.log(err);
+    });
+  }, []);
 
   const handleFilterChange = (selectedFilter) => {
     setFilter(selectedFilter);
@@ -93,9 +75,13 @@ const FindDoctor = () => {
             filteredDoctorsBySearch.map((doctor, index) => (
               <div key={index} className="doctor-sec" style={{ flex: '0 0 33.33%', maxWidth: '33.33%' }}>
                 <div className='imgdiv'>
-                  <img src={doctor.image} className='dctrimg' alt="" />
+                  {doctor.image ? (
+                    <img src={doctor.image} className='dctrimg' alt={doctor.name} />
+                  ) : (
+                    <FaUserMd className=' default-icon' />
+                  )}
                 </div>
-                <h2>{doctor.name}</h2>
+                <h2 className='docname'>{doctor.name}</h2>
                 <div className='specialdiv'>
                   <p className="specialisation">{doctor.specialization}</p>
                   <div className="stars">
@@ -103,19 +89,16 @@ const FindDoctor = () => {
                     <FaStar />
                     <FaStar />
                     <FaStar />
-                    <CiStar/>
-                    
+                    <CiStar />
                   </div>
                 </div>
                 <div className="goto">
                   <p className='address'>Dehradun, Uttarakhand</p>
-                    <Link to={`/doctorpage/${doctor._id}`}>
-                  <p className='right-icon'>
-                    
-                    <FaArrowRight className='right' />
-                    
-                     </p>
-                    </Link>
+                  <Link to={`/doctorpage/${doctor._id}`}>
+                    <p className='right-icon'>
+                      <FaArrowRight className='right' />
+                    </p>
+                  </Link>
                 </div>
               </div>
             ))
