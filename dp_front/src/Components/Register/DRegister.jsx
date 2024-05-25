@@ -220,7 +220,7 @@ const DRegister = () => {
               </div>
               <div>
                 <div className="box">
-                  <label htmlFor="price">Price:</label>
+                  <label htmlFor="price">Fees:</label>
                   <input
                     type="text"
                     id="price"
@@ -329,7 +329,10 @@ const DRegister = () => {
                   />
                   {errors.about && touched.about && <p className="form-error">{errors.about}</p>}
                 </div>
-              <button type="submit" disabled={isSubmitting}>Register</button>
+                <p>
+        Already have an account? <Link className='signlink' to="/doctorlogin">Sign in</Link>{" "}
+      </p>
+              <button className='btn' type="submit" disabled={isSubmitting}>Register</button>
               </div>
             </form>
           </div>

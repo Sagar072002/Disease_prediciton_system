@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
+import "./admin.css";
 import img from "../../assets/man.jpg";
 import img1 from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import userService from "../../services/user_service";
 
-const Doctor = () => {
+const Appointment = () => {
     const [activeMenu, setActiveMenu] = useState("Appointments");
     const [searchQuery, setSearchQuery] = useState("");
     const [filteredUsers, setFilteredUsers] = useState([]);
@@ -49,9 +50,9 @@ const Doctor = () => {
         <p>Sagar Negi</p>
       </div>
       <div className="det">
-       <Link to="/doctor"> <p className={activeMenu === "Appointments" ? "active" : ""} onClick={() => handleMenuClick("Appointments")}>Appointments</p> </Link>
-       <Link to="/doctorreviews"> <p className={activeMenu === "Reviews" ? "active" : ""} onClick={() => handleMenuClick("Reviews")}>Reviews</p> </Link>
-       <Link to="/docprofile"> <p className={activeMenu === "Edit Profile" ? "active" : ""} onClick={() => handleMenuClick("Edit Profile")}>Edit Profile</p> </Link>
+      <Link to="/admin">  <p className={activeMenu === "Users" ? "active" : ""} onClick={() => handleMenuClick("Users")}>Users</p></Link>
+       <Link to="/admin-dctr"> <p className={activeMenu === "Doctors" ? "active" : ""} onClick={() => handleMenuClick("Doctors")}>Doctors</p> </Link>
+       <Link to="/admin-appointment"> <p className={activeMenu === "Appointments" ? "active" : ""} onClick={() => handleMenuClick("Appointments")}>Appointments</p> </Link>
         <button>Logout</button>
       </div>
     </div>
@@ -99,4 +100,4 @@ const Doctor = () => {
   )
 }
 
-export default Doctor
+export default Appointment
