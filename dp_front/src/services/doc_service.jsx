@@ -66,9 +66,3 @@ export function checkDoc(){
     
     return Token.uid
 }
-
-export function clearToken(){
-    localStorage.removeItem('userDetails')
-    localStorage.removeItem('userState')
-    localStorage.removeItem('docDetails')
-}

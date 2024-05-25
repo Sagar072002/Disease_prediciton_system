@@ -5,7 +5,7 @@ import img from '../../assets/doctor.png';
 
 import { useFormik } from "formik";
 import doctorService from '../../services/doc_service.jsx'
-import { saveToken, clearToken } from '../../services/doc_service.jsx';
+import { saveToken } from '../../services/doc_service.jsx';
 import {Dloginschema} from '../Login/DLoginschema.jsx'
 import { SiteContext } from '../../context/siteContext.jsx';
 import { ToastContainer, toast } from 'react-toastify';

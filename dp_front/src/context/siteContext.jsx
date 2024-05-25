@@ -2,6 +2,7 @@ import React, { createContext, useEffect, useState } from 'react'
 import userService from '../services/user_service'
 import { checkUser, checkUserState, clearToken } from '../services/user_service';
 import { checkDoc } from '../services/doc_service';
+import { checkAdmin } from '../services/admin_service';
 
 export const SiteContext = createContext(null);
 
@@ -29,11 +30,14 @@ export const SiteContextProvider = (props) => {
         const res1 = checkUser();
         const res2 = checkUserState()
         const res3 = checkDoc()
+        const res4 = checkAdmin()
         // console.log("res: ",res)
         if(res1!=''){
             setUid(res1)
-        }else{
+        }else if(res3!=''){
             setUid(res3)
+        }else{
+            setUid(res4)
         }
         setUserState(res2)
     },[])

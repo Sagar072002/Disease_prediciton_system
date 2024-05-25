@@ -3,7 +3,7 @@ import './Login.css'
 import { Link, useNavigate } from 'react-router-dom'
 import img from '../../assets/login.gif';
 import { useFormik } from "formik";
-import adminService from '../../services/admin_service.jsx';
+import adminService,{ saveToken } from '../../services/admin_service.jsx';
 import {loginschema} from '../Login/Loginschema.jsx'
 import { SiteContext } from '../../context/siteContext.jsx';
 import { ToastContainer, toast } from 'react-toastify';
@@ -51,6 +51,11 @@ const Adminlogin = () => {
           adminService.login(data).then(async (res)=>{
             console.log('Login Res:', res.data);
             showToastMessage("success");
+            await delay(2000);
+            setUid(res.data.uid);
+            saveToken({"uid": res.data.uid, "Token":res.data.token})
+            await delay(100);
+            navigate("/")
           }).catch((err)=>{
             toast.warning('Invalid credentials',err.response.data);
           })

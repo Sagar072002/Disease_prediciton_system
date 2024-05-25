@@ -15,3 +15,18 @@ class adminService{
 }
 
 export default new adminService;
+
+export function saveToken(tokenData){
+    localStorage.setItem('adminDetails', JSON.stringify(tokenData))
+}
+
+export function checkAdmin(){
+    const TokenDetails = localStorage.getItem('adminDetails')
+
+    if(!TokenDetails){
+        return ''
+    }
+    const Token = JSON.parse(TokenDetails)
+    
+    return Token.uid
+}
