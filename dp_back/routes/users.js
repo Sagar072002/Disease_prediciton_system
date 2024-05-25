@@ -35,6 +35,8 @@ router.post('/',async (req, res)=>{
             username: req.body.username,
             email: req.body.email,
             phone: req.body.phone,
+            age: req.body.age,
+            gender: req.body.gender,
             password: encryptedpass
         })
 
@@ -78,6 +80,8 @@ router.patch('/', async(req, res)=>{
         if(req.body.address) user.address = req.body.addressphone
         if(req.body.phone) user.phone = req.body.phone;
         if(req.body.email) user.email = req.body.email;
+        if(req.body.age) user.age = req.body.age;
+        if(req.body.gender) user.gender = req.body.gender;
 
         user = await user.save();
         res.send(user);
@@ -112,13 +116,14 @@ router.post('/login', async(req, res)=>{
     }
 });
 
-// router.post('/userData',async(req,res)=>{
-//     const token = req.token;
-//     try{
-//         const user = jwt.verify(token, jwtSecret);
-//         const name = user.username;
-//         user.findOne
-//     }
-// });
+router.post('/getAll', async (req, res)=>{
+    try{
+        const user= await User.find({}).select("-password");
+
+        res.json(user)
+    }catch(err){
+        res.status(400).send(err);
+    }
+});
 
 module.exports = router;

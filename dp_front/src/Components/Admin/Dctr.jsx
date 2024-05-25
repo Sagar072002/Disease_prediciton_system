@@ -1,22 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./admin.css";
 import img1 from "../../assets/logo.png";
 import img from '../../assets/man.jpg';
 import { Link } from "react-router-dom";
+import doctorService from "../../services/doc_service";
 
 
 const User = () => {
   const [activeMenu, setActiveMenu] = useState("Doctors");
   const [searchQuery, setSearchQuery] = useState("");
-  const [doctors, setDoctors] = useState([
-    { name: "Sagar Negi", email: "abc@gmail.com", contact: "9876543210", specialization: "Suregon" },
-    { name: "Ayush Nautiyal", email: "abc@gmail.com", contact: "9876543210", specialization: "Suregon" },
-    { name: "Harshit  Bajpai", email: "abc@gmail.com", contact: "9876543210", specialization: "Suregon" },
-    { name: "Chinmay Raj ", email: "abc@gmail.com", contact: "9876543210", specialization: "Suregon" },
-    { name: "John Doe", email: "abc@gmail.com", contact: "9876543210", specialization: "Suregon" },
-    { name: "Sagar Negi", email: "abc@gmail.com", contact: "9876543210", specialization: "Suregon" },
-    // Add more doctors as needed
-  ]);
+  const [doctors, setDoctors] = useState([]);
+
+  useEffect(()=>{
+    doctorService.getAll().then((res)=>{
+      console.log("Res doc : ",res.data)
+      setDoctors(res.data)
+    }).catch((err)=>{
+      console.log("Error: ", err)
+    })
+
+  },[])
 
   const handleMenuClick = (menu) => {
     setActiveMenu(menu);
@@ -32,6 +35,8 @@ const User = () => {
     doctor.email.toLowerCase().includes(searchQuery.toLowerCase()) ||
     doctor.specialization.toLowerCase().includes(searchQuery.toLowerCase())
   );
+
+  if (!doctors.length) return <div>Loading...</div>;
 
   return (
     <div className="admin admindct">
@@ -82,7 +87,7 @@ const User = () => {
                   <div className="leftdet">
                     <p>{doctor.name}</p>
                     <p> {doctor.email}</p>
-                    <p> {doctor.contact}</p>
+                    <p> {doctor.phone}</p>
                     <p> {doctor.specialization}</p>
                   </div>
                 </div>

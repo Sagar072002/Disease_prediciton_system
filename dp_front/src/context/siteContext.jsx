@@ -39,13 +39,13 @@ export const SiteContextProvider = (props) => {
     },[])
     
     useEffect(()=>{
-        userService.getInfo(uid).then((res)=>{
+        if(uid){userService.getInfo(uid).then((res)=>{
             console.log('Uid :', uid);
             console.log('User :', res.data);
             setUser(res.data);
         }).catch((err)=>{
-            console.log('Error :',err.response.data);
-        })
+            console.log('Error :',err);
+        })}
     },[uid])
     
     const contextValue = {

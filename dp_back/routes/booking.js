@@ -9,6 +9,16 @@ const Stripe = require('stripe');
 const authenticate = require('./auth');
 dotenv.config();
 
+router.post('/getAll', async(req,res)=>{
+    try{
+        const apps = await Booking.find({});
+
+        res.json(apps);
+    }catch(err){
+        res.status(400).send(err);
+    }
+})
+
 router.post('/checkout-session/:doctorId',authenticate, async(req,res)=>{
 
     try {

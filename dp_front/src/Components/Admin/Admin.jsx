@@ -1,19 +1,42 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Countup from "react-countup";
 import "./admin.css";
 import img from '../../assets/man.jpg';
 import img1 from "../../assets/logo.png"
 import ScrollTrigger from "react-scroll-trigger";
 import { Link } from "react-router-dom";
+import clientApi from "../../services/client_api";
+import doctorService from "../../services/doc_service";
 
 
 const Admin = () => {
   const [counteron, Setcounteron] = useState(false);
   const [activeMenu, setActiveMenu] = useState("Dashboard");
+  const [apps, setApps] = useState([]);
+  const [doctors, setDoctors] = useState([]);
+
+  useEffect(()=>{
+    clientApi.post('/booking/getAll').then((res)=>{
+      console.log("Res: ",res.data)
+      setApps(res.data)
+    }).catch((err)=>{
+      console.log("Error: ", err)
+    })
+
+    doctorService.getAll().then((res)=>{
+      console.log("Res Doc : ",res.data)
+      setDoctors(res.data)
+    }).catch((err)=>{
+      console.log("Error: ", err)
+    })
+
+  },[])
 
   const handleMenuClick = (menu) => {
     setActiveMenu(menu);
   };
+
+  if (!apps.length || !doctors.length) return <div>Loading...</div>;
 
   return (
     <div className="admin">
@@ -127,25 +150,22 @@ const Admin = () => {
       </thead>
       <tbody>
         <tr>
-          <td>John Doe</td>
-          <td>Male</td>
-          <td>Surgeon</td>
+          <td>{doctors[0].name}</td>
+          <td>{doctors[0].gender}</td>
+          <td>{doctors[0].specialization}</td>
+        </tr>
+        <tr>
+          <td>{doctors[1].name}</td>
+          <td>{doctors[1].gender}</td>
+          <td>{doctors[1].specialization}</td>
         </tr>
         <tr>
           <td>Jane Smith</td>
-
           <td>Female</td>
           <td>Surgeon</td>
         </tr>
         <tr>
           <td>Jane Smith</td>
-
-          <td>Female</td>
-          <td>Surgeon</td>
-        </tr>
-        <tr>
-          <td>Jane Smith</td>
-
           <td>Female</td>
           <td>Surgeon</td>
         </tr>
@@ -169,10 +189,10 @@ const Admin = () => {
       </thead>
       <tbody>
         <tr>
-          <td>John Doe</td>
-          <td>21</td>
-          <td>Male</td>
-          <td>Dr. Smith</td>
+          <td>{apps[0].user.username}</td>
+          <td>{apps[0].user.age}</td>
+          <td>{apps[0].user.gender}</td>
+          <td>{apps[0].doctor.name}</td>
         </tr>
         <tr>
           <td>Jane Smith</td>

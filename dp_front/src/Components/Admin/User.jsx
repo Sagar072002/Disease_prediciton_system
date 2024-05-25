@@ -3,74 +3,42 @@ import "./admin.css";
 import img from "../../assets/man.jpg";
 import img1 from "../../assets/logo.png";
 import { Link } from "react-router-dom";
+import userService from "../../services/user_service";
 
 
 const User = () => {
-  const [counteron, Setcounteron] = useState(false);
+  
   const [activeMenu, setActiveMenu] = useState("Users");
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredUsers, setFilteredUsers] = useState([]);
+  const [userList, setUserList] = useState([]);
 
   const handleMenuClick = (menu) => {
     setActiveMenu(menu);
   };
 
+  useEffect(()=>{
+    userService.getAll().then((res)=>{
+      console.log("Res : ",res.data)
+      setUserList(res.data)
+    }).catch((err)=>{
+      console.log("Error: ", err)
+    })
+
+  },[])
+
   useEffect(() => {
     // Filter users based on search query
     const filtered = userList.filter(
       (user) =>
-        user.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        user.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
         user.email.toLowerCase().includes(searchQuery.toLowerCase())
     );
     setFilteredUsers(filtered);
-  }, [searchQuery]);
+  }, [searchQuery, userList]);
 
-  // Dummy user list (replace with your actual user data)
-  const userList = [
-    {
-      name: "Sagar Negi",
-      age: 21,
-      gender: "Male",
-      contact: "9876543210",
-      email: "abc@gmail.com",
-    },
-    {
-      name: "Ayush Nautiyal",
-      age: 21,
-      gender: "Male",
-      contact: "9876543210",
-      email: "abc@gmail.com",
-    },
-    {
-      name: "Harshit Bajpai",
-      age: 21,
-      gender: "Male",
-      contact: "9876543210",
-      email: "zyx@gmail.com",
-    },
-    {
-      name: "Chinmay Raj Shah",
-      age: 21,
-      gender: "Male",
-      contact: "9876543210",
-      email: "cba@gmail.com",
-    },
-    {
-      name: "John Doe",
-      age: 21,
-      gender: "Male",
-      contact: "9876543210",
-      email: "lmn@gmail.com",
-    },
-    {
-      name: "sagar negi",
-      age: 21,
-      gender: "Male",
-      contact: "9876543210",
-      email: "xyz@gmail.com",
-    },
-    // Add more users as needed
-  ];
+
+  if (!userList.length) return <div>Loading...</div>;
 
   return (
     <div className="admin">
@@ -129,10 +97,10 @@ const User = () => {
               <tbody>
                 {filteredUsers.map((user, index) => (
                   <tr key={index}>
-                    <td>{user.name}</td>
+                    <td>{user.username}</td>
                     <td>{user.age}</td>
                     <td>{user.gender}</td>
-                    <td>{user.contact}</td>
+                    <td>{user.phone}</td>
                     <td>{user.email}</td>
                   </tr>
                 ))}

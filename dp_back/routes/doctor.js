@@ -56,6 +56,7 @@ router.post('/',async (req, res)=>{
             qualifications:req.body.qualifications,
             about:req.body.about,
             timeSlots:req.body.timeSlots,
+            gender:req.body.gender,
             totalRatings:0,
             avgRating:0,
         })
@@ -80,7 +81,16 @@ router.post('/get', async (req, res)=>{
     }
 });
 
-router.post('/getAll', authenticate, restrict(["admin","doctor","user"]), async (req, res)=>{
+// router.post('/getAll', authenticate, restrict(["admin","doctor","user"]), async (req, res)=>{
+//     try{
+//         const user= await Doctor.find({});
+
+//         res.json(user)
+//     }catch(err){
+//         res.status(400).send(err);
+//     }
+// });
+router.post('/getAll', async (req, res)=>{
     try{
         const user= await Doctor.find({});
 
@@ -119,6 +129,7 @@ router.patch('/', async(req, res)=>{
 
         if(req.body.username) user.name = req.body.username;
         if(req.body.address) user.address = req.body.addressphone
+        if(req.body.gender) user.gender = req.body.gender;
         if(req.body.phone) user.phone = req.body.phone;
         if(req.body.email) user.email = req.body.email;
         if(req.body.price) user.price = req.body.price;

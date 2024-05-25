@@ -46,6 +46,12 @@ class userService{
 
         return req;
     }
+
+    getAll(){
+        const req = clientApi.post(this.endpoint+'/getAll')
+
+        return req;
+    }
 }
 
 export default new userService;
