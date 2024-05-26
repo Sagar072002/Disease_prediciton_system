@@ -57,7 +57,6 @@ router.post('/',async (req, res)=>{
             qualifications:req.body.qualifications,
             about:req.body.about,
             timeSlots:req.body.timeSlots,
-            gender:req.body.gender,
             totalRatings:0,
             avgRating:0,
         })
@@ -130,7 +129,6 @@ router.patch('/', async(req, res)=>{
 
         if(req.body.username) user.name = req.body.username;
         if(req.body.address) user.address = req.body.addressphone
-        if(req.body.gender) user.gender = req.body.gender;
         if(req.body.phone) user.phone = req.body.phone;
         if(req.body.email) user.email = req.body.email;
         if(req.body.price) user.price = req.body.price;
@@ -172,7 +170,7 @@ router.post('/login', async(req, res)=>{
     }
 });
 
-router.post('/getAppointments', async(req,res)=>{
+router.post('/getAppointments', authenticate, restrict(["doctor"]) , async(req,res)=>{
     try{
         const bookings = await Booking.find({doctor:req.userid});
         res.status(200).json({suucess:true,bookings})

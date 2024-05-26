@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 const doctorSchema = new mongoose.Schema({
     name:{type: String, required: true},
     email:{type: String, required: true, unique: true},
-    gender:{type: String, required: true},
     phone:{type: Number, required: true},
     address:{type: String, required: true},
     password:{type: String, required: true},
@@ -21,7 +20,6 @@ const doctorSchema = new mongoose.Schema({
         enum: ["pending", "approved", "cancelled"],
         default: "pending",
     },
-    appointments: [{type: mongoose.Types.ObjectId, ref:"Appointment"}],
 })
 
 const doctor = new mongoose.model("Doctor", doctorSchema);

@@ -8,7 +8,8 @@ export const SiteContext = createContext(null);
 
 export const SiteContextProvider = (props) => {
     const [uid, setUid] = useState('');
-    const [user, setUser] = useState({ user: "blank" });
+    const [role, setRole] = useState('none');
+    // const [user, setUser] = useState({ user: "blank" });
     const [userState, setUserState] = useState({
         path: "",
         gender: "",
@@ -28,18 +29,24 @@ export const SiteContextProvider = (props) => {
     useEffect(() => {
         const fetchData = async () => {
             const res1 = checkUser();
-            const res2 = checkUserState();
-            const res3 = checkDoc();
-            const res4 = checkAdmin();
+            const res2 = checkDoc();
+            const res3 = checkAdmin();
+            const res4 = checkUserState();
 
             if (res1 !== '') {
                 setUid(res1);
-            } else if (res3 !== '') {
-                setUid(res3);
+                setRole('user');
+
+            } else if (res2 !== '') {
+                setUid(res2);
+                setRole('doctor')
+
             } else {
-                setUid(res4);
+                setUid(res3);
+                setRole('admin')
             }
-            setUserState(res2);
+
+            setUserState(res4)
         };
 
         // Run fetchData only in the client-side environment
@@ -48,25 +55,25 @@ export const SiteContextProvider = (props) => {
         }
     }, []);
 
-    useEffect(() => {
-        if (uid) {
-            userService.getInfo(uid)
-                .then((res) => {
-                    console.log('Uid :', uid);
-                    console.log('User :', res.data);
-                    setUser(res.data);
-                })
-                .catch((err) => {
-                    console.log('Error :', err);
-                });
-        }
-    }, [uid]);
+    // useEffect(() => {
+    //     if (uid) {
+    //         userService.getInfo(uid)
+    //             .then((res) => {
+    //                 console.log('Uid :', uid);
+    //                 console.log('User :', res.data);
+    //                 setUser(res.data);
+    //             })
+    //             .catch((err) => {
+    //                 console.log('Error :', err);
+    //             });
+    //     }
+    // }, [uid]);
 
     const contextValue = {
         uid,
         setUid,
         logout,
-        user,
+        role,
         userState,
         setUserState,
     };

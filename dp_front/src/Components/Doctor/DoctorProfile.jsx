@@ -5,14 +5,12 @@ import { CiStar } from "react-icons/ci";
 import { useParams } from 'react-router-dom';
 import doctorService from '../../services/doc_service';
 import clientApi from '../../services/client_api';
-import { SiteContext } from '../../context/siteContext';
 
 const DoctorProfile = () => {
-  const { user } = useContext(SiteContext);
+
   const [showFeedbackForm, setShowFeedbackForm] = useState(false);
   const [doctor, setDoctor] = useState({});
   const [flag, setFlag] = useState(0);
-  const [userName, setUserName] = useState('');
   const [userRating, setUserRating] = useState(0);
   const [userComment, setUserComment] = useState('');
   const params = useParams();
@@ -27,10 +25,6 @@ const DoctorProfile = () => {
       console.log(err);
     });
   }, [flag]);
-
-  useEffect(() => {
-    setUserName(user.username);
-  }, [user]);
 
   const handleBook = () => {
     clientApi.post(`/booking/checkout-session/${doctor._id}`).then((res) => {

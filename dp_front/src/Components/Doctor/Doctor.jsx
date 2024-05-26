@@ -17,22 +17,22 @@ const Doctor = () => {
     useEffect(()=>{
       doctorService.getApps().then((res)=>{
         console.log("Res : ",res.data)
-        setAppList(res.data)
+        setAppList(res.data.bookings)
       }).catch((err)=>{
         console.log("Error: ", err)
       })
   
     },[])
   
-    // useEffect(() => {
-    //   // Filter users based on search query
-    //   const filtered = appList.filter(
-    //     (user) =>
-    //       user.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    //       user.email.toLowerCase().includes(searchQuery.toLowerCase())
-    //   );
-    //   setFilteredUsers(filtered);
-    // }, [searchQuery, appList]);
+    useEffect(() => {
+      // Filter users based on search query
+      const filtered = appList.filter(
+        (app) =>
+          app.user.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          app.user.email.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+      setFilteredUsers(filtered);
+    }, [searchQuery, appList]);
   
   
     if (!appList.length) return <div>Loading...</div>;
@@ -79,12 +79,12 @@ const Doctor = () => {
                 </tr>
               </thead>
               <tbody>
-                {filteredUsers.map((user, index) => (
+                {filteredUsers.map((app, index) => (
                   <tr key={index}>
-                    <td>{user.username}</td>
-                    <td>1000</td>
-                    <td>23</td>
-                    <td>Male</td>
+                    <td>{app.user.username}</td>
+                    <td>{app.amount}</td>
+                    <td>{app.user.age}</td>
+                    <td>{app.user.gender}</td>
                   </tr>
                 ))}
               </tbody>

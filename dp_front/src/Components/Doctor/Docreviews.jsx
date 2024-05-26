@@ -1,41 +1,43 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import img from "../../assets/man.jpg";
 import img1 from "../../assets/logo.png";
 import { Link } from "react-router-dom";
-import userService from "../../services/user_service";
+import doctorService from '../../services/doc_service';
+import { SiteContext } from '../../context/siteContext';
 
 const Docreviews = () => {
+
+    const { uid } = useContext(SiteContext);
     const [activeMenu, setActiveMenu] = useState("Reviews");
     const [searchQuery, setSearchQuery] = useState("");
     const [filteredUsers, setFilteredUsers] = useState([]);
-    const [userList, setUserList] = useState([]);
+    const [reviewList, setReviewList] = useState([]);
   
     const handleMenuClick = (menu) => {
       setActiveMenu(menu);
     };
   
     useEffect(()=>{
-      userService.getAll().then((res)=>{
-        console.log("Res : ",res.data)
-        setUserList(res.data)
+      doctorService.get(uid).then((res)=>{
+        console.log("Res : ",res.data.reviews)
+        setReviewList(res.data.reviews)
       }).catch((err)=>{
         console.log("Error: ", err)
       })
   
-    },[])
+    },[uid])
   
     useEffect(() => {
       // Filter users based on search query
-      const filtered = userList.filter(
-        (user) =>
-          user.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          user.email.toLowerCase().includes(searchQuery.toLowerCase())
+      const filtered = reviewList.filter(
+        (review) =>
+          review.user.username.toLowerCase().includes(searchQuery.toLowerCase())
       );
       setFilteredUsers(filtered);
-    }, [searchQuery, userList]);
+    }, [searchQuery, reviewList]);
   
   
-    if (!userList.length) return <div>Loading...</div>;
+    if (!reviewList.length) return <div>Loading...</div>;
   
   return (
     <div className="admin admindct">

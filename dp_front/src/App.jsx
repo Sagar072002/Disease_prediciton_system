@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css'
 import { SiteContext, SiteContextProvider } from './context/siteContext';
+import ProtectedRoute from './ProtectedRoute';
 import Header from './Components/Header/Header';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
@@ -40,7 +41,6 @@ const App = () => {
 
   return (
     <>
-      {/* <SiteContextProvider> */}
         <Router>
           {
             logged
@@ -48,8 +48,7 @@ const App = () => {
             [
               <Header key={"header"} />,
               <Routes key={"routes"} >
-                <Route path='/*' element={<Navigate replace to="/home"/>} />
-                <Route key={"home"} path='/home' element={ <Home/> } />
+                <Route exact path='/' element={ <Home/> } />
                 <Route exact path='/medicine' element={ <Medicine/> } />
                 <Route exact path='/disease' element={ <Disease/> } />
                 <Route exact key={"contact"} path='/contact' element={ <Contact/> } />
@@ -59,33 +58,30 @@ const App = () => {
                 <Route exact key={"finddoctor"} path='/finddoctor' element={ <FindDoctor/> } />
                 <Route exact path='/doctorpage/:id' element={ <DoctorProfile/> } />
                 <Route exact key={"successpage"} path='/checkout-success' element={<Success/> } />
-                <Route exact path='/doctor' element={ <Doctor/> } />
-                <Route exact path='/docprofile' element={ <Docprofile/> } />
-                <Route exact path='/doctorreviews' element={ <Docreviews/> } />
-                <Route exact path='/userprofile' element={ <Userprofile/> } />
+                <Route exact key={"doctorpage"} path='/doctor' element={ <ProtectedRoute allowedRoles={['doctor']} > <Doctor/> </ProtectedRoute> } />
+                <Route exact path='/docprofile' element={ <ProtectedRoute allowedRoles={['doctor']} ><Docprofile/></ProtectedRoute> } />
+                <Route exact path='/doctorreviews' element={ <ProtectedRoute allowedRoles={['doctor']} ><Docreviews/></ProtectedRoute> } />
+                <Route exact path='/userprofile' element={ <ProtectedRoute allowedRoles={['user']} ><Userprofile/></ProtectedRoute> } />
+                <Route exact path='/admin' element={ <ProtectedRoute allowedRoles={['admin']} ><Admin/></ProtectedRoute> } />
+                <Route exact path='/admin-dctr' element={ <ProtectedRoute allowedRoles={['admin']} ><Dctr/></ProtectedRoute> } />
+                <Route exact path='/admin-appointment' element={ <ProtectedRoute allowedRoles={['admin']} ><Appointment/></ProtectedRoute> } />
+                <Route path="/*" element={<Navigate to="/" replace />} />
               </Routes>,
               <Footer key={"footer"} />
             ]
             :
             <Routes>
-              <Route exact path='/medicine' element={ <Medicine/> } />
-                <Route exact path='/disease' element={ <Disease/> } />
-              <Route exact path='/admin' element={ <Admin/> } />
-
-              <Route exact path='/admin-dctr' element={ <Dctr/> } />
-              <Route exact path='/admin-appointment' element={ <Appointment/> } />
-              <Route path="/*" element={<Navigate replace to="/mainlogin"/>} />
               <Route exact key={"doctorregister"} path='/doctorregister' element={<DRegister/> } />
               <Route exact key={"doctorlogin"} path='/doctorlogin' element={<Dlogin/> } />
               <Route exact key={"adminregister"} path='/adminregister' element={<Adminreg/> } />
               <Route exact key={"adminlogin"} path='/adminlogin' element={<Adminlogin/> } />
               <Route exact path='/register' element={ <Register/> } />
               <Route exact path='/login' element={ <Login/> } />
-              <Route exact path='/mainlogin' element={ <Mainlogin/> } />
+              <Route exact path='/' element={ <Mainlogin/> } />
+              {/* <Route path="/*" element={<Navigate to="/" replace />} /> */}
             </Routes>
           }
         </Router>
-      {/* </SiteContextProvider> */}
     </>
   )
 }
