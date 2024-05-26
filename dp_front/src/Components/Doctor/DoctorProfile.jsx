@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./doctor.css";
 import { FaStar, FaStarHalf, FaUserMd, FaUser } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";
@@ -37,24 +37,24 @@ const DoctorProfile = () => {
     });
   };
 
- const handleSubmitFeedback = () => {
-  const data = {
-    reviewText: userComment,
-    rating: userRating,
+  const handleSubmitFeedback = () => {
+    const data = {
+      reviewText: userComment,
+      rating: userRating,
+      createdAt: new Date().toISOString(), // Include the current timestamp
+    };
+
+    clientApi.post(`/doctor/${doctor._id}/reviews`, data).then((res) => {
+      console.log("Res :", res.data);
+      setFlag(flag ? 0 : 1);
+    }).catch((err) => {
+      console.log("Error :", err);
+    });
+
+    setUserRating(0);
+    setUserComment('');
+    setShowFeedbackForm(false);
   };
-
-  clientApi.post(`/doctor/${doctor._id}/reviews`, data).then((res) => {
-    console.log("Res :", res.data);
-    setFlag(flag ? 0 : 1);
-  }).catch((err) => {
-    console.log("Error :", err);
-  });
-
-  setUserRating(0);
-  setUserComment('');
-  setShowFeedbackForm(false);
-};
-
 
   return (
     <div className="doctor">
@@ -68,18 +68,20 @@ const DoctorProfile = () => {
                 <FaUserMd className='default-icon' />
               )}
             </div>
-            <div>
-              <p className='profession'>Surgeon</p>
-              <p className='name'>{doctor.name}</p>
+            <div className='infodiv'>
+              <p>Name: <span>{doctor.name}</span></p>
+              <p>Email: <span>{doctor.email}</span></p>
+              <p>Phone: <span>{doctor.phone}</span></p>
+           
               <div className="stars">
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStar />
                 <FaStarHalf />
-                <span>{doctor.avgRating}</span>
+                <span>{doctor.avgRating}/5</span>
               </div>
-              <p>Specialization: {doctor.specialization}</p>
+              <p className='profession'>{doctor.specialization}</p>
             </div>
           </div>
           <div className="top-right">
@@ -102,7 +104,7 @@ const DoctorProfile = () => {
             <button onClick={handleBook}>Book Appointment</button>
           </div>
         </div>
-        <div className="mid">
+        {/* <div className="mid">
           <h1>Personal Information</h1>
           <div className='infodiv'>
             <div className='detail'>
@@ -116,52 +118,46 @@ const DoctorProfile = () => {
               <p>{doctor.about}</p>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="bottom">
           <h2>Feedback</h2>
           <p className='reviewnum'>All reviews <span>({reviews.length})</span>:</p>
+          <div className='allreview'>
           {reviews.map((review, index) => (
             <div className="feedback" key={index}>
-              <div className='imgdiv'>
+              {/* <div className='imgdiv'>
                 {review.user.image ? (
                   <img src={review.user.image} alt={review.user.username} />
                 ) : (
                   <FaUser className='default-icon' />
                 )}
-              </div>
+              </div> */}
               <div className='feed'>
-                <div className='feeddiv firstfeed'>
-                <p className='name'>Name  </p>
-                  <p>Rating</p>
-                <h3>Comment</h3>
-
+                <p className='name'>Name: <span>{review.user.username}</span></p>
+                <div className='ratingdiv'>
+                  <p>Rating:</p>
+                  <div className="stars">
+                    {[...Array(Math.floor(review.rating))].map((_, i) => (
+                      <FaStar key={i} />
+                    ))}
+                    {review.rating % 1 !== 0 && <FaStarHalf />}
+                    {[...Array(5 - Math.ceil(review.rating))].map((_, i) => (
+                      <CiStar key={i} />
+                    ))}
+                  </div>
                 </div>
-                <div className='feeddiv'>
-                <span>{review.user.username}</span>
-                <div className="stars">
-                  {[...Array(Math.floor(review.rating))].map((_, i) => (
-                    <FaStar key={i} />
-                  ))}
-                  {review.rating % 1 !== 0 && <FaStarHalf />}
-                  {[...Array(5 - Math.ceil(review.rating))].map((_, i) => (
-                    <CiStar key={i} />
-                  ))}
-                </div>
-                <div className='comment'>
-                  <p>{review.reviewText}</p>
-                </div>
-                </div>
-                
-                
+                <h3>Comment: <span>{review.reviewText}</span> </h3>
+                <p className='datetime'>Date: <span>{new Date(review.createdAt).toLocaleDateString()}</span></p>
+                <p className='datetime'>Time: <span>{new Date(review.createdAt).toLocaleTimeString()}</span></p>
               </div>
             </div>
           ))}
+          </div>
           <button className='feedbackbtn' onClick={() => setShowFeedbackForm(true)}>Give Feedback</button>
         </div>
         {showFeedbackForm && (
           <div className="feedback-form">
             <h2>Provide Your Feedback</h2>
-            <input type="text" placeholder="Your Name" onChange={(e) => setUserName(e.target.value)} />
             <div>
               <p>Rating:</p>
               <div className="stars">

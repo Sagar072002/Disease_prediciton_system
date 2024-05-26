@@ -9,6 +9,7 @@
     background-color: aliceblue;
     width: 70%;
     border-radius: 6px; 
+    padding-bottom: 30px;
 }
 .profile .top,.profile .top-left{
     display: flex;
@@ -67,7 +68,15 @@ align-items: center;
 }
 .profile .top .top-right .timing{
     display: flex;
-    gap:80px;
+    gap:30px;
+}
+.special{
+  font-size: 20px;
+  font-weight: bold;
+}
+.special span{
+  font-weight: 500;
+  color: #008080;
 }
 .profile .top .top-right .timing p{
     font-size:18px;
@@ -153,35 +162,51 @@ align-items: center;
     margin-bottom:50px;
     text-decoration: underline;
 }
+.ratingdiv,.allreview{
+  display: flex;
+  flex-wrap: wrap;
+}
+.allreview{
+  gap:50px;
+  padding-bottom:60px;
+}
+.infodiv p{
+  margin-bottom:10px;
+  font-weight: bold;
+  color: #008080;
+  font-size: 18px;
+}
+.infodiv p span{
+  color:#000;
+  font-weight: 500;
+}
+.datetime{
+  margin-top:10px;
+  font-weight: bold;
+  color: #008080
+}
+.ratingdiv p{
+  font-weight: 600;
+  color:#008080;
+}
 .profile .bottom .feedback {
-    display: flex;
-    align-items: center;
-    margin-bottom:30px;
-    margin:20px 40px;
-    margin-bottom:50px;
+    
     padding:10px;
-    border: 1px solid #999;
-    border-radius: 3p;
+    border: 1px solid #008080;
+    overflow:auto;
+    width:320px;
+    border-radius: 3px;
 }
 .profile .bottom .feedback .name{
     font-weight: 600;
     color:#008080
 }
 
-.profile .bottom .feedback .feed{
-    padding-top:5px;
-    display: flex;
-    flex-direction: column;
+
+.profile .bottom .feedback .feed {
+  padding-left:10px;
 }
-.profile .bottom .feedback .feed .feeddiv{
-  display: flex;
-  gap:100px;
-}
-.profile .bottom .feedback .feed .firstfeed p,
-.profile .bottom .feedback .feed .firstfeed h3{
-  color:#008080;
-font-weight: 600;
-}
+
 .profile .bottom .feedback .feed p{
 font-size: 20px;
 margin-bottom:10px;
@@ -203,13 +228,12 @@ color: #000;
     color:#008080;
     font-weight: bold;
 }
-.profile .bottom .feedback .comment h3{
+.profile .bottom .feedback h3{
     color:#008080 ;
 }
-.profile .bottom .feedback .comment p{
-    font-size: 18px;
-    margin-left:-15px;
-    text-align: justify;
+.profile .bottom .feedback  h3 span{
+   color:#000;
+   font-weight: 500;
 }
 
   .profile .bottom .feedbackbtn{
@@ -219,7 +243,7 @@ color: #000;
     border-radius: 5px;
     position: absolute;
     left:40%;
-    bottom:1%;
+    bottom:2%;
     font-size: 20px;
     border: 1px solid transparent;
   }
@@ -310,7 +334,7 @@ color: orangered;
   .finddoctor .mid-section .doctor-sec{
     border-radius: 5px;
     padding:20px 30px;
-    max-width: 420px !important;
+    max-width: 380px !important;
     max-height:380px;
     margin:20px;
     border:1px solid #ccc;
@@ -408,8 +432,8 @@ font-weight: 600;
   position: fixed;
   top: 50%;
   left: 50%;
-  width:500px;
-  height: 380px;
+  width:450px;
+  height: 350px;
   transform: translate(-50%, -50%);
   background-color: #fff;
   padding: 70px 50px;
@@ -417,10 +441,13 @@ font-weight: 600;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+.feedback-form button:last-of-type{
+  background-color: orangered;
+}
 .feedback-form h2{
   font-size:23px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
 }
 .feedback-form input[type="text"],
@@ -430,6 +457,7 @@ font-weight: 600;
   margin-bottom: 10px;
   border: 1px solid #bbb;
   border-radius: 4px;
+  margin-top:20px;
   margin-bottom:20px;
   resize: none;
 }
