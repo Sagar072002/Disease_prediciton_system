@@ -16,12 +16,20 @@ const About = () => {
     <div className="about">
       <div className="left-side">
         <h2>What is Dispred?</h2>
-        <p>Dispred is an intelligent tool for symptom assessment, made for you. Each time you add extra symptoms, the interview adjusts itself to you. This is made possible through the combination of our cutting edge, AI-based inference engine and our meticulously maintained medical knowledge base.
-          <br />
-          <br />
-        Dispred has evolved to be the most accurate and accessible symptom assessment tool available. We’d like to keep it this way, ensuring that anyone in need can use if for free, privately, at any time they need to. It cares about our data, ensuring your privacy and security are respected.
-<br /><br />
-Dispred is always available, regardless of what you need it for. Stick to using it for one purpose or swap as the situation demands, the choice is yours.
+        <p>
+        Welcome to Dispred, your trusted destination for cutting-edge healthcare solutions. At Dispred, we are committed to revolutionizing the way individuals manage their health. Our platform offers a sophisticated Disease Prediction System, empowering users to take control of their well-being by simply inputting their symptoms and receiving accurate disease predictions.
+<br/>
+<br/>
+In addition to our innovative prediction system, Dispred hosts a comprehensive Medicine Encyclopedia, providing detailed information on a vast array of medications, including composition, side effects, and manufacturers. This invaluable resource equips users with the knowledge they need to make informed decisions about their healthcare.
+<br/>
+<br/>
+
+Furthermore, our platform features a robust Disease Information database, offering thorough insights into various illnesses, including descriptions, causes, symptoms, prevention methods, and associated healthcare professionals. By harnessing the power of technology and data-driven insights, we aim to arm individuals with the information they need to proactively manage their health and well-being.
+<br/>
+
+
+
+Join us on this journey towards a healthier future. Together, we can redefine healthcare and inspire positive change in the lives of millions.
         </p>
       </div>
       <div className="right-side">

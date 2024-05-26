@@ -30,12 +30,16 @@ const FindDoctor = () => {
   }, []);
 
   const handleFilterChange = (selectedFilter) => {
-    setFilter(selectedFilter);
-    setSearchQuery(''); // Reset search query when filter changes
+    const lowerCaseFilter = selectedFilter.toLowerCase();
+    setFilter(lowerCaseFilter);
+  setSearchQuery('');
   };
 
-  const filteredDoctors = filter === 'All' ? doctors : doctors.filter(doctor => doctor.specialization === filter);
-
+  const filteredDoctors = filter.toLowerCase() === 'all' ? doctors : doctors.filter(doctor =>
+    doctor.specialization.toLowerCase() === filter.toLowerCase()
+  );
+  
+ 
   const filteredDoctorsBySearch = filteredDoctors.filter(doctor =>
     doctor.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
     doctor.specialization.toLowerCase().includes(searchQuery.toLowerCase())

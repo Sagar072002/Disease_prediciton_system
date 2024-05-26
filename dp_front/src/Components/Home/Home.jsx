@@ -58,10 +58,13 @@ const Home = () => {
       <div className="counter-div">
       <div className="firstdiv">
       <h2>About Us</h2>
-      <p>Dispred is a self-service symptom checker made by doctors for anyone wishing to learn more about their symptoms, find their possible causes, get guidance on what to do next, or just to better prepare for their medical appointment.</p>
-      <br />
-      <p>Dispred is a self-service symptom checker made by doctors for anyone wishing to learn more about their symptoms, find their possible causes, get guidance on what to do next, or just to better prepare for their medical appointment.</p>
-      <Link className="learn" to="/about">Learn More</Link>
+      <p>Dispred is an intelligent tool for symptom assessment, made for you. Each time you add extra symptoms, the interview adjusts itself to you. This is made possible through the combination of our cutting edge, AI-based inference engine and our meticulously maintained medical knowledge base.
+          <br />
+          <br />
+        Dispred has evolved to be the most accurate and accessible symptom assessment tool available. We’d like to keep it this way, ensuring that anyone in need can use if for free, privately, at any time they need to. It cares about our data, ensuring your privacy and security are respected.
+<br /><br />
+Dispred is always available, regardless of what you need it for. Stick to using it for one purpose or swap as the situation demands, the choice is yours.
+        </p><Link className="learn" to="/about">Learn More</Link>
     </div>
     <div className="seconddiv">
         <ScrollTrigger
@@ -131,12 +134,13 @@ const Home = () => {
 
         </div>
         <div className="right-side">
-<h2>Give patients a tool they will love</h2>
+<h2>Disease Information</h2>
           <p>
-          People worldwide, all ages and professions (including clinicians), use our Symptom Checker  and appreciate its accuracy, reliability and simplicity of use. Up your service level and add  a Symptom Checker to your organization.</p>
-          <br />
-          <p>
-          People worldwide, all ages and professions (including clinicians), use our Symptom Checker  and appreciate its accuracy, reliability and simplicity of use. Up your service level and add  a Symptom Checker to your organization.</p>
+          Our website features a powerful Disease Information Module designed to provide users with detailed insights into various diseases. By simply entering the name of a disease, users can access comprehensive information, including a description of the disease, its causes, symptoms, prevention methods, and associated doctors. Whether you're looking to understand a specific condition better, seeking prevention tips, or finding the right healthcare professional, our Disease Information Module is here to help. Empower yourself with knowledge and take proactive steps towards better health with this invaluable resource.</p>
+          <button className="btn">
+            <Link to="/disease" className="explore">Explore</Link>
+            </button>
+
         </div>
       </div>   
      
@@ -176,20 +180,13 @@ const Home = () => {
       
       <div className="info">
         <div className="left-side">
-          <h2>Improve Patient Flow</h2>
+          <h2>Medicine Encyclopedia</h2>
           <p>
-          Identify patients’ needs and appropriate care. Using our technology, it is easy to accurately identify those who can self-treat, qualify for teleconsultation, consult a doctor, or seek immediate medical treatment.
+          Our website proudly features a comprehensive Medicine Module, designed to provide users with detailed information on a wide range of medications. This module offers an extensive database that includes the name of each medicine, its composition, potential side effects, and the manufacturer. Whether you are a healthcare professional, a patient, or simply someone seeking more information about a specific medication, our Medicine Module is a valuable resource. Take advantage of this tool to make informed decisions about your health and well-being, ensuring you have all the information you need at your fingertips.
           </p>
-          <p>
-           <span>$18B</span> 
-            
-<br />
-in healthcare savings per year when patients are led to proper care
-<br />
-           <span>25%</span> 
-
-<br />
-of cases can be self-treated or treated through teleconsultation</p>
+          <button className="btn">
+            <Link to="/medicine" className="explore">Explore</Link>
+            </button>
         </div>
         <div className="right-side">
 <img className="infoimg" src={flow} alt="" />
@@ -303,11 +300,11 @@ of cases can be self-treated or treated through teleconsultation</p>
               </div>
             </div>
             <div className="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-regular fa-star"></i>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
@@ -325,11 +322,11 @@ of cases can be self-treated or treated through teleconsultation</p>
               </div>
             </div>
             <div className="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-regular fa-star"></i>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
@@ -347,11 +344,11 @@ of cases can be self-treated or treated through teleconsultation</p>
               </div>
             </div>
             <div className="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-regular fa-star"></i>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
@@ -372,11 +369,11 @@ of cases can be self-treated or treated through teleconsultation</p>
               </div>
             </div>
             <div className="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-regular fa-star"></i>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
@@ -394,11 +391,11 @@ of cases can be self-treated or treated through teleconsultation</p>
               </div>
             </div>
             <div className="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-regular fa-star"></i>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
@@ -416,11 +413,11 @@ of cases can be self-treated or treated through teleconsultation</p>
               </div>
             </div>
             <div className="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-solid fa-star"></i>
+              <i className="fa-regular fa-star"></i>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
@@ -440,7 +437,7 @@ of cases can be self-treated or treated through teleconsultation</p>
             <h2>Contact Us:</h2>
             <div className="contactdetail">
             <div className="box">
-            <i class="fa-solid fa-location-dot"></i>
+            <i className="fa-solid fa-location-dot"></i>
                 <p><span>Address: </span> Dehradun, Uttarakhand, India</p>
             </div>
             <div className="box">
