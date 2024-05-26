@@ -3,22 +3,22 @@ import "./admin.css";
 import img from "../../assets/man.jpg";
 import img1 from "../../assets/logo.png";
 import { Link } from "react-router-dom";
-import userService from "../../services/user_service";
+import clientApi from "../../services/client_api";
 
 const Appointment = () => {
     const [activeMenu, setActiveMenu] = useState("Appointments");
     const [searchQuery, setSearchQuery] = useState("");
     const [filteredUsers, setFilteredUsers] = useState([]);
-    const [userList, setUserList] = useState([]);
+    const [appList, setAppList] = useState([]);
   
     const handleMenuClick = (menu) => {
       setActiveMenu(menu);
     };
   
     useEffect(()=>{
-      userService.getAll().then((res)=>{
+      clientApi.post('/booking/getAll').then((res)=>{
         console.log("Res : ",res.data)
-        setUserList(res.data)
+        setAppList(res.data)
       }).catch((err)=>{
         console.log("Error: ", err)
       })
@@ -27,16 +27,16 @@ const Appointment = () => {
   
     useEffect(() => {
       // Filter users based on search query
-      const filtered = userList.filter(
-        (user) =>
-          user.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          user.email.toLowerCase().includes(searchQuery.toLowerCase())
+      const filtered = appList.filter(
+        (app) =>
+          app.user.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          app.doctor.name.toLowerCase().includes(searchQuery.toLowerCase())
       );
       setFilteredUsers(filtered);
-    }, [searchQuery, userList]);
+    }, [searchQuery, appList]);
   
   
-    if (!userList.length) return <div>Loading...</div>;
+    if (!appList.length) return <div>Loading...</div>;
   
   return (
     <div className="admin admindct">
@@ -81,13 +81,13 @@ const Appointment = () => {
                 </tr>
               </thead>
               <tbody>
-                {filteredUsers.map((user, index) => (
+                {filteredUsers.map((app, index) => (
                   <tr key={index}>
-                    <td>{user.username}</td>
-                    <td>Dctr</td>
-                    <td>1000</td>
-                    <td>23</td>
-                    <td>Male</td>
+                    <td>{app.user.username}</td>
+                    <td>{app.doctor.name}</td>
+                    <td>{app.amount}</td>
+                    <td>{app.user.age}</td>
+                    <td>{app.user.gender}</td>
                   </tr>
                 ))}
               </tbody>

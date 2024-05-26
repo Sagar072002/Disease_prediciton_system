@@ -3,23 +3,23 @@ import "./admin.css";
 import img from "../../assets/man.jpg";
 import img1 from "../../assets/logo.png";
 import { Link } from "react-router-dom";
-import userService from "../../services/user_service";
+import doctorService from "../../services/doc_service";
 
 
 const User = () => {
   const [activeMenu, setActiveMenu] = useState("Doctors");
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredUsers, setFilteredUsers] = useState([]);
-  const [userList, setUserList] = useState([]);
+  const [dctrList, setDctrList] = useState([]);
 
   const handleMenuClick = (menu) => {
     setActiveMenu(menu);
   };
 
   useEffect(()=>{
-    userService.getAll().then((res)=>{
+    doctorService.getAll().then((res)=>{
       console.log("Res : ",res.data)
-      setUserList(res.data)
+      setDctrList(res.data)
     }).catch((err)=>{
       console.log("Error: ", err)
     })
@@ -28,16 +28,16 @@ const User = () => {
 
   useEffect(() => {
     // Filter users based on search query
-    const filtered = userList.filter(
+    const filtered = dctrList.filter(
       (user) =>
-        user.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        user.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         user.email.toLowerCase().includes(searchQuery.toLowerCase())
     );
     setFilteredUsers(filtered);
-  }, [searchQuery, userList]);
+  }, [searchQuery, dctrList]);
 
 
-  if (!userList.length) return <div>Loading...</div>;
+  if (!dctrList.length) return <div>Loading...</div>;
 
   return (
     <div className="admin admindct">
@@ -85,19 +85,19 @@ const User = () => {
               <tbody>
                 {filteredUsers.map((user, index) => (
                   <tr key={index}>
-                    <td>Sagar</td>
-                    <td>1000</td>
-                    <td>Surgeon</td>
-                    <td>9876543210</td>
-                    <td>xyz@gmail.com</td>
+                    <td>{user.name}</td>
+                    <td>{user.price}</td>
+                    <td>{user.specialization}</td>
+                    <td>{user.phone}</td>
+                    <td>{user.email}</td>
                     <td>
-                    <select name="cars" id="cars">
-  <option value="Pending">Pending</option>
-  <option value="Approved">Approved</option>
-  <option value="Cancelled">Cancelled</option>
-</select>
+                    <select name="status" id="status">
+                      <option value="Pending">Pending</option>
+                      <option value="Approved">Approved</option>
+                      <option value="Cancelled">Cancelled</option>
+                    </select>
 
-                      </td>
+                    </td>
                   </tr>
                 ))}
               </tbody>
