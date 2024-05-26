@@ -14,8 +14,9 @@ function validateUser(user){
     const schema = joi.object({
         username: joi.string().min(5).required(),
         email: joi.string().email().required(),
+        gender: joi.string().required(),
         phone: joi.number().min(10).required(),
-        address: joi.string().min(8).required(),
+        age: joi.number().required(),
         password1: joi.string().min(8).required(),
         password2: joi.string().min(8).required().valid(joi.ref('password1')),        
     });
@@ -77,7 +78,6 @@ router.patch('/', async(req, res)=>{
         let user = await User.findOne({ _id: uid })
 
         if(req.body.username) user.username = req.body.username;
-        if(req.body.address) user.address = req.body.addressphone
         if(req.body.phone) user.phone = req.body.phone;
         if(req.body.email) user.email = req.body.email;
         if(req.body.age) user.age = req.body.age;

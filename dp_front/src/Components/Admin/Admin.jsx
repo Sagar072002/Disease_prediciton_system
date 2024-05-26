@@ -1,13 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./admin.css";
 import img from "../../assets/man.jpg";
 import img1 from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import userService from "../../services/user_service";
+import { SiteContext } from "../../context/siteContext";
 
 
 const Admin = () => {
   
+  const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+  const { logout } = useContext(SiteContext)
+
+  const LogOut =async ()=>{
+    toast.success('LOGGED OUT!', {
+      position: toast.POSITION.BOTTOM_CENTER,
+      hideProgressBar: true,
+      autoClose: 2000,
+      pauseOnHover: false,
+    });
+    // await delay(2000)
+    logout()
+  }
+
   const [activeMenu, setActiveMenu] = useState("Users");
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredUsers, setFilteredUsers] = useState([]);
