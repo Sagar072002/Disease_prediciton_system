@@ -48,6 +48,11 @@ class doctorService{
         const req = clientApi.post(this.endpoint+'/getAll');
         return req;
     }
+
+    getApps(){
+        const req = clientApi.post(this.endpoint+'/getAppointments');
+        return req;
+    }
 }
 
 export default new doctorService;

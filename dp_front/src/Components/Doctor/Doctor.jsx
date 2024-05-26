@@ -2,40 +2,40 @@ import React, { useState, useEffect } from "react";
 import img from "../../assets/man.jpg";
 import img1 from "../../assets/logo.png";
 import { Link } from "react-router-dom";
-import userService from "../../services/user_service";
+import doctorService from "../../services/doc_service";
 
 const Doctor = () => {
     const [activeMenu, setActiveMenu] = useState("Appointments");
     const [searchQuery, setSearchQuery] = useState("");
     const [filteredUsers, setFilteredUsers] = useState([]);
-    const [userList, setUserList] = useState([]);
+    const [appList, setAppList] = useState([]);
   
     const handleMenuClick = (menu) => {
       setActiveMenu(menu);
     };
   
     useEffect(()=>{
-      userService.getAll().then((res)=>{
+      doctorService.getApps().then((res)=>{
         console.log("Res : ",res.data)
-        setUserList(res.data)
+        setAppList(res.data)
       }).catch((err)=>{
         console.log("Error: ", err)
       })
   
     },[])
   
-    useEffect(() => {
-      // Filter users based on search query
-      const filtered = userList.filter(
-        (user) =>
-          user.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          user.email.toLowerCase().includes(searchQuery.toLowerCase())
-      );
-      setFilteredUsers(filtered);
-    }, [searchQuery, userList]);
+    // useEffect(() => {
+    //   // Filter users based on search query
+    //   const filtered = appList.filter(
+    //     (user) =>
+    //       user.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    //       user.email.toLowerCase().includes(searchQuery.toLowerCase())
+    //   );
+    //   setFilteredUsers(filtered);
+    // }, [searchQuery, appList]);
   
   
-    if (!userList.length) return <div>Loading...</div>;
+    if (!appList.length) return <div>Loading...</div>;
   
   return (
     <div className="admin admindct">
