@@ -58,10 +58,10 @@ const Admin = () => {
   return (
     <div className="admin">
       <div className="sidebar">
-        <div className="logo">
+        {/* <div className="logo">
           <img src={img1} alt="" />
           <p>DISPRED</p>
-        </div>
+        </div> */}
         <div className="image">
           <img src={img} alt="" />
           <p>Sagar Negi</p>
@@ -71,7 +71,7 @@ const Admin = () => {
          <Link to="/admin-dctr"> <p className={activeMenu === "Doctors" ? "active" : ""} onClick={() => handleMenuClick("Doctors")}>Doctors</p> </Link>
          <Link to="/admin-appointment"> <p className={activeMenu === "Appointments" ? "active" : ""} onClick={() => handleMenuClick("Appointments")}>Appointments</p> </Link>
           
-         <button>Logout</button>
+         {/* <button>Logout</button> */}
         </div>
       </div>
       <div className="rightside">

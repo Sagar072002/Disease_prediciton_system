@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import './header.css';
 import img from "../../assets/logo.png"
 import { NavLink, Link } from 'react-router-dom'
@@ -10,8 +10,10 @@ import { AiOutlineUser } from "react-icons/ai";
 const Header = () => {
 
   const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
-  const { logout } = useContext(SiteContext);
+  const { logout,role } = useContext(SiteContext);
   const [showDropdown, setShowDropdown] = useState(false);
+  const [linkName, setLinkName] = useState('Edit Profile');
+  const [linkVal, setLinkVal] = useState('/userprofile');
 
   const LogOut = async () => {
     toast.success('LOGGED OUT!', {
@@ -23,6 +25,21 @@ const Header = () => {
     await delay(2000);
     logout();
   }
+
+  useEffect(()=>{
+    if(role==='user'){
+      setLinkName("Edit Profile")
+      setLinkVal("/userprofile")
+
+    }else if(role==='doctor'){
+      setLinkName("Dashboard")
+      setLinkVal("/doctor")
+      
+    }else if(role==='admin'){
+      setLinkName("Dashboard")
+      setLinkVal("/admin")
+    }
+  },[])
 
   return (
     <>
@@ -46,7 +63,7 @@ const Header = () => {
               <AiOutlineUser />
               {showDropdown && (
                 <div className="dropdown-content">
-                  <Link to="/userprofile">Edit Profile</Link>
+                  <Link to={linkVal}>{linkName}</Link>
                   <span onClick={LogOut}>Logout</span>
                 </div>
               )}

@@ -8,7 +8,7 @@ export const SiteContext = createContext(null);
 
 export const SiteContextProvider = (props) => {
     const [uid, setUid] = useState('');
-    const [role, setRole] = useState('none');
+    const [role, setRole] = useState('');
     // const [user, setUser] = useState({ user: "blank" });
     const [userState, setUserState] = useState({
         path: "",
@@ -23,7 +23,7 @@ export const SiteContextProvider = (props) => {
         console.log("called logout");
         clearToken();
         setUid('');
-        window.location.reload();
+        window.location.replace('http://localhost:5173/');
     };
 
     useEffect(() => {

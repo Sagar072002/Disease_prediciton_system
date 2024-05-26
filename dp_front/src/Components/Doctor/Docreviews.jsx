@@ -42,10 +42,10 @@ const Docreviews = () => {
   return (
     <div className="admin admindct">
     <div className="sidebar">
-      <div className='logo'>
+      {/* <div className='logo'>
         <img src={img1} alt="" />
         <p>DISPRED</p>
-      </div>
+      </div> */}
       <div className="image">
         <img src={img} alt="" />
         <p>Sagar Negi</p>
@@ -54,7 +54,7 @@ const Docreviews = () => {
        <Link to="/doctor"> <p className={activeMenu === "Appointments" ? "active" : ""} onClick={() => handleMenuClick("Appointments")}>Appointments</p> </Link>
        <Link to="/doctorreviews"> <p className={activeMenu === "Reviews" ? "active" : ""} onClick={() => handleMenuClick("Reviews")}>Reviews</p> </Link>
        <Link to="/docprofile"> <p className={activeMenu === "Edit Profile" ? "active" : ""} onClick={() => handleMenuClick("Edit Profile")}>Edit Profile</p> </Link>
-        <button>Logout</button>
+        {/* <button>Logout</button> */}
       </div>
     </div>
     <div className="rightside">
