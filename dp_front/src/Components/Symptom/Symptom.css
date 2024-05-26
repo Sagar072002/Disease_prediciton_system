@@ -452,8 +452,9 @@ select {
   .diseasecontainer {
     max-width: 850px !important;
         margin:auto;
-    
+    min-height:70vh;
     padding: 20px;
+    margin-bottom:40px;
     font-family: Arial, sans-serif;
   }
   

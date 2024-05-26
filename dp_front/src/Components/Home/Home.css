@@ -9,7 +9,12 @@ align-items: center;
     min-height:90vh;
     overflow-x: hidden;
 }
-
+.explore{
+  color:#fff;
+}
+.btn:hover .explore{
+  color:#008080;
+}
 .banner .left-side{
   width: 50%;
 }
@@ -705,7 +710,7 @@ font-size: 22px;
 .counter-div .seconddiv{
   width:40%;
   margin-left:40px;
-  margin-top:30px;
+  margin-top:70px;
 }
 .counter-div .seconddivv{
   display: flex;
@@ -726,11 +731,11 @@ margin:0 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 6px;
-    transition: all 0.5s ease;
+    border-radius: 3px;
 }
 .innercounter:hover{
-transform: scale(1.03);
+background-color: rgb(42, 191, 255);
+color:#fff;
 cursor: pointer;
 }
 /* .firstcount{
@@ -1320,4 +1325,9 @@ height:40px !important;
      height:340px;
      margin-left:-160px;
    }
+ }
+
+
+ .userprofile .profile-div{
+  width:30% !important;
  }

@@ -42,7 +42,6 @@ const Medicine = () => {
 
   return (
     <>
-      <Header />
       <div className="medicine">
         <h2>Medicine Encyclopedia</h2>
         <div className='letterdiv'>
@@ -119,7 +118,6 @@ const Medicine = () => {
           </div>
         </div>
       </div>
-      <Footer/>
     </>
   );
 }

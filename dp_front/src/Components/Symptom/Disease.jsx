@@ -1,19 +1,17 @@
 import React, { useState } from "react";
 import diseasesData from "./Detail.json";
 import "./Symptom.css"; // Import the CSS file for other styles
-import Header from "../Header/Header";
 
 function Disease() {
   const [disease, setDisease] = useState("");
   const [diseaseInfo, setDiseaseInfo] = useState(null);
   const [suggestions, setSuggestions] = useState([]);
-  const [activeSection, setActiveSection] = useState("");
+  const [activeSection, setActiveSection] = useState("description"); // Initialize with "description"
 
   const handleSearch = () => {
-    
     if (disease && diseasesData.diseases[disease]) {
       setDiseaseInfo(diseasesData.diseases[disease]);
-      setActiveSection(""); // Reset active section when new search is performed
+      setActiveSection("description"); // Reset active section when new search is performed
       setSuggestions([]); // Clear suggestions after search
     } else {
       setDiseaseInfo(null);
@@ -25,7 +23,7 @@ function Disease() {
     setDisease("");
     setDiseaseInfo(null);
     setSuggestions([]);
-    setActiveSection(""); // Reset active section when clear is clicked
+    setActiveSection("description"); // Reset active section when clear is clicked
   };
 
   const handleInputChange = (e) => {
@@ -51,8 +49,7 @@ function Disease() {
 
   return (
     <>
-    <Header/>
-     <div className="firstdisdiv">
+      <div className="firstdisdiv">
         <h1>Disease Information</h1>
         <div className="searchdiv">
           <input
@@ -65,7 +62,6 @@ function Disease() {
           <button onClick={handleSearch} className="submit-btn">
             Submit
           </button>
-
           <button onClick={handleClear} className="clear-btn">
             Clear
           </button>
@@ -85,147 +81,103 @@ function Disease() {
             </div>
           </div>
         )}
-        </div>
-        
-    <div className="diseasecontainer">
-      <div>
-       
-        {/* Display suggestions */}
-        
-
-        {diseaseInfo && (
-          <div className="info-container">
-            <h2> Name: <span>{diseaseInfo.disease_name}</span></h2>
-
-            <div className="accordion-section">
-              <button
-                className="accordion-btn"
-                onClick={() => toggleAccordion("description")}
-              >
-                <span>Description</span>{" "}
-                <span>{activeSection === "description" ? "-" : "+"}</span>
-              </button>
-              {activeSection === "description" && (
-                <div className="accordion-content">
-                  {diseaseInfo.disease_detail}
-                </div>
-              )}
-            </div>
-            {/* Accordion sections */}
-            <div className="accordion-section">
-              <button
-                className="accordion-btn"
-                onClick={() => toggleAccordion("cause")}
-              >
-                <span>Cause</span>
-                <span> {activeSection === "cause" ? "-" : "+"}</span>
-              </button>
-              {activeSection === "cause" && (
-                <div className="accordion-content">{diseaseInfo.cause}</div>
-              )}
-            </div>
-
-            <div className="accordion-section">
-              <button
-                className="accordion-btn"
-                onClick={() => toggleAccordion("symptoms")}
-              >
-                <span>Symptoms</span>
-                <span> {activeSection === "symptoms" ? "-" : "+"}</span>
-              </button>
-              {activeSection === "symptoms" && (
-                <ul className="accordion-content">
-                  {diseaseInfo.symptoms.map((symptom, index) => (
-                    <li key={index}>{symptom}</li>
-                  ))}
-                </ul>
-              )}
-            </div>
-
-            <div className="accordion-section">
-              <button
-                className="accordion-btn"
-                onClick={() => toggleAccordion("prevention")}
-              >
-                <span>Prevention</span>
-                <span> {activeSection === "prevention" ? "-" : "+"}</span>
-              </button>
-              {activeSection === "prevention" && (
-                <ul className="accordion-content">
-                  {diseaseInfo.prevention.map((prevention, index) => (
-                    <li key={index}>{prevention}</li>
-                  ))}
-                </ul>
-              )}
-            </div>
-
-            {/* Alternative name */}
-            <div className="accordion-section">
-              <button
-                className="accordion-btn"
-                onClick={() => toggleAccordion("alternative")}
-              >
-                <span>Alternative name</span>
-                <span> {activeSection === "alternative" ? "-" : "+"}</span>
-              </button>
-              {activeSection === "alternative" && (
-                <ul className="accordion-content">
-                  {diseaseInfo.alternative.length > 0 ? (
-                    diseaseInfo.alternative.map((alternative, index) => (
-                      <li key={index}>{alternative}</li>
-                    ))
-                  ) : (
-                    <li>None</li>
-                  )}
-                </ul>
-              )}
-            </div>
-
-            {/* Treatment */}
-            <div className="accordion-section">
-              <button
-                className="accordion-btn"
-                onClick={() => toggleAccordion("treatment")}
-              >
-                <span>Treatment</span>
-                <span>                {activeSection === "treatment" ? "-" : "+"} 
-</span>
-              </button>
-              {activeSection === "treatment" && (
-                <ul className="accordion-content">
-                  {diseaseInfo.treatment.length > 0 ? (
-                    diseaseInfo.treatment.map((treatment, index) => (
-                      <li key={index}>{treatment}</li>
-                    ))
-                  ) : (
-                    <li>None</li>
-                  )}
-                </ul>
-              )}
-            </div>
-
-            {/* Doctor */}
-            <div className="accordion-section">
-              <button
-                className="accordion-btn"
-                onClick={() => toggleAccordion("doctor")}
-              >
-                <span>Doctor</span>
-                <span>                {activeSection === "doctor" ? "-" : "+"} 
-</span>
-              </button>
-              {activeSection === "doctor" && (
-                <div className="accordion-content">
-                  {diseaseInfo.doctor || "None"}
-                </div>
-              )}
-            </div>
-          </div>
-        )}
       </div>
-    </div>
+      
+      <div className="diseasecontainer">
+        <div>
+          {diseaseInfo && (
+            <div className="info-container">
+              <h2>Name: <span>{diseaseInfo.disease_name}</span></h2>
+
+              <Accordion
+                title="Description"
+                content={diseaseInfo.disease_detail}
+                isActive={activeSection === "description"}
+                onToggle={() => toggleAccordion("description")}
+              />
+
+              <Accordion
+                title="Cause"
+                content={diseaseInfo.cause}
+                isActive={activeSection === "cause"}
+                onToggle={() => toggleAccordion("cause")}
+              />
+
+              <Accordion
+                title="Symptoms"
+                content={diseaseInfo.symptoms}
+                isActive={activeSection === "symptoms"}
+                onToggle={() => toggleAccordion("symptoms")}
+                isList={true}
+              />
+
+              <Accordion
+                title="Prevention"
+                content={diseaseInfo.prevention}
+                isActive={activeSection === "prevention"}
+                onToggle={() => toggleAccordion("prevention")}
+                isList={true}
+              />
+
+              <Accordion
+                title="Alternative name"
+                content={diseaseInfo.alternative.length > 0 ? diseaseInfo.alternative : ["None"]}
+                isActive={activeSection === "alternative"}
+                onToggle={() => toggleAccordion("alternative")}
+                isList={true}
+              />
+
+              <Accordion
+                title="Treatment"
+                content={diseaseInfo.treatment.length > 0 ? diseaseInfo.treatment : ["None"]}
+                isActive={activeSection === "treatment"}
+                onToggle={() => toggleAccordion("treatment")}
+                isList={true}
+              />
+
+              <Accordion
+                title="Doctor"
+                content={diseaseInfo.doctor || "None"}
+                isActive={activeSection === "doctor"}
+                onToggle={() => toggleAccordion("doctor")}
+              />
+            </div>
+          )}
+        </div>
+      </div>
     </>
-    
+  );
+}
+
+function Accordion({ title, content, isActive, onToggle, isList = false }) {
+  return (
+    <div className="accordion-section">
+      <button
+        className="accordion-btn"
+        onClick={onToggle}
+        aria-expanded={isActive}
+        aria-controls={`accordion-content-${title}`}
+      >
+        <span>{title}</span> <span>{isActive ? "-" : "+"}</span>
+      </button>
+      {isActive && (
+        <div
+          className="accordion-content"
+          id={`accordion-content-${title}`}
+          role="region"
+        >
+          {isList ? (
+            <ul>
+              {content.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{content}</p>
+          )}
+        </div>
+      )}
+    </div>
   );
 }
 
