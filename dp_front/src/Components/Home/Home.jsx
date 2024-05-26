@@ -24,6 +24,7 @@ import stats3 from "../../assets/family-members.png";
 import { Link } from "react-router-dom";
 import {TiTick  } from "react-icons/ti"
 import {GoDotFill  } from "react-icons/go"
+import Slider from "./SliderComponent";
 
 const Home = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -37,20 +38,20 @@ const Home = () => {
     <>
       <div className="banner">
         <div className="left-side">
-          <h2>More than a Symptom Checker</h2>
-          <div className="bannerp">
-          <p>
-            Sensely's comprehensive clinical decision support  solution navigates
-            users from problem to solution, all through a simple conversation
-            to:
-          </p>
-          </div>
-          <ul>
-            <li>Assess symptoms</li>
-            <li>Route patients to care</li>
-            <li>Deliver content from leading sources</li>
-          </ul>
-        </div>
+        <h2>More than a Symptom Checker</h2>
+<div className="bannerp">
+  <p>
+    Sensely's innovative clinical decision support solution empowers users to seamlessly navigate from symptom assessment to tailored solutions through intuitive conversations:
+  </p>
+</div>
+<ul>
+  <li>Assess symptoms with precision</li>
+  <li>Direct patients to optimal care pathways</li>
+  <li>Deliver curated content from top-tier sources</li>
+  <li>Provide personalized health recommendations</li>
+  <li>Facilitate remote monitoring and follow-up</li>
+</ul>
+</div>
         <div className="right-side">
 <img className="bannerimg" src={banner} alt="" />
         </div>
@@ -128,6 +129,11 @@ Dispred is always available, regardless of what you need it for. Stick to using 
         </div>
         </div>
       </div>
+
+
+
+
+
       <div className="patient">
         <div className="left-side">
         <img className="infoimg" src={patient} alt="" />
@@ -175,6 +181,7 @@ Dispred is always available, regardless of what you need it for. Stick to using 
   </div>
 </div>
 
+<Slider/>
 
      
       
@@ -428,7 +435,7 @@ Dispred is always available, regardless of what you need it for. Stick to using 
           </div>
         </div>
       </div>
-      <div className="contact">
+      {/* <div className="contact">
 
       <h2 className="touch">Get in Touch</h2>
     <div className="contact-form">
@@ -477,7 +484,7 @@ Dispred is always available, regardless of what you need it for. Stick to using 
        
     </div>
    
-    </div>
+    </div> */}
     <div className="accordion">
         <h1>FAQ'S</h1>
           <div>

@@ -35,14 +35,14 @@ align-items: center;
 .banner div p{
   margin-bottom:60px;
   font-size:26px;
-  color:#555;
+  color:#333;
   line-height: 1.5;
   text-align: justify;
 }
 .banner div ul li{
   margin-bottom:10px;
   font-size:23px;
-  color:#555;
+  color:#333;
   line-height: 1.5;
 }
 .bannerimg{
@@ -203,6 +203,9 @@ border:1px solid transparent;
     width:80%;
     margin-left: 60px;
   }
+  .patient{
+margin-top:-40px;
+  }
   .patient h2{
     text-align: left !important;
     font-size: 40px !important;
@@ -229,8 +232,8 @@ border:1px solid transparent;
     font-family: "Montserrat", sans-serif;
     color: #fff;
     margin: 0;
-    margin-top: 20px;
     padding:60px 120px;
+    padding-top:20px;
   }
   
   .accordion-item {
@@ -411,7 +414,6 @@ height:200px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top:40px;
     margin-bottom:40px;
     padding:40px 0;
     background-color: #e8f2f9;
@@ -490,6 +492,7 @@ letter-spacing: 1px;
   justify-content: center;
   align-items: center;
   padding:30px 40px;
+  padding-top: 0;
   gap:45px;
 }
 .stats .first,
@@ -724,7 +727,7 @@ margin:0 20px;
 .counter-div .innercounter{
     /* width:450px; */
     height:200px;
-    background-color: #e8f2f9;
+    background-color: #e1f3f3;
     color:#000;
     border:1px solid #ddd;
     margin:40px;
@@ -734,7 +737,7 @@ margin:0 20px;
     border-radius: 3px;
 }
 .innercounter:hover{
-background-color: rgb(42, 191, 255);
+background-color: #008080;
 color:#fff;
 cursor: pointer;
 }
@@ -1331,3 +1334,72 @@ height:40px !important;
  .userprofile .profile-div{
   width:30% !important;
  }
+ 
+.slide{
+  width: 90%;
+  padding:0 200px;
+  padding-left:300px;
+  margin:60px 0;
+}
+.dctr-icon{
+  background-color: #fff;
+  border-radius: 50%;
+  height:80px;
+  width:80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color:#008080;
+  margin-top: 15px;
+}
+.head {
+  margin-bottom:40px;
+  font-size:35px;
+  text-align: center;
+  line-height: 1.3;
+  font-weight: 800;
+  text-transform: uppercase;
+  color:#008080;
+}
+
+
+
+.service {
+  background-color: #aaefef;
+  padding: 20px;
+  display: flex !important;
+  flex-direction: column;
+  gap:40px;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  width:200px !important;
+  height:200px;
+  transition: background-color 0.3s ease;
+    margin-bottom:30px;
+
+}
+.service p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
+
+.service:hover {
+  background-color: #87e2e2;
+}
+
+
+
+.service.active {
+  background-color: #008080;
+  color: #fff;
+}
+.service.active .ds{
+  color: #fff;
+}
+
+.slick-dots li button {
+  transform: scale(2); /* Increase the size of the dots */
+}
