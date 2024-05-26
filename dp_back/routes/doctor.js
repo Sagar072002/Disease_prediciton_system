@@ -3,6 +3,7 @@ const router = express.Router();
 const joi = require('joi');
 const mongoose = require('mongoose');
 const Doctor = require('../models/doctorModel');
+const Booking = require('../models/bookingModel');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
@@ -170,5 +171,15 @@ router.post('/login', async(req, res)=>{
         res.status(400).send(err);
     }
 });
+
+router.post('/getAppointments', async(req,res)=>{
+    try{
+        const bookings = await Booking.find({doctor:req.userid});
+        res.status(200).json({suucess:true,bookings})
+
+    }catch(err){
+        res.status(400).send(err);
+    }
+})
 
 module.exports = router;

@@ -3,6 +3,9 @@ const router = express.Router();
 const joi = require('joi');
 const mongoose = require('mongoose');
 const User = require('../models/userModel');
+const Booking = require('../models/bookingModel');
+const authenticate = require('./auth')
+const restrict = require('./restrict')
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
@@ -53,16 +56,6 @@ router.post('/get', async (req, res)=>{
 
     try{
         const user= await User.findOne({ _id: uid });
-
-        res.json(user)
-    }catch(err){
-        res.status(400).send(err);
-    }
-});
-
-router.post('/getAll', async (req, res)=>{
-    try{
-        const user= await User.find({});
 
         res.json(user)
     }catch(err){
@@ -125,5 +118,15 @@ router.post('/getAll', async (req, res)=>{
         res.status(400).send(err);
     }
 });
+
+router.post('/getAppointments', authenticate, restrict(["user"]), async(req,res)=>{
+    try{
+        const bookings = await Booking.find({user:req.userid});
+        res.status(200).json({suucess:true,bookings})
+
+    }catch(err){
+        res.status(400).send(err);
+    }
+})
 
 module.exports = router;
