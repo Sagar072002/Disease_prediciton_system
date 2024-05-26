@@ -121,7 +121,7 @@ We remain committed to providing a safe and inclusive environment to work and re
       <div className="row">
         <div className="detail">
           <img src={img} alt="" />
-          <h2>Sagar Negi</h2>
+          <h2>Harshit Bajpai</h2>
           <h4>Software Developer</h4>
         </div>
         <div className="connect">
@@ -134,7 +134,7 @@ We remain committed to providing a safe and inclusive environment to work and re
       <div className="row">
         <div className="detail">
           <img src={img} alt="" />
-          <h2>Sagar Negi</h2>
+          <h2>Ayush Nautiyal</h2>
           <h4>Software Developer</h4>
         </div>
         <div className="connect">
@@ -147,7 +147,7 @@ We remain committed to providing a safe and inclusive environment to work and re
       <div className="row">
         <div className="detail">
           <img src={img} alt="" />
-          <h2>Sagar Negi</h2>
+          <h2>Chinmay Raj Shah</h2>
           <h4>Software Developer</h4>
         </div>
         <div className="connect">
