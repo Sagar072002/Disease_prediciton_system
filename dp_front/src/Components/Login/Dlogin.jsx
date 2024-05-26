@@ -57,7 +57,7 @@ const Login = () => {
           setUid(res.data.uid);
           saveToken({"uid": res.data.uid, "Token":res.data.token})
           await delay(100);
-          navigate("/")
+          navigate("/doctor")
         }).catch((err)=>{
           toast.warning('Invalid credentials',err.response.data);
         })
@@ -79,7 +79,7 @@ const Login = () => {
       <div className="box">
         <i className="fa-solid fa-user" />
         <div>
-        <input  type="text"  placeholder="email"  
+        <input  type="text"  placeholder="Email"  
                       autoComplete="off"
                       name="email"
                       id="email"

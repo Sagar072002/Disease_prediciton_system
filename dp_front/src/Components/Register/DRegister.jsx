@@ -90,6 +90,7 @@ const DRegister = () => {
 
         try {
           doctorService.register(Data).then(async (res) => {
+            console.log("Registered Values:", values);
             actions.resetForm();
             setQualifications([""]);
             setTimeSlots([""]);

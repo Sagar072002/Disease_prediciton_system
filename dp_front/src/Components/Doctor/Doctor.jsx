@@ -73,7 +73,6 @@ const Doctor = () => {
               <thead>
                 <tr>
                   <th>Patient</th>
-                  <th>Doctor</th>
                   <th>Payment</th>
                   <th>Age</th>
                   <th>Gender</th>
@@ -83,7 +82,6 @@ const Doctor = () => {
                 {filteredUsers.map((user, index) => (
                   <tr key={index}>
                     <td>{user.username}</td>
-                    <td>Dctr</td>
                     <td>1000</td>
                     <td>23</td>
                     <td>Male</td>

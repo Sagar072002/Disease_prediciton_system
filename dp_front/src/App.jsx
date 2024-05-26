@@ -59,16 +59,18 @@ const App = () => {
                 <Route exact key={"finddoctor"} path='/finddoctor' element={ <FindDoctor/> } />
                 <Route exact path='/doctorpage/:id' element={ <DoctorProfile/> } />
                 <Route exact key={"successpage"} path='/checkout-success' element={<Success/> } />
+                <Route exact path='/doctor' element={ <Doctor/> } />
+                <Route exact path='/docprofile' element={ <Docprofile/> } />
+                <Route exact path='/doctorreviews' element={ <Docreviews/> } />
+                <Route exact path='/userprofile' element={ <Userprofile/> } />
               </Routes>,
               <Footer key={"footer"} />
             ]
             :
             <Routes>
-              <Route exact path='/doctor' element={ <Doctor/> } />
+              <Route exact path='/medicine' element={ <Medicine/> } />
+                <Route exact path='/disease' element={ <Disease/> } />
               <Route exact path='/admin' element={ <Admin/> } />
-              <Route exact path='/userprofile' element={ <Userprofile/> } />
-              <Route exact path='/docprofile' element={ <Docprofile/> } />
-              <Route exact path='/doctorreviews' element={ <Docreviews/> } />
 
               <Route exact path='/admin-dctr' element={ <Dctr/> } />
               <Route exact path='/admin-appointment' element={ <Appointment/> } />

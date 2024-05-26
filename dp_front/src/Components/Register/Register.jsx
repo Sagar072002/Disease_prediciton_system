@@ -11,6 +11,8 @@ import 'react-toastify/dist/ReactToastify.css';
 const initialValues = {
   name: "",
   email: "",
+  age:"",
+  gender:"",
   password: "",
   confirm_password: "",
   phone:""
@@ -48,7 +50,8 @@ const Register = () => {
           username: values.name,
           email: values.email,
           phone: values.phone,
-          address: "test_address",
+          age: values.age,
+          gender: values.gender,
           password1: values.password,
           password2: values.confirm_password
         }
@@ -119,6 +122,45 @@ const Register = () => {
                           ) : null}
                     </div>
       </div>
+
+
+      <div className="box">
+      <i className="fas fa-birthday-cake"></i>
+        <div>
+        <input type="number"
+                      autoComplete="off"
+                      name="age"
+                      id="age"
+                      placeholder="Age "
+                      value={values.age}
+                      onChange={handleChange}
+                      onBlur={handleBlur} />
+                        {errors.age && touched.age ? (
+                          <p className="form-error">{errors.age}</p>
+                          ) : null}
+                    </div>
+      </div>
+
+      <div className="box">
+      <i className="fas fa-user"></i>
+              <div>
+        <input type="text"
+                      autoComplete="off"
+                      name="gender"
+                      id="gender"
+                      placeholder="gender "
+                      value={values.gender}
+                      onChange={handleChange}
+                      onBlur={handleBlur} />
+                        {errors.gender && touched.gender ? (
+                          <p className="form-error">{errors.gender}</p>
+                          ) : null}
+                    </div>
+      </div>
+
+
+
+
       <div className="box">
         <i className="fa-solid fa-lock" />
         <div>
