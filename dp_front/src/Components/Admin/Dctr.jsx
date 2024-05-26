@@ -1,42 +1,43 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./admin.css";
+import img from "../../assets/man.jpg";
 import img1 from "../../assets/logo.png";
-import img from '../../assets/man.jpg';
 import { Link } from "react-router-dom";
-import doctorService from "../../services/doc_service";
+import userService from "../../services/user_service";
 
 
 const User = () => {
   const [activeMenu, setActiveMenu] = useState("Doctors");
   const [searchQuery, setSearchQuery] = useState("");
-  const [doctors, setDoctors] = useState([]);
+  const [filteredUsers, setFilteredUsers] = useState([]);
+  const [userList, setUserList] = useState([]);
+
+  const handleMenuClick = (menu) => {
+    setActiveMenu(menu);
+  };
 
   useEffect(()=>{
-    doctorService.getAll().then((res)=>{
-      console.log("Res doc : ",res.data)
-      setDoctors(res.data)
+    userService.getAll().then((res)=>{
+      console.log("Res : ",res.data)
+      setUserList(res.data)
     }).catch((err)=>{
       console.log("Error: ", err)
     })
 
   },[])
 
-  const handleMenuClick = (menu) => {
-    setActiveMenu(menu);
-  };
+  useEffect(() => {
+    // Filter users based on search query
+    const filtered = userList.filter(
+      (user) =>
+        user.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        user.email.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+    setFilteredUsers(filtered);
+  }, [searchQuery, userList]);
 
-  const handleSearchChange = (e) => {
-    setSearchQuery(e.target.value);
-  };
 
-  // Function to filter doctors based on search query
-  const filteredDoctors = doctors.filter(doctor =>
-    doctor.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    doctor.email.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    doctor.specialization.toLowerCase().includes(searchQuery.toLowerCase())
-  );
-
-  if (!doctors.length) return <div>Loading...</div>;
+  if (!userList.length) return <div>Loading...</div>;
 
   return (
     <div className="admin admindct">
@@ -50,11 +51,9 @@ const User = () => {
           <p>Sagar Negi</p>
         </div>
         <div className="det">
-        <Link to="/admin">  <p className={activeMenu === "Dashboard" ? "active" : ""} onClick={() => handleMenuClick("Dashboard")}>Dashboard</p></Link>
-        <Link to="/admin-user">  <p className={activeMenu === "Users" ? "active" : ""} onClick={() => handleMenuClick("Users")}>Users</p></Link>
+        <Link to="/admin">  <p className={activeMenu === "Users" ? "active" : ""} onClick={() => handleMenuClick("Users")}>Users</p></Link>
          <Link to="/admin-dctr"> <p className={activeMenu === "Doctors" ? "active" : ""} onClick={() => handleMenuClick("Doctors")}>Doctors</p> </Link>
-          <p className={activeMenu === "Appointments" ? "active" : ""} onClick={() => handleMenuClick("Appointments")}>Appointments</p>
-          <p className={activeMenu === "Edit Profile" ? "active" : ""} onClick={() => handleMenuClick("Edit Profile")}>Edit Profile</p>
+         <Link to="/admin-appointment"> <p className={activeMenu === "Appointments" ? "active" : ""} onClick={() => handleMenuClick("Appointments")}>Appointments</p> </Link>
           <button>Logout</button>
         </div>
       </div>
@@ -68,35 +67,43 @@ const User = () => {
               id=""
               placeholder="Search Doctor"
               value={searchQuery}
-              onChange={handleSearchChange}
+              onChange={(e) => setSearchQuery(e.target.value)}
             />
           </div>
           <div className="userlist">
-            {filteredDoctors.map((doctor, index) => (
-              <div className="userdiv" key={index}>
-                <div className="dctrimg">
-                  <img src={img} alt="" />
-                </div>
-                <div className="detail">
-                  <div className="leftdet">
-                    <p>Name: </p>
-                    <p>Email: </p>
-                    <p>Contact: </p>
-                    <p>Specialization: </p>
-                  </div>
-                  <div className="leftdet">
-                    <p>{doctor.name}</p>
-                    <p> {doctor.email}</p>
-                    <p> {doctor.phone}</p>
-                    <p> {doctor.specialization}</p>
-                  </div>
-                </div>
-                <button>More</button>
-              </div>
-            ))}
+            <table className="admin-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Fees</th>
+                  <th>Specialization</th>
+                  <th>Contact</th>
+                  <th>Email</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                {filteredUsers.map((user, index) => (
+                  <tr key={index}>
+                    <td>Sagar</td>
+                    <td>1000</td>
+                    <td>Surgeon</td>
+                    <td>9876543210</td>
+                    <td>xyz@gmail.com</td>
+                    <td>
+                    <select name="cars" id="cars">
+  <option value="Pending">Pending</option>
+  <option value="Approved">Approved</option>
+  <option value="Cancelled">Cancelled</option>
+</select>
+
+                      </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
-        <div className="dispdata"></div>
       </div>
     </div>
   );

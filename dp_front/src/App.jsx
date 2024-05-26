@@ -16,7 +16,6 @@ import Dlogin from './Components/Login/Dlogin';
 import FindDoctor from './Components/Doctor/FindDoctor';
 import Mainlogin from './Components/Login/Mainlogin';
 import Admin from './Components/Admin/Admin';
-import User from './Components/Admin/User';
 import Dctr from './Components/Admin/Dctr';
 import Doctor from './Components/Doctor/Doctor';
 import DoctorProfile from './Components/Doctor/DoctorProfile';
@@ -25,6 +24,10 @@ import Medicine from './Components/Search/Medicine';
 import Adminlogin from './Components/Login/Adminlogin';
 import Adminreg from './Components/Register/Adminreg';
 import Success from './Components/Symptom/Success';
+import Appointment from './Components/Admin/Appointment';
+import Userprofile from './Components/Home/Userprofile';
+import Docprofile from './Components/Doctor/Docprofile';
+import Docreviews from './Components/Doctor/Docreviews';
 
 const App = () => {
 
@@ -63,8 +66,12 @@ const App = () => {
             <Routes>
               <Route exact path='/doctor' element={ <Doctor/> } />
               <Route exact path='/admin' element={ <Admin/> } />
-              <Route exact path='/admin-user' element={ <User/> } />
+              <Route exact path='/userprofile' element={ <Userprofile/> } />
+              <Route exact path='/docprofile' element={ <Docprofile/> } />
+              <Route exact path='/doctorreviews' element={ <Docreviews/> } />
+
               <Route exact path='/admin-dctr' element={ <Dctr/> } />
+              <Route exact path='/admin-appointment' element={ <Appointment/> } />
               <Route path="/*" element={<Navigate replace to="/mainlogin"/>} />
               <Route exact key={"doctorregister"} path='/doctorregister' element={<DRegister/> } />
               <Route exact key={"doctorlogin"} path='/doctorlogin' element={<Dlogin/> } />
