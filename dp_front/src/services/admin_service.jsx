@@ -1,5 +1,23 @@
 import clientApi from "./client_api";
 
+function getToken() {
+    const saved = localStorage.getItem("adminDetails");
+    let initial = "";
+    if(saved){
+      initial = JSON.parse(saved).Token;
+      initial = initial.toString();
+    }
+    return initial;
+}
+
+clientApi.interceptors.request.use(config => {
+    const token = getToken();
+    if (token) {
+      config.headers['Authorization'] = `Bearer ${token}`;
+    }
+    return config;
+  }, error => Promise.reject(error));
+
 class adminService{
     constructor(){
         this.endpoint="/admin"
@@ -10,6 +28,10 @@ class adminService{
     }
     login(creds){
         const req = clientApi.post(this.endpoint+'/login',creds);
+        return req;
+    }
+    getAllUsers(){
+        const req = clientApi.post('/users/getAll');
         return req;
     }
 }

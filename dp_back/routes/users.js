@@ -63,8 +63,8 @@ router.post('/get', async (req, res)=>{
     }
 });
 
-router.patch('/', async(req, res)=>{
-    const uid = req.body.uid
+router.patch('/', authenticate, restrict(["user"]), async(req, res)=>{
+    const uid = req.userid
     if(!uid){ return res.status(400).send("User id is missing!"); }
 
     try{
@@ -109,7 +109,7 @@ router.post('/login', async(req, res)=>{
     }
 });
 
-router.post('/getAll', async (req, res)=>{
+router.post('/getAll', authenticate, restrict(["admin"]) , async (req, res)=>{
     try{
         const user= await User.find({}).select("-password");
 

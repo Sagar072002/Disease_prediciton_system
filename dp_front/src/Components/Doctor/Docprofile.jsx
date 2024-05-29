@@ -5,45 +5,47 @@ import { Link } from "react-router-dom";
 import userService from "../../services/user_service";
 import { Formik, FieldArray } from "formik";
 import * as Yup from "yup";
+import doctorService from "../../services/doc_service";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Docprofile = () => {
   const [activeMenu, setActiveMenu] = useState("Edit Profile");
-  const [searchQuery, setSearchQuery] = useState("");
-  const [userList, setUserList] = useState([]);
-
-  useEffect(() => {
-    userService.getAll()
-      .then((res) => {
-        console.log("Res:", res.data);
-        setUserList(res.data);
-      })
-      .catch((err) => {
-        console.log("Error:", err);
-      });
-  }, []);
-
-  useEffect(() => {
-    const filtered = userList.filter(
-      (user) =>
-        user.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        user.email.toLowerCase().includes(searchQuery.toLowerCase())
-    );
-    // setFilteredUsers(filtered); // Not used in this snippet
-  }, [searchQuery, userList]);
 
   const validationSchema = Yup.object({
-    name: Yup.string().required("Name is required"),
-    email: Yup.string().email("Invalid email address").required("Email is required"),
-    phoneNumber: Yup.string().required("Phone number is required"),
-    price: Yup.number().required("Price is required"),
-    specialisation: Yup.string().required("Specialisation is required"),
-    qualifications: Yup.array().of(Yup.string().required("Qualification is required")),
-    timeSlot: Yup.array().of(Yup.string().required("Time slot is required")),
-    address: Yup.string().required("Address is required"),
-    introduction: Yup.string().required("Introduction is required")
+    name: Yup.string(),
+    email: Yup.string().email("Invalid email address"),
+    phoneNumber: Yup.string(),
+    price: Yup.number(),
+    specialisation: Yup.string(),
+    qualifications: Yup.array().of(Yup.string()),
+    timeSlot: Yup.array().of(Yup.string()),
+    address: Yup.string(),
+    introduction: Yup.string()
   });
+  const showToastMessage =(msg) => {
+    // console.log("called ",msg)
+    if(msg === "success"){
+      toast.success('UPDATE SUCCESSFUL !', {
+          position: toast.POSITION.BOTTOM_CENTER,
+          autoClose: 2000,
+          pauseOnHover: false,
+          hideProgressBar: true
+      });
+    }
+    else if(msg === "failed"){
+      toast.warning('Failed to update !', {
+          position: toast.POSITION.BOTTOM_CENTER,
+          autoClose: 2000,
+          pauseOnHover: false,
+          hideProgressBar: true
+      });
+    }
+    };
 
   return (
+    <>
+    <ToastContainer/>
     <div className="admin admindct">
       <div className="sidebar">
         {/* <div className="logo">
@@ -89,11 +91,28 @@ const Docprofile = () => {
                 introduction: ""
               }}
               validationSchema={validationSchema}
-              onSubmit={(values) => {
-                console.log("Form Values:", values);
-                // Handle form submission
+              onSubmit={(values, action) => {
+                const data={
+                  name:values.name,
+                  email:values.email,
+                  phone:values.phoneNumber,
+                  price:values.price,
+                  specialization:values.specialisation,
+                  qualifications:values.qualifications,
+                  timeSlots:values.timeSlot,
+                  address:values.address,
+                  about:values.introduction,
+                }
+                console.log(data);
+                doctorService.update(data).then((res)=>{
+                  console.log("Res: ",res)
+                  showToastMessage("success");
+                }).catch((err)=>{
+                  console.log("Error: ",err)
+                })
+                action.resetForm();
               }}
-            >
+              >
               {formik => (
                 <form onSubmit={formik.handleSubmit} className="profiles">
                   <div className="adminform">
@@ -121,7 +140,7 @@ const Docprofile = () => {
     onChange={formik.handleChange}
     onBlur={formik.handleBlur}
     value={formik.values.email}
-  />
+    />
   {formik.touched.email && formik.errors.email ? (
     <div className="form-error">{formik.errors.email}</div>
   ) : null}
@@ -135,7 +154,7 @@ const Docprofile = () => {
     onChange={formik.handleChange}
     onBlur={formik.handleBlur}
     value={formik.values.phoneNumber}
-  />
+    />
   {formik.touched.phoneNumber && formik.errors.phoneNumber ? (
     <div className="form-error">{formik.errors.phoneNumber}</div>
   ) : null}
@@ -149,7 +168,7 @@ const Docprofile = () => {
     onChange={formik.handleChange}
     onBlur={formik.handleBlur}
     value={formik.values.price}
-  />
+    />
   {formik.touched.price && formik.errors.price ? (
     <div className="form-error">{formik.errors.price}</div>
   ) : null}
@@ -163,7 +182,7 @@ const Docprofile = () => {
     onChange={formik.handleChange}
     onBlur={formik.handleBlur}
     value={formik.values.specialisation}
-  />
+    />
   {formik.touched.specialisation && formik.errors.specialisation ? (
     <div className="form-error">{formik.errors.specialisation}</div>
   ) : null}
@@ -183,7 +202,7 @@ const Docprofile = () => {
                                   value={qualification}
                                   onChange={formik.handleChange}
                                   onBlur={formik.handleBlur}
-                                />
+                                  />
                                 {formik.touched.qualifications && formik.errors.qualifications && formik.errors.qualifications[index] ? (
                                   <div className="form-error">{formik.errors.qualifications[index]}</div>
                                 ) : null}
@@ -208,7 +227,7 @@ const Docprofile = () => {
                                   value={slot}
                                   onChange={formik.handleChange}
                                   onBlur={formik.handleBlur}
-                                />
+                                  />
                                 {formik.touched.timeSlot && formik.errors.timeSlot && formik.errors.timeSlot[index] ? (
                                   <div className="form-error">{formik.errors.timeSlot[index]}</div>
                                 ) : null}
@@ -229,7 +248,7 @@ const Docprofile = () => {
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         value={formik.values.address}
-                      />
+                        />
                       {formik.touched.address && formik.errors.address ? (
                         <div className="form-error">{formik.errors.address}</div>
                       ) : null}
@@ -243,7 +262,7 @@ const Docprofile = () => {
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         value={formik.values.introduction}
-                      />
+                        />
                       {formik.touched.introduction && formik.errors.introduction ? (
                         <div className="form-error">{formik.errors.introduction}</div>
                       ) : null}
@@ -261,6 +280,7 @@ const Docprofile = () => {
         </div>
       </div>
     </div>
+  </>
   );
 };
 

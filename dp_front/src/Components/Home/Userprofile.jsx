@@ -1,18 +1,41 @@
-import React from 'react';
-import { Formik, Field } from 'formik';
+import { Formik } from 'formik';
 import * as Yup from 'yup';
+import userService from '../../services/user_service';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Userprofile = () => {
   // Define validation schema using Yup
   const validationSchema = Yup.object().shape({
-    name: Yup.string().required('Name is required'),
-    email: Yup.string().email('Invalid email').required('Email is required'),
-    phoneNumber: Yup.string().required('Phone number is required'),
-    age: Yup.number().required('Age is required'),
-    gender: Yup.string().required('Gender is required'),
+    name: Yup.string(),
+    email: Yup.string().email('Invalid email'),
+    phoneNumber: Yup.number(),
+    age: Yup.number(),
+    gender: Yup.string()
   });
+  const showToastMessage =(msg) => {
+    // console.log("called ",msg)
+    if(msg === "success"){
+      toast.success('UPDATE SUCCESSFUL !', {
+          position: toast.POSITION.BOTTOM_CENTER,
+          autoClose: 2000,
+          pauseOnHover: false,
+          hideProgressBar: true
+      });
+    }
+    else if(msg === "failed"){
+      toast.warning('Failed to update !', {
+          position: toast.POSITION.BOTTOM_CENTER,
+          autoClose: 2000,
+          pauseOnHover: false,
+          hideProgressBar: true
+      });
+    }
+    };
 
   return (
+    <>
+    <ToastContainer/>
     <div className='prof userprofile'>
       <div className="profile-div">
         <h2>Edit Profile</h2>
@@ -26,11 +49,23 @@ const Userprofile = () => {
             gender: '',
           }}
           validationSchema={validationSchema}
-          onSubmit={(values, { setSubmitting }) => {
-            // Handle form submission here
-            console.log(values);
-            // After form submission logic, you can reset form or perform other actions
-            setSubmitting(false);
+          onSubmit={(values,action ) => {
+            const data={
+              username:values.name,
+              email:values.email,
+              phone:values.phoneNumber,
+              age:values.age,
+              gender:values.gender
+            }
+            console.log(data);
+            userService.update(data).then((res)=>{
+              console.log("Res: ",res)
+              showToastMessage("success");
+            }).catch((err)=>{
+              console.log("Error: ",err)
+              
+            })
+            action.resetForm();
           }}
         >
           {/* Form content */}
@@ -46,7 +81,7 @@ const Userprofile = () => {
                     id="name"
                     onChange={handleChange}
                     value={values.name}
-                  />
+                    />
                   {errors.name && <div className="form-error">{errors.name}</div>}
                 </div>
                 {/* Input field for email */}
@@ -58,7 +93,7 @@ const Userprofile = () => {
                     id="email"
                     onChange={handleChange}
                     value={values.email}
-                  />
+                    />
                   {errors.email && <div className="form-error">{errors.email}</div>}
                 </div>
                 {/* Input field for phone number */}
@@ -70,7 +105,7 @@ const Userprofile = () => {
                     id="phoneNumber"
                     onChange={handleChange}
                     value={values.phoneNumber}
-                  />
+                    />
                   {errors.phoneNumber && <div className="form-error">{errors.phoneNumber}</div>}
                 </div>
                 {/* Input field for age */}
@@ -94,7 +129,7 @@ const Userprofile = () => {
                     id="gender"
                     onChange={handleChange}
                     value={values.gender}
-                  />
+                    />
                   {errors.gender && <div className="form-error">{errors.gender}</div>}
                 </div>
               </div>
@@ -108,6 +143,7 @@ const Userprofile = () => {
         </Formik>
       </div>
     </div>
+    </>
   );
 }
 

@@ -120,15 +120,15 @@ router.post('/getRequired', async (req, res)=>{
     }
 });
 
-router.patch('/', async(req, res)=>{
-    const uid = req.body.uid
+router.patch('/', authenticate, restrict(["doctor"]), async(req, res)=>{
+    const uid = req.userid
     if(!uid){ return res.status(400).send("User id is missing!"); }
 
     try{
         let user = await Doctor.findOne({ _id: uid })
 
-        if(req.body.username) user.name = req.body.username;
-        if(req.body.address) user.address = req.body.addressphone
+        if(req.body.name) user.name = req.body.name;
+        if(req.body.address) user.address = req.body.address;
         if(req.body.phone) user.phone = req.body.phone;
         if(req.body.email) user.email = req.body.email;
         if(req.body.price) user.price = req.body.price;

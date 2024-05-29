@@ -33,8 +33,8 @@ class doctorService{
         return req;
     }
 
-    update(uid, changes){
-        const req = clientApi.patch(this.endpoint, { ...changes, uid: uid })
+    update( changes){
+        const req = clientApi.patch(this.endpoint,changes)
 
         return req;
     }

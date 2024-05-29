@@ -56,7 +56,8 @@ const Login = () => {
           setUid(res.data.uid);
           saveToken({"uid": res.data.uid, "Token":res.data.token})
           await delay(100);
-          navigate("/")
+          // navigate("/")
+          window.location.replace('http://localhost:5173/')
         }).catch((err)=>{
           toast.warning('Invalid credentials',err.response.data);
         })
