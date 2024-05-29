@@ -74,9 +74,9 @@ const Adminlogin = () => {
       <div className='formbox'>
 
       <div className="box">
-      <i class="fa fa-envelope" />
+      <i class="fa fa-user" />
         <div>
-        <input  type="text"  placeholder="adminname"  
+        <input  type="text"  placeholder="admin name"  
                       autoComplete="off"
                       name="username"
                       id="username"

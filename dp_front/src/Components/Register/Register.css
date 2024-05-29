@@ -9,6 +9,9 @@
     display: flex ;
     gap:80px;
 }
+.admin-register-container input{
+  border: none !important;
+}
 .doctor-register form div{
     width:35%;
 }
