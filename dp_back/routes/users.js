@@ -109,16 +109,6 @@ router.post('/login', async(req, res)=>{
     }
 });
 
-router.post('/getAll', authenticate, restrict(["admin"]) , async (req, res)=>{
-    try{
-        const user= await User.find({}).select("-password");
-
-        res.json(user)
-    }catch(err){
-        res.status(400).send(err);
-    }
-});
-
 router.post('/getAppointments', authenticate, restrict(["user"]), async(req,res)=>{
     try{
         const bookings = await Booking.find({user:req.userid});

@@ -81,25 +81,6 @@ router.post('/get', async (req, res)=>{
     }
 });
 
-// router.post('/getAll', authenticate, restrict(["admin","doctor","user"]), async (req, res)=>{
-//     try{
-//         const user= await Doctor.find({});
-
-//         res.json(user)
-//     }catch(err){
-//         res.status(400).send(err);
-//     }
-// });
-router.post('/getAll', authenticate, restrict(["admin"]) , async (req, res)=>{
-    try{
-        const user= await Doctor.find({}).select('-password');
-
-        res.json(user)
-    }catch(err){
-        res.status(400).send(err);
-    }
-});
-
 router.post('/getRequired', async (req, res)=>{
     try{
         const {query} = req.query;
@@ -136,22 +117,6 @@ router.patch('/', authenticate, restrict(["doctor"]), async(req, res)=>{
         if(req.body.qualifications) user.qualifications = req.body.qualifications;
         if(req.body.about) user.about = req.body.about;
         if(req.body.timeSlots) user.timeSlots = req.body.timeSlots;
-
-        user = await user.save();
-        res.send(user);
-    }catch(err){
-        res.status(400).send(err);
-    }
-});
-
-router.patch('/status', authenticate, restrict(["admin"]), async(req, res)=>{
-    const uid = req.body.uid
-    if(!uid){ return res.status(400).send("User id is missing!"); }
-
-    try{
-        let user = await Doctor.findOne({ _id: uid })
-
-        if(req.body.status) user.isApproved = req.body.status;
 
         user = await user.save();
         res.send(user);

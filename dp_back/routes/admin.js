@@ -3,6 +3,8 @@ const router = express.Router();
 const joi = require('joi');
 const mongoose = require('mongoose');
 const Admin = require('../models/adminModel');
+const User = require('../models/userModel');
+const Doctor = require('../models/doctorModel');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
@@ -67,6 +69,42 @@ router.post('/login', async(req, res)=>{
             }
             else{ res.status(400).send("Invalid Credentials!"); }
         }
+    }catch(err){
+        res.status(400).send(err);
+    }
+});
+
+router.post('/getAllUsers', authenticate, restrict(["admin"]) , async (req, res)=>{
+    try{
+        const user= await User.find({}).select("-password");
+
+        res.json(user)
+    }catch(err){
+        res.status(400).send(err);
+    }
+});
+
+router.post('/getAllDocs', authenticate, restrict(["admin"]) , async (req, res)=>{
+    try{
+        const user= await Doctor.find({}).select('-password');
+
+        res.json(user)
+    }catch(err){
+        res.status(400).send(err);
+    }
+});
+
+router.patch('/updateDocStatus', authenticate, restrict(["admin"]), async(req, res)=>{
+    const uid = req.body.uid
+    if(!uid){ return res.status(400).send("User id is missing!"); }
+
+    try{
+        let user = await Doctor.findOne({ _id: uid })
+
+        if(req.body.status) user.isApproved = req.body.status;
+
+        user = await user.save();
+        res.send(user);
     }catch(err){
         res.status(400).send(err);
     }

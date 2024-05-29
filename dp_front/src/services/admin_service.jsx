@@ -31,16 +31,17 @@ class adminService{
         return req;
     }
     getAllUsers(){
-        const req = clientApi.post('/users/getAll');
+        const req = clientApi.post(this.endpoint+'/getAllUsers');
         return req;
     }
 
     getAllDocs(){
-        const req = clientApi.post('/doctor/getAll');
+        const req = clientApi.post(this.endpoint+'/getAllDocs');
         return req;
     }
+
     updateDocStatus(data){
-        const req = clientApi.patch('/doctor/status',data);
+        const req = clientApi.patch(this.endpoint+'/updateDocStatus', data);
         return req;
     }
 }
