@@ -3,7 +3,7 @@ import "./admin.css";
 import img from "../../assets/man.jpg";
 import img1 from "../../assets/logo.png";
 import { Link } from "react-router-dom";
-import userService from "../../services/user_service";
+import adminService from "../../services/admin_service";
 import { SiteContext } from "../../context/siteContext";
 
 
@@ -33,7 +33,7 @@ const Admin = () => {
   };
 
   useEffect(()=>{
-    userService.getAll().then((res)=>{
+    adminService.getAllUsers().then((res)=>{
       console.log("Res : ",res.data)
       setUserList(res.data)
     }).catch((err)=>{

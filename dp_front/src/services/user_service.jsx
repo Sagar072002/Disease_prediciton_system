@@ -35,20 +35,14 @@ class userService{
         return req;
     }
 
-    update(uid, changes){
-        const req = clientApi.patch(this.endpoint, { ...changes, uid: uid })
+    update(changes){
+        const req = clientApi.patch(this.endpoint, changes)
 
         return req;
     }
 
     getInfo(uid){
         const req = clientApi.post(this.endpoint+'/get', {uid: uid})
-
-        return req;
-    }
-
-    getAll(){
-        const req = clientApi.post(this.endpoint+'/getAll')
 
         return req;
     }
