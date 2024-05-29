@@ -34,6 +34,10 @@ class adminService{
         const req = clientApi.post('/users/getAll');
         return req;
     }
+    updateDocStatus(data){
+        const req = clientApi.patch('/doctor/status',data);
+        return req;
+    }
 }
 
 export default new adminService;

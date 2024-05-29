@@ -3,14 +3,35 @@ import "./admin.css";
 import img from "../../assets/man.jpg";
 import img1 from "../../assets/logo.png";
 import { Link } from "react-router-dom";
+import adminService from "../../services/admin_service";
 import doctorService from "../../services/doc_service";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const User = () => {
   const [activeMenu, setActiveMenu] = useState("Doctors");
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredUsers, setFilteredUsers] = useState([]);
   const [dctrList, setDctrList] = useState([]);
+  const showToastMessage =(msg) => {
+    // console.log("called ",msg)
+    if(msg === "success"){
+      toast.success('Status Updated !', {
+          position: toast.POSITION.BOTTOM_CENTER,
+          autoClose: 1000,
+          pauseOnHover: false,
+          hideProgressBar: true
+      });
+    }
+    else if(msg === "failed"){
+      toast.warning('Update failed !', {
+          position: toast.POSITION.BOTTOM_CENTER,
+          autoClose: 1000,
+          pauseOnHover: false,
+          hideProgressBar: true
+      });
+    }
+    };
 
   const handleMenuClick = (menu) => {
     setActiveMenu(menu);
@@ -36,10 +57,26 @@ const User = () => {
     setFilteredUsers(filtered);
   }, [searchQuery, dctrList]);
 
+  const handleChange=(value,uid)=>{
+    const data={
+      status:value,
+      uid:uid
+    }
+    adminService.updateDocStatus(data).then((res)=>{
+      console.log("Res :",res)
+      showToastMessage("success");
+    }).catch((err)=>{
+      console.log("Error :",err)
+      showToastMessage("failed");
+    })
+  }
+
 
   if (!dctrList.length) return <div>Loading...</div>;
 
   return (
+    <>
+    <ToastContainer/>
     <div className="admin admindct">
       <div className="sidebar">
         {/* <div className='logo'>
@@ -68,7 +105,7 @@ const User = () => {
               placeholder="Search Doctor"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-            />
+              />
           </div>
           <div className="userlist">
             <table className="admin-table">
@@ -91,10 +128,10 @@ const User = () => {
                     <td>{user.phone}</td>
                     <td>{user.email}</td>
                     <td>
-                    <select name="status" id="status">
-                      <option value="Pending">Pending</option>
-                      <option value="Approved">Approved</option>
-                      <option value="Cancelled">Cancelled</option>
+                    <select onChange={(e)=>{handleChange(e.target.value,user._id)}} name="status" id="status">
+                      <option value="pending">Pending</option>
+                      <option value="approved">Approved</option>
+                      <option value="cancelled">Cancelled</option>
                     </select>
 
                     </td>
@@ -106,6 +143,7 @@ const User = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

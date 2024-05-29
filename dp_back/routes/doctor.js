@@ -144,6 +144,22 @@ router.patch('/', authenticate, restrict(["doctor"]), async(req, res)=>{
     }
 });
 
+router.patch('/status', authenticate, restrict(["admin"]), async(req, res)=>{
+    const uid = req.body.uid
+    if(!uid){ return res.status(400).send("User id is missing!"); }
+
+    try{
+        let user = await Doctor.findOne({ _id: uid })
+
+        if(req.body.status) user.isApproved = req.body.status;
+
+        user = await user.save();
+        res.send(user);
+    }catch(err){
+        res.status(400).send(err);
+    }
+});
+
 router.post('/login', async(req, res)=>{
     const email= req.body.email;
     const password= req.body.password;
