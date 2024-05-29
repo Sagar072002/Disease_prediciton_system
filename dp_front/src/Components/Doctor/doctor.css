@@ -6,6 +6,7 @@
 }
 .admin .review-section{
   min-height:90vh;
+  justify-content: start;
 }
 .profile{
     border:1px solid #ddd;

@@ -50,8 +50,7 @@ const Docreviews = () => {
             </div>
             <div className="rightside revsec">
                 <div className="review-section">
-                    <h1>Customer Reviews</h1>
-                    <p className="text">Read what our customers have to say about us</p>
+                    <h1>User Reviews</h1>
                     <div className="inner-review">
                         {filteredReviews.map((review) => (
                             <div className="review" key={review._id}>

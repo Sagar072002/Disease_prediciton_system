@@ -77,11 +77,11 @@ const AdminReg = () => {
             <h2>Admin Register</h2>
             <div className='formbox'>
               <div className="box">
-                <i className="fa-solid fa-envelope" />
+                <i className="fa-solid fa-user" />
                 <div>
                   <input
                     type="text"
-                    placeholder="adminname"
+                    placeholder="admin name"
                     autoComplete="off"
                     name="adminname"
                     id="adminname"
