@@ -4,6 +4,9 @@
     justify-content: center;
     padding:40px 30px;
 }
+.admin .review-section{
+  min-height:90vh;
+}
 .profile{
     border:1px solid #ddd;
     background-color: aliceblue;
@@ -25,6 +28,10 @@ align-items: center;
     border-radius: 5px;
     width:220px;
     height:200px;
+}
+.adminform{
+  display: flex;
+  gap:50px;
 }
 .profile .top .profession{
     background-color: #84eeee;

@@ -46,10 +46,10 @@ const Docprofile = () => {
   return (
     <div className="admin admindct">
       <div className="sidebar">
-        <div className="logo">
+        {/* <div className="logo">
           <img src={img1} alt="Logo" />
           <p>DISPRED</p>
-        </div>
+        </div> */}
         <div className="image">
           <img src={img} alt="Profile" />
           <p>Sagar Negi</p>
@@ -70,7 +70,6 @@ const Docprofile = () => {
               Edit Profile
             </p>
           </Link>
-          <button>Logout</button>
         </div>
       </div>
       <div className="rightside">
@@ -97,6 +96,7 @@ const Docprofile = () => {
             >
               {formik => (
                 <form onSubmit={formik.handleSubmit} className="profiles">
+                  <div className="adminform">
                   <div className="profile-container">
                     <div className="input-field">
                       <label htmlFor="name">Name</label>
@@ -187,10 +187,10 @@ const Docprofile = () => {
                                 {formik.touched.qualifications && formik.errors.qualifications && formik.errors.qualifications[index] ? (
                                   <div className="form-error">{formik.errors.qualifications[index]}</div>
                                 ) : null}
-                                <button type="button" onClick={() => remove(index)}>-</button>
+                                <button type="button" className="push" onClick={() => remove(index)}>-</button>
+                                <button type="button" className="push" onClick={() => push('')}>+</button>
                               </div>
                             ))}
-                            <button type="button" onClick={() => push('')}>+</button>
                           </div>
                         </>
                       )}
@@ -212,10 +212,10 @@ const Docprofile = () => {
                                 {formik.touched.timeSlot && formik.errors.timeSlot && formik.errors.timeSlot[index] ? (
                                   <div className="form-error">{formik.errors.timeSlot[index]}</div>
                                 ) : null}
-                                <button type="button" onClick={() => remove(index)}>-</button>
+                                <button type="button" className="push" onClick={() => remove(index)}>-</button>
+                                <button type="button" className="push" onClick={() => push('')}>+</button>
                               </div>
                             ))}
-                            <button type="button" onClick={() => push('')}>+</button>
                           </div>
                           </>
                       )}
@@ -248,6 +248,7 @@ const Docprofile = () => {
                         <div className="form-error">{formik.errors.introduction}</div>
                       ) : null}
                     </div>
+                  </div>
                   </div>
                   <div>
                     <button type="submit" className="submitbutton">Submit</button>
