@@ -90,9 +90,9 @@ router.post('/get', async (req, res)=>{
 //         res.status(400).send(err);
 //     }
 // });
-router.post('/getAll', async (req, res)=>{
+router.post('/getAll', authenticate, restrict(["admin"]) , async (req, res)=>{
     try{
-        const user= await Doctor.find({});
+        const user= await Doctor.find({}).select('-password');
 
         res.json(user)
     }catch(err){

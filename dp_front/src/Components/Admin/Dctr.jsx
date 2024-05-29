@@ -4,7 +4,6 @@ import img from "../../assets/man.jpg";
 import img1 from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import adminService from "../../services/admin_service";
-import doctorService from "../../services/doc_service";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -38,7 +37,7 @@ const User = () => {
   };
 
   useEffect(()=>{
-    doctorService.getAll().then((res)=>{
+    adminService.getAllDocs().then((res)=>{
       console.log("Res : ",res.data)
       setDctrList(res.data)
     }).catch((err)=>{
@@ -128,7 +127,7 @@ const User = () => {
                     <td>{user.phone}</td>
                     <td>{user.email}</td>
                     <td>
-                    <select onChange={(e)=>{handleChange(e.target.value,user._id)}} name="status" id="status">
+                    <select onChange={(e)=>{handleChange(e.target.value,user._id)}} defaultValue={user.isApproved} name="status" id="status">
                       <option value="pending">Pending</option>
                       <option value="approved">Approved</option>
                       <option value="cancelled">Cancelled</option>

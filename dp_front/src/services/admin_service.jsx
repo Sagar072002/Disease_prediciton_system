@@ -34,6 +34,11 @@ class adminService{
         const req = clientApi.post('/users/getAll');
         return req;
     }
+
+    getAllDocs(){
+        const req = clientApi.post('/doctor/getAll');
+        return req;
+    }
     updateDocStatus(data){
         const req = clientApi.patch('/doctor/status',data);
         return req;

@@ -45,7 +45,7 @@ class doctorService{
     }
 
     getAll(){
-        const req = clientApi.post(this.endpoint+'/getAll');
+        const req = clientApi.post(this.endpoint+'/getRequired');
         return req;
     }
 
