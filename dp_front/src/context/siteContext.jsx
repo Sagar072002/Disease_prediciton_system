@@ -17,6 +17,7 @@ export const SiteContextProvider = (props) => {
         quesList: {},
         SymList: {},
         SymValList: {},
+        predResult:[],
     });
 
     const logout = () => {

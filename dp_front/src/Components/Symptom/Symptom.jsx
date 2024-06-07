@@ -916,15 +916,20 @@ const [othersClick, setOthersClick] = useState(false);
       setSelectedSymptoms(syms);
       setSelectedSymptomsVal(symsVal);
     }
+    if(userState.predResult){
+        const parsedResult = userState.predResult;
+        setResult(parsedResult);
+    }
   }, []);
 
   useEffect(() => {
     let newState = { ...userState };
     newState.SymList = selectedSymptoms;
     newState.SymValList = selectedSymptomsVal;
+    newState.predResult = result 
     setUserState(newState);
     saveUserState(newState);
-  }, [selectedSymptomsVal]);
+  }, [selectedSymptomsVal,result]);
 
 
   const handleItemClick = (index) => {
@@ -951,7 +956,12 @@ const [othersClick, setOthersClick] = useState(false);
     toast.success("Symptom removed.", {
       position: toast.POSITION.TOP_CENTER
     });
+    console.log("Length",selectedSymptoms.length)
+    if(selectedSymptoms.length === 1){
+      setResult([]);
+    }
   };
+
   const handleRemoveSelectedItem = (indexToRemove) => {
     const updatedSelectedItems = selectedItems.filter((_, index) => index !== indexToRemove);
     console.log("updatedSelectedItems: ",updatedSelectedItems)
@@ -977,6 +987,7 @@ const [othersClick, setOthersClick] = useState(false);
         // Check if res.data is an array, if not, parse it
         const parsedResult = Array.isArray(res.data) ? res.data : JSON.parse(res.data);
         setResult(parsedResult);
+
       })
       .catch((err) => {
         console.log('Pred error:', err);
@@ -986,9 +997,9 @@ const [othersClick, setOthersClick] = useState(false);
   
   const handleClear = () => {
     setSelectedSymptoms([]);
-    setSelectedItems([]);
-    // setSelectedSymptoms(updatedSymptoms);
     setSelectedSymptomsVal([]);
+    setSelectedItems([]);
+    setResult([]);
   };
   return (
     <>
