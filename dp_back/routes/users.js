@@ -51,8 +51,8 @@ router.post('/',async (req, res)=>{
     }
 });
 
-router.post('/get', async (req, res)=>{
-    const uid = req.body.uid;
+router.post('/get', authenticate, restrict(["user"]), async (req, res)=>{
+    const uid = req.userid;
 
     try{
         const user= await User.findOne({ _id: uid });

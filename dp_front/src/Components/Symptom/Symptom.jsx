@@ -987,6 +987,8 @@ const [othersClick, setOthersClick] = useState(false);
   const handleClear = () => {
     setSelectedSymptoms([]);
     setSelectedItems([]);
+    // setSelectedSymptoms(updatedSymptoms);
+    setSelectedSymptomsVal([]);
   };
   return (
     <>

@@ -41,8 +41,8 @@ class userService{
         return req;
     }
 
-    getInfo(uid){
-        const req = clientApi.post(this.endpoint+'/get', {uid: uid})
+    getInfo(){
+        const req = clientApi.post(this.endpoint+'/get')
 
         return req;
     }

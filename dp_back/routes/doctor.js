@@ -69,8 +69,8 @@ router.post('/',async (req, res)=>{
     }
 });
 
-router.post('/get', async (req, res)=>{
-    const uid = req.body.uid;
+router.post('/get', authenticate, restrict(["doctor"]), async (req, res)=>{
+    const uid = req.userid;
 
     try{
         const user= await Doctor.findOne({ _id: uid }).populate('reviews').select("-password");

@@ -10,7 +10,19 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Docprofile = () => {
+
+  const [doc, setDoc] = useState({})
+  const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
   const [activeMenu, setActiveMenu] = useState("Edit Profile");
+
+  useEffect(()=>{
+    doctorService.get().then((res)=>{
+      console.log("Res:",res)
+      setDoc(res.data)
+    }).catch((err)=>{
+      console.log("Error :", err)
+    })
+  },[])
 
   const validationSchema = Yup.object({
     name: Yup.string(),
@@ -42,6 +54,8 @@ const Docprofile = () => {
       });
     }
     };
+
+  if(!doc) return <div>Loading....</div>
 
   return (
     <>
@@ -80,16 +94,17 @@ const Docprofile = () => {
             <h2>Edit Profile</h2>
             <Formik
               initialValues={{
-                name: "",
-                email: "",
-                phoneNumber: "",
-                price: "",
-                specialisation: "",
-                qualifications: [""],
-                timeSlot: [""],
-                address: "",
-                introduction: ""
+                name: doc.name || "",
+                email: doc.email || "",
+                phoneNumber: doc.phone || "",
+                price: doc.price || "",
+                specialisation: doc.specialization || "",
+                qualifications: doc.qualifications || [""],
+                timeSlot: doc.timeSlots || [""],
+                address: doc.address || "",
+                introduction: doc.about || ""
               }}
+              enableReinitialize= "true"
               validationSchema={validationSchema}
               onSubmit={(values, action) => {
                 const data={
@@ -107,6 +122,8 @@ const Docprofile = () => {
                 doctorService.update(data).then((res)=>{
                   console.log("Res: ",res)
                   showToastMessage("success");
+                  delay(1000)
+                  window.location.reload()
                 }).catch((err)=>{
                   console.log("Error: ",err)
                 })

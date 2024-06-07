@@ -3,9 +3,22 @@ import * as Yup from 'yup';
 import userService from '../../services/user_service';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useEffect, useState } from 'react';
 
 const Userprofile = () => {
-  // Define validation schema using Yup
+  
+  const [user, setUser] = useState({})
+  const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+  useEffect(()=>{
+    userService.getInfo().then((res)=>{
+      console.log("Res:",res)
+      setUser(res.data)
+    }).catch((err)=>{
+      console.log("Error :", err)
+    })
+  },[])
+
   const validationSchema = Yup.object().shape({
     name: Yup.string(),
     email: Yup.string().email('Invalid email'),
@@ -33,21 +46,23 @@ const Userprofile = () => {
     }
     };
 
+  if(!user) return <div>Loading....</div>
+
   return (
     <>
     <ToastContainer/>
     <div className='prof userprofile'>
       <div className="profile-div">
         <h2>Edit Profile</h2>
-        {/* Wrap the form with Formik and utilize its props */}
         <Formik
           initialValues={{
-            name: '',
-            email: '',
-            phoneNumber: '',
-            age: '',
-            gender: '',
+            name: user.username || "",
+            email: user.email || "",
+            phoneNumber: user.phone || "",
+            age: user.age || "",
+            gender: user.gender || "",
           }}
+          enableReinitialize= "true"
           validationSchema={validationSchema}
           onSubmit={(values,action ) => {
             const data={
@@ -61,6 +76,8 @@ const Userprofile = () => {
             userService.update(data).then((res)=>{
               console.log("Res: ",res)
               showToastMessage("success");
+              delay(1000)
+              window.location.reload()
             }).catch((err)=>{
               console.log("Error: ",err)
               

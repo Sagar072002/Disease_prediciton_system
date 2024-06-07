@@ -39,8 +39,8 @@ class doctorService{
         return req;
     }
 
-    get(uid){
-        const req = clientApi.post(this.endpoint+'/get',{uid:uid});
+    get(){
+        const req = clientApi.post(this.endpoint+'/get');
         return req;
     }
 
