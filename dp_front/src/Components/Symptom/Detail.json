@@ -2831,7 +2831,189 @@
         "Ketogenic diet in some cases, especially in children."
       ]
     },
-    
+    "Esophagitis": {
+      "disease_name": "Esophagitis",
+      "disease_detail": "Esophagitis is inflammation of the esophagus, often caused by irritation from stomach acid or other gastric contents.",
+      "cause": [
+        "Chronic acid reflux (gastroesophageal reflux disease, or GERD).",
+        "Infections (such as Candida or herpes simplex virus).",
+        "Certain medications (such as nonsteroidal anti-inflammatory drugs or bisphosphonates)."
+      ],
+      "symptoms": [
+        "Difficulty or pain with swallowing (odynophagia).",
+        "Chest pain or heartburn.",
+        "Acid reflux.",
+        "Nausea or vomiting.",
+        "Difficulty or pain with swallowing (odynophagia)."
+      ],
+      "prevention": [
+        "Maintaining a healthy weight.",
+        "Avoiding trigger foods that exacerbate symptoms (e.g., spicy or acidic foods).",
+        "Not lying down for at least three hours after eating.",
+        "Raising the head of the bed."
+      ],
+      "alternative": [],
+      "doctor": "Gastroenterologist",
+      "treatment": [
+        "Antacids or proton pump inhibitors to reduce stomach acid production.",
+        "Dietary and lifestyle changes.",
+        "Antifungal medications for esophageal candidiasis.",
+        "Treatment of underlying conditions, if applicable."
+      ]
+    },
+    "Ethmoiditis": {
+      "disease_name": "Ethmoiditis",
+      "disease_detail": "Ethmoiditis is inflammation of the ethmoid sinuses, which are located between the eyes and behind the nose. It is often caused by a bacterial or viral infection.",
+      "cause": [
+        "Bacterial or viral infection, often secondary to an upper respiratory tract infection."
+      ],
+      "symptoms": [
+        "Nasal congestion.",
+        "Facial pain or pressure, often between the eyes.",
+        "Headache, often worsened by bending forward.",
+        "Tenderness over the bridge of the nose.",
+        "Reduced sense of smell (hyposmia) or taste."
+      ],
+      "prevention": [
+        "Practicing good hand hygiene to reduce the risk of upper respiratory infections.",
+        "Avoiding close contact with individuals who have respiratory infections."
+      ],
+      "alternative": [],
+      "doctor": "Otolaryngologist",
+      "treatment": [
+        "Antibiotics to treat bacterial infections.",
+        "Nasal decongestants or corticosteroids to relieve congestion and inflammation.",
+        "Pain relievers.",
+        "Warm compresses over the affected sinuses."
+      ]
+    },
+    "Facial Tics": {
+      "disease_name": "Facial Tics",
+      "disease_detail": "Facial tics are sudden, repetitive, involuntary contractions of facial muscles. They can be transient or chronic and may be related to various factors, including stress, fatigue, or certain medical conditions.",
+      "cause": [
+        "The exact cause of facial tics is often unknown, but they may be associated with stress, fatigue, caffeine, or certain medications."
+      ],
+      "symptoms": [
+        "Repetitive, involuntary movements of the facial muscles, such as blinking, grimacing, or twitching.",
+        "Tics may worsen with stress or fatigue.",
+        "Tics are usually not present during sleep."
+      ],
+      "prevention": [
+        "Reducing stress and fatigue through relaxation techniques, adequate sleep, and regular exercise.",
+        "Avoiding caffeine and stimulants if they trigger tics."
+      ],
+      "alternative": [],
+      "doctor": "Neurologist or Psychiatrist",
+      "treatment": [
+        "Behavioral therapies, such as habit reversal training or cognitive-behavioral therapy (CBT).",
+        "Medications, such as antipsychotics, muscle relaxants, or botulinum toxin injections, in severe cases.",
+        "Addressing underlying conditions that may contribute to tics."
+      ]
+    },
+    "Facioscapulohumeral Muscular Dystrophy": {
+      "disease_name": "Facioscapulohumeral Muscular Dystrophy",
+      "disease_detail": "Facioscapulohumeral muscular dystrophy (FSHD) is a genetic muscle disorder characterized by progressive weakening and wasting of the muscles, particularly those of the face, shoulders, and upper arms.",
+      "cause": [
+        "FSHD is caused by genetic mutations that result in the abnormal expression of the DUX4 gene, leading to muscle cell damage and death."
+      ],
+      "symptoms": [
+        "Progressive weakness and atrophy (wasting) of the facial muscles, particularly around the eyes and mouth.",
+        "Shoulder weakness and difficulty raising the arms.",
+        "Foot drop.",
+        "Difficulty with activities requiring overhead arm movement, such as reaching and lifting.",
+        "Reduced facial expressions (hypomimia)."
+      ],
+      "prevention": [
+        "There is no known prevention as FSHD is a genetic disorder."
+      ],
+      "alternative": [],
+      "doctor": "Neurologist",
+      "treatment": [
+        "Physical therapy to maintain muscle strength and function.",
+        "Occupational therapy to optimize activities of daily living.",
+        "Speech therapy to address difficulties with speech and swallowing.",
+        "Bracing or assistive devices to support weakened muscles.",
+        "Management of associated symptoms and complications."
+      ]
+    },
+    "Familial Dysautonomia": {
+      "disease_name": "Familial Dysautonomia",
+      "disease_detail": "Familial dysautonomia (FD), also known as Riley-Day syndrome, is a genetic disorder that affects the autonomic nervous system, resulting in a wide range of symptoms.",
+      "cause": [
+        "Familial dysautonomia is caused by mutations in the IKBKAP gene, leading to abnormal development and function of the autonomic nervous system."
+      ],
+      "symptoms": [
+        "Poor muscle tone (hypotonia) in infancy.",
+        "Difficulty swallowing (dysphagia) and feeding problems in infancy.",
+        "Recurrent pneumonia and respiratory difficulties.",
+        "Unstable blood pressure, alternating between high and low (orthostatic hypotension).",
+        "Abnormalities in sweating (hypohidrosis or hyperhidrosis)."
+      ],
+      "prevention": [
+        "There is no known prevention as familial dysautonomia is a genetic disorder."
+      ],
+      "alternative": [],
+      "doctor": "Neurologist or Pediatrician",
+      "treatment": [
+        "Management of symptoms and complications, such as feeding difficulties and respiratory problems.",
+        "Physical and occupational therapy to improve muscle tone and function.",
+        "Medications to manage symptoms such as gastrointestinal issues, blood pressure fluctuations, and pain.",
+        "Regular monitoring and supportive care."
+      ]
+    },
+    "Familial Hypercholesterolemia": {
+      "disease_name": "Familial Hypercholesterolemia",
+      "disease_detail": "Familial hypercholesterolemia (FH) is a genetic disorder characterized by high levels of low-density lipoprotein (LDL) cholesterol from birth, which increases the risk of cardiovascular disease, including heart attacks and strokes.",
+      "cause": [
+        "FH is caused by mutations in genes that regulate the metabolism of LDL cholesterol, particularly the LDL receptor gene."
+      ],
+      "symptoms": [
+        "High levels of LDL cholesterol in blood tests from childhood.",
+        "Cholesterol deposits in tendons (xanthomas), especially around the elbows, knees, and Achilles tendons.",
+        "Cholesterol deposits in the eyelids (xanthelasma).",
+        "Premature atherosclerosis and cardiovascular disease."
+      ],
+      "prevention": [
+        "Early detection through family screening and genetic testing.",
+        "Lifestyle modifications, including a heart-healthy diet, regular exercise, and avoiding smoking and excessive alcohol consumption.",
+        "Use of cholesterol-lowering medications."
+      ],
+      "alternative": [],
+      "doctor": "Cardiologist or Lipidologist",
+      "treatment": [
+        "Lifestyle changes, such as a heart-healthy diet, regular exercise, and weight management.",
+        "Cholesterol-lowering medications, such as statins.",
+        "Other medications, such as bile acid sequestrants or PCSK9 inhibitors, in some cases.",
+        "Regular monitoring of cholesterol levels and cardiovascular risk factors.",
+        "Early intervention for the prevention and treatment of cardiovascular disease."
+      ]
+    },
+    "Familial Lipoprotein Lipase Deficiency": {
+      "disease_name": "Familial Lipoprotein Lipase Deficiency",
+      "disease_detail": "Familial lipoprotein lipase deficiency (LPLD) is a rare genetic disorder characterized by the inability to break down certain fats, leading to severe hypertriglyceridemia and an increased risk of pancreatitis.",
+      "cause": [
+        "LPLD is caused by mutations in the LPL gene, which leads to a deficiency or malfunction of the enzyme lipoprotein lipase necessary for breaking down triglycerides."
+      ],
+      "symptoms": [
+        "Severe hypertriglyceridemia.",
+        "Recurrent episodes of pancreatitis.",
+        "Eruptive xanthomas (yellowish deposits of fat under the skin).",
+        "Hepatosplenomegaly (enlargement of the liver and spleen).",
+        "Abdominal pain, particularly after eating a high-fat meal."
+      ],
+      "prevention": [
+        "There is no known prevention as LPLD is a genetic disorder. Management focuses on avoiding triggers and complications."
+      ],
+      "alternative": [],
+      "doctor": "Endocrinologist or Geneticist",
+      "treatment": [
+        "A very low-fat diet to minimize triglyceride levels.",
+        "Medium-chain triglycerides (MCTs) as an alternative fat source because they are more easily metabolized.",
+        "Omega-3 fatty acid supplements to help reduce triglyceride levels.",
+        "Fibrates or other medications to lower triglycerides in some cases.",
+        "Monitoring and managing pancreatitis and other complications."
+      ]
+    },
     "Episcleritis": {
       "disease_name": "Episcleritis",
       "disease_detail": "Episcleritis is inflammation of the episclera, the thin layer of tissue between the conjunctiva (the clear membrane covering the white part of the eye) and the connective tissue layer of the eye.",
