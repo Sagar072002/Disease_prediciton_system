@@ -1334,6 +1334,9 @@ height:40px !important;
  .userprofile .profile-div{
   width:30% !important;
  }
+ .profile-div input{
+  padding-left:10px;
+ }
  
 .slide{
   width: 90%;

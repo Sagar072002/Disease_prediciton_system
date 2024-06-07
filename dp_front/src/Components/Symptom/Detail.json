@@ -30,6 +30,3042 @@
         "Special education and developmental support for intellectual disabilities."
       ]
     },
+    "Cardiac Arrest": {
+      "disease_name": "Cardiac Arrest",
+      "disease_detail": "Cardiac arrest is a sudden loss of heart function, leading to a cessation of blood flow to the rest of the body. It is a medical emergency that requires immediate intervention.",
+      "cause": [
+        "Coronary artery disease.",
+        "Heart attack.",
+        "Arrhythmias (abnormal heart rhythms).",
+        "Cardiomyopathy (heart muscle disease).",
+        "Drug overdose."
+      ],
+      "symptoms": [
+        "Sudden collapse.",
+        "No pulse.",
+        "No breathing.",
+        "Loss of consciousness."
+      ],
+      "prevention": [
+        "Regular heart check-ups and management of heart conditions.",
+        "Healthy lifestyle choices such as diet and exercise.",
+        "Avoiding smoking and excessive alcohol consumption.",
+        "Managing stress and regular physical activity."
+      ],
+      "alternative": [],
+      "doctor": "Cardiologist",
+      "treatment": [
+        "Cardiopulmonary resuscitation (CPR).",
+        "Defibrillation.",
+        "Advanced cardiac life support (ACLS).",
+        "Medications to stabilize heart rhythm."
+      ]
+    },
+    "Carpal Tunnel Syndrome": {
+      "disease_name": "Carpal Tunnel Syndrome",
+      "disease_detail": "Carpal tunnel syndrome is a condition caused by compression of the median nerve as it travels through the wrist at the carpal tunnel.",
+      "cause": [
+        "Repetitive hand movements.",
+        "Wrist anatomy.",
+        "Health conditions such as diabetes, rheumatoid arthritis."
+      ],
+      "symptoms": [
+        "Numbness or tingling in the thumb, index, and middle fingers.",
+        "Pain in the wrist and hand.",
+        "Weakness in the hand."
+      ],
+      "prevention": [
+        "Ergonomic workplace setup.",
+        "Frequent breaks from repetitive tasks.",
+        "Wrist exercises and stretches."
+      ],
+      "alternative": [],
+      "doctor": "Orthopedic Surgeon",
+      "treatment": [
+        "Wrist splinting.",
+        "Nonsteroidal anti-inflammatory drugs (NSAIDs).",
+        "Corticosteroid injections.",
+        "Surgery to relieve nerve compression."
+      ]
+    },
+    "Cataract - Adult": {
+      "disease_name": "Cataract - Adult",
+      "disease_detail": "A cataract is a clouding of the lens in the eye, leading to a decrease in vision. It is most commonly related to aging.",
+      "cause": [
+        "Aging.",
+        "Diabetes.",
+        "Excessive exposure to sunlight.",
+        "Smoking."
+      ],
+      "symptoms": [
+        "Blurry vision.",
+        "Difficulty with vision at night.",
+        "Sensitivity to light and glare.",
+        "Fading or yellowing of colors."
+      ],
+      "prevention": [
+        "Regular eye examinations.",
+        "Managing health problems such as diabetes.",
+        "Wearing sunglasses to block UV rays.",
+        "Quitting smoking."
+      ],
+      "alternative": [],
+      "doctor": "Ophthalmologist",
+      "treatment": [
+        "Surgery to remove the cloudy lens and replace it with a clear artificial lens."
+      ]
+    },
+    "Catheter-Related UTI": {
+      "disease_name": "Catheter-Related Urinary Tract Infection (UTI)",
+      "disease_detail": "A catheter-related urinary tract infection (UTI) occurs when bacteria enter the urinary tract through the urinary catheter.",
+      "cause": [
+        "Insertion of a urinary catheter.",
+        "Prolonged use of a urinary catheter.",
+        "Bacteria entering the urinary tract."
+      ],
+      "symptoms": [
+        "Fever.",
+        "Burning sensation during urination.",
+        "Cloudy urine.",
+        "Lower abdominal pain."
+      ],
+      "prevention": [
+        "Proper catheter care and hygiene.",
+        "Using the catheter only when necessary.",
+        "Prompt removal of the catheter when no longer needed."
+      ],
+      "alternative": [],
+      "doctor": "Urologist",
+      "treatment": [
+        "Antibiotics to treat the infection.",
+        "Removal or replacement of the catheter."
+      ]
+    },
+    "Central Serous Choroidopathy": {
+      "disease_name": "Central Serous Choroidopathy",
+      "disease_detail": "Central serous choroidopathy is an eye disease where fluid builds up under the retina, leading to distorted vision.",
+      "cause": [
+        "Unknown, but linked to stress and corticosteroid use."
+      ],
+      "symptoms": [
+        "Blurred or distorted vision.",
+        "A dark or gray spot in the central vision.",
+        "Straight lines appearing bent or crooked."
+      ],
+      "prevention": [
+        "Managing stress.",
+        "Avoiding corticosteroid use when possible."
+      ],
+      "alternative": [],
+      "doctor": "Ophthalmologist",
+      "treatment": [
+        "Observation, as many cases resolve on their own.",
+        "Laser treatment or photodynamic therapy in persistent cases."
+      ]
+    },
+    "Cerebral Amyloid Angiopathy": {
+      "disease_name": "Cerebral Amyloid Angiopathy",
+      "disease_detail": "Cerebral amyloid angiopathy is a condition where amyloid proteins build up in the walls of the brain's blood vessels, increasing the risk of hemorrhagic stroke.",
+      "cause": [
+        "Age-related changes.",
+        "Genetic factors."
+      ],
+      "symptoms": [
+        "Headaches.",
+        "Seizures.",
+        "Stroke-like symptoms (weakness, numbness, speech difficulties)."
+      ],
+      "prevention": [
+        "No specific prevention, but managing vascular health may help."
+      ],
+      "alternative": [],
+      "doctor": "Neurologist",
+      "treatment": [
+        "Managing symptoms and complications.",
+        "Avoiding anticoagulant medications."
+      ]
+    },
+    "Cerebral Arteriovenous Malformation": {
+      "disease_name": "Cerebral Arteriovenous Malformation",
+      "disease_detail": "A cerebral arteriovenous malformation (AVM) is a tangle of abnormal blood vessels connecting arteries and veins in the brain, which can cause serious neurological problems if it ruptures.",
+      "cause": [
+        "Congenital (present at birth)."
+      ],
+      "symptoms": [
+        "Headaches.",
+        "Seizures.",
+        "Neurological deficits (weakness, numbness, vision problems)."
+      ],
+      "prevention": [
+        "No known prevention methods."
+      ],
+      "alternative": [],
+      "doctor": "Neurosurgeon",
+      "treatment": [
+        "Surgical removal of the AVM.",
+        "Endovascular embolization.",
+        "Stereotactic radiosurgery."
+      ]
+    },
+    "Cerebral Hypoxia": {
+      "disease_name": "Cerebral Hypoxia",
+      "disease_detail": "Cerebral hypoxia occurs when there is a lack of oxygen supply to the brain, leading to brain damage.",
+      "cause": [
+        "Cardiac arrest.",
+        "Stroke.",
+        "Drowning.",
+        "Choking."
+      ],
+      "symptoms": [
+        "Confusion.",
+        "Weakness or dizziness.",
+        "Unconsciousness.",
+        "Seizures."
+      ],
+      "prevention": [
+        "Preventing conditions that lead to oxygen deprivation.",
+        "Immediate medical intervention during emergencies."
+      ],
+      "alternative": [],
+      "doctor": "Neurologist",
+      "treatment": [
+        "Oxygen therapy.",
+        "Hyperbaric oxygen therapy.",
+        "Supportive care to manage symptoms."
+      ]
+    },
+    "Cervical Cancer": {
+      "disease_name": "Cervical Cancer",
+      "disease_detail": "Cervical cancer is a type of cancer that occurs in the cells of the cervix, often caused by the human papillomavirus (HPV).",
+      "cause": [
+        "Human papillomavirus (HPV) infection."
+      ],
+      "symptoms": [
+        "Vaginal bleeding after intercourse, between periods, or after menopause.",
+        "Watery, bloody vaginal discharge.",
+        "Pelvic pain or pain during intercourse."
+      ],
+      "prevention": [
+        "HPV vaccination.",
+        "Regular Pap smears and HPV testing.",
+        "Safe sex practices."
+      ],
+      "alternative": [],
+      "doctor": "Gynecologic Oncologist",
+      "treatment": [
+        "Surgery (e.g., hysterectomy).",
+        "Radiation therapy.",
+        "Chemotherapy."
+      ]
+    },
+    "Cervical Polyps": {
+      "disease_name": "Cervical Polyps",
+      "disease_detail": "Cervical polyps are benign growths on the cervix that can cause bleeding or discharge.",
+      "cause": [
+        "Chronic inflammation of the cervix.",
+        "Clogged blood vessels in the cervix.",
+        "Abnormal response to estrogen."
+      ],
+      "symptoms": [
+        "Abnormal vaginal bleeding.",
+        "Unusual vaginal discharge.",
+        "Bleeding after intercourse."
+      ],
+      "prevention": [
+        "Regular gynecological check-ups."
+      ],
+      "alternative": [],
+      "doctor": "Gynecologist",
+      "treatment": [
+        "Removal of polyps during a pelvic exam.",
+        "Histopathological examination to rule out malignancy."
+      ]
+    },
+    "Cervical Spondylosis": {
+      "disease_name": "Cervical Spondylosis",
+      "disease_detail": "Cervical spondylosis is age-related wear and tear affecting the spinal disks in your neck.",
+      "cause": [
+        "Aging.",
+        "Degenerative changes in the cervical spine."
+      ],
+      "symptoms": [
+        "Neck pain and stiffness.",
+        "Headaches, particularly in the back of the head.",
+        "Pain in the shoulder or arms.",
+        "Tingling or numbness in the arms and fingers."
+      ],
+      "prevention": [
+        "Regular exercise to maintain neck strength and flexibility.",
+        "Good posture practices."
+      ],
+      "alternative": [],
+      "doctor": "Orthopedic Specialist",
+      "treatment": [
+        "Physical therapy.",
+        "Pain relief medications.",
+        "Surgery in severe cases."
+      ]
+    },
+    "Cervicitis": {
+      "disease_name": "Cervicitis",
+      "disease_detail": "Cervicitis is an inflammation of the cervix, often caused by infections or sexually transmitted infections.",
+      "cause": [
+        "Sexually transmitted infections (STIs) such as chlamydia and gonorrhea.",
+        "Allergic reactions to contraceptives or feminine hygiene products."
+      ],
+      "symptoms": [
+        "Abnormal vaginal discharge.",
+        "Pain during intercourse.",
+        "Vaginal bleeding between periods or after intercourse.",
+        "Pelvic pain."
+      ],
+      "prevention": [
+        "Safe sex practices.",
+        "Avoiding irritants such as douches and certain feminine hygiene products."
+      ],
+      "alternative": [],
+      "doctor": "Gynecologist",
+      "treatment": [
+        "Antibiotics for infection.",
+        "Avoiding exposure to irritants."
+      ]
+    },
+    "Chediak-Higashi Syndrome": {
+      "disease_name": "Chediak-Higashi Syndrome",
+      "disease_detail": "Chediak-Higashi syndrome is a rare genetic disorder affecting the immune and nervous systems, characterized by recurrent infections, partial albinism, and neurological abnormalities.",
+      "cause": [
+        "Mutations in the LYST gene."
+      ],
+      "symptoms": [
+        "Recurrent infections.",
+        "Partial albinism.",
+        "Neurological abnormalities such as muscle weakness and seizures.",
+        "Easy bruising and bleeding."
+      ],
+      "prevention": [
+        "Genetic counseling for families with a history of the disorder."
+      ],
+      "alternative": [],
+      "doctor": "Immunologist",
+      "treatment": [
+        "Antibiotics for infections.",
+        "Bone marrow transplant.",
+        "Supportive care for symptoms."
+      ]
+    },
+    "Chickenpox": {
+      "disease_name": "Chickenpox",
+      "disease_detail": "Chickenpox is a highly contagious viral infection causing an itchy rash with red spots and blisters all over the body.",
+      "cause": [
+        "Varicella-zoster virus (VZV)."
+      ],
+      "symptoms": [
+        "Itchy rash with red spots and blisters.",
+        "Fever.",
+        "Fatigue.",
+        "Loss of appetite."
+      ],
+      "prevention": [
+        "Varicella vaccine."
+      ],
+      "alternative": [],
+      "doctor": "Pediatrician",
+      "treatment": [
+        "Antihistamines to relieve itching.",
+        "Acetaminophen to reduce fever.",
+        "Antiviral medications in severe cases."
+      ]
+    },
+    "Chikungunya Virus": {
+      "disease_name": "Chikungunya Virus",
+      "disease_detail": "Chikungunya virus is transmitted to humans by infected mosquitoes and causes fever, joint pain, and rash.",
+      "cause": [
+        "Bite from an infected mosquito (Aedes aegypti and Aedes albopictus)."
+      ],
+      "symptoms": [
+        "Fever.",
+        "Severe joint pain.",
+        "Rash.",
+        "Muscle pain."
+      ],
+      "prevention": [
+        "Avoiding mosquito bites by using insect repellent and wearing long sleeves and pants.",
+        "Eliminating standing water where mosquitoes breed."
+      ],
+      "alternative": [],
+      "doctor": "Infectious Disease Specialist",
+      "treatment": [
+        "Pain relief medications.",
+        "Rest and fluids.",
+        "No specific antiviral treatment available."
+      ]
+    },
+    "Chlamydia": {
+      "disease_name": "Chlamydia",
+      "disease_detail": "Chlamydia is a common sexually transmitted infection caused by the bacterium Chlamydia trachomatis.",
+      "cause": [
+        "Infection with Chlamydia trachomatis through sexual contact."
+      ],
+      "symptoms": [
+        "Often asymptomatic.",
+        "Genital pain.",
+        "Discharge from the penis or vagina.",
+        "Painful urination."
+      ],
+      "prevention": [
+        "Safe sex practices, including the use of condoms.",
+        "Regular screening for sexually active individuals."
+      ],
+      "alternative": [],
+      "doctor": "Gynecologist",
+      "treatment": [
+        "Antibiotics such as azithromycin or doxycycline."
+      ]
+    },
+    "Cholangiocarcinoma": {
+      "disease_name": "Cholangiocarcinoma",
+      "disease_detail": "Cholangiocarcinoma is a cancer that forms in the bile ducts.",
+      "cause": [
+        "Chronic inflammation of the bile ducts.",
+        "Certain liver diseases.",
+        "Parasitic infections."
+      ],
+      "symptoms": [
+        "Jaundice.",
+        "Itchy skin.",
+        "Abdominal pain.",
+        "Weight loss."
+      ],
+      "prevention": [
+        "Reducing risk factors such as managing liver disease and avoiding exposure to parasites."
+      ],
+      "alternative": [],
+      "doctor": "Oncologist",
+      "treatment": [
+        "Surgery.",
+        "Chemotherapy.",
+        "Radiation therapy."
+      ]
+    },
+    "Cholangitis": {
+      "disease_name": "Cholangitis",
+      "disease_detail": "Cholangitis is an infection of the bile ducts.",
+      "cause": [
+        "Bacterial infection, often due to bile duct obstruction."
+      ],
+      "symptoms": [
+        "Fever.",
+        "Jaundice.",
+        "Abdominal pain."
+      ],
+      "prevention": [
+        "Prompt treatment of bile duct obstructions."
+      ],
+      "alternative": [],
+      "doctor": "Gastroenterologist",
+      "treatment": [
+        "Antibiotics.",
+        "Drainage procedures to relieve obstruction."
+      ]
+    },
+    "Choledocholithiasis": {
+      "disease_name": "Choledocholithiasis",
+      "disease_detail": "Choledocholithiasis is the presence of one or more gallstones in the common bile duct.",
+      "cause": [
+        "Formation of gallstones that migrate to the common bile duct."
+      ],
+      "symptoms": [
+        "Abdominal pain.",
+        "Jaundice.",
+        "Fever."
+      ],
+      "prevention": [
+        "Maintaining a healthy diet to reduce the risk of gallstone formation."
+      ],
+      "alternative": [],
+      "doctor": "Gastroenterologist",
+      "treatment": [
+        "Endoscopic removal of stones.",
+        "Surgery in severe cases."
+      ]
+    },
+    "Cholera": {
+      "disease_name": "Cholera",
+      "disease_detail": "Cholera is an acute diarrheal illness caused by infection of the intestine with Vibrio cholerae bacteria.",
+      "cause": [
+        "Ingestion of contaminated water or food with Vibrio cholerae."
+      ],
+      "symptoms": [
+        "Severe watery diarrhea.",
+        "Dehydration.",
+        "Vomiting."
+      ],
+      "prevention": [
+        "Ensuring access to clean water and proper sanitation.",
+        "Vaccination in high-risk areas."
+      ],
+      "alternative": [],
+      "doctor": "Infectious Disease Specialist",
+      "treatment": [
+        "Rehydration therapy.",
+        "Antibiotics in severe cases."
+      ]
+    },
+    "Cholestasis": {
+      "disease_name": "Cholestasis",
+      "disease_detail": "Cholestasis is a condition where bile flow from the liver is reduced or blocked.",
+      "cause": [
+        "Liver diseases.",
+        "Gallstones.",
+        "Certain medications."
+      ],
+      "symptoms": [
+        "Jaundice.",
+        "Itching.",
+        "Dark urine.",
+        "Pale stool."
+      ],
+      "prevention": [
+        "Managing underlying liver conditions.",
+        "Avoiding medications that can cause cholestasis."
+      ],
+      "alternative": [],
+      "doctor": "Hepatologist",
+      "treatment": [
+        "Treating the underlying cause.",
+        "Medications to relieve symptoms."
+      ]
+    },
+    "Chronic Cholecystitis": {
+      "disease_name": "Chronic Cholecystitis",
+      "disease_detail": "Chronic cholecystitis is a long-standing inflammation of the gallbladder.",
+      "cause": [
+        "Repeated episodes of acute cholecystitis.",
+        "Gallstones."
+      ],
+      "symptoms": [
+        "Persistent right upper abdominal pain.",
+        "Nausea and vomiting.",
+        "Fatty food intolerance."
+      ],
+      "prevention": [
+        "Healthy diet to reduce the risk of gallstones."
+      ],
+      "alternative": [],
+      "doctor": "Gastroenterologist",
+      "treatment": [
+        "Surgical removal of the gallbladder (cholecystectomy)."
+      ]
+    },
+    "Chronic Inflammatory Demyelinating Polyneuropathy": {
+      "disease_name": "Chronic Inflammatory Demyelinating Polyneuropathy",
+      "disease_detail": "Chronic inflammatory demyelinating polyneuropathy (CIDP) is a neurological disorder characterized by progressive weakness and impaired sensory function in the legs and arms.",
+      "cause": [
+        "Autoimmune response damaging the myelin sheath of peripheral nerves."
+      ],
+      "symptoms": [
+        "Gradual onset of weakness in the arms and legs.",
+        "Impaired reflexes.",
+        "Numbness and tingling."
+      ],
+      "prevention": [
+        "No known prevention."
+      ],
+      "alternative": [],
+      "doctor": "Neurologist",
+      "treatment": [
+        "Corticosteroids.",
+        "Immunosuppressive drugs.",
+        "Plasmapheresis or intravenous immunoglobulin (IVIG) therapy."
+      ]
+    }, "Chronic Kidney Disease": {
+      "disease_name": "Chronic Kidney Disease",
+      "disease_detail": "Chronic kidney disease (CKD) is a long-term condition where the kidneys do not work effectively.",
+      "cause": [
+        "Diabetes.",
+        "High blood pressure.",
+        "Chronic glomerulonephritis."
+      ],
+      "symptoms": [
+        "Fatigue.",
+        "Swelling in the legs, ankles, or feet.",
+        "Shortness of breath.",
+        "Nausea."
+      ],
+      "prevention": [
+        "Managing blood sugar levels in diabetes.",
+        "Controlling high blood pressure.",
+        "Regular kidney function monitoring in at-risk individuals."
+      ],
+      "alternative": [],
+      "doctor": "Nephrologist",
+      "treatment": [
+        "Medications to manage symptoms and complications.",
+        "Dialysis in advanced stages.",
+        "Kidney transplant."
+      ]
+    },
+    "Chronic Lymphocytic Leukemia": {
+      "disease_name": "Chronic Lymphocytic Leukemia",
+      "disease_detail": "Chronic lymphocytic leukemia (CLL) is a type of cancer that starts from white blood cells in the bone marrow and affects the blood and lymphatic tissue.",
+      "cause": [
+        "Genetic mutations."
+      ],
+      "symptoms": [
+        "Fatigue.",
+        "Swollen lymph nodes.",
+        "Frequent infections.",
+        "Unexplained weight loss."
+      ],
+      "prevention": [
+        "No known prevention."
+      ],
+      "alternative": [],
+      "doctor": "Oncologist",
+      "treatment": [
+        "Chemotherapy.",
+        "Targeted therapy.",
+        "Immunotherapy."
+      ]
+    },
+    "Chronic Motor or Vocal Tic Disorder": {
+      "disease_name": "Chronic Motor or Vocal Tic Disorder",
+      "disease_detail": "Chronic motor or vocal tic disorder involves repeated, sudden, rapid, nonrhythmic movements or vocalizations.",
+      "cause": [
+        "Exact cause unknown, may involve genetic and environmental factors."
+      ],
+      "symptoms": [
+        "Repetitive movements such as blinking or grimacing.",
+        "Vocal tics such as grunting or throat clearing."
+      ],
+      "prevention": [
+        "No known prevention."
+      ],
+      "alternative": [],
+      "doctor": "Neurologist",
+      "treatment": [
+        "Behavioral therapy.",
+        "Medications to reduce tics.",
+        "Supportive therapies."
+      ]
+    },
+    "Chronic Myelogenous Leukemia": {
+      "disease_name": "Chronic Myelogenous Leukemia",
+      "disease_detail": "Chronic myelogenous leukemia (CML) is a type of cancer that affects the bone marrow and blood.",
+      "cause": [
+        "Genetic mutation known as the Philadelphia chromosome."
+      ],
+      "symptoms": [
+        "Fatigue.",
+        "Weight loss.",
+        "Fever.",
+        "Night sweats."
+      ],
+      "prevention": [
+        "No known prevention."
+      ],
+      "alternative": [],
+      "doctor": "Oncologist",
+      "treatment": [
+        "Targeted therapy with tyrosine kinase inhibitors.",
+        "Chemotherapy.",
+        "Stem cell transplant."
+      ]
+    },
+    "Chronic Obstructive Pulmonary Disease": {
+      "disease_name": "Chronic Obstructive Pulmonary Disease",
+      "disease_detail": "Chronic obstructive pulmonary disease (COPD) is a chronic inflammatory lung disease that causes obstructed airflow from the lungs.",
+      "cause": [
+        "Long-term exposure to irritating gases or particulate matter, most often from cigarette smoke."
+      ],
+      "symptoms": [
+        "Shortness of breath.",
+        "Wheezing.",
+        "Chronic cough.",
+        "Frequent respiratory infections."
+      ],
+      "prevention": [
+        "Avoid smoking and exposure to lung irritants.",
+        "Regular vaccinations to prevent respiratory infections."
+      ],
+      "alternative": [],
+      "doctor": "Pulmonologist",
+      "treatment": [
+        "Bronchodilators.",
+        "Inhaled steroids.",
+        "Oxygen therapy.",
+        "Pulmonary rehabilitation."
+      ]
+    },
+    "Chronic Pancreatitis": {
+      "disease_name": "Chronic Pancreatitis",
+      "disease_detail": "Chronic pancreatitis is long-standing inflammation of the pancreas that alters its normal structure and functions.",
+      "cause": [
+        "Long-term alcohol abuse.",
+        "Genetic mutations.",
+        "Autoimmune conditions."
+      ],
+      "symptoms": [
+        "Upper abdominal pain.",
+        "Digestive issues.",
+        "Weight loss.",
+        "Diabetes."
+      ],
+      "prevention": [
+        "Avoiding excessive alcohol consumption.",
+        "Healthy diet."
+      ],
+      "alternative": [],
+      "doctor": "Gastroenterologist",
+      "treatment": [
+        "Pain management.",
+        "Enzyme supplements.",
+        "Insulin for diabetes.",
+        "Lifestyle modifications."
+      ]
+    },
+    "Chronic Subdural Hematoma": {
+      "disease_name": "Chronic Subdural Hematoma",
+      "disease_detail": "Chronic subdural hematoma is a collection of blood on the brain's surface, under the outer covering (dura), that develops over weeks or months.",
+      "cause": [
+        "Head injury.",
+        "Increased susceptibility in elderly and those on anticoagulant therapy."
+      ],
+      "symptoms": [
+        "Headache.",
+        "Confusion.",
+        "Weakness.",
+        "Seizures."
+      ],
+      "prevention": [
+        "Protecting the head from injury.",
+        "Careful use of anticoagulants."
+      ],
+      "alternative": [],
+      "doctor": "Neurosurgeon",
+      "treatment": [
+        "Surgical drainage.",
+        "Monitoring and managing symptoms."
+      ]
+    },
+    "Chronic Thyroiditis (Hashimoto Disease)": {
+      "disease_name": "Chronic Thyroiditis (Hashimoto Disease)",
+      "disease_detail": "Chronic thyroiditis, also known as Hashimoto's disease, is an autoimmune disorder that damages the thyroid gland, leading to hypothyroidism.",
+      "cause": [
+        "Autoimmune response against the thyroid gland."
+      ],
+      "symptoms": [
+        "Fatigue.",
+        "Weight gain.",
+        "Cold intolerance.",
+        "Depression."
+      ],
+      "prevention": [
+        "No known prevention."
+      ],
+      "alternative": [
+        "Hashimoto's Thyroiditis"
+      ],
+      "doctor": "Endocrinologist",
+      "treatment": [
+        "Thyroid hormone replacement therapy."
+      ]
+    },
+    "Chylomicronemia Syndrome": {
+      "disease_name": "Chylomicronemia Syndrome",
+      "disease_detail": "Chylomicronemia syndrome is a rare disorder characterized by an extremely high level of triglycerides in the blood due to the accumulation of chylomicrons.",
+      "cause": [
+        "Genetic mutations affecting triglyceride metabolism."
+      ],
+      "symptoms": [
+        "Abdominal pain.",
+        "Pancreatitis.",
+        "Hepatosplenomegaly.",
+        "Eruptive xanthomas."
+      ],
+      "prevention": [
+        "Low-fat diet.",
+        "Regular monitoring of lipid levels."
+      ],
+      "alternative": [],
+      "doctor": "Endocrinologist",
+      "treatment": [
+        "Dietary fat restriction.",
+        "Fibrate medications.",
+        "Omega-3 fatty acid supplements."
+      ]
+    },
+    "Cirrhosis": {
+      "disease_name": "Cirrhosis",
+      "disease_detail": "Cirrhosis is severe scarring of the liver caused by long-term liver damage, which can lead to liver failure.",
+      "cause": [
+        "Chronic alcohol abuse.",
+        "Hepatitis B and C infections.",
+        "Nonalcoholic fatty liver disease."
+      ],
+      "symptoms": [
+        "Fatigue.",
+        "Jaundice.",
+        "Ascites (abdominal swelling).",
+        "Bruising and bleeding easily."
+      ],
+      "prevention": [
+        "Avoiding alcohol abuse.",
+        "Vaccination against hepatitis B.",
+        "Maintaining a healthy weight."
+      ],
+      "alternative": [],
+      "doctor": "Hepatologist",
+      "treatment": [
+        "Managing underlying causes.",
+        "Medications to manage symptoms.",
+        "Liver transplant in severe cases."
+      ]
+    },
+    "Cleidocranial Dysostosis": {
+      "disease_name": "Cleidocranial Dysostosis",
+      "disease_detail": "Cleidocranial dysostosis is a rare genetic disorder affecting the development of bones and teeth, characterized by the absence or underdevelopment of clavicles, delayed closure of the fontanelles, and dental abnormalities.",
+      "cause": [
+        "Mutations in the RUNX2 gene."
+      ],
+      "symptoms": [
+        "Absent or underdeveloped clavicles.",
+        "Delayed closure of the fontanelles.",
+        "Dental abnormalities.",
+        "Short stature."
+      ],
+      "prevention": [
+        "Genetic counseling for families with a history of the disorder."
+      ],
+      "alternative": [
+        "Cleidocranial dysplasia"
+      ],
+      "doctor": "Geneticist",
+      "treatment": [
+        "Dental care to manage tooth anomalies.",
+        "Orthopedic care for bone abnormalities.",
+        "Surgical interventions if necessary."
+      ]
+    },
+    "CMV Gastroenteritis/Colitis": {
+      "disease_name": "CMV Gastroenteritis/Colitis",
+      "disease_detail": "CMV gastroenteritis/colitis is an infection of the gastrointestinal tract caused by cytomegalovirus, particularly affecting immunocompromised individuals.",
+      "cause": [
+        "Cytomegalovirus (CMV) infection."
+      ],
+      "symptoms": [
+        "Diarrhea.",
+        "Abdominal pain.",
+        "Fever.",
+        "Weight loss."
+      ],
+      "prevention": [
+        "Avoiding exposure to CMV, especially in immunocompromised individuals."
+      ],
+      "alternative": [],
+      "doctor": "Gastroenterologist",
+      "treatment": [
+        "Antiviral medications.",
+        "Supportive care for symptoms."
+      ]
+    },
+    "CMV Pneumonia": {
+      "disease_name": "CMV Pneumonia",
+      "disease_detail": "CMV pneumonia is a lung infection caused by cytomegalovirus, predominantly affecting immunocompromised patients.",
+      "cause": [
+        "Cytomegalovirus (CMV) infection."
+      ],
+      "symptoms": [
+        "Cough.",
+        "Shortness of breath.",
+        "Fever.",
+        "Fatigue."
+      ],
+      "prevention": [
+        "Avoiding exposure to CMV, particularly for immunocompromised individuals."
+      ],
+      "alternative": [],
+      "doctor": "Pulmonologist",
+      "treatment": [
+        "Antiviral medications.",
+        "Supportive respiratory care."
+      ]
+    },
+    "CMV Retinitis": {
+      "disease_name": "CMV Retinitis",
+      "disease_detail": "CMV retinitis is an eye infection caused by cytomegalovirus, leading to inflammation of the retina, commonly seen in individuals with weakened immune systems.",
+      "cause": [
+        "Cytomegalovirus (CMV) infection."
+      ],
+      "symptoms": [
+        "Blurred vision.",
+        "Floaters in the visual field.",
+        "Loss of peripheral vision.",
+        "Blind spots."
+      ],
+      "prevention": [
+        "Avoiding exposure to CMV in immunocompromised individuals.",
+        "Regular eye examinations for at-risk patients."
+      ],
+      "alternative": [],
+      "doctor": "Ophthalmologist",
+      "treatment": [
+        "Antiviral medications.",
+        "Intravitreal injections.",
+        "Laser therapy."
+      ]
+    },
+    "Coarctation of the Aorta": {
+      "disease_name": "Coarctation of the Aorta",
+      "disease_detail": "Coarctation of the aorta is a congenital condition characterized by the narrowing of the aorta, which can lead to high blood pressure and heart damage.",
+      "cause": [
+        "Congenital defect."
+      ],
+      "symptoms": [
+        "High blood pressure.",
+        "Shortness of breath.",
+        "Chest pain.",
+        "Headaches."
+      ],
+      "prevention": [
+        "No known prevention, as it is a congenital condition."
+      ],
+      "alternative": [],
+      "doctor": "Cardiologist",
+      "treatment": [
+        "Surgical repair of the aorta.",
+        "Balloon angioplasty.",
+        "Medications to manage blood pressure."
+      ]
+    },
+    "Colitis": {
+      "disease_name": "Colitis",
+      "disease_detail": "Colitis is an inflammation of the colon, which can be caused by infections, inflammatory bowel disease, or other conditions.",
+      "cause": [
+        "Infections.",
+        "Inflammatory bowel disease.",
+        "Ischemia.",
+        "Allergic reactions."
+      ],
+      "symptoms": [
+        "Abdominal pain.",
+        "Diarrhea.",
+        "Rectal bleeding.",
+        "Fever."
+      ],
+      "prevention": [
+        "Maintaining good hygiene.",
+        "Managing underlying conditions.",
+        "Avoiding known allergens or irritants."
+      ],
+      "alternative": [],
+      "doctor": "Gastroenterologist",
+      "treatment": [
+        "Medications to reduce inflammation.",
+        "Antibiotics for infections.",
+        "Dietary changes.",
+        "Surgery in severe cases."
+      ]
+    },
+    "Collapsed Lung (Pneumothorax)": {
+      "disease_name": "Collapsed Lung (Pneumothorax)",
+      "disease_detail": "A pneumothorax occurs when air leaks into the space between the lung and chest wall, causing the lung to collapse.",
+      "cause": [
+        "Chest injury.",
+        "Lung disease.",
+        "Ruptured air blisters.",
+        "Mechanical ventilation."
+      ],
+      "symptoms": [
+        "Sudden chest pain.",
+        "Shortness of breath.",
+        "Rapid heart rate.",
+        "Fatigue."
+      ],
+      "prevention": [
+        "Avoiding smoking.",
+        "Managing chronic lung conditions."
+      ],
+      "alternative": [
+        "Pneumothorax"
+      ],
+      "doctor": "Pulmonologist",
+      "treatment": [
+        "Observation for small pneumothorax.",
+        "Needle aspiration or chest tube insertion.",
+        "Surgery in recurrent cases."
+      ]
+    },
+    "Colorado Tick Fever": {
+      "disease_name": "Colorado Tick Fever",
+      "disease_detail": "Colorado tick fever is a viral infection transmitted by the bite of an infected tick, leading to fever, muscle pain, and headache.",
+      "cause": [
+        "Bite from an infected tick (Dermacentor andersoni)."
+      ],
+      "symptoms": [
+        "Fever.",
+        "Muscle pain.",
+        "Headache.",
+        "Nausea."
+      ],
+      "prevention": [
+        "Avoiding tick-infested areas.",
+        "Using tick repellents.",
+        "Wearing protective clothing."
+      ],
+      "alternative": [],
+      "doctor": "Infectious Disease Specialist",
+      "treatment": [
+        "Symptomatic treatment.",
+        "Pain relief medications.",
+        "Rest and fluids."
+      ]
+    },
+    "Colorectal Cancer": {
+      "disease_name": "Colorectal Cancer",
+      "disease_detail": "Colorectal cancer is a cancer that starts in the colon or rectum, often developing from benign polyps that become cancerous over time.",
+      "cause": [
+        "Genetic mutations.",
+        "Lifestyle factors (diet, smoking, alcohol).",
+        "Chronic inflammatory conditions of the colon."
+      ],
+      "symptoms": [
+        "Changes in bowel habits.",
+        "Blood in the stool.",
+        "Abdominal discomfort.",
+        "Unexplained weight loss."
+      ],
+      "prevention": [
+        "Regular screening and removal of polyps.",
+        "Healthy diet and lifestyle.",
+        "Avoiding smoking and excessive alcohol."
+      ],
+      "alternative": [],
+      "doctor": "Oncologist",
+      "treatment": [
+        "Surgery.",
+        "Chemotherapy.",
+        "Radiation therapy."
+      ]
+    },
+    "Common Cold": {
+      "disease_name": "Common Cold",
+      "disease_detail": "The common cold is a viral infection of the upper respiratory tract, characterized by a runny nose, sore throat, cough, and congestion.",
+      "cause": [
+        "Rhinoviruses.",
+        "Coronaviruses.",
+        "Other respiratory viruses."
+      ],
+      "symptoms": [
+        "Runny nose.",
+        "Sore throat.",
+        "Cough.",
+        "Congestion."
+      ],
+      "prevention": [
+        "Good hand hygiene.",
+        "Avoiding close contact with infected individuals.",
+        "Maintaining a healthy immune system."
+      ],
+      "alternative": [],
+      "doctor": "General Practitioner",
+      "treatment": [
+        "Rest and fluids.",
+        "Over-the-counter medications for symptom relief.",
+        "Humidifiers and saline nasal sprays."
+      ]
+    },
+    "Common Peroneal Nerve Dysfunction": {
+      "disease_name": "Common Peroneal Nerve Dysfunction",
+      "disease_detail": "Common peroneal nerve dysfunction is a type of peripheral neuropathy that affects the peroneal nerve, leading to loss of movement or sensation in the foot and leg.",
+      "cause": [
+        "Injury or trauma to the knee.",
+        "Prolonged pressure on the knee.",
+        "Diabetes."
+      ],
+      "symptoms": [
+        "Foot drop.",
+        "Numbness or tingling in the leg or foot.",
+        "Weakness in the ankle or foot.",
+        "Difficulty lifting the foot."
+      ],
+      "prevention": [
+        "Avoiding prolonged pressure on the knee.",
+        "Managing underlying conditions like diabetes."
+      ],
+      "alternative": [
+        "Peroneal neuropathy",
+        "Foot drop"
+      ],
+      "doctor": "Neurologist",
+      "treatment": [
+        "Physical therapy.",
+        "Braces or splints.",
+        "Surgery in severe cases."
+      ]
+    },
+    "Compartment Syndrome": {
+      "disease_name": "Compartment Syndrome",
+      "disease_detail": "Compartment syndrome is a painful condition that occurs when pressure within the muscles builds to dangerous levels, decreasing blood flow and preventing nourishment and oxygen from reaching nerve and muscle cells.",
+      "cause": [
+        "Trauma such as fractures.",
+        "Crush injuries.",
+        "Severe muscle bruises.",
+        "Repetitive activities."
+      ],
+      "symptoms": [
+        "Intense pain, especially when stretching the muscle.",
+        "Tingling or burning sensation.",
+        "Muscle tightness.",
+        "Numbness or paralysis."
+      ],
+      "prevention": [
+        "Avoiding repetitive strain.",
+        "Proper management of injuries."
+      ],
+      "alternative": [],
+      "doctor": "Orthopedic Surgeon",
+      "treatment": [
+        "Fasciotomy surgery to relieve pressure.",
+        "Monitoring and supportive care."
+      ]
+    },
+    "Complex Regional Pain Syndrome": {
+      "disease_name": "Complex Regional Pain Syndrome",
+      "disease_detail": "Complex regional pain syndrome (CRPS) is a chronic pain condition that typically affects a limb after an injury or surgery.",
+      "cause": [
+        "Exact cause unknown, often follows an injury."
+      ],
+      "symptoms": [
+        "Prolonged severe pain.",
+        "Changes in skin color and temperature.",
+        "Swelling in the affected area.",
+        "Muscle spasms and weakness."
+      ],
+      "prevention": [
+        "Early mobilization after injury or surgery."
+      ],
+      "alternative": [
+        "Reflex sympathetic dystrophy (RSD)"
+      ],
+      "doctor": "Pain Specialist",
+      "treatment": [
+        "Physical therapy.",
+        "Medications for pain relief.",
+        "Nerve blocks.",
+        "Pain management programs."
+      ]
+    },
+    "Concussion": {
+      "disease_name": "Concussion",
+      "disease_detail": "A concussion is a mild traumatic brain injury caused by a bump, blow, or jolt to the head, affecting brain function.",
+      "cause": [
+        "Traumatic injury to the head."
+      ],
+      "symptoms": [
+        "Headache.",
+        "Confusion.",
+        "Dizziness.",
+        "Nausea or vomiting."
+      ],
+      "prevention": [
+        "Wearing protective gear during sports.",
+        "Following safety protocols to prevent falls."
+      ],
+      "alternative": [],
+      "doctor": "Neurologist",
+      "treatment": [
+        "Rest and gradual return to activities.",
+        "Monitoring for worsening symptoms.",
+        "Pain relief medications."
+      ]
+    },
+    "Conduct Disorder": {
+      "disease_name": "Conduct Disorder",
+      "disease_detail": "Conduct disorder is a mental health condition diagnosed in childhood or adolescence characterized by a persistent pattern of disruptive and violent behaviors that violate the rights of others.",
+      "cause": [
+        "Genetic factors.",
+        "Environmental influences.",
+        "Brain abnormalities."
+      ],
+      "symptoms": [
+        "Aggressive behavior.",
+        "Destruction of property.",
+        "Deceitfulness or theft.",
+        "Serious violations of rules."
+      ],
+      "prevention": [
+        "Early intervention and support for at-risk children.",
+        "Parent training programs."
+      ],
+      "alternative": [],
+      "doctor": "Child Psychiatrist",
+      "treatment": [
+        "Behavioral therapy.",
+        "Family therapy.",
+        "Medications to manage symptoms."
+      ]
+    },
+    "Congenital Cataract": {
+      "disease_name": "Congenital Cataract",
+      "disease_detail": "Congenital cataract is a clouding of the lens of the eye present at birth, which can affect one or both eyes and impair vision.",
+      "cause": [
+        "Genetic mutations.",
+        "Infections during pregnancy.",
+        "Metabolic disorders."
+      ],
+      "symptoms": [
+        "Cloudy or blurry vision.",
+        "Nystagmus (uncontrolled eye movements).",
+        "Poor visual tracking.",
+        "Visible opacity in the lens."
+      ],
+      "prevention": [
+        "Prenatal care to prevent infections.",
+        "Genetic counseling."
+      ],
+      "alternative": [],
+      "doctor": "Ophthalmologist",
+      "treatment": [
+        "Surgical removal of the cataract.",
+        "Corrective lenses or contact lenses.",
+        "Vision therapy."
+      ]
+    },
+    "Congenital Cytomegalovirus": {
+      "disease_name": "Congenital Cytomegalovirus",
+      "disease_detail": "Congenital cytomegalovirus (CMV) infection occurs when a baby is born with CMV, which can lead to various health problems.",
+      "cause": [
+        "CMV infection passed from mother to baby during pregnancy."
+      ],
+      "symptoms": [
+        "Hearing loss.",
+        "Vision impairment.",
+        "Microcephaly.",
+        "Developmental delays."
+      ],
+      "prevention": [
+        "Practicing good hygiene during pregnancy.",
+        "Avoiding contact with bodily fluids of young children."
+      ],
+      "alternative": [],
+      "doctor": "Pediatrician",
+      "treatment": [
+        "Antiviral medications.",
+        "Early intervention services.",
+        "Supportive therapies."
+      ]
+    },
+    "Congenital Fibrinogen Deficiency": {
+      "disease_name": "Congenital Fibrinogen Deficiency",
+      "disease_detail": "Congenital fibrinogen deficiency is a rare bleeding disorder where the blood does not clot properly due to a lack of fibrinogen.",
+      "cause": [
+        "Genetic mutations affecting fibrinogen production."
+      ],
+      "symptoms": [
+        "Excessive bleeding.",
+        "Easy bruising.",
+        "Bleeding gums.",
+        "Prolonged bleeding from cuts."
+      ],
+      "prevention": [
+        "Genetic counseling."
+      ],
+      "alternative": [],
+      "doctor": "Hematologist",
+      "treatment": [
+        "Fibrinogen replacement therapy.",
+        "Blood transfusions.",
+        "Preventive care to avoid injuries."
+      ]
+    },
+    "Congenital Nephrotic Syndrome": {
+      "disease_name": "Congenital Nephrotic Syndrome",
+      "disease_detail": "Congenital nephrotic syndrome is a kidney disorder present at birth that leads to significant protein loss in the urine.",
+      "cause": [
+        "Genetic mutations."
+      ],
+      "symptoms": [
+        "Swelling (edema).",
+        "Proteinuria (high levels of protein in the urine).",
+        "Hypoalbuminemia (low blood albumin levels).",
+        "Frequent infections."
+      ],
+      "prevention": [
+        "Genetic counseling."
+      ],
+      "alternative": [],
+      "doctor": "Nephrologist",
+      "treatment": [
+        "Medications to manage symptoms.",
+        "Dietary changes.",
+        "Dialysis.",
+        "Kidney transplant."
+      ]
+    },
+    "Conjunctivitis (Pink Eye)": {
+      "disease_name": "Conjunctivitis (Pink Eye)",
+      "disease_detail": "Conjunctivitis, also known as pink eye, is an inflammation or infection of the conjunctiva, the transparent membrane that lines the eyelid and covers the white part of the eyeball.",
+      "cause": [
+        "Viral infections.",
+        "Bacterial infections.",
+        "Allergic reactions."
+      ],
+      "symptoms": [
+        "Redness in the white of the eye or inner eyelid.",
+        "Increased amount of tears.",
+        "Thick yellow discharge that crusts over the eyelashes.",
+        "Itchy or burning eyes."
+      ],
+      "prevention": [
+        "Good hygiene practices.",
+        "Avoiding touching the eyes with unclean hands.",
+        "Avoiding sharing personal items."
+      ],
+      "alternative": [
+        "Pink eye"
+      ],
+      "doctor": "Ophthalmologist",
+      "treatment": [
+        "Antibiotic eye drops for bacterial infections.",
+        "Antihistamines for allergic conjunctivitis.",
+        "Symptomatic treatment for viral infections."
+      ]
+    },
+    "Coronavirus": {
+      "disease_name": "Coronavirus",
+      "disease_detail": "Coronavirus refers to a family of viruses that can cause illnesses ranging from the common cold to more severe diseases such as COVID-19.",
+      "cause": [
+        "Infection with a coronavirus strain."
+      ],
+      "symptoms": [
+        "Fever.",
+        "Cough.",
+        "Shortness of breath.",
+        "Fatigue."
+      ],
+      "prevention": [
+        "Frequent handwashing.",
+        "Wearing masks.",
+        "Social distancing.",
+        "Vaccination."
+      ],
+      "alternative": [],
+      "doctor": "Infectious Disease Specialist",
+      "treatment": [
+        "Symptomatic treatment.",
+        "Antiviral medications.",
+        "Supportive care."
+      ]
+    },
+    "Cranial Mononeuropathy III": {
+      "disease_name": "Cranial Mononeuropathy III",
+      "disease_detail": "Cranial mononeuropathy III is a condition that affects the third cranial nerve, which controls most of the eye's movements and pupil constriction.",
+      "cause": [
+        "Diabetes.",
+        "Head trauma.",
+        "Aneurysms.",
+        "Infections."
+      ],
+      "symptoms": [
+        "Double vision.",
+        "Drooping eyelid.",
+        "Pupil dilation.",
+        "Eye movement difficulties."
+      ],
+      "prevention": [
+        "Managing underlying conditions like diabetes.",
+        "Protecting the head from injury."
+      ],
+      "alternative": [
+        "Oculomotor nerve palsy"
+      ],
+      "doctor": "Neurologist",
+      "treatment": [
+        "Treating the underlying cause.",
+        "Eye patching.",
+        "Surgical intervention in some cases."
+      ]
+    },
+    "Craniopharyngioma": {
+      "disease_name": "Craniopharyngioma",
+      "disease_detail": "Craniopharyngioma is a benign brain tumor that develops near the pituitary gland, often affecting hormone production and growth.",
+      "cause": [
+        "Embryonic tissue remnants near the pituitary gland."
+      ],
+      "symptoms": [
+        "Headaches.",
+        "Vision problems.",
+        "Hormonal imbalances.",
+        "Growth delays in children."
+      ],
+      "prevention": [
+        "No known prevention as it is related to embryonic development."
+      ],
+      "alternative": [],
+      "doctor": "Neurosurgeon",
+      "treatment": [
+        "Surgical removal of the tumor.",
+        "Radiation therapy.",
+        "Hormone replacement therapy."
+      ]
+    },
+    "Creutzfeldt-Jakob Disease": {
+      "disease_name": "Creutzfeldt-Jakob Disease",
+      "disease_detail": "Creutzfeldt-Jakob disease (CJD) is a rare, degenerative, and fatal brain disorder caused by prions.",
+      "cause": [
+        "Abnormal prion proteins."
+      ],
+      "symptoms": [
+        "Rapidly progressive dementia.",
+        "Muscle stiffness.",
+        "Tremors.",
+        "Loss of coordination."
+      ],
+      "prevention": [
+        "Avoiding exposure to infected tissue.",
+        "Proper sterilization procedures for medical instruments."
+      ],
+      "alternative": [],
+      "doctor": "Neurologist",
+      "treatment": [
+        "No cure; supportive care to manage symptoms."
+      ]
+    },
+    "Crohn Disease": {
+      "disease_name": "Crohn Disease",
+      "disease_detail": "Crohn disease is a chronic inflammatory bowel disease that affects the lining of the digestive tract, leading to abdominal pain, severe diarrhea, and malnutrition.",
+      "cause": [
+        "Exact cause unknown; involves genetic, environmental, and immune factors."
+      ],
+      "symptoms": [
+        "Abdominal pain.",
+        "Diarrhea.",
+        "Weight loss.",
+        "Fatigue."
+      ],
+      "prevention": [
+        "No known prevention; managing risk factors and early intervention."
+      ],
+      "alternative": [
+        "Regional enteritis"
+      ],
+      "doctor": "Gastroenterologist",
+      "treatment": [
+        "Anti-inflammatory drugs.",
+        "Immune system suppressors.",
+        "Surgery.",
+        "Dietary changes."
+      ]
+    },
+    "Cryoglobulinemia": {
+      "disease_name": "Cryoglobulinemia",
+      "disease_detail": "Cryoglobulinemia is a condition where abnormal proteins in the blood precipitate at cold temperatures, leading to restricted blood flow and various symptoms.",
+      "cause": [
+        "Hepatitis C infection.",
+        "Autoimmune diseases.",
+        "Certain cancers."
+      ],
+      "symptoms": [
+        "Skin rashes.",
+        "Joint pain.",
+        "Weakness.",
+        "Nerve damage."
+      ],
+      "prevention": [
+        "Avoiding cold exposure.",
+        "Treating underlying conditions."
+      ],
+      "alternative": [],
+      "doctor": "Rheumatologist",
+      "treatment": [
+        "Plasmapheresis.",
+        "Immunosuppressive drugs.",
+        "Antiviral therapy for hepatitis C."
+      ]
+    },
+    "Cryptosporidium Enteritis": {
+      "disease_name": "Cryptosporidium Enteritis",
+      "disease_detail": "Cryptosporidium enteritis is a parasitic infection of the intestines caused by Cryptosporidium, leading to severe diarrhea and abdominal cramps.",
+      "cause": [
+        "Ingestion of contaminated water or food."
+      ],
+      "symptoms": [
+        "Watery diarrhea.",
+        "Abdominal cramps.",
+        "Nausea.",
+        "Weight loss."
+      ],
+      "prevention": [
+        "Drinking treated or boiled water.",
+        "Good hygiene practices."
+      ],
+      "alternative": [],
+      "doctor": "Infectious Disease Specialist",
+      "treatment": [
+        "Rehydration therapy.",
+        "Antiparasitic medications.",
+        "Supportive care."
+      ]
+    },
+    "Curvature of the Penis": {
+      "disease_name": "Curvature of the Penis",
+      "disease_detail": "Curvature of the penis, also known as Peyronie's disease, is a condition where fibrous scar tissue develops inside the penis, causing it to bend or curve during erections.",
+      "cause": [
+        "Trauma to the penis.",
+        "Genetic predisposition."
+      ],
+      "symptoms": [
+        "Bent or curved penis.",
+        "Painful erections.",
+        "Erectile dysfunction."
+      ],
+      "prevention": [
+        "Avoiding penile injury."
+      ],
+      "alternative": [
+        "Peyronie's disease"
+      ],
+      "doctor": "Urologist",
+      "treatment": [
+        "Medications to reduce scar tissue.",
+        "Surgery.",
+        "Shock wave therapy."
+      ]
+    },
+    "Cystitis - Acute": {
+      "disease_name": "Cystitis - Acute",
+      "disease_detail": "Acute cystitis is a sudden inflammation of the bladder, usually caused by a bacterial infection, leading to pain and discomfort during urination.",
+      "cause": [
+        "Bacterial infection, often E. coli."
+      ],
+      "symptoms": [
+        "Painful urination.",
+        "Frequent urge to urinate.",
+        "Cloudy or strong-smelling urine.",
+        "Pelvic discomfort."
+      ],
+      "prevention": [
+        "Good personal hygiene.",
+        "Staying hydrated.",
+        "Urinating after sexual intercourse."
+      ],
+      "alternative": [
+        "Bladder infection"
+      ],
+      "doctor": "Urologist",
+      "treatment": [
+        "Antibiotics.",
+        "Pain relief medications.",
+        "Increased fluid intake."
+      ]
+    },
+    "Cytomegalovirus (CMV) Infection": {
+      "disease_name": "Cytomegalovirus (CMV) Infection",
+      "disease_detail": "Cytomegalovirus (CMV) infection is a common virus that can infect people of all ages, causing mild symptoms in healthy individuals but serious complications in immunocompromised individuals and newborns.",
+      "cause": [
+        "Cytomegalovirus (CMV) infection."
+      ],
+      "symptoms": [
+        "Fever.",
+        "Sore throat.",
+        "Fatigue.",
+        "Swollen glands."
+      ],
+      "prevention": [
+        "Good hygiene practices.",
+        "Avoiding contact with bodily fluids of infected individuals."
+      ],
+      "alternative": [],
+      "doctor": "Infectious Disease Specialist",
+      "treatment": [
+        "Antiviral medications.",
+        "Supportive care."
+      ]
+    },
+    "Deep Vein Thrombosis": {
+      "disease_name": "Deep Vein Thrombosis",
+      "disease_detail": "Deep vein thrombosis (DVT) is a condition where a blood clot forms in a deep vein, usually in the legs, which can cause serious complications if the clot travels to the lungs.",
+      "cause": [
+        "Prolonged immobility.",
+        "Certain medical conditions.",
+        "Genetic predisposition."
+      ],
+      "symptoms": [
+        "Swelling in the affected leg.",
+        "Pain or tenderness in the leg.",
+        "Red or discolored skin.",
+        "Warmth in the affected area."
+      ],
+      "prevention": [
+        "Regular movement during long periods of sitting.",
+        "Wearing compression stockings.",
+        "Maintaining a healthy weight.",
+        "Staying hydrated."
+      ],
+      "alternative": [],
+      "doctor": "Vascular Specialist",
+      "treatment": [
+        "Anticoagulant medications.",
+        "Thrombolytic therapy.",
+        "Compression stockings.",
+        "Surgery in severe cases."
+      ]
+    },
+    "Dehydration": {
+      "disease_name": "Dehydration",
+      "disease_detail": "Dehydration occurs when you use or lose more fluid than you take in, and your body doesn't have enough water and other fluids to carry out its normal functions.",
+      "cause": [
+        "Excessive sweating.",
+        "Vomiting or diarrhea.",
+        "Fever.",
+        "Insufficient fluid intake."
+      ],
+      "symptoms": [
+        "Thirst.",
+        "Dry mouth and tongue.",
+        "Dark yellow urine.",
+        "Dizziness or lightheadedness."
+      ],
+      "prevention": [
+        "Drinking plenty of fluids, especially during hot weather or exercise.",
+        "Eating water-rich foods like fruits and vegetables.",
+        "Monitoring fluid intake during illness."
+      ],
+      "alternative": [],
+      "doctor": "Primary Care Physician",
+      "treatment": [
+        "Rehydration with fluids and electrolytes.",
+        "IV fluids in severe cases.",
+        "Treating the underlying cause of fluid loss."
+      ]
+    },
+    "Delirium": {
+      "disease_name": "Delirium",
+      "disease_detail": "Delirium is a sudden, severe confusion and rapid changes in brain function that occur with physical or mental illness.",
+      "cause": [
+        "Infections.",
+        "Medications.",
+        "Metabolic imbalances.",
+        "Substance withdrawal."
+      ],
+      "symptoms": [
+        "Reduced awareness of the environment.",
+        "Cognitive impairment.",
+        "Emotional disturbances.",
+        "Hallucinations."
+      ],
+      "prevention": [
+        "Proper management of chronic illnesses.",
+        "Avoiding or monitoring high-risk medications.",
+        "Preventing infections."
+      ],
+      "alternative": [],
+      "doctor": "Geriatrician",
+      "treatment": [
+        "Treating the underlying cause.",
+        "Medications to manage symptoms.",
+        "Supportive care."
+      ]
+    },
+    "Delirium Tremens": {
+      "disease_name": "Delirium Tremens",
+      "disease_detail": "Delirium tremens (DTs) is a severe form of alcohol withdrawal that involves sudden and severe mental or nervous system changes.",
+      "cause": [
+        "Abrupt cessation of alcohol after prolonged heavy use."
+      ],
+      "symptoms": [
+        "Severe confusion.",
+        "Agitation.",
+        "Fever.",
+        "Hallucinations."
+      ],
+      "prevention": [
+        "Gradual reduction of alcohol intake.",
+        "Seeking medical help for alcohol dependence."
+      ],
+      "alternative": [],
+      "doctor": "Addiction Specialist",
+      "treatment": [
+        "Benzodiazepines.",
+        "Supportive care.",
+        "Monitoring and managing complications."
+      ]
+    },
+    "Dementia": {
+      "disease_name": "Dementia",
+      "disease_detail": "Dementia is a general term for loss of memory, language, problem-solving, and other thinking abilities that are severe enough to interfere with daily life.",
+      "cause": [
+        "Alzheimer's disease.",
+        "Vascular dementia.",
+        "Lewy body dementia.",
+        "Frontotemporal dementia."
+      ],
+      "symptoms": [
+        "Memory loss.",
+        "Difficulty communicating.",
+        "Impaired reasoning and judgment.",
+        "Personality changes."
+      ],
+      "prevention": [
+        "Regular physical exercise.",
+        "Healthy diet.",
+        "Cognitive activities.",
+        "Managing cardiovascular risk factors."
+      ],
+      "alternative": [],
+      "doctor": "Neurologist",
+      "treatment": [
+        "Medications to manage symptoms.",
+        "Cognitive therapy.",
+        "Supportive care."
+      ]
+    },
+    "Dengue Fever": {
+      "disease_name": "Dengue Fever",
+      "disease_detail": "Dengue fever is a mosquito-borne viral infection causing flu-like illness and potentially developing into severe dengue, a leading cause of serious illness and death.",
+      "cause": [
+        "Dengue virus transmitted by Aedes mosquitoes."
+      ],
+      "symptoms": [
+        "High fever.",
+        "Severe headache.",
+        "Pain behind the eyes.",
+        "Severe joint and muscle pain."
+      ],
+      "prevention": [
+        "Using mosquito repellent.",
+        "Wearing protective clothing.",
+        "Eliminating mosquito breeding sites."
+      ],
+      "alternative": [],
+      "doctor": "Infectious Disease Specialist",
+      "treatment": [
+        "Supportive care.",
+        "Pain relievers (avoid aspirin).",
+        "Fluid replacement therapy."
+      ]
+    },
+    "Dependent Personality Disorder": {
+      "disease_name": "Dependent Personality Disorder",
+      "disease_detail": "Dependent personality disorder is a mental health condition characterized by an excessive need to be taken care of, leading to submissive and clinging behavior and fears of separation.",
+      "cause": [
+        "Genetic factors.",
+        "Childhood experiences.",
+        "Developmental issues."
+      ],
+      "symptoms": [
+        "Difficulty making decisions without reassurance.",
+        "Need for others to assume responsibility.",
+        "Fear of being alone.",
+        "Difficulty expressing disagreement."
+      ],
+      "prevention": [
+        "Early intervention in at-risk individuals.",
+        "Healthy parenting and nurturing independence."
+      ],
+      "alternative": [],
+      "doctor": "Psychiatrist",
+      "treatment": [
+        "Psychotherapy (Cognitive-behavioral therapy).",
+        "Medications to manage co-occurring conditions."
+      ]
+    },
+    "Dermatitis Herpetiformis": {
+      "disease_name": "Dermatitis Herpetiformis",
+      "disease_detail": "Dermatitis herpetiformis is a chronic, intensely itchy skin condition associated with celiac disease, characterized by clusters of small blisters and bumps.",
+      "cause": [
+        "Gluten sensitivity.",
+        "Genetic predisposition."
+      ],
+      "symptoms": [
+        "Intense itching and burning.",
+        "Clusters of red bumps and blisters.",
+        "Lesions typically on elbows, knees, back, and buttocks."
+      ],
+      "prevention": [
+        "Adhering to a gluten-free diet."
+      ],
+      "alternative": [],
+      "doctor": "Dermatologist",
+      "treatment": [
+        "Gluten-free diet.",
+        "Dapsone medication.",
+        "Topical steroids for symptom relief."
+      ]
+    },
+    "Dermatomyositis": {
+      "disease_name": "Dermatomyositis",
+      "disease_detail": "Dermatomyositis is an inflammatory disease marked by muscle weakness and a distinctive skin rash.",
+      "cause": [
+        "Autoimmune response.",
+        "Genetic factors.",
+        "Infections."
+      ],
+      "symptoms": [
+        "Muscle weakness.",
+        "Heliotrope rash on eyelids.",
+        "Gottron's papules on knuckles.",
+        "Difficulty swallowing."
+      ],
+      "prevention": [
+        "No specific prevention; early treatment can help manage symptoms."
+      ],
+      "alternative": [],
+      "doctor": "Rheumatologist",
+      "treatment": [
+        "Corticosteroids.",
+        "Immunosuppressive drugs.",
+        "Physical therapy."
+      ]
+    },
+    "Developmental Coordination Disorder": {
+      "disease_name": "Developmental Coordination Disorder",
+      "disease_detail": "Developmental coordination disorder (DCD) is a motor skills disorder characterized by difficulty in coordination and executing motor tasks, affecting daily activities and academic performance.",
+      "cause": [
+        "Exact cause unknown; involves developmental delays in the brain."
+      ],
+      "symptoms": [
+        "Clumsiness.",
+        "Difficulty with tasks requiring fine motor skills.",
+        "Poor balance and coordination.",
+        "Delays in achieving motor milestones."
+      ],
+      "prevention": [
+        "Early intervention programs."
+      ],
+      "alternative": [
+        "Dyspraxia"
+      ],
+      "doctor": "Pediatrician",
+      "treatment": [
+        "Occupational therapy.",
+        "Physical therapy.",
+        "Educational support."
+      ]
+    },
+    "Diabetes": {
+      "disease_name": "Diabetes",
+      "disease_detail": "Diabetes is a chronic condition that affects the way the body processes blood sugar (glucose). There are two main types: Type 1 and Type 2.",
+      "cause": [
+        "Type 1: Autoimmune destruction of insulin-producing beta cells in the pancreas.",
+        "Type 2: Insulin resistance and eventual inability of the pancreas to produce sufficient insulin."
+      ],
+      "symptoms": [
+        "Increased thirst.",
+        "Frequent urination.",
+        "Extreme hunger.",
+        "Unexplained weight loss.",
+        "Fatigue."
+      ],
+      "prevention": [
+        "Healthy diet.",
+        "Regular physical activity.",
+        "Maintaining a healthy weight.",
+        "Regular blood sugar monitoring."
+      ],
+      "alternative": [],
+      "doctor": "Endocrinologist",
+      "treatment": [
+        "Insulin therapy for Type 1.",
+        "Oral medications for Type 2.",
+        "Diet and lifestyle changes.",
+        "Regular blood sugar monitoring."
+      ]
+    },
+    "Dilated Cardiomyopathy": {
+      "disease_name": "Dilated Cardiomyopathy",
+      "disease_detail": "Dilated cardiomyopathy is a condition where the heart's ability to pump blood is decreased because the heart's main pumping chamber is enlarged and weakened.",
+      "cause": [
+        "Genetic mutations.",
+        "Coronary artery disease.",
+        "Infections.",
+        "Toxins such as alcohol or drugs."
+      ],
+      "symptoms": [
+        "Shortness of breath.",
+        "Fatigue.",
+        "Swelling in the legs and ankles.",
+        "Irregular heartbeats."
+      ],
+      "prevention": [
+        "Healthy lifestyle choices.",
+        "Managing risk factors such as high blood pressure and diabetes.",
+        "Avoiding excessive alcohol and drug use."
+      ],
+      "alternative": [],
+      "doctor": "Cardiologist",
+      "treatment": [
+        "Medications.",
+        "Lifestyle changes.",
+        "Implantable devices.",
+        "Heart transplant in severe cases."
+      ]
+    },
+    "Diphtheria": {
+      "disease_name": "Diphtheria",
+      "disease_detail": "Diphtheria is a serious bacterial infection affecting the mucous membranes of the throat and nose, potentially leading to severe respiratory issues.",
+      "cause": [
+        "Corynebacterium diphtheriae bacterium."
+      ],
+      "symptoms": [
+        "Sore throat.",
+        "Fever.",
+        "Swollen glands.",
+        "Thick, gray coating on the throat and tonsils."
+      ],
+      "prevention": [
+        "Vaccination (DPT vaccine).",
+        "Good hygiene practices."
+      ],
+      "alternative": [],
+      "doctor": "Infectious Disease Specialist",
+      "treatment": [
+        "Antitoxin.",
+        "Antibiotics.",
+        "Supportive care."
+      ]
+    },
+    "Diskitis": {
+      "disease_name": "Diskitis",
+      "disease_detail": "Diskitis is an infection of the intervertebral disc space that can lead to severe back pain and spinal damage.",
+      "cause": [
+        "Bacterial or viral infections."
+      ],
+      "symptoms": [
+        "Severe back pain.",
+        "Fever.",
+        "Difficulty moving or walking.",
+        "Local tenderness."
+      ],
+      "prevention": [
+        "Prompt treatment of infections.",
+        "Maintaining a healthy immune system."
+      ],
+      "alternative": [],
+      "doctor": "Orthopedic Specialist",
+      "treatment": [
+        "Antibiotics or antiviral medications.",
+        "Pain management.",
+        "Bed rest or immobilization."
+      ]
+    },
+    "Disseminated Intravascular Coagulation (DIC)": {
+      "disease_name": "Disseminated Intravascular Coagulation (DIC)",
+      "disease_detail": "DIC is a serious disorder in which the proteins that control blood clotting become overactive, leading to both excessive clotting and bleeding.",
+      "cause": [
+        "Severe infections.",
+        "Trauma.",
+        "Cancer.",
+        "Complications during childbirth."
+      ],
+      "symptoms": [
+        "Bleeding, possibly from multiple sites.",
+        "Bruising.",
+        "Blood clots.",
+        "Organ failure."
+      ],
+      "prevention": [
+        "Prompt treatment of underlying conditions.",
+        "Monitoring at-risk patients closely."
+      ],
+      "alternative": [],
+      "doctor": "Hematologist",
+      "treatment": [
+        "Treating the underlying cause.",
+        "Blood transfusions.",
+        "Medications to control clotting."
+      ]
+    },
+    "Disseminated Tuberculosis": {
+      "disease_name": "Disseminated Tuberculosis",
+      "disease_detail": "Disseminated tuberculosis is a severe form of tuberculosis where the infection spreads from the lungs to other parts of the body through the bloodstream.",
+      "cause": [
+        "Mycobacterium tuberculosis bacteria."
+      ],
+      "symptoms": [
+        "Fever.",
+        "Weight loss.",
+        "Weakness.",
+        "Night sweats."
+      ],
+      "prevention": [
+        "BCG vaccination.",
+        "Early detection and treatment of TB.",
+        "Good hygiene and ventilation."
+      ],
+      "alternative": [],
+      "doctor": "Infectious Disease Specialist",
+      "treatment": [
+        "Long-term antibiotic therapy.",
+        "Supportive care.",
+        "Monitoring for complications."
+      ]
+    },
+    "Distal Renal Tubular Acidosis": {
+      "disease_name": "Distal Renal Tubular Acidosis",
+      "disease_detail": "Distal renal tubular acidosis (dRTA) is a condition where the kidneys fail to acidify urine properly, leading to a buildup of acid in the blood.",
+      "cause": [
+        "Genetic mutations.",
+        "Autoimmune diseases.",
+        "Certain medications."
+      ],
+      "symptoms": [
+        "Growth retardation in children.",
+        "Muscle weakness.",
+        "Fatigue.",
+        "Kidney stones."
+      ],
+      "prevention": [
+        "Managing underlying conditions.",
+        "Avoiding medications that can cause dRTA."
+      ],
+      "alternative": [],
+      "doctor": "Nephrologist",
+      "treatment": [
+        "Alkali therapy (bicarbonate supplements).",
+        "Potassium supplements.",
+        "Monitoring and managing kidney stones."
+      ]
+    },
+    "Diverticulitis": {
+      "disease_name": "Diverticulitis",
+      "disease_detail": "Diverticulitis is the inflammation or infection of diverticula, which are small, bulging pouches that can form in the lining of the digestive system.",
+      "cause": [
+        "Fecal matter trapped in the diverticula.",
+        "Bacterial infection."
+      ],
+      "symptoms": [
+        "Abdominal pain.",
+        "Fever.",
+        "Nausea.",
+        "Changes in bowel habits."
+      ],
+      "prevention": [
+        "High-fiber diet.",
+        "Regular exercise.",
+        "Drinking plenty of fluids."
+      ],
+      "alternative": [],
+      "doctor": "Gastroenterologist",
+      "treatment": [
+        "Antibiotics.",
+        "Liquid diet to allow the bowel to heal.",
+        "Surgery in severe cases."
+      ]
+    },
+    "Double Aortic Arch": {
+      "disease_name": "Double Aortic Arch",
+      "disease_detail": "Double aortic arch is a congenital heart defect where the aorta, the main artery that carries blood from the heart to the body, forms a complete vascular ring around the trachea and esophagus.",
+      "cause": [
+        "Developmental defect during embryogenesis."
+      ],
+      "symptoms": [
+        "Difficulty breathing.",
+        "Trouble swallowing.",
+        "Coughing.",
+        "Recurrent respiratory infections."
+      ],
+      "prevention": [
+        "No known prevention; congenital condition."
+      ],
+      "alternative": [],
+      "doctor": "Pediatric Cardiologist",
+      "treatment": [
+        "Surgical correction of the defect."
+      ]
+    },
+    "Double Inlet Left Ventricle": {
+      "disease_name": "Double Inlet Left Ventricle",
+      "disease_detail": "Double inlet left ventricle (DILV) is a rare congenital heart defect where both atria connect to the left ventricle, resulting in an abnormal blood flow pattern in the heart.",
+      "cause": [
+        "Developmental defect during embryogenesis."
+      ],
+      "symptoms": [
+        "Cyanosis (bluish skin).",
+        "Fatigue.",
+        "Shortness of breath.",
+        "Poor growth."
+      ],
+      "prevention": [
+        "No known prevention; congenital condition."
+      ],
+      "alternative": [],
+      "doctor": "Pediatric Cardiologist",
+      "treatment": [
+        "Surgical interventions.",
+        "Medications to manage symptoms."
+      ]
+    },
+    "Down Syndrome": {
+      "disease_name": "Down Syndrome",
+      "disease_detail": "Down syndrome is a genetic disorder caused by the presence of an extra chromosome 21. It is associated with intellectual disabilities, characteristic facial features, and developmental delays.",
+      "cause": [
+        "Presence of an extra chromosome 21 (Trisomy 21)."
+      ],
+      "symptoms": [
+        "Intellectual disability.",
+        "Characteristic facial features (flattened face, upward slanting eyes).",
+        "Developmental delays.",
+        "Low muscle tone."
+      ],
+      "prevention": [
+        "Prenatal testing (amniocentesis, chorionic villus sampling) for early diagnosis."
+      ],
+      "alternative": [],
+      "doctor": "Geneticist",
+      "treatment": [
+        "Early intervention programs (occupational therapy, speech therapy, physical therapy).",
+        "Treatment of associated health conditions."
+      ]
+    },
+    "Dysarthria": {
+      "disease_name": "Dysarthria",
+      "disease_detail": "Dysarthria is a motor speech disorder caused by weakness, paralysis, or incoordination of the muscles used for speech production.",
+      "cause": [
+        "Neurological conditions (stroke, brain injury, Parkinson's disease).",
+        "Muscle weakness or paralysis."
+      ],
+      "symptoms": [
+        "Slurred or slow speech.",
+        "Difficulty moving the tongue or facial muscles.",
+        "Changes in voice quality (hoarse, nasal).",
+        "Difficulty controlling volume or pitch of speech."
+      ],
+      "prevention": [
+        "Preventing conditions that cause neurological damage.",
+        "Speech therapy to improve speech clarity and coordination."
+      ],
+      "alternative": [],
+      "doctor": "Speech-Language Pathologist",
+      "treatment": [
+        "Speech therapy.",
+        "Physical therapy.",
+        "Treatment of underlying neurological conditions."
+      ]
+    },
+    "Dysgraphia": {
+      "disease_name": "Dysgraphia",
+      "disease_detail": "Dysgraphia is a learning disorder that affects writing abilities, causing problems with handwriting, spelling, and organization.",
+      "cause": [
+        "Underlying neurological differences."
+      ],
+      "symptoms": [
+        "Illegible handwriting.",
+        "Inconsistent spacing between letters and words.",
+        "Difficulty expressing thoughts in writing.",
+        "Poor spelling and grammar."
+      ],
+      "prevention": [
+        "Early identification and intervention.",
+        "Educational support tailored to the individual's needs."
+      ],
+      "alternative": [],
+      "doctor": "Educational Psychologist",
+      "treatment": [
+        "Educational support (occupational therapy, specialized instruction in writing skills).",
+        "Assistive technology (speech-to-text software, dictation devices)."
+      ]
+    },
+    "E. coli Enteritis": {
+      "disease_name": "E. coli Enteritis",
+      "disease_detail": "E. coli enteritis is a type of food poisoning caused by the ingestion of food or water contaminated with Escherichia coli bacteria, leading to inflammation of the intestines.",
+      "cause": [
+        "Ingestion of food or water contaminated with E. coli bacteria."
+      ],
+      "symptoms": [
+        "Severe abdominal cramps.",
+        "Watery or bloody diarrhea.",
+        "Nausea and vomiting.",
+        "Fever."
+      ],
+      "prevention": [
+        "Thoroughly cooking food, especially meat.",
+        "Practicing good hygiene (handwashing, proper food handling).",
+        "Avoiding unpasteurized dairy products."
+      ],
+      "alternative": [],
+      "doctor": "Gastroenterologist",
+      "treatment": [
+        "Rehydration.",
+        "Antibiotics in severe cases.",
+        "Supportive care."
+      ]
+    },
+    "Ear Barotrauma": {
+      "disease_name": "Ear Barotrauma",
+      "disease_detail": "Ear barotrauma is discomfort or damage to the ear due to pressure changes, such as those that occur during airplane travel, scuba diving, or driving in the mountains.",
+      "cause": [
+        "Rapid changes in air pressure."
+      ],
+      "symptoms": [
+        "Ear pain or discomfort.",
+        "Feeling of fullness in the ear.",
+        "Hearing loss.",
+        "Tinnitus (ringing in the ears)."
+      ],
+      "prevention": [
+        "Swallowing, yawning, or chewing gum during pressure changes.",
+        "Gradual pressure equalization during scuba diving.",
+        "Using decongestants before air travel if prone to congestion."
+      ],
+      "alternative": [],
+      "doctor": "Otolaryngologist",
+      "treatment": [
+        "Self-care measures (rest, chewing, yawning).",
+        "Decongestants or nasal corticosteroid sprays.",
+        "Pain relievers.",
+        "In severe cases, ear tube surgery."
+      ]
+    },
+    "Ear Infection": {
+      "disease_name": "Ear Infection",
+      "disease_detail": "An ear infection, also known as otitis media, is an inflammation or infection of the middle ear, commonly occurring in children.",
+      "cause": [
+        "Bacterial or viral infections."
+      ],
+      "symptoms": [
+        "Ear pain.",
+        "Tugging or pulling at the ear (in infants).",
+        "Difficulty sleeping.",
+        "Fever."
+      ],
+      "prevention": [
+        "Vaccination against bacterial causes (pneumococcus, Haemophilus influenzae type b).",
+        "Avoiding secondhand smoke exposure.",
+        "Breastfeeding infants, if possible."
+      ],
+      "alternative": [],
+      "doctor": "Pediatrician",
+      "treatment": [
+        "Antibiotics (if bacterial).",
+        "Pain relievers.",
+        "Warm compresses.",
+        "Ear drops for pain relief."
+      ]
+    },
+    "Ebola Virus Disease": {
+      "disease_name": "Ebola Virus Disease",
+      "disease_detail": "Ebola virus disease (EVD), formerly known as Ebola hemorrhagic fever, is a severe, often fatal illness in humans caused by infection with the Ebola virus.",
+      "cause": [
+        "Infection with the Ebola virus."
+      ],
+      "symptoms": [
+        "Fever.",
+        "Severe headache.",
+        "Muscle pain.",
+        "Weakness."
+      ],
+      "prevention": [
+        "Avoiding contact with bodily fluids of infected individuals.",
+        "Practicing good hygiene.",
+        "Using protective equipment in healthcare settings."
+      ],
+      "alternative": [],
+      "doctor": "Infectious Disease Specialist",
+      "treatment": [
+        "Supportive care (hydration, pain relief).",
+        "Experimental treatments (e.g., antiviral drugs, monoclonal antibodies).",
+        "Isolation to prevent spread of the virus."
+      ]
+    },
+    "Echinococcosis": {
+      "disease_name": "Echinococcosis",
+      "disease_detail": "Echinococcosis, also known as hydatid disease, is a parasitic infection caused by tapeworms of the genus Echinococcus.",
+      "cause": [
+        "Infection with the larval stage of Echinococcus tapeworms."
+      ],
+      "symptoms": [
+        "Abdominal pain.",
+        "Cysts or masses in the liver, lungs, or other organs.",
+        "Jaundice.",
+        "Allergic reactions (in some cases)."
+      ],
+      "prevention": [
+        "Preventing contact with infected dogs, the primary hosts of the tapeworms.",
+        "Avoiding consumption of contaminated food and water."
+      ],
+      "alternative": [],
+      "doctor": "Infectious Disease Specialist",
+      "treatment": [
+        "Surgery to remove cysts.",
+        "Antiparasitic medications.",
+        "Puncture, aspiration, injection, re-aspiration (PAIR) procedure for liver cysts."
+      ]
+    },
+    "ECHO Virus": {
+      "disease_name": "ECHO Virus",
+      "disease_detail": "ECHO (Enteric Cytopathic Human Orphan) viruses are a group of enteroviruses that primarily infect the gastrointestinal tract, although they can also cause respiratory and other infections.",
+      "cause": [
+        "Infection with ECHO viruses."
+      ],
+      "symptoms": [
+        "Fever.",
+        "Rash.",
+        "Respiratory symptoms (cough, runny nose).",
+        "Gastrointestinal symptoms (nausea, vomiting, diarrhea)."
+      ],
+      "prevention": [
+        "Good hygiene practices (handwashing, avoiding contact with infected individuals).",
+        "Vaccination against poliovirus, another enterovirus."
+      ],
+      "alternative": [],
+      "doctor": "Pediatrician",
+      "treatment": [
+        "Supportive care (hydration, fever management).",
+        "Antiviral medications in severe cases."
+      ]
+    },
+    "Ectodermal Dysplasias": {
+      "disease_name": "Ectodermal Dysplasias",
+      "disease_detail": "Ectodermal dysplasias are a group of genetic disorders characterized by abnormalities in structures derived from the ectoderm, including the skin, hair, nails, teeth, and sweat glands.",
+      "cause": [
+        "Genetic mutations affecting ectodermal development."
+      ],
+      "symptoms": [
+        "Abnormalities in hair, skin, nails, and teeth.",
+        "Sparse hair (hypotrichosis) or absent hair (alopecia).",
+        "Abnormal tooth development (hypodontia, anodontia).",
+        "Abnormal nail development (dystrophic or absent nails).",
+        "Sweating abnormalities."
+      ],
+      "prevention": [
+        "Genetic counseling for affected families to understand the risks of passing on the condition."
+      ],
+      "alternative": [],
+      "doctor": "Dermatologist or Medical Geneticist",
+      "treatment": [
+        "Management of symptoms (e.g., dental implants, prosthetic devices for missing teeth).",
+        "Supportive care.",
+        "Sweat gland surgery (in some cases)."
+      ]
+    },
+    "Ehlers-Danlos Syndrome": {
+      "disease_name": "Ehlers-Danlos Syndrome",
+      "disease_detail": "Ehlers-Danlos syndrome (EDS) is a group of connective tissue disorders characterized by joint hypermobility, skin hyperextensibility, and tissue fragility.",
+      "cause": [
+        "Genetic mutations affecting collagen production or structure."
+      ],
+      "symptoms": [
+        "Joint hypermobility.",
+        "Skin hyperextensibility.",
+        "Easy bruising.",
+        "Tissue fragility.",
+        "Chronic joint pain."
+      ],
+      "prevention": [
+        "Genetic counseling for affected families to understand the risks of passing on the condition."
+      ],
+      "alternative": [],
+      "doctor": "Rheumatologist or Medical Geneticist",
+      "treatment": [
+        "Physical therapy to strengthen muscles and stabilize joints.",
+        "Pain management.",
+        "Wound care for skin injuries.",
+        "Surgery in severe cases to repair joint damage."
+      ]
+    },
+    "Eisenmenger Syndrome": {
+      "disease_name": "Eisenmenger Syndrome",
+      "disease_detail": "Eisenmenger syndrome is a complication of certain congenital heart defects, where blood flows in the wrong direction within the heart due to increased pressure in the pulmonary arteries.",
+      "cause": [
+        "Congenital heart defects (e.g., ventricular septal defect, atrial septal defect)."
+      ],
+      "symptoms": [
+        "Cyanosis (bluish discoloration of the skin).",
+        "Shortness of breath.",
+        "Fatigue.",
+        "Arrhythmias.",
+        "Clubbing of fingers."
+      ],
+      "prevention": [
+        "Early detection and treatment of congenital heart defects.",
+        "Avoiding pregnancy for women with Eisenmenger syndrome due to high maternal mortality risk."
+      ],
+      "alternative": [],
+      "doctor": "Cardiologist",
+      "treatment": [
+        "Medications to manage symptoms and improve heart function.",
+        "Supplemental oxygen therapy.",
+        "Heart-lung transplant in severe cases."
+      ]
+    },
+    "Ellis-van Creveld Syndrome": {
+      "disease_name": "Ellis-van Creveld Syndrome",
+      "disease_detail": "Ellis-van Creveld syndrome is a rare genetic disorder characterized by short stature, polydactyly (extra fingers or toes), and abnormalities of the teeth and nails.",
+      "cause": [
+        "Genetic mutations affecting the EVC or EVC2 genes."
+      ],
+      "symptoms": [
+        "Short stature.",
+        "Polydactyly (extra fingers or toes).",
+        "Abnormalities of the teeth (e.g., small teeth, misshapen teeth).",
+        "Nail abnormalities (e.g., missing nails, malformed nails).",
+        "Congenital heart defects."
+      ],
+      "prevention": [
+        "Genetic counseling for affected families to understand the risks of passing on the condition."
+      ],
+      "alternative": [],
+      "doctor": "Medical Geneticist",
+      "treatment": [
+        "Surgical correction of polydactyly.",
+        "Dental treatments.",
+        "Treatment of associated health issues (e.g., heart defects)."
+      ]
+    },
+    "Empyema": {
+      "disease_name": "Empyema",
+      "disease_detail": "Empyema is a collection of pus in the pleural cavity, usually caused by a bacterial infection, particularly following pneumonia.",
+      "cause": [
+        "Bacterial infection, often following pneumonia."
+      ],
+      "symptoms": [
+        "Chest pain, often sharp and worsened by breathing or coughing.",
+        "Fever.",
+        "Cough, often with sputum production.",
+        "Shortness of breath.",
+        "Fatigue."
+      ],
+      "prevention": [
+        "Vaccination against Streptococcus pneumoniae (pneumococcus).",
+        "Prompt treatment of respiratory infections."
+      ],
+      "alternative": [],
+      "doctor": "Pulmonologist",
+      "treatment": [
+        "Antibiotics to treat the underlying infection.",
+        "Drainage of pus from the pleural space (thoracentesis or chest tube insertion).",
+        "Surgery in severe cases."
+      ]
+    },
+    "Encephalitis": {
+      "disease_name": "Encephalitis",
+      "disease_detail": "Encephalitis is inflammation of the brain, most commonly caused by viral infections, although it can also result from bacterial or fungal infections, or autoimmune reactions.",
+      "cause": [
+        "Viral infections (e.g., herpes simplex virus, West Nile virus).",
+        "Bacterial infections (e.g., Lyme disease, tuberculosis).",
+        "Fungal infections (e.g., cryptococcosis).",
+        "Autoimmune reactions (e.g., acute disseminated encephalomyelitis)."
+      ],
+      "symptoms": [
+        "Fever.",
+        "Headache.",
+        "Confusion.",
+        "Seizures.",
+        "Behavioral changes."
+      ],
+      "prevention": [
+        "Vaccination against preventable viral infections (e.g., measles, mumps, rubella, varicella).",
+        "Mosquito control measures to prevent mosquito-borne viruses (e.g., West Nile virus).",
+        "Tick avoidance measures to prevent tick-borne infections (e.g., Lyme disease)."
+      ],
+      "alternative": [],
+      "doctor": "Neurologist or Infectious Disease Specialist",
+      "treatment": [
+        "Antiviral, antibacterial, or antifungal medications, depending on the cause.",
+        "Supportive care (hydration, pain relief, management of complications).",
+        "In severe cases, hospitalization and intensive care."
+      ]
+    },
+    "Endometrial Polyps": {
+      "disease_name": "Endometrial Polyps",
+      "disease_detail": "Endometrial polyps are growths that develop in the inner lining of the uterus (endometrium), often leading to irregular menstrual bleeding, but they can also be asymptomatic.",
+      "cause": [
+        "Exact cause is unknown, but hormonal factors may play a role."
+      ],
+      "symptoms": [
+        "Irregular menstrual bleeding.",
+        "Heavy menstrual bleeding.",
+        "Bleeding between periods.",
+        "Infertility (in some cases)."
+      ],
+      "prevention": [
+        "There are no known preventive measures."
+      ],
+      "alternative": [],
+      "doctor": "Gynecologist",
+      "treatment": [
+        "Hysteroscopic polypectomy (removal of polyps through a hysteroscope).",
+        "Hormonal medications to control bleeding.",
+        "In some cases, no treatment is required if the polyps are asymptomatic."
+      ]
+    },
+    "Endometriosis": {
+      "disease_name": "Endometriosis",
+      "disease_detail": "Endometriosis is a painful disorder in which tissue that normally lines the inside of the uterus (the endometrium) grows outside the uterus, commonly affecting the ovaries, fallopian tubes, and the tissue lining the pelvis.",
+      "cause": [
+        "Exact cause is unknown, but possible factors include retrograde menstruation, hormonal factors, and immune system disorders."
+      ],
+      "symptoms": [
+        "Pelvic pain.",
+        "Painful periods (dysmenorrhea).",
+        "Pain with intercourse (dyspareunia).",
+        "Infertility.",
+        "Heavy menstrual bleeding."
+      ],
+      "prevention": [
+        "There are no known preventive measures."
+      ],
+      "alternative": [],
+      "doctor": "Gynecologist",
+      "treatment": [
+        "Pain medications (NSAIDs) for pain relief.",
+        "Hormonal therapy to control menstrual cycles and reduce pain.",
+        "Surgery to remove endometrial implants and scar tissue (laparoscopy).",
+        "Fertility treatments for women trying to conceive."
+      ]
+    },
+    "Endometritis": {
+      "disease_name": "Endometritis",
+      "disease_detail": "Endometritis is inflammation of the inner lining of the uterus (endometrium), often due to infection following childbirth, miscarriage, or certain medical procedures.",
+      "cause": [
+        "Bacterial infection, commonly following childbirth, miscarriage, or medical procedures (e.g., insertion of an intrauterine device, endometrial biopsy)."
+      ],
+      "symptoms": [
+        "Pelvic pain.",
+        "Abnormal vaginal bleeding.",
+        "Fever.",
+        "Uterine tenderness.",
+        "Foul-smelling vaginal discharge."
+      ],
+      "prevention": [
+        "Using sterile techniques during medical procedures involving the uterus.",
+        "Prompt treatment of genital infections during pregnancy."
+      ],
+      "alternative": [],
+      "doctor": "Gynecologist",
+      "treatment": [
+        "Antibiotics to treat the underlying infection.",
+        "Pain relievers.",
+        "In severe cases, hospitalization and intravenous antibiotics."
+      ]
+    },
+    "Endophthalmitis": {
+      "disease_name": "Endophthalmitis",
+      "disease_detail": "Endophthalmitis is inflammation of the interior structures of the eye, often caused by a bacterial or fungal infection.",
+      "cause": [
+        "Bacterial or fungal infection, often following eye surgery, trauma, or as a complication of certain systemic infections."
+      ],
+      "symptoms": [
+        "Eye pain.",
+        "Redness of the eye.",
+        "Blurred vision.",
+        "Increased sensitivity to light (photophobia).",
+        "Floaters in the field of vision."
+      ],
+      "prevention": [
+        "Using sterile techniques during eye surgery.",
+        "Prompt treatment of eye injuries."
+      ],
+      "alternative": [],
+      "doctor": "Ophthalmologist",
+      "treatment": [
+        "Immediate administration of broad-spectrum antibiotics or antifungal medications.",
+        "Surgical drainage of pus or vitreous fluid from the eye (vitrectomy).",
+        "In severe cases, enucleation (removal of the eye)."
+      ]
+    },
+    "Enlarged Prostate": {
+      "disease_name": "Enlarged Prostate",
+      "disease_detail": "Enlarged prostate, also known as benign prostatic hyperplasia (BPH), is a common condition in aging men where the prostate gland grows larger and may cause urinary symptoms.",
+      "cause": [
+        "Age-related changes in hormone levels, especially testosterone and dihydrotestosterone (DHT)."
+      ],
+      "symptoms": [
+        "Frequent or urgent need to urinate.",
+        "Difficulty starting urination.",
+        "Weak urine stream.",
+        "Incomplete emptying of the bladder.",
+        "Nocturia (frequent urination at night)."
+      ],
+      "prevention": [
+        "Regular medical check-ups for early detection and treatment.",
+        "Maintaining a healthy lifestyle, including regular physical activity and a balanced diet."
+      ],
+      "alternative": [],
+      "doctor": "Urologist",
+      "treatment": [
+        "Medications to relax the muscles of the prostate and bladder.",
+        "Alpha-blockers to improve urine flow.",
+        "5-alpha-reductase inhibitors to shrink the prostate.",
+        "Surgery in severe cases (transurethral resection of the prostate, prostatectomy)."
+      ]
+    },
+    "Enteritis": {
+      "disease_name": "Enteritis",
+      "disease_detail": "Enteritis is inflammation of the small intestine, often caused by infection, autoimmune reactions, or other inflammatory conditions.",
+      "cause": [
+        "Infection with bacteria, viruses, or parasites (e.g., Salmonella, norovirus, Giardia).",
+        "Autoimmune reactions (e.g., celiac disease).",
+        "Other inflammatory conditions (e.g., Crohn's disease)."
+      ],
+      "symptoms": [
+        "Abdominal pain or cramps.",
+        "Diarrhea, which may be watery or contain blood.",
+        "Nausea and vomiting.",
+        "Fever.",
+        "Loss of appetite."
+      ],
+      "prevention": [
+        "Practicing good hygiene (handwashing, food safety measures).",
+        "Avoiding contaminated food and water.",
+        "Vaccination against preventable infections (e.g., rotavirus)."
+      ],
+      "alternative": [],
+      "doctor": "Gastroenterologist",
+      "treatment": [
+        "Rehydration to replace fluids and electrolytes lost through diarrhea.",
+        "Antibiotics in bacterial infections.",
+        "Antidiarrheal medications.",
+        "Treatment of underlying conditions causing enteritis."
+      ]
+    },
+    "Entropion": {
+      "disease_name": "Entropion",
+      "disease_detail": "Entropion is a condition in which the eyelid, usually the lower eyelid, turns inward, causing the eyelashes and skin to rub against the eye's surface, leading to irritation and discomfort.",
+      "cause": [
+        "Age-related changes in the eyelid tissues.",
+        "Scarring of the eyelid from injury or infection."
+      ],
+      "symptoms": [
+        "Eye irritation.",
+        "Watery eyes (epiphora).",
+        "Sensitivity to light (photophobia).",
+        "Blurred vision.",
+        "Corneal abrasions."
+      ],
+      "prevention": [
+        "There are no known preventive measures for age-related entropion.",
+        "Preventing eye injuries and infections may reduce the risk of scarring-related entropion."
+      ],
+      "alternative": [],
+      "doctor": "Ophthalmologist",
+      "treatment": [
+        "Artificial tears or lubricating ointments to relieve symptoms.",
+        "Taping the eyelid to correct its position.",
+        "Botulinum toxin injections to temporarily paralyze the muscles around the eye.",
+        "Surgery to tighten the eyelid and restore its normal position."
+      ]
+    },
+    "Eosinophilic Fasciitis": {
+      "disease_name": "Eosinophilic Fasciitis",
+      "disease_detail": "Eosinophilic fasciitis is a rare disorder characterized by inflammation and thickening of the fascia, the connective tissue that surrounds muscles, leading to swelling, pain, and stiffness in the arms, legs, and other affected areas.",
+      "cause": [
+        "The exact cause is unknown, but it is believed to involve an abnormal immune system response."
+      ],
+      "symptoms": [
+        "Swelling and pain in the arms, legs, or other areas.",
+        "Stiffness of the affected muscles and joints.",
+        "Skin redness and warmth over the affected area.",
+        "Fatigue.",
+        "Muscle weakness."
+      ],
+      "prevention": [
+        "There are no known preventive measures."
+      ],
+      "alternative": [],
+      "doctor": "Rheumatologist",
+      "treatment": [
+        "Corticosteroids to reduce inflammation.",
+        "Physical therapy to maintain or improve joint function.",
+        "Immunosuppressive medications in severe cases.",
+        "Treatment of associated conditions, if present."
+      ]
+    },
+    "Epidermoid Cyst": {
+      "disease_name": "Epidermoid Cyst",
+      "disease_detail": "An epidermoid cyst is a non-cancerous, closed sac located just beneath the skin, usually filled with keratin, a protein component of hair and nails.",
+      "cause": [
+        "Blockage of hair follicles or sebaceous glands."
+      ],
+      "symptoms": [
+        "A small, round bump under the skin.",
+        "Whitish, cheesy material (keratin) that may ooze out if the cyst is squeezed.",
+        "Localized swelling.",
+        "Redness and tenderness, if the cyst becomes inflamed or infected."
+      ],
+      "prevention": [
+        "Avoiding skin trauma or irritation.",
+        "Good hygiene practices."
+      ],
+      "alternative": [],
+      "doctor": "Dermatologist",
+      "treatment": [
+        "Surgical removal of the cyst (excision) if it is painful, infected, or cosmetically bothersome.",
+        "Corticosteroid injections to reduce inflammation.",
+        "Incision and drainage of an infected cyst."
+      ]
+    },
+    "Epidermolysis Bullosa": {
+      "disease_name": "Epidermolysis Bullosa",
+      "disease_detail": "Epidermolysis bullosa (EB) is a group of rare genetic disorders characterized by fragile skin that blisters and forms sores in response to minor injuries, friction, or trauma.",
+      "cause": [
+        "Genetic mutations affecting the proteins that anchor the layers of the skin together (e.g., collagen, keratin)."
+      ],
+      "symptoms": [
+        "Skin blisters or sores, often in response to minor trauma.",
+        "Thin or absent nails.",
+        "Scalp blistering and scarring, leading to hair loss.",
+        "Blistering inside the mouth or throat (mucous membrane involvement).",
+        "Difficulty swallowing (dysphagia)."
+      ],
+      "prevention": [
+        "There are no known preventive measures as EB is a genetic condition."
+      ],
+      "alternative": [],
+      "doctor": "Dermatologist",
+      "treatment": [
+        "Wound care to protect the skin and prevent infection.",
+        "Pain management.",
+        "Physical therapy to prevent contractures and maintain joint function.",
+        "Management of nutritional and gastrointestinal complications."
+      ]
+    },
+    "Epidural Abscess": {
+      "disease_name": "Epidural Abscess",
+      "disease_detail": "Epidural abscess is a collection of pus located between the dura mater (the tough outer membrane covering the brain and spinal cord) and the vertebral column.",
+      "cause": [
+        "Bacterial infection, usually spreading from nearby structures (e.g., spine, skin, urinary tract)."
+      ],
+      "symptoms": [
+        "Back or neck pain, often severe and localized.",
+        "Fever and chills.",
+        "Neurological symptoms (weakness, numbness, tingling) corresponding to the affected spinal cord level.",
+        "Difficulty controlling bowel or bladder function (in severe cases).",
+        "Spinal deformity or tenderness."
+      ],
+      "prevention": [
+        "Prompt treatment of infections in other parts of the body to prevent spread.",
+        "Careful management of invasive spinal procedures."
+      ],
+      "alternative": [],
+      "doctor": "Neurosurgeon or Infectious Disease Specialist",
+      "treatment": [
+        "Intravenous antibiotics to treat the underlying infection.",
+        "Surgical drainage of the abscess (laminectomy) to relieve pressure on the spinal cord.",
+        "Pain management.",
+        "In severe cases, surgery to stabilize the spine."
+      ]
+    },
+    "Epidural Hematoma": {
+      "disease_name": "Epidural Hematoma",
+      "disease_detail": "Epidural hematoma is bleeding between the dura mater (the tough outer membrane covering the brain and spinal cord) and the skull, often caused by head trauma.",
+      "cause": [
+        "Head injury causing a tear in the middle meningeal artery or vein, leading to bleeding."
+      ],
+      "symptoms": [
+        "Headache, often severe and worsening over time.",
+        "Loss of consciousness followed by a period of lucidity (lucid interval) in some cases.",
+        "Nausea and vomiting.",
+        "Weakness or paralysis on one side of the body.",
+        "Seizures."
+      ],
+      "prevention": [
+        "Wearing appropriate protective headgear during activities with a risk of head injury (e.g., sports, construction work).",
+        "Safe driving practices to prevent motor vehicle accidents."
+      ],
+      "alternative": [],
+      "doctor": "Neurosurgeon",
+      "treatment": [
+        "Surgical evacuation of the hematoma to relieve pressure on the brain (craniotomy).",
+        "Medications to control intracranial pressure.",
+        "Monitoring and management of other head injury complications."
+      ]
+    },
+    "Epiglottitis": {
+      "disease_name": "Epiglottitis",
+      "disease_detail": "Epiglottitis is inflammation of the epiglottis, a flap of tissue at the base of the tongue that prevents food from entering the windpipe during swallowing.",
+      "cause": [
+        "Bacterial infection, usually by Haemophilus influenzae type b (Hib)."
+      ],
+      "symptoms": [
+        "Severe sore throat.",
+        "Drooling.",
+        "Difficulty swallowing.",
+        "High fever.",
+        "Stridor (high-pitched breathing sound)."
+      ],
+      "prevention": [
+        "Vaccination against Haemophilus influenzae type b (Hib).",
+        "Practicing good hygiene to prevent the spread of infections."
+      ],
+      "alternative": [],
+      "doctor": "Pediatrician or Otolaryngologist",
+      "treatment": [
+        "Maintaining the airway through intubation or tracheostomy if necessary.",
+        "Intravenous antibiotics to treat the underlying infection.",
+        "Corticosteroids to reduce inflammation.",
+        "In severe cases, hospitalization in an intensive care unit."
+      ]
+    },
+    "Epilepsy": {
+      "disease_name": "Epilepsy",
+      "disease_detail": "Epilepsy is a neurological disorder characterized by recurrent seizures, which can vary widely in severity and type.",
+      "cause": [
+        "Various factors can cause epilepsy, including genetic predisposition, brain injury, infections, brain tumors, and developmental disorders."
+      ],
+      "symptoms": [
+        "Seizures, which can range from convulsions to momentary lapses of awareness.",
+        "Loss of consciousness or awareness.",
+        "Temporary confusion.",
+        "Uncontrollable jerking movements of the arms and legs.",
+        "Seizures, which can range from convulsions to momentary lapses of awareness.",
+        "Loss of consciousness or awareness.",
+        "Temporary confusion.",
+        "Uncontrollable jerking movements of the arms and legs.",
+        "Psychic symptoms (such as deja vu or hallucinations) before the seizure.",
+        "Automatisms (repetitive, purposeless movements or actions)."
+      ],
+      "prevention": [
+        "Avoiding known triggers, such as lack of sleep, stress, and certain medications.",
+        "Compliance with prescribed anti-seizure medications.",
+        "Wearing protective headgear if at risk of head injury during seizures."
+      ],
+      "alternative": [],
+      "doctor": "Neurologist",
+      "treatment": [
+        "Anti-seizure medications (antiepileptic drugs) to prevent or reduce the frequency of seizures.",
+        "Surgery to remove the part of the brain responsible for seizure activity (in some cases).",
+        "Vagus nerve stimulation (VNS), a treatment that involves implanting a device that sends electrical impulses to the brain.",
+        "Ketogenic diet in some cases, especially in children."
+      ]
+    },
+    
+    "Episcleritis": {
+      "disease_name": "Episcleritis",
+      "disease_detail": "Episcleritis is inflammation of the episclera, the thin layer of tissue between the conjunctiva (the clear membrane covering the white part of the eye) and the connective tissue layer of the eye.",
+      "cause": [
+        "The exact cause is often unknown, but it can be associated with systemic inflammatory conditions, infections, or allergies."
+      ],
+      "symptoms": [
+        "Redness of the eye.",
+        "Eye pain or discomfort, which may worsen with eye movement.",
+        "Tearing.",
+        "Photophobia (sensitivity to light).",
+        "A sensation of a foreign body in the eye."
+      ],
+      "prevention": [
+        "There are no specific preventive measures."
+      ],
+      "alternative": [],
+      "doctor": "Ophthalmologist",
+      "treatment": [
+        "Topical corticosteroids to reduce inflammation.",
+        "Artificial tears or lubricating eye drops.",
+        "Treatment of underlying systemic conditions, if present."
+      ]
+    },
+    "Eruptive Xanthomatosis": {
+      "disease_name": "Eruptive Xanthomatosis",
+      "disease_detail": "Eruptive xanthomatosis is a skin condition characterized by the sudden development of firm, yellow, waxy, pea-like bumps surrounded by red halos, often on the buttocks, backs of the knees, elbows, and back.",
+      "cause": [
+        "Eruptive xanthomatosis is often associated with poorly controlled diabetes mellitus, especially type 1 diabetes."
+      ],
+      "symptoms": [
+        "Yellow, waxy bumps on the skin.",
+        "Red halos surrounding the bumps.",
+        "Itching or burning sensation over the bumps.",
+        "Associated symptoms of poorly controlled diabetes, such as increased thirst and frequent urination."
+      ],
+      "prevention": [
+        "Maintaining good control of blood sugar levels in people with diabetes."
+      ],
+      "alternative": [],
+      "doctor": "Dermatologist or Endocrinologist",
+      "treatment": [
+        "Achieving better control of blood sugar levels through dietary changes, exercise, and medication adjustments.",
+        "Statin medications to lower cholesterol levels.",
+        "Topical treatments to relieve itching or discomfort."
+      ]
+    },
+    "Erysipeloid": {
+      "disease_name": "Erysipeloid",
+      "disease_detail": "Erysipeloid is a skin infection caused by the bacterium Erysipelothrix rhusiopathiae, often acquired through contact with infected animals, fish, or contaminated meat.",
+      "cause": [
+        "Infection with the bacterium Erysipelothrix rhusiopathiae, commonly found in animals like pigs, fish, and birds."
+      ],
+      "symptoms": [
+        "Painful, red, swollen area of the skin, often on the hands or fingers.",
+        "Raised, well-defined border.",
+        "Fever.",
+        "Malaise (general feeling of illness).",
+        "Joint pain (in some cases)."
+      ],
+      "prevention": [
+        "Wearing protective gloves when handling animal products or fish.",
+        "Cooking meat thoroughly."
+      ],
+      "alternative": [],
+      "doctor": "Dermatologist or Infectious Disease Specialist",
+      "treatment": [
+        "Antibiotic therapy, usually with penicillin or erythromycin.",
+        "Pain relievers for symptomatic relief.",
+        "Cleaning and dressing of wounds."
+      ]
+    },
+    "Erythema Multiforme": {
+      "disease_name": "Erythema Multiforme",
+      "disease_detail": "Erythema multiforme is a skin condition characterized by red, raised skin lesions that resemble targets or bulls-eye, usually triggered by an immune reaction to infections or medications.",
+      "cause": [
+        "Infections (especially herpes simplex virus and Mycoplasma pneumoniae).",
+        "Medications (such as antibiotics, anticonvulsants, and nonsteroidal anti-inflammatory drugs)."
+      ],
+      "symptoms": [
+        "Red, raised skin lesions with a central blister or crust.",
+        "Target-like appearance of the lesions.",
+        "Itching.",
+        "Fever.",
+        "Malaise (general feeling of illness)."
+      ],
+      "prevention": [
+        "Avoiding known triggers, such as certain medications.",
+        "Prompt treatment of infections."
+      ],
+      "alternative": [],
+      "doctor": "Dermatologist",
+      "treatment": [
+        "Identifying and discontinuing the causative medication, if applicable.",
+        "Antiviral or antibiotic medications for infectious triggers.",
+        "Corticosteroids to reduce inflammation.",
+        "Symptomatic treatment, such as antihistamines for itching."
+      ]
+    },
+    "Erythroderma": {
+      "disease_name": "Erythroderma",
+      "disease_detail": "Erythroderma is a generalized redness of the skin affecting over 90% of the body's surface area. It is often associated with exfoliation (peeling) of the skin and can be caused by various underlying conditions.",
+      "cause": [
+        "Underlying skin conditions (such as psoriasis, eczema, or contact dermatitis).",
+        "Drug reactions (such as to certain antibiotics or anticonvulsants).",
+        "Systemic diseases (such as lymphoma or leukemia)."
+      ],
+      "symptoms": [
+        "Widespread redness of the skin.",
+        "Skin peeling or scaling.",
+        "Itching or burning sensation.",
+        "Swelling of the affected skin.",
+        "Fever and chills."
+      ],
+      "prevention": [
+        "Avoiding known triggers, such as certain medications.",
+        "Proper management of underlying skin conditions."
+      ],
+      "alternative": [],
+      "doctor": "Dermatologist or Allergist",
+      "treatment": [
+        "Identifying and discontinuing the causative medication, if applicable.",
+        "Corticosteroids to reduce inflammation.",
+        "Moisturizers and emollients to soothe the skin.",
+        "Treatment of the underlying condition."
+      ]
+    },
+    "Esophageal Cancer": {
+      "disease_name": "Esophageal Cancer",
+      "disease_detail": "Esophageal cancer is a malignancy that develops in the tissues of the esophagus, the muscular tube that connects the throat to the stomach. It is often diagnosed at an advanced stage.",
+      "cause": [
+        "Exact causes are not fully understood, but risk factors include smoking, heavy alcohol consumption, chronic acid reflux (gastroesophageal reflux disease, or GERD), obesity, and certain dietary factors."
+      ],
+      "symptoms": [
+        "Difficulty swallowing (dysphagia).",
+        "Unintended weight loss.",
+        "Chest pain, pressure, or burning.",
+        "Chronic cough.",
+        "Hoarseness."
+      ],
+      "prevention": [
+        "Quitting smoking.",
+        "Limiting alcohol consumption.",
+        "Maintaining a healthy weight.",
+        "Treating conditions such as GERD to reduce the risk of Barrett's esophagus."
+      ],
+      "alternative": [],
+      "doctor": "Gastroenterologist or Oncologist",
+      "treatment": [
+        "Surgery to remove the cancerous tissue (esophagectomy).",
+        "Chemotherapy.",
+        "Radiation therapy.",
+        "Targeted therapy.",
+        "Immunotherapy."
+      ]
+    },
+    "Cavernous Sinus Thrombosis": {
+      "disease_name": "Cavernous Sinus Thrombosis",
+      "disease_detail": "Cavernous sinus thrombosis is a rare, life-threatening condition involving a blood clot in the cavernous sinus, a large vein at the base of the brain.",
+      "cause": [
+        "Infections, particularly from the nose, sinuses, ears, or teeth.",
+        "Head trauma."
+      ],
+      "symptoms": [
+        "Severe headache.",
+        "Swelling and bulging of the eyes.",
+        "Double vision or loss of vision.",
+        "Facial pain or numbness."
+      ],
+      "prevention": [
+        "Early treatment of sinus, ear, and dental infections.",
+        "Prompt medical attention for head injuries."
+      ],
+      "alternative": [],
+      "doctor": "Neurologist",
+      "treatment": [
+        "Antibiotics to treat the underlying infection.",
+        "Anticoagulants to prevent further clotting.",
+        "Surgery in severe cases to drain the infected sinus."
+      ]
+    },
+    "Celiac Disease - Sprue": {
+      "disease_name": "Celiac Disease - Sprue",
+      "disease_detail": "Celiac disease is an autoimmune disorder where the ingestion of gluten leads to damage in the small intestine.",
+      "cause": [
+        "Genetic predisposition.",
+        "Consumption of gluten."
+      ],
+      "symptoms": [
+        "Diarrhea.",
+        "Bloating and gas.",
+        "Fatigue.",
+        "Anemia.",
+        "Osteoporosis."
+      ],
+      "prevention": [
+        "Avoiding gluten in the diet.",
+        "Regular monitoring for people with a family history of celiac disease."
+      ],
+      "alternative": [
+        "Gluten-sensitive enteropathy.",
+        "Non-tropical sprue."
+      ],
+      "doctor": "Gastroenterologist",
+      "treatment": [
+        "Strict, lifelong gluten-free diet."
+      ]
+    },
+    "Cellulitis": {
+      "disease_name": "Cellulitis",
+      "disease_detail": "Cellulitis is a common, potentially serious bacterial skin infection characterized by redness, swelling, and pain.",
+      "cause": [
+        "Bacteria, typically Streptococcus and Staphylococcus, entering the skin through cuts or abrasions."
+      ],
+      "symptoms": [
+        "Red, swollen, and painful skin.",
+        "Warmth in the affected area.",
+        "Fever.",
+        "Red spots or blisters on the affected area."
+      ],
+      "prevention": [
+        "Good wound care.",
+        "Keeping skin clean and moisturized.",
+        "Prompt treatment of skin infections."
+      ],
+      "alternative": [],
+      "doctor": "Dermatologist",
+      "treatment": [
+        "Antibiotics to treat the infection.",
+        "Rest and elevation of the affected limb.",
+        "Pain relief medications."
+      ]
+    
+  },
     "Aase syndrome": {
       "disease_name": "Aase syndrome",
       "disease_detail": "Aase syndrome is a rare congenital disorder characterized by anemia and skeletal abnormalities, particularly involving the fingers and thumbs. The condition is typically diagnosed in infancy.",

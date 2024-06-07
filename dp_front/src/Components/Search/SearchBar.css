@@ -5,7 +5,26 @@
     border-radius: 4px;
     height:60px;
   }
-  
+  .medicinesearch {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .medicinesearch h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .medicinesearch input {
+    width: 40%;
+    border:1px solid #777;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
   .search input {
     background-color: white;
     border:none;
@@ -76,6 +95,7 @@
   }
 
 .medicine{
+  padding-top:60px;
   padding-bottom:60px;
 }
   .medicine h2{

@@ -1,18 +1,24 @@
 import React, { useState } from 'react';
-import Header from '../Header/Header';
 import "./SearchBar.css";
 import medicineData from './Medicine.json'; // Adjust the path if necessary
-import Footer from '../Footer/Footer';
 
 const Medicine = () => {
   const [selectedLetter, setSelectedLetter] = useState('All');
   const [currentPage, setCurrentPage] = useState(1);
   const [goToPage, setGoToPage] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
 
   // Calculate pagination
   const perPage = 20;
-  const filteredMedicine = selectedLetter === 'All' ? medicineData : 
+  const filteredByLetter = selectedLetter === 'All' ? medicineData : 
     medicineData.filter(medicine => medicine["Medicine Name"].charAt(0).toUpperCase() === selectedLetter);
+  
+  const filteredMedicine = searchQuery ? 
+    filteredByLetter.filter(medicine => 
+      medicine["Medicine Name"].toLowerCase().includes(searchQuery.toLowerCase()) ||
+      medicine.Composition.toLowerCase().includes(searchQuery.toLowerCase())
+    ) : filteredByLetter;
+  
   const totalPages = Math.ceil(filteredMedicine.length / perPage);
   const paginationRange = 5; // Number of page numbers to display around the current page
   const currentPageIndex = currentPage - 1;
@@ -43,30 +49,55 @@ const Medicine = () => {
   return (
     <>
       <div className="medicine">
-        <h2>Medicine Encyclopedia</h2>
+        
+        <div className="medicinesearch">
+          <h3>Medicine Encyclopedia</h3>
+          <input
+            type="search"
+            placeholder="Search by medicine name or composition..."
+            value={searchQuery}
+            onChange={e => {
+              setSearchQuery(e.target.value);
+              setCurrentPage(1); // Reset to first page on new search
+            }}
+            />
+        </div>
+
         <div className='letterdiv'>
           <div>
-            <span className={selectedLetter === 'All' ? 'selected' : ''} onClick={() => setSelectedLetter('All')}>All</span>
+            <span className={selectedLetter === 'All' ? 'selected' : ''} onClick={() => {
+              setSelectedLetter('All');
+              setCurrentPage(1); // Reset to first page on letter change
+            }}>All</span>
             {firstRowLetters.map(letter => (
                 <span
-  key={letter}
-  className={`letter ${selectedLetter === letter ? 'selected-letter' : ''}`}
-  onClick={() => setSelectedLetter(letter)}
->
-  {letter}
-</span>            ))}
+                  key={letter}
+                  className={`letter ${selectedLetter === letter ? 'selected-letter' : ''}`}
+                  onClick={() => {
+                    setSelectedLetter(letter);
+                    setCurrentPage(1); // Reset to first page on letter change
+                  }}
+                >
+                  {letter}
+                </span>
+            ))}
           </div>
           <div>
             {secondRowLetters.map(letter => (
                 <span
-  key={letter}
-  className={`letter ${selectedLetter === letter ? 'selected-letter' : ''}`}
-  onClick={() => setSelectedLetter(letter)}
->
-  {letter}
-</span>            ))}
+                  key={letter}
+                  className={`letter ${selectedLetter === letter ? 'selected-letter' : ''}`}
+                  onClick={() => {
+                    setSelectedLetter(letter);
+                    setCurrentPage(1); // Reset to first page on letter change
+                  }}
+                >
+                  {letter}
+                </span>
+            ))}
           </div>
         </div>
+        
         <div>
           {currentMedicines.map((medicine, index) => (
             <div className='medicinediv' key={index}>
@@ -78,6 +109,7 @@ const Medicine = () => {
             </div>
           ))}
         </div>
+
         <div className='numpage'>
           <ul className="pagination">
             {startPage !== 1 && (

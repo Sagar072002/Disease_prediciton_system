@@ -4,6 +4,7 @@ import userService from '../../services/user_service';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useEffect, useState } from 'react';
+import "./Home.css"
 
 const Userprofile = () => {
   
@@ -153,7 +154,7 @@ const Userprofile = () => {
               {/* Buttons for form submission */}
               <div>
                 <button type="submit" className='submitbutton'>Submit</button>
-                <button type="button" className='cancelbutton'>Cancel</button>
+                {/* <button type="button" className='cancelbutton'>Cancel</button> */}
               </div>
             </form>
           )}
