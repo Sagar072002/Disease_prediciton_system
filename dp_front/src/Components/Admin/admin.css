@@ -1,3 +1,15 @@
+.dashboardtext,.dashboardtext2{
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-top:-50px;
+  margin-left:50px;
+  margin-bottom:20px;
+}
+.dashboardtext2{
+  margin-top:0;
+  margin-left:20px;
+}
+
 .admin {
   background-color: aliceblue;
   display: flex;

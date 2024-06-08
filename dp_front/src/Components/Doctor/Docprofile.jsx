@@ -68,6 +68,8 @@ const Docprofile = () => {
           <img src={img1} alt="Logo" />
           <p>DISPRED</p>
         </div> */}
+        <h2 className="dashboardtext">Doctor </h2>
+        <h2 className="dashboardtext2"> Dashboard</h2>
         <div className="image">
           <img src={img} alt="Profile" />
           <p>Sagar Negi</p>

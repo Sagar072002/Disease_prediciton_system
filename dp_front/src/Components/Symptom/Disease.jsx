@@ -85,6 +85,7 @@ function Disease() {
       
       <div className="diseasecontainer">
         <div>
+          {!diseaseInfo && <p className="nodisease">No disease searched yet.</p>}
           {diseaseInfo && (
             <div className="info-container">
               <h2>Name: <span>{diseaseInfo.disease_name}</span></h2>

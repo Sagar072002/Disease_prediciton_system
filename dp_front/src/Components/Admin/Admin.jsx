@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import "./admin.css";
 import img from "../../assets/man.jpg";
-import img1 from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import adminService from "../../services/admin_service";
 import { SiteContext } from "../../context/siteContext";
@@ -62,6 +61,8 @@ const Admin = () => {
           <img src={img1} alt="" />
           <p>DISPRED</p>
         </div> */}
+        <h2 className="dashboardtext">Admin </h2>
+        <h2 className="dashboardtext2"> Dashboard</h2>
         <div className="image">
           <img src={img} alt="" />
           <p>Sagar Negi</p>

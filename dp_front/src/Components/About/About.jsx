@@ -78,7 +78,7 @@ Join us on this journey towards a healthier future. Together, we can redefine he
 </div>
 <div className="message">
   <h2>Message to our community</h2>
-  <p>Our teammates live Sutter's values on a daily basis as we support and provide high-quality, inclusive patient care. Sutter Health's commitment to our values and diversity and inclusion does not stop at our doors. When conduct by our employees outside of work — online or off — impacts our patients, teammates or organization, we will stand by our commitment to equality and non-discriminatory practices and look into the matter.
+  <p>Our teammates live Dispred's values on a daily basis as we support and provide high-quality, inclusive patient care. Dispred's commitment to our values and diversity and inclusion does not stop at our doors. When conduct by our employees outside of work — online or off — impacts our patients, teammates or organization, we will stand by our commitment to equality and non-discriminatory practices and look into the matter.
 <br /> <br />
 This includes responding when we are made aware of comments on social media platforms like Facebook, Twitter or Instagram that use language or images that are intentionally inflammatory, promoting racism, sexism, homophobia and hate or endorsing violence.
 <br /> <br />

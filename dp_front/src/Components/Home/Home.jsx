@@ -41,7 +41,7 @@ const Home = () => {
         <h2>More than a Symptom Checker</h2>
 <div className="bannerp">
   <p>
-    Sensely's innovative clinical decision support solution empowers users to seamlessly navigate from symptom assessment to tailored solutions through intuitive conversations:
+    Dispred's innovative clinical decision support solution empowers users to seamlessly navigate from symptom assessment to tailored solutions through intuitive conversations:
   </p>
 </div>
 <ul>
@@ -506,7 +506,7 @@ Dispred is always available, regardless of what you need it for. Stick to using 
             }}
           >
             <div className="accordion-item-body-content">
-           Isabel is built in a completely different way to other symptom checkers, utilizing sophisticated Artificial Intelligence technology which searches over 6,000 disease presentations - many more than other tools. Most importantly, Isabel can understand multiple symptoms entered in everyday language, all in one go without going through a long list of questions. Other tools restrict the user to entering just one single symptom, or force them to select common symptoms from a list or body map, severely limiting the user’s ability to accurately describe their own problem.
+           Dispred is built in a completely different way to other symptom checkers, utilizing sophisticated Artificial Intelligence technology which searches over 6,000 disease presentations - many more than other tools. Most importantly, Dispred can understand multiple symptoms entered in everyday language, all in one go without going through a long list of questions. Other tools restrict the user to entering just one single symptom, or force them to select common symptoms from a list or body map, severely limiting the user’s ability to accurately describe their own problem.
             </div>
           </div>
         </div>
@@ -528,7 +528,7 @@ Dispred is always available, regardless of what you need it for. Stick to using 
             }}
           >
             <div className="accordion-item-body-content">
-            Dispred Symptom Checker is adapted from the Isabel Pro which has been used by doctors in hospitals around the world for almost two decades and is widely recognised in the medical community as one of the most accurate on the market. The tool has been professionally validated over many years with several peer-reviewed articles appearing in medical journals.
+            Dispred Symptom Checker is adapted from the Dispred Pro which has been used by doctors in hospitals around the world for almost two decades and is widely recognised in the medical community as one of the most accurate on the market. The tool has been professionally validated over many years with several peer-reviewed articles appearing in medical journals.
             </div>
           </div>
         </div>
@@ -571,7 +571,7 @@ Do I still need to see a doctor after using Dispred?          </div>
             }}
           >
             <div className="accordion-item-body-content">
-            Almost certainly yes. You should not use Isabel as a substitute for going to see your doctor but as a tool to help you decide which type of doctor to see and make your consultation more productive with the aim of reaching the correct diagnosis more quickly.
+            Almost certainly yes. You should not use Dispred as a substitute for going to see your doctor but as a tool to help you decide which type of doctor to see and make your consultation more productive with the aim of reaching the correct diagnosis more quickly.
             </div>
           </div>
         </div>

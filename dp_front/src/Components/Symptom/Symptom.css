@@ -1,3 +1,10 @@
+.nodisease{
+  font-size: 30px;
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+
 .terms{
     display: flex;
     justify-content: center;
