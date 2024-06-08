@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import img from "../../assets/man.jpg";
 import img1 from "../../assets/logo.png";
 import { Link } from "react-router-dom";
@@ -8,15 +8,17 @@ import * as Yup from "yup";
 import doctorService from "../../services/doc_service";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { SiteContext } from "../../context/siteContext";
 
 const Docprofile = () => {
 
+  const { uid } = useContext(SiteContext)
   const [doc, setDoc] = useState({})
   const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
   const [activeMenu, setActiveMenu] = useState("Edit Profile");
 
   useEffect(()=>{
-    doctorService.get().then((res)=>{
+    doctorService.get(uid).then((res)=>{
       console.log("Res:",res)
       setDoc(res.data)
     }).catch((err)=>{
