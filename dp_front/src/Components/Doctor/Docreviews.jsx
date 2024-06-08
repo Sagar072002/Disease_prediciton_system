@@ -33,7 +33,7 @@ const Docreviews = () => {
         setFilteredReviews(filtered);
     }, [searchQuery, reviewList]);
 
-    if (!reviewList.length) return <div>Loading...</div>;
+    // if (!reviewList.length) return <div>Loading...</div>;
 
     return (
         <div className="admin admindct">
@@ -42,6 +42,8 @@ const Docreviews = () => {
                     <img src={img} alt="" />
                     <p>Sagar Negi</p>
                 </div>
+                <h2 className="dashboardtext">Doctor </h2>
+        <h2 className="dashboardtext2"> Dashboard</h2>
                 <div className="det">
                     <Link to="/doctor"> <p className={activeMenu === "Appointments" ? "active" : ""} onClick={() => handleMenuClick("Appointments")}>Appointments</p> </Link>
                     <Link to="/doctorreviews"> <p className={activeMenu === "Reviews" ? "active" : ""} onClick={() => handleMenuClick("Reviews")}>Reviews</p> </Link>

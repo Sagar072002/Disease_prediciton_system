@@ -40,6 +40,8 @@ const Doctor = () => {
             <img src={img1} alt="" />
             <p>DISPRED</p>
           </div> */}
+          <h2 className="dashboardtext">Doctor </h2>
+        <h2 className="dashboardtext2"> Dashboard</h2>
           <div className="image">
             <img src={img} alt="" />
             <p>Sagar Negi</p>
