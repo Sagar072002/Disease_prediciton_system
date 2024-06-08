@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import './login.css'; // Import the CSS file
 
 const Mainlogin = () => {
   // State to track selected option
@@ -21,13 +22,7 @@ const Mainlogin = () => {
       <div className='options'>
         {/* User option */}
         <div
-          style={{
-            padding: '10px',
-            margin: '5px',
-            cursor: 'pointer',
-            backgroundColor: selectedOption === 'user' ? '#fff' : 'transparent',
-            color: selectedOption === 'user' ? 'black' : 'white'
-          }}
+          className={selectedOption === 'user' ? 'selected' : ''}
           onClick={() => handleOptionClick('user')}
         >
           User
@@ -35,37 +30,19 @@ const Mainlogin = () => {
         
         {/* Doctor option */}
         <div
-          style={{
-            padding: '10px',
-            margin: '5px',
-            cursor: 'pointer',
-            backgroundColor: selectedOption === 'doctor' ? '#fff' : 'transparent',
-            color: selectedOption === 'doctor' ? 'black' : 'white'
-          }}
+          className={selectedOption === 'doctor' ? 'selected' : ''}
           onClick={() => handleOptionClick('doctor')}
         >
           Doctor
         </div>
-        
-       
-        
-        {/* Render Reset option only if an option is selected */}
-        
       </div>
-      <div className='btns'> 
-        {selectedOption && (
-          <button
-            onClick={handleResetClick}
-          >
-            Reset
-          </button>
-        )}
-        {/* Render Next button if an option is selected */}
-        {selectedOption && (
-          <Link to={selectedOption === 'user' ? "/login" : "/doctorlogin"}>
-            <button>Next</button>
-          </Link>
-        )}
+      <div className={`btns ${!selectedOption ? 'hidden' : ''}`}>
+        <button onClick={handleResetClick}>
+          Reset
+        </button>
+        <Link to={selectedOption === 'user' ? "/login" : "/doctorlogin"}>
+          <button>Next</button>
+        </Link>
       </div>
     </div>
   );

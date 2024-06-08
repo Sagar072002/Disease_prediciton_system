@@ -116,8 +116,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap:100px;
-background-color: #008080;
-color: #fff;
+background-color: #f1f1f1;
 /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
 }
 .mainlogindiv .options{
@@ -130,7 +129,6 @@ gap:50px;
     font-size:30px;
 }
 .mainlogindiv .options div{
-    border:1px solid transparent;
     border-radius: 3px;
     height:300px;
     width:400px;
@@ -138,10 +136,16 @@ gap:50px;
 justify-content: center;
 align-items: center;
 font-size: 30px;
+color:#000 !important; 
+cursor: pointer;
 font-weight: bold;
-border:2px solid #fff; /* Change to the text color you desire */
+background-color: #fff !important;
+border:1px solid #088088; /* Change to the text color you desire */
 }
-
+.mainlogindiv .options .selected {
+    background-color: #088088 !important;
+    color: #fff !important;
+}
 .userlog, .doctorlog, .adminlog {
     cursor: pointer;
     padding: 10px;
@@ -149,15 +153,10 @@ border:2px solid #fff; /* Change to the text color you desire */
   }
   
  
-  .mainlogindiv .btns{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:30px;
-  }
+ 
   .mainlogindiv .btns button{
-    background-color: #fff;
-    color:#000;
+    background-color: #088088;
+    color:#fff;
     border:2px solid #fff;
     font-size: 20px;
     border:1px solid transparent;
@@ -165,12 +164,21 @@ border:2px solid #fff; /* Change to the text color you desire */
     border-radius: 2px;
 }
 .mainlogindiv .btns button:hover{
-      border:1px solid #fff;
-      color:#fff;
+      border:1px solid #088088;
+      color:#000;
       background-color: transparent;
     cursor: pointer;
   }
+  .btns {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
 
+.btns.hidden {
+    visibility: hidden;
+}
   @media only screen and (max-width: 1600px) {
     
     .login-right img{
